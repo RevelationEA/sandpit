@@ -1,0 +1,504 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Student Records Accelerator",
+      "inputType": "text"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "LAYOUT": {
+      "value": "CenteredRectangle",
+      "inputType": "select",
+      "refData": "LAYOUTTYPE"
+    },
+    "VIEW": {
+      "value": "Architecture",
+      "inputType": "select",
+      "refData": "VIEWTYPE"
+    },
+    "Detailed Description": {
+      "inputType": "url",
+      "value": "https://revelationcore.com/blogs/a-student-records-enterprise-reference-model.html"
+    },
+    "Author": {
+      "inputType": "text",
+      "value": "Steve J White"
+    },
+    "GITHUB_REPO": {
+      "value": "RevelationEA/sandpit",
+      "inputType": "text"
+    },
+    "GITHUB_PATH": {
+      "value": "StudentRecordsAccelerator.json",
+      "inputType": "text"
+    },
+    "GITHUB_BRANCH": {
+      "value": "main",
+      "inputType": "text"
+    },
+    "GITHUB_SHA": {
+      "value": "c429c9ccde5e6408194f9c2a80c4eb103cb04158",
+      "inputType": "text"
+    }
+  },
+  "systems": [
+    {
+      "ID": "ACC",
+      "TEXT": "Accomm & Conf Sys",
+      "TYPE": "SYSTEM",
+      "Description": "Manage on-campus accommodation and external event bookings",
+      "Key Capabilities": "Room allocation; Conference/venue scheduling; Booking/payment processing; Resource allocation",
+      "Higher Education Domain": "Campus & Facilities"
+    },
+    {
+      "ID": "AM",
+      "TEXT": "Attendance Monitoring",
+      "TYPE": "SYSTEM",
+      "Description": "Track student attendance and engagement indicators; analyze learning activities",
+      "Key Capabilities": "Attendance tracking; Engagement analytics; Early-warning alerts; Reporting/dashboards",
+      "Higher Education Domain": "Student Lifecycle & Experience"
+    },
+    {
+      "ID": "BI",
+      "TEXT": "Business Intelligence",
+      "TYPE": "SYSTEM",
+      "Description": "Provide data analysis, dashboards, and reporting across institution-wide data sets",
+      "Key Capabilities": "Data aggregation; Analytics & dashboards; Predictive insights; Performance reporting",
+      "Higher Education Domain": "Institutional Analytics & Reporting"
+    },
+    {
+      "ID": "CMS",
+      "TEXT": "Content Mgmt Systems",
+      "TYPE": "SYSTEM",
+      "Description": "Manage and publish digital content for websites, intranets, and portals",
+      "Key Capabilities": "Web content creation; Content workflow; Version control; Publishing & archiving",
+      "Higher Education Domain": "IT & Digital Infrastructure"
+    },
+    {
+      "ID": "CRIS",
+      "TEXT": "CRIS",
+      "TYPE": "SYSTEM",
+      "Description": "Centralize and track research outputs, publications, and researcher profiles",
+      "Key Capabilities": "Publications management; Researcher profiles; Compliance reporting; Collaboration tracking",
+      "Higher Education Domain": "Research & Innovation"
+    },
+    {
+      "ID": "CRM",
+      "TEXT": "CRM",
+      "TYPE": "SYSTEM",
+      "Description": "Manage interactions and relationships with prospects, students, alumni, partners",
+      "Key Capabilities": "Lead management; Communication tracking; Recruitment & marketing automation; Stakeholder engagement",
+      "Higher Education Domain": "Student Lifecycle & Experience"
+    },
+    {
+      "ID": "CM",
+      "TEXT": "Curriculum Mgmt",
+      "TYPE": "SYSTEM",
+      "Description": "Define and maintain programs, modules, and learning outcomes",
+      "Key Capabilities": "Program/module design; Curriculum change tracking; Learning outcome mapping; Approval workflows",
+      "Higher Education Domain": "Academic & Program Management"
+    },
+    {
+      "ID": "DW",
+      "TEXT": "Data Warehouse",
+      "TYPE": "SYSTEM",
+      "Description": "Consolidate institutional data from multiple sources for analysis and reporting",
+      "Key Capabilities": "Data extraction/ETL; Historical data storage; Centralized reporting; Integration with BI tools",
+      "Higher Education Domain": "Institutional Analytics & Reporting"
+    },
+    {
+      "ID": "EDRMS",
+      "TEXT": "EDRMS",
+      "TYPE": "SYSTEM",
+      "Description": "Store, manage, and track electronic documents and records throughout their lifecycle",
+      "Key Capabilities": "Document version control; Record retention policies; Secure access; Compliance & auditing",
+      "Higher Education Domain": "Enterprise Administration"
+    },
+    {
+      "ID": "ESB",
+      "TEXT": "Enterprise Service Bus",
+      "TYPE": "SYSTEM",
+      "Description": "Facilitate system-to-system integration and message brokering between applications",
+      "Key Capabilities": "Message routing; Data transformation; Enterprise integration patterns; Event-driven architecture",
+      "Higher Education Domain": "IT & Digital Infrastructure"
+    },
+    {
+      "ID": "EWP",
+      "TEXT": "Enterprise Web Portal",
+      "TYPE": "SYSTEM",
+      "Description": "Provide unified, role-based web access to institutional services and information",
+      "Key Capabilities": "Single sign-on; Personalized dashboards; Self-service functionality; Communication tools",
+      "Higher Education Domain": "IT & Digital Infrastructure"
+    },
+    {
+      "ID": "EST",
+      "TEXT": "Estates",
+      "TYPE": "SYSTEM",
+      "Description": "Manage property portfolios, maintenance, space allocation, and campus infrastructure",
+      "Key Capabilities": "Facilities management; Room allocation; Maintenance scheduling; Capital project management",
+      "Higher Education Domain": "Campus & Facilities"
+    },
+    {
+      "ID": "FIN",
+      "TEXT": "Finance",
+      "TYPE": "SYSTEM",
+      "Description": "Handle financial transactions, budgeting, accounting, and procurement",
+      "Key Capabilities": "Accounts payable/receivable; Budgeting & forecasting; Procurement; Financial reporting",
+      "Higher Education Domain": "Enterprise Administration"
+    },
+    {
+      "ID": "HR",
+      "TEXT": "HR",
+      "TYPE": "SYSTEM",
+      "Description": "Support human resource processes including recruitment, performance, and payroll setup",
+      "Key Capabilities": "Staff recruitment & onboarding; Performance reviews; Training & development; Leave management",
+      "Higher Education Domain": "Enterprise Administration"
+    },
+    {
+      "ID": "ITSM",
+      "TEXT": "IT Service Mgmt",
+      "TYPE": "SYSTEM",
+      "Description": "Coordinate and track IT support, incidents, requests, and assets",
+      "Key Capabilities": "Incident management; Service request tracking; Configuration & asset management; Knowledge base",
+      "Higher Education Domain": "IT & Digital Infrastructure"
+    },
+    {
+      "ID": "LIB",
+      "TEXT": "Library",
+      "TYPE": "SYSTEM",
+      "Description": "Manage library resources, loans, and digital/electronic materials",
+      "Key Capabilities": "Cataloging; Circulation/loans; E-resource management; Discovery & search services",
+      "Higher Education Domain": "Teaching & Learning"
+    },
+    {
+      "ID": "PAY",
+      "TEXT": "Payroll",
+      "TYPE": "SYSTEM",
+      "Description": "Execute payroll runs, deductions, tax, and pension management for institutional employees",
+      "Key Capabilities": "Payroll calculation; Tax & pension contributions; Payslip generation; Compliance reporting",
+      "Higher Education Domain": "Enterprise Administration"
+    },
+    {
+      "ID": "RP",
+      "TEXT": "Research Proposals",
+      "TYPE": "SYSTEM",
+      "Description": "Support the submission, management, and tracking of research funding and contracts",
+      "Key Capabilities": "Grant application workflow; Compliance checks; Award management; Contract tracking",
+      "Higher Education Domain": "Research & Innovation"
+    },
+    {
+      "ID": "SETS",
+      "TEXT": "Stud Eval Teach Soft",
+      "TYPE": "SYSTEM",
+      "Description": "Collect and analyze student feedback on modules, lecturers, and teaching effectiveness",
+      "Key Capabilities": "Feedback surveys; Data analysis & reporting; Action tracking; Quality enhancement",
+      "Higher Education Domain": "Teaching & Learning"
+    },
+    {
+      "ID": "SIS",
+      "TEXT": "Student Records",
+      "TYPE": "SYSTEM",
+      "Description": "Core SIS functionality to manage student data, enrolment, progression, and awards",
+      "Key Capabilities": "Enrolment & registration; Academic records; Grades & progression; Graduation & award management",
+      "Higher Education Domain": "Student Lifecycle & Experience"
+    },
+    {
+      "ID": "TTB",
+      "TEXT": "Timetabling",
+      "TYPE": "SYSTEM",
+      "Description": "Create and manage academic timetables for classes, rooms, and other resources",
+      "Key Capabilities": "Schedule generation; Room allocation; Conflict resolution; Calendar integration",
+      "Higher Education Domain": "Teaching & Learning"
+    },
+    {
+      "ID": "VLE",
+      "TEXT": "Virtual Learning Env",
+      "TYPE": "SYSTEM",
+      "Description": "Deliver and manage online learning content, assessments, and collaboration tools",
+      "Key Capabilities": "Course content hosting; Online assessments; Discussion forums; Gradebook",
+      "Higher Education Domain": "Teaching & Learning"
+    },
+    {
+      "ID": "IAM",
+      "TEXT": "Identity & Access Mgmt",
+      "TYPE": "SYSTEM",
+      "Description": "Provision and manage user identities and access rights across enterprise systems",
+      "Key Capabilities": "User provisioning; Authentication; Role-based access; Single sign-on",
+      "Higher Education Domain": "IT & Digital Infrastructure"
+    },
+    {
+      "ID": "OIV",
+      "TEXT": "Online ID Verification",
+      "TYPE": "SYSTEM",
+      "Description": "Electronic identity verification service for student personal data and documents",
+      "Key Capabilities": "Document scanning; ID matching; Fraud detection; Verification status updates",
+      "Higher Education Domain": "Student Lifecycle & Experience"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "F001",
+      "FROMID": "CM",
+      "TOID": "SIS",
+      "TEXT": "Curriculum",
+      "TYPE": "->",
+      "Entities": "Program, Module/Course, Prerequisites, Retired, Progression Structure",
+      "From": "Curriculum Mgmt",
+      "To": "Student Records"
+    },
+    {
+      "ID": "F002",
+      "FROMID": "SIS",
+      "TOID": "CM",
+      "TEXT": "Curriculum Analytics",
+      "TYPE": "->",
+      "Entities": "Enrollment, Completion, Grades, Retention, Feedback",
+      "From": "Student Records",
+      "To": "Curriculum Mgmt"
+    },
+    {
+      "ID": "F003",
+      "FROMID": "SIS",
+      "TOID": "TTB",
+      "TEXT": "Enrollment Feeds",
+      "TYPE": "->",
+      "Entities": "Student, Program, Module, Enrollment, Constraints",
+      "From": "Student Records",
+      "To": "Timetabling"
+    },
+    {
+      "ID": "F004",
+      "FROMID": "TTB",
+      "TOID": "SIS",
+      "TEXT": "Scheduling Feeds",
+      "TYPE": "->",
+      "Entities": "ClassSchedules, RoomAllocations, TimeSlots, InstructorAvailability",
+      "From": "Timetabling",
+      "To": "Student Records"
+    },
+    {
+      "ID": "F005",
+      "FROMID": "CRM",
+      "TOID": "SIS",
+      "TEXT": "Recruitment & Admissions",
+      "TYPE": "->",
+      "Entities": "Prospect, Application, Offer, Decision",
+      "From": "CRM",
+      "To": "Student Records"
+    },
+    {
+      "ID": "F006",
+      "FROMID": "SIS",
+      "TOID": "CRM",
+      "TEXT": "Enrollment & Academic Progress",
+      "TYPE": "->",
+      "Entities": "StudentRecord, Enrollment, Progression, Qualification",
+      "From": "Student Records",
+      "To": "CRM"
+    },
+    {
+      "ID": "F007",
+      "FROMID": "LIB",
+      "TOID": "SIS",
+      "TEXT": "Circulation & Overdues",
+      "TYPE": "->",
+      "Entities": "Loans, Overdues, Fines, ResourceHolds, ReturnStatus",
+      "From": "Library",
+      "To": "Student Records"
+    },
+    {
+      "ID": "F008",
+      "FROMID": "SIS",
+      "TOID": "LIB",
+      "TEXT": "Student Status & Access",
+      "TYPE": "->",
+      "Entities": "StudentID, Registration, Program, AccessRights, Holds",
+      "From": "Student Records",
+      "To": "Library"
+    },
+    {
+      "ID": "F009",
+      "FROMID": "SIS",
+      "TOID": "FIN",
+      "TEXT": "Fee Assessments",
+      "TYPE": "->",
+      "Entities": "Enrollment, TuitionCharges, PaymentPlans, Scholarships",
+      "From": "Student Records",
+      "To": "Finance"
+    },
+    {
+      "ID": "F010",
+      "FROMID": "FIN",
+      "TOID": "SIS",
+      "TEXT": "Payment Updates",
+      "TYPE": "->",
+      "Entities": "Payments, Refunds, OutstandingBalances, FinancialHolds",
+      "From": "Finance",
+      "To": "Student Records"
+    },
+    {
+      "ID": "F011",
+      "FROMID": "EWP",
+      "TOID": "SIS",
+      "TEXT": "Self-Service Data",
+      "TYPE": "->",
+      "Entities": "ProfileInfo, ApplicationData, ModuleSelections, Requests",
+      "From": "Enterprise Web Portal",
+      "To": "Student Records"
+    },
+    {
+      "ID": "F012",
+      "FROMID": "SIS",
+      "TOID": "EWP",
+      "TEXT": "Academic Updates",
+      "TYPE": "->",
+      "Entities": "EnrollmentStatus, Timetables, Grades, Notifications",
+      "From": "Student Records",
+      "To": "Enterprise Web Portal"
+    },
+    {
+      "ID": "F013",
+      "FROMID": "AM",
+      "TOID": "SIS",
+      "TEXT": "Attendance Feeds",
+      "TYPE": "->",
+      "Entities": "AttendanceRecords, EngagementIndicators, AbsenceAlerts",
+      "From": "Attendance Monitoring",
+      "To": "Student Records"
+    },
+    {
+      "ID": "F014",
+      "FROMID": "SIS",
+      "TOID": "AM",
+      "TEXT": "Enrollment Updates",
+      "TYPE": "->",
+      "Entities": "StudentRoster, ModuleDetails, AcademicCalendar",
+      "From": "Student Records",
+      "To": "Attendance Monitoring"
+    },
+    {
+      "ID": "F015",
+      "FROMID": "SIS",
+      "TOID": "VLE",
+      "TEXT": "Enrollment Data",
+      "TYPE": "->",
+      "Entities": "StudentRecords, CourseAssignments, InstructorDetails, TermDates",
+      "From": "Student Records",
+      "To": "Virtual Learning Env"
+    },
+    {
+      "ID": "F016",
+      "FROMID": "VLE",
+      "TOID": "SIS",
+      "TEXT": "Assessment Results",
+      "TYPE": "->",
+      "Entities": "Grades, Feedback, CompletionStatus, AcademicAlerts",
+      "From": "Virtual Learning Env",
+      "To": "Student Records"
+    },
+    {
+      "ID": "F017",
+      "FROMID": "SIS",
+      "TOID": "ACC",
+      "TEXT": "Student Info",
+      "TYPE": "->",
+      "Entities": "StudentProfiles, ContactDetails, EnrollmentStatus, ProgramDetails",
+      "From": "Student Records",
+      "To": "Accomm & Conf Sys"
+    },
+    {
+      "ID": "F018",
+      "FROMID": "ACC",
+      "TOID": "SIS",
+      "TEXT": "Accommodation Data",
+      "TYPE": "->",
+      "Entities": "RoomAllocations, BookingStatus, CheckInDates, CheckOutDates",
+      "From": "Accomm & Conf Sys",
+      "To": "Student Records"
+    },
+    {
+      "ID": "F019",
+      "FROMID": "SIS",
+      "TOID": "EST",
+      "TEXT": "Enrollment Data",
+      "TYPE": "->",
+      "Entities": "StudentEnrollments, Programs, Timetable, OccupancyForecasts",
+      "From": "Student Records",
+      "To": "Estates"
+    },
+    {
+      "ID": "F020",
+      "FROMID": "EST",
+      "TOID": "SIS",
+      "TEXT": "Space Utilization",
+      "TYPE": "->",
+      "Entities": "RoomAllocations, EventBookings, AvailabilityUpdates, MaintenanceNotices",
+      "From": "Estates",
+      "To": "Student Records"
+    },
+    {
+      "ID": "F021",
+      "FROMID": "SIS",
+      "TOID": "IAM",
+      "TEXT": "Provisioning Data",
+      "TYPE": "->",
+      "Entities": "StudentProfiles, EnrollmentStatus, ContactDetails, AccessEligibility",
+      "From": "Student Records",
+      "To": "Identity & Access Mgmt"
+    },
+    {
+      "ID": "F022",
+      "FROMID": "IAM",
+      "TOID": "SIS",
+      "TEXT": "Authentication Updates",
+      "TYPE": "->",
+      "Entities": "Credentials, AccountLocks, RoleAssignments, SecurityLogs",
+      "From": "Identity & Access Mgmt",
+      "To": "Student Records"
+    },
+    {
+      "ID": "F023",
+      "FROMID": "SIS",
+      "TOID": "EDRMS",
+      "TEXT": "Student Documents",
+      "TYPE": "->",
+      "Entities": "EnrollmentForms, Transcripts, GraduationCertificates, StudentProfiles",
+      "From": "Student Records",
+      "To": "EDRMS"
+    },
+    {
+      "ID": "F024",
+      "FROMID": "EDRMS",
+      "TOID": "SIS",
+      "TEXT": "Document Updates",
+      "TYPE": "->",
+      "Entities": "ArchivedRecords, RetentionPolicies, DocumentLinks, AccessLogs",
+      "From": "EDRMS",
+      "To": "Student Records"
+    },
+    {
+      "ID": "F025",
+      "FROMID": "SIS",
+      "TOID": "OIV",
+      "TEXT": "ID Verification Requests",
+      "TYPE": "->",
+      "Entities": "StudentProfiles, EnrollmentRecords, IdentityDocs, RequestMetadata",
+      "From": "Student Records",
+      "To": "Online ID Verification"
+    },
+    {
+      "ID": "F026",
+      "FROMID": "OIV",
+      "TOID": "SIS",
+      "TEXT": "Verification Results",
+      "TYPE": "->",
+      "Entities": "VerifiedStatus, ConfidenceScores, DocumentLinks, PendingFlags",
+      "From": "Online ID Verification",
+      "To": "Student Records"
+    }
+  ],
+  "layouts": {}
+}
