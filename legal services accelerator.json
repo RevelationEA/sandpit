@@ -286,6 +286,17 @@
       "deleted": false,
       "isExpanded": false,
       "isVisible": true
+    },
+    {
+      "ID": "5f0932ff-3c6b-4354-9775-82a786002407",
+      "TEXT": "test",
+      "TYPE": "ACTOR",
+      "Commercial Examples": "",
+      "Description": "",
+      "Key Capabilities": "",
+      "Legal Domain": "",
+      "isVisible": true,
+      "selected": true
     }
   ],
   "interactions": [
@@ -773,7 +784,7 @@
   ],
   "metadata": {
     "version": "1.0",
-    "exported": "2025-12-17T17:06:59.874Z",
+    "exported": "2025-12-17T17:08:10.900Z",
     "application": "Revelation Core"
   }
 }
