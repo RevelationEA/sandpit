@@ -296,6 +296,19 @@
       "Key Capabilities": "",
       "Legal Domain": "",
       "isVisible": true,
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false
+    },
+    {
+      "ID": "ab29bb5f-93e4-4cc4-83fc-14d0b26cce8d",
+      "TEXT": "test",
+      "TYPE": "ACTOR",
+      "Commercial Examples": "",
+      "Description": "",
+      "Key Capabilities": "",
+      "Legal Domain": "",
+      "isVisible": true,
       "selected": true
     }
   ],
@@ -784,7 +797,7 @@
   ],
   "metadata": {
     "version": "1.0",
-    "exported": "2025-12-17T17:08:10.900Z",
+    "exported": "2025-12-17T18:04:19.215Z",
     "application": "Revelation Core"
   }
 }
