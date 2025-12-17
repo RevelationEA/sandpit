@@ -305,6 +305,16 @@
       "Key Capabilities": "",
       "isVisible": true,
       "selected": true
+    },
+    {
+      "ID": "f8318558-d1d7-4618-be3c-307fc99b962e",
+      "TEXT": "test2",
+      "TYPE": "ACTOR",
+      "Description": "",
+      "Higher Education Domain": "",
+      "Key Capabilities": "",
+      "isVisible": true,
+      "selected": true
     }
   ],
   "interactions": [
@@ -649,7 +659,7 @@
   ],
   "metadata": {
     "version": "1.0",
-    "exported": "2025-12-17T15:54:55.495Z",
+    "exported": "2025-12-17T15:56:01.646Z",
     "application": "Revelation Core"
   }
 }
