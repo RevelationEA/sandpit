@@ -309,7 +309,9 @@
       "Key Capabilities": "",
       "Legal Domain": "",
       "isVisible": true,
-      "selected": true
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false
     }
   ],
   "interactions": [
@@ -793,11 +795,23 @@
       "isVisible": true,
       "From": "Administrative Staff",
       "To": "Case Management System"
+    },
+    {
+      "ID": "ee01296d-d11d-44c6-a38c-67a0564d1edc",
+      "FROMID": "ab29bb5f-93e4-4cc4-83fc-14d0b26cce8d",
+      "TOID": "CMS",
+      "TEXT": "hjgjhg",
+      "TYPE": "->",
+      "Entities": "",
+      "isVisible": true,
+      "From": "test",
+      "To": "Case Management System",
+      "selected": true
     }
   ],
   "metadata": {
     "version": "1.0",
-    "exported": "2025-12-17T18:04:19.215Z",
+    "exported": "2025-12-18T15:42:09.936Z",
     "application": "Revelation Core"
   }
 }
