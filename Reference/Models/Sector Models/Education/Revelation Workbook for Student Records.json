@@ -42,7 +42,7 @@
       "Vendor": "Kinetic",
       "Number of Users": 2500,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "24/7 Support",
       "TIME Status": "INVEST",
@@ -53,7 +53,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.6% uptime",
       "Data Sensitivity": "Medium",
-      "System of Record Data Entities": "Accommodation Data, Payment Records"
+      "System of Record Data Entities": "Accommodation Data, Payment Records",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "AM",
@@ -68,7 +72,7 @@
       "Vendor": "SEAtS",
       "Number of Users": 5000,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Internal IT",
       "Support Hours": "9am-5pm Mon-Fri",
       "TIME Status": "INVEST",
@@ -79,7 +83,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.7% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Attendance Data, Student Engagement"
+      "System of Record Data Entities": "Attendance Data, Student Engagement",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "BI",
@@ -94,7 +102,7 @@
       "Vendor": "Microsoft",
       "Number of Users": 800,
       "License Type": "Enterprise Agreement",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Internal IT",
       "Support Hours": "24/7 Support",
       "TIME Status": "INVEST",
@@ -105,7 +113,11 @@
       "User Feedback": "Positive",
       "Performance Metrics": "99.9% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Performance Metrics, Data Dashboards"
+      "System of Record Data Entities": "Performance Metrics, Data Dashboards",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "CMS",
@@ -131,7 +143,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.6% uptime",
       "Data Sensitivity": "Medium",
-      "System of Record Data Entities": "Website Content, Media Assets"
+      "System of Record Data Entities": "Website Content, Media Assets",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "CRIS",
@@ -146,7 +162,7 @@
       "Vendor": "Elsevier",
       "Number of Users": 1500,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "Extended Hours",
       "TIME Status": "INVEST",
@@ -157,7 +173,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.7% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Research Data, Publications"
+      "System of Record Data Entities": "Research Data, Publications",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "CRM",
@@ -172,7 +192,7 @@
       "Vendor": "Salesforce",
       "Number of Users": 1000,
       "License Type": "Per User License",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Internal IT",
       "Support Hours": "9am-5pm Mon-Fri",
       "TIME Status": "INVEST",
@@ -183,7 +203,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.7% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Applicant Data, Communications History"
+      "System of Record Data Entities": "Applicant Data, Communications History",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "CM",
@@ -198,7 +222,7 @@
       "Vendor": "CourseLoop",
       "Number of Users": 500,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "Extended Hours",
       "TIME Status": "INVEST",
@@ -209,7 +233,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.7% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Course Structures, Module Dependencies"
+      "System of Record Data Entities": "Course Structures, Module Dependencies",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "DW",
@@ -224,7 +252,7 @@
       "Vendor": "Snowflake",
       "Number of Users": 500,
       "License Type": "Enterprise Agreement",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Internal IT",
       "Support Hours": "24/7 Support",
       "TIME Status": "INVEST",
@@ -235,7 +263,11 @@
       "User Feedback": "Positive",
       "Performance Metrics": "99.9% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Raw Data, Institutional Reports"
+      "System of Record Data Entities": "Raw Data, Institutional Reports",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "EDRMS",
@@ -250,7 +282,7 @@
       "Vendor": "Microsoft",
       "Number of Users": 10000,
       "License Type": "Enterprise Agreement",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Internal IT",
       "Support Hours": "24/7 Support",
       "TIME Status": "INVEST",
@@ -261,7 +293,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.7% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Document Storage, File History"
+      "System of Record Data Entities": "Document Storage, File History",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "ESB",
@@ -276,7 +312,7 @@
       "Vendor": "MuleSoft",
       "Number of Users": 300,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "24/7 Support",
       "TIME Status": "INVEST",
@@ -287,7 +323,11 @@
       "User Feedback": "Positive",
       "Performance Metrics": "99.8% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "System Integrations, API Transactions"
+      "System of Record Data Entities": "System Integrations, API Transactions",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "EWP",
@@ -313,7 +353,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.6% uptime",
       "Data Sensitivity": "Medium",
-      "System of Record Data Entities": "Portal Data, User Profiles"
+      "System of Record Data Entities": "Portal Data, User Profiles",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "EST",
@@ -328,7 +372,7 @@
       "Vendor": "Planon",
       "Number of Users": 300,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "Extended Hours",
       "TIME Status": "TOLERATE",
@@ -339,7 +383,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.6% uptime",
       "Data Sensitivity": "Medium",
-      "System of Record Data Entities": "Room Bookings, Maintenance Logs"
+      "System of Record Data Entities": "Room Bookings, Maintenance Logs",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "FIN",
@@ -354,7 +402,7 @@
       "Vendor": "SAP",
       "Number of Users": 200,
       "License Type": "Enterprise Agreement",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "24/7 Support",
       "TIME Status": "MIGRATE",
@@ -365,7 +413,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.8% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Transactions, Budget Data"
+      "System of Record Data Entities": "Transactions, Budget Data",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "HR",
@@ -380,7 +432,7 @@
       "Vendor": "Workday",
       "Number of Users": 1500,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "Extended Hours",
       "TIME Status": "TOLERATE",
@@ -391,7 +443,11 @@
       "User Feedback": "Positive",
       "Performance Metrics": "99.7% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Employee Records, Payroll Data"
+      "System of Record Data Entities": "Employee Records, Payroll Data",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "IAM",
@@ -406,7 +462,7 @@
       "Vendor": "Okta",
       "Number of Users": 15000,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "24/7 Support",
       "TIME Status": "INVEST",
@@ -417,7 +473,11 @@
       "User Feedback": "Positive",
       "Performance Metrics": "99.9% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Identity Data, Authentication Logs"
+      "System of Record Data Entities": "Identity Data, Authentication Logs",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "LIB",
@@ -432,7 +492,7 @@
       "Vendor": "Clarivate",
       "Number of Users": 5000,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "9am-5pm Mon-Fri",
       "TIME Status": "INVEST",
@@ -443,7 +503,11 @@
       "User Feedback": "Positive",
       "Performance Metrics": "99.7% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Borrowing Records, Digital Resources"
+      "System of Record Data Entities": "Borrowing Records, Digital Resources",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "PAY",
@@ -458,7 +522,7 @@
       "Vendor": "Workday",
       "Number of Users": 1000,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "Extended Hours",
       "TIME Status": "TOLERATE",
@@ -469,7 +533,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.8% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Payroll Records, Payslips"
+      "System of Record Data Entities": "Payroll Records, Payslips",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "RP",
@@ -484,7 +552,7 @@
       "Vendor": "Workday",
       "Number of Users": 500,
       "License Type": "Per User License",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "9am-5pm Mon-Fri",
       "TIME Status": "INVEST",
@@ -495,7 +563,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.5% uptime",
       "Data Sensitivity": "Medium",
-      "System of Record Data Entities": "Research Funding Applications, Proposal Submissions"
+      "System of Record Data Entities": "Research Funding Applications, Proposal Submissions",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "SETS",
@@ -510,7 +582,7 @@
       "Vendor": "Explorance",
       "Number of Users": 4000,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "Extended Hours",
       "TIME Status": "INVEST",
@@ -521,7 +593,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.7% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Student Feedback Data, Survey Reports"
+      "System of Record Data Entities": "Student Feedback Data, Survey Reports",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "SIS",
@@ -536,7 +612,7 @@
       "Vendor": "Ellucian",
       "Number of Users": 5000,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "24/7 Support",
       "TIME Status": "MIGRATE",
@@ -547,7 +623,11 @@
       "User Feedback": "Positive",
       "Performance Metrics": "99.9% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Enrollment Data, Academic Records"
+      "System of Record Data Entities": "Enrollment Data, Academic Records",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "TTB",
@@ -562,7 +642,7 @@
       "Vendor": "Celcat",
       "Number of Users": 300,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "Extended Hours",
       "TIME Status": "TOLERATE",
@@ -573,7 +653,11 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.6% uptime",
       "Data Sensitivity": "Medium",
-      "System of Record Data Entities": "Class Schedules, Room Allocations"
+      "System of Record Data Entities": "Class Schedules, Room Allocations",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "VLE",
@@ -599,7 +683,11 @@
       "User Feedback": "Positive",
       "Performance Metrics": "99.8% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "Course Content, Assessment Data"
+      "System of Record Data Entities": "Course Content, Assessment Data",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
     },
     {
       "ID": "OIV",
@@ -614,7 +702,7 @@
       "Vendor": "TrustID",
       "Number of Users": 1000,
       "License Type": "Annual Subscription",
-      "Cost": "£***",
+      "Cost": "Â£***",
       "Support Provider": "Third-party Vendor",
       "Support Hours": "Extended Hours",
       "TIME Status": "INVEST",
@@ -625,7 +713,39 @@
       "User Feedback": "Mixed",
       "Performance Metrics": "99.7% uptime",
       "Data Sensitivity": "High",
-      "System of Record Data Entities": "ID Verification Records, Student Identity Data"
+      "System of Record Data Entities": "ID Verification Records, Student Identity Data",
+      "selected": true,
+      "deleted": false,
+      "isExpanded": false,
+      "isVisible": true
+    },
+    {
+      "ID": "6f744e29-9a61-4f92-861f-96b2ff7bfd54",
+      "TEXT": "Test",
+      "TYPE": "ACTOR",
+      "Business Impact": "",
+      "Business Owner": "",
+      "Compliance Requirements": "",
+      "Cost": "",
+      "Data Sensitivity": "",
+      "Description": "",
+      "Future Improvements/Plans": "",
+      "Higher Education Domain": "",
+      "Issues/Challenges": "",
+      "Key Capabilities": "",
+      "License Type": "",
+      "Number of Users": "",
+      "Performance Metrics": "",
+      "Product": "",
+      "Support Hours": "",
+      "Support Provider": "",
+      "System of Record Data Entities": "",
+      "Technical Owner": "",
+      "TIME Status": "",
+      "User Feedback": "",
+      "Vendor": "",
+      "isVisible": true,
+      "selected": true
     }
   ],
   "interactions": [
@@ -643,7 +763,10 @@
       "Future Improvements/Plans": "Move to real-time API integration for immediate updates",
       "Data Entities Flowing": "Applicant personal details, chosen program, admission status, name, department, course assignment info",
       "From": "Attendance Monitoring (SEAtS Analytics)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT002",
@@ -660,7 +783,10 @@
       "Future Improvements/Plans": "Implement data dictionary and automated data mapping",
       "Data Entities Flowing": "Staff ID, name, department, course assignment info, student IDs, payment status, amounts",
       "From": "HR (Workday)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT003",
@@ -676,7 +802,10 @@
       "Future Improvements/Plans": "Transition to near real-time posting via web service",
       "Data Entities Flowing": "Invoice IDs, student IDs, payment status, amounts, student account, amount paid, timestamp",
       "From": "Finance (SAP S/4HANA)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT004",
@@ -692,7 +821,10 @@
       "Future Improvements/Plans": "Introduce message queue to buffer and retry transactions",
       "Data Entities Flowing": "Transaction ID, student account, amount paid, timestamp, course ID, grade/marks",
       "From": "Payroll (Workday)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT005",
@@ -708,7 +840,10 @@
       "Future Improvements/Plans": "Adopt standardized grade schema and validation checks",
       "Data Entities Flowing": "Student ID, course ID, grade/marks, class times, room numbers, instructor ID",
       "From": "Virtual Learning Env (Moodle)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT006",
@@ -724,7 +859,10 @@
       "Future Improvements/Plans": "Implement event-driven updates for immediate schedule changes",
       "Data Entities Flowing": "Course code, class times, room numbers, instructor ID, fine amount, hold flag",
       "From": "Timetabling (Celcat Timetabler)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT007",
@@ -740,7 +878,10 @@
       "Future Improvements/Plans": "Integrate via API for instant hold clearing once fines paid",
       "Data Entities Flowing": "Student ID, fine amount, hold flag, dorm/residence ID, room number, occupancy status",
       "From": "Library (Ex Libris)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT008",
@@ -756,7 +897,10 @@
       "Future Improvements/Plans": "Implement IAM integration for unified student IDs across systems",
       "Data Entities Flowing": "Student ID, dorm/residence ID, room number, occupancy status, document type, receipt status, doc reference ID",
       "From": "Accomm & Conf Sys (Kinetic Solutions)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT009",
@@ -773,7 +917,10 @@
       "Future Improvements/Plans": "Add monitoring and retry logic for message processing",
       "Data Entities Flowing": "Student ID, document type, receipt status, doc reference ID, visa type, expiration date, visa status",
       "From": "EDRMS (Microsoft SharePoint)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT010",
@@ -789,7 +936,10 @@
       "Future Improvements/Plans": "Plan for real-time integration with government visa databases",
       "Data Entities Flowing": "Student ID, visa type, expiration date, visa status, titles, credit values, prerequisites",
       "From": "Online ID Verification (TrustID)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT011",
@@ -805,7 +955,10 @@
       "Future Improvements/Plans": "Develop a unified curriculum repository or direct module in SIS",
       "Data Entities Flowing": "Course codes, titles, credit values, prerequisites, milestone achieved, date of completion",
       "From": "Content Mgmt Systems (Drupal)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT012",
@@ -821,7 +974,10 @@
       "Future Improvements/Plans": "Switch to standardized API with JSON data format",
       "Data Entities Flowing": "Student ID, milestone achieved, date of completion, email, phone, address changes",
       "From": "CRIS (Elsevier Pure)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT013",
@@ -837,7 +993,10 @@
       "Future Improvements/Plans": "Enable bi-directional sync or single system of truth for profile updates",
       "Data Entities Flowing": "Student ID, email, phone, address changes, risk score/alert type, timestamp",
       "From": "CRM (Salesforce)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT014",
@@ -853,7 +1012,10 @@
       "Future Improvements/Plans": "Incorporate filtering/thresholds and a dedicated alert handling service",
       "Data Entities Flowing": "Student ID, risk score/alert type, timestamp, selected course IDs, semester, enrollment status",
       "From": "Stud Eval Teach Soft (Blue Explorance)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT015",
@@ -870,7 +1032,10 @@
       "Future Improvements/Plans": "Scale system and use message queue to handle peak loads",
       "Data Entities Flowing": "Student ID, selected course IDs, semester, enrollment status, course IDs, roles",
       "From": "Enterprise Web Portal (Liferay)",
-      "To": "Student Records (Ellucian Banner)"
+      "To": "Student Records (Ellucian Banner)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT016",
@@ -886,7 +1051,10 @@
       "Future Improvements/Plans": "Adopt standard integration (LTI); real-time sync",
       "Data Entities Flowing": "Student enrollments, course IDs, roles, course registrations, class sections",
       "From": "Student Records (Ellucian Banner)",
-      "To": "Virtual Learning Env (Moodle)"
+      "To": "Virtual Learning Env (Moodle)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT017",
@@ -902,7 +1070,10 @@
       "Future Improvements/Plans": "Implement API for instant timetable updates",
       "Data Entities Flowing": "Student IDs, course registrations, class sections, amounts, due dates",
       "From": "Student Records (Ellucian Banner)",
-      "To": "Timetabling (Celcat Timetabler)"
+      "To": "Timetabling (Celcat Timetabler)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT018",
@@ -918,7 +1089,10 @@
       "Future Improvements/Plans": "Real-time billing updates via web service",
       "Data Entities Flowing": "Student ID, charges, amounts, due dates, amount due",
       "From": "Student Records (Ellucian Banner)",
-      "To": "Finance (SAP S/4HANA)"
+      "To": "Finance (SAP S/4HANA)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT019",
@@ -934,7 +1108,10 @@
       "Future Improvements/Plans": "Use webhooks for immediate payment confirmation in SIS",
       "Data Entities Flowing": "Invoice ID, student account, amount due, program, graduation date",
       "From": "Student Records (Ellucian Banner)",
-      "To": "Payroll (Workday)"
+      "To": "Payroll (Workday)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT020",
@@ -950,7 +1127,10 @@
       "Future Improvements/Plans": "Event-driven updates on graduation; improved data mapping",
       "Data Entities Flowing": "Contact details, program, graduation date, role, status",
       "From": "Student Records (Ellucian Banner)",
-      "To": "CRM (Salesforce)"
+      "To": "CRM (Salesforce)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT021",
@@ -967,7 +1147,10 @@
       "Future Improvements/Plans": "Direct API integration with IAM or confirmation feedback",
       "Data Entities Flowing": "Username, email, role, status, library ID",
       "From": "Student Records (Ellucian Banner)",
-      "To": "Identity & Access Mgmt (Okta)"
+      "To": "Identity & Access Mgmt (Okta)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT022",
@@ -979,11 +1162,14 @@
       "Frequency": "Nightly",
       "Protocol": "SFTP (SSH File Transfer Protocol)",
       "Security Measures": "SSH File Transfer (SFTP)",
-      "Issues/Challenges": "New students can’t use library until next day if delayed",
+      "Issues/Challenges": "New students canât use library until next day if delayed",
       "Future Improvements/Plans": "Real-time API sync for immediate activation",
       "Data Entities Flowing": "Student ID, enrollment status, library ID, financial records",
       "From": "Student Records (Ellucian Banner)",
-      "To": "Library (Ex Libris)"
+      "To": "Library (Ex Libris)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT023",
@@ -999,7 +1185,10 @@
       "Future Improvements/Plans": "Real-time data streaming to DW or data lake",
       "Data Entities Flowing": "Enrollment data, grades, financial records, personal data",
       "From": "Student Records (Ellucian Banner)",
-      "To": "Data Warehouse (Snowflake)"
+      "To": "Data Warehouse (Snowflake)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT024",
@@ -1015,7 +1204,10 @@
       "Future Improvements/Plans": "Automate batch for historical records; two-way verification",
       "Data Entities Flowing": "Transcript PDFs, enrollment records, personal data, ID, enrollment status",
       "From": "Student Records (Ellucian Banner)",
-      "To": "EDRMS (Microsoft SharePoint)"
+      "To": "EDRMS (Microsoft SharePoint)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT025",
@@ -1031,7 +1223,10 @@
       "Future Improvements/Plans": "API for instant housing updates",
       "Data Entities Flowing": "Student name, ID, enrollment status, dorm preference, schedule info",
       "From": "Student Records (Ellucian Banner)",
-      "To": "Accomm & Conf Sys (Kinetic Solutions)"
+      "To": "Accomm & Conf Sys (Kinetic Solutions)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT026",
@@ -1047,7 +1242,10 @@
       "Future Improvements/Plans": "Real-time event push for adds/drops",
       "Data Entities Flowing": "Course IDs, student IDs, schedule info, transcripts",
       "From": "Student Records (Ellucian Banner)",
-      "To": "Attendance Monitoring (SEAtS Analytics)"
+      "To": "Attendance Monitoring (SEAtS Analytics)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT027",
@@ -1063,7 +1261,10 @@
       "Future Improvements/Plans": "Include digital transcripts; extend to more partners",
       "Data Entities Flowing": "Student mobility data, learning agreements, transcripts, status (active/inactive)",
       "From": "Student Records (Ellucian Banner)",
-      "To": "Enterprise Web Portal (Liferay)"
+      "To": "Enterprise Web Portal (Liferay)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT028",
@@ -1080,7 +1281,10 @@
       "Future Improvements/Plans": "Add retry/confirmation for webhooks; integrate with IAM",
       "Data Entities Flowing": "Student ID, access permissions, status (active/inactive), project title",
       "From": "Student Records (Ellucian Banner)",
-      "To": "Estates (Planon)"
+      "To": "Estates (Planon)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT029",
@@ -1096,7 +1300,10 @@
       "Future Improvements/Plans": "Use standard researcher IDs (ORCID); increase sync frequency",
       "Data Entities Flowing": "Student researcher details, supervisor, project title, attendance flag",
       "From": "Student Records (Ellucian Banner)",
-      "To": "CRIS (Elsevier Pure)"
+      "To": "CRIS (Elsevier Pure)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     },
     {
       "ID": "INT030",
@@ -1112,8 +1319,15 @@
       "Future Improvements/Plans": "Automate acknowledgments from govt system; real-time monitoring",
       "Data Entities Flowing": "Student visa info, enrollment status, attendance flag",
       "From": "Student Records (Ellucian Banner)",
-      "To": "Online ID Verification (TrustID)"
+      "To": "Online ID Verification (TrustID)",
+      "selected": true,
+      "deleted": false,
+      "isVisible": true
     }
   ],
-  "layouts": {}
+  "metadata": {
+    "version": "1.0",
+    "exported": "2025-12-25T22:25:59.431Z",
+    "application": "Revelation Core"
+  }
 }
