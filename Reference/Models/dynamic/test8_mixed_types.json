@@ -1,0 +1,132 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Test 8: Mixed Node Types"
+    },
+    "AUTHOR": {
+      "value": "Test Suite",
+      "readOnly": "true"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Various node types with complex interactions",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "Dynamic",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    {
+      "ID": "USER",
+      "TEXT": "End User",
+      "TYPE": "ACTOR"
+    },
+    {
+      "ID": "ADMIN",
+      "TEXT": "Administrator",
+      "TYPE": "ACTOR"
+    },
+    {
+      "ID": "WEB",
+      "TEXT": "Web Application",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "API",
+      "TEXT": "API Server",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "WORKER",
+      "TEXT": "Background Worker",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "REDIS",
+      "TEXT": "Redis Cache",
+      "TYPE": "DATASTORE"
+    },
+    {
+      "ID": "POSTGRES",
+      "TEXT": "PostgreSQL",
+      "TYPE": "DATASTORE"
+    },
+    {
+      "ID": "S3",
+      "TEXT": "S3 Storage",
+      "TYPE": "DATASTORE"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "U_W",
+      "FROMID": "USER",
+      "TOID": "WEB",
+      "TEXT": "Browse",
+      "TYPE": "->"
+    },
+    {
+      "ID": "A_W",
+      "FROMID": "ADMIN",
+      "TOID": "WEB",
+      "TEXT": "Manage",
+      "TYPE": "->"
+    },
+    {
+      "ID": "W_API",
+      "FROMID": "WEB",
+      "TOID": "API",
+      "TEXT": "Request",
+      "TYPE": "->"
+    },
+    {
+      "ID": "API_R",
+      "FROMID": "API",
+      "TOID": "REDIS",
+      "TEXT": "Cache Lookup",
+      "TYPE": "->"
+    },
+    {
+      "ID": "API_P",
+      "FROMID": "API",
+      "TOID": "POSTGRES",
+      "TEXT": "Query",
+      "TYPE": "->"
+    },
+    {
+      "ID": "API_W",
+      "FROMID": "API",
+      "TOID": "WORKER",
+      "TEXT": "Enqueue Job",
+      "TYPE": "->"
+    },
+    {
+      "ID": "W_P",
+      "FROMID": "WORKER",
+      "TOID": "POSTGRES",
+      "TEXT": "Update",
+      "TYPE": "->"
+    },
+    {
+      "ID": "W_S3",
+      "FROMID": "WORKER",
+      "TOID": "S3",
+      "TEXT": "Store File",
+      "TYPE": "->"
+    },
+    {
+      "ID": "API_S3",
+      "FROMID": "API",
+      "TOID": "S3",
+      "TEXT": "Retrieve File",
+      "TYPE": "->"
+    }
+  ]
+}

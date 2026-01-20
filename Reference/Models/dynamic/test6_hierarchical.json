@@ -1,0 +1,125 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Test 6: Hierarchical Tree"
+    },
+    "AUTHOR": {
+      "value": "Test Suite",
+      "readOnly": "true"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Tree structure with parent-child relationships",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "Dynamic",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    {
+      "ID": "ROOT",
+      "TEXT": "Root System",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "L1A",
+      "TEXT": "Level 1 - A",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "L1B",
+      "TEXT": "Level 1 - B",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "L2A1",
+      "TEXT": "Level 2 - A1",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "L2A2",
+      "TEXT": "Level 2 - A2",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "L2B1",
+      "TEXT": "Level 2 - B1",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "L2B2",
+      "TEXT": "Level 2 - B2",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "L3",
+      "TEXT": "Level 3",
+      "TYPE": "SYSTEM"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "R_A",
+      "FROMID": "ROOT",
+      "TOID": "L1A",
+      "TEXT": "Command",
+      "TYPE": "->"
+    },
+    {
+      "ID": "R_B",
+      "FROMID": "ROOT",
+      "TOID": "L1B",
+      "TEXT": "Command",
+      "TYPE": "->"
+    },
+    {
+      "ID": "A_A1",
+      "FROMID": "L1A",
+      "TOID": "L2A1",
+      "TEXT": "Command",
+      "TYPE": "->"
+    },
+    {
+      "ID": "A_A2",
+      "FROMID": "L1A",
+      "TOID": "L2A2",
+      "TEXT": "Command",
+      "TYPE": "->"
+    },
+    {
+      "ID": "B_B1",
+      "FROMID": "L1B",
+      "TOID": "L2B1",
+      "TEXT": "Command",
+      "TYPE": "->"
+    },
+    {
+      "ID": "B_B2",
+      "FROMID": "L1B",
+      "TOID": "L2B2",
+      "TEXT": "Command",
+      "TYPE": "->"
+    },
+    {
+      "ID": "A1_L3",
+      "FROMID": "L2A1",
+      "TOID": "L3",
+      "TEXT": "Report",
+      "TYPE": "->"
+    },
+    {
+      "ID": "B1_L3",
+      "FROMID": "L2B1",
+      "TOID": "L3",
+      "TEXT": "Report",
+      "TYPE": "->"
+    }
+  ]
+}

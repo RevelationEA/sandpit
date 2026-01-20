@@ -1,0 +1,153 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Test 4: Dense Cluster"
+    },
+    "AUTHOR": {
+      "value": "Test Suite",
+      "readOnly": "true"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Many nodes with complex interconnections",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "Dynamic",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    {
+      "ID": "M1",
+      "TEXT": "Microservice 1",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "M2",
+      "TEXT": "Microservice 2",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "M3",
+      "TEXT": "Microservice 3",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "M4",
+      "TEXT": "Microservice 4",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "M5",
+      "TEXT": "Microservice 5",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "M6",
+      "TEXT": "Microservice 6",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "M7",
+      "TEXT": "Microservice 7",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "M8",
+      "TEXT": "Microservice 8",
+      "TYPE": "SYSTEM"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "E12",
+      "FROMID": "M1",
+      "TOID": "M2",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E13",
+      "FROMID": "M1",
+      "TOID": "M3",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E24",
+      "FROMID": "M2",
+      "TOID": "M4",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E25",
+      "FROMID": "M2",
+      "TOID": "M5",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E34",
+      "FROMID": "M3",
+      "TOID": "M4",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E36",
+      "FROMID": "M3",
+      "TOID": "M6",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E45",
+      "FROMID": "M4",
+      "TOID": "M5",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E47",
+      "FROMID": "M4",
+      "TOID": "M7",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E56",
+      "FROMID": "M5",
+      "TOID": "M6",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E58",
+      "FROMID": "M5",
+      "TOID": "M8",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E67",
+      "FROMID": "M6",
+      "TOID": "M7",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E78",
+      "FROMID": "M7",
+      "TOID": "M8",
+      "TEXT": "Call",
+      "TYPE": "->"
+    }
+  ]
+}

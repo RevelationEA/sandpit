@@ -1,0 +1,39 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "ArchiMate Implementation and Migration"
+    },
+    "AUTHOR": {
+      "value": "Revelation EA"
+    },
+    "MODELTYPE": {
+      "value": "ARCHIMATE",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Implementation and migration example with work packages, plateaus, and deliverables. Uses mxArchiMate symbols.",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "HorizontalFlow",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    { "ID": "WP1", "TEXT": "Build Core Platform", "TYPE": "ARCHI_WORK_PACKAGE" },
+    { "ID": "IE1", "TEXT": "Release Gate", "TYPE": "ARCHI_IMPLEMENTATION_EVENT" },
+    { "ID": "DL1", "TEXT": "Platform Release", "TYPE": "ARCHI_DELIVERABLE" },
+    { "ID": "PL1", "TEXT": "Target Plateau", "TYPE": "ARCHI_PLATEAU" },
+    { "ID": "GP1", "TEXT": "Capability Gap", "TYPE": "ARCHI_GAP" },
+    { "ID": "OC1", "TEXT": "Operational Outcome", "TYPE": "ARCHI_OUTCOME" }
+  ],
+  "interactions": [
+    { "ID": "INT1", "FROMID": "IE1", "TOID": "WP1", "TEXT": "Triggers", "TYPE": "TRIGGERING" },
+    { "ID": "INT2", "FROMID": "WP1", "TOID": "DL1", "TEXT": "Realizes", "TYPE": "REALIZATION" },
+    { "ID": "INT3", "FROMID": "DL1", "TOID": "PL1", "TEXT": "Enables", "TYPE": "ASSOCIATION" },
+    { "ID": "INT4", "FROMID": "GP1", "TOID": "PL1", "TEXT": "Bridged By", "TYPE": "ASSOCIATION" },
+    { "ID": "INT5", "FROMID": "DL1", "TOID": "OC1", "TEXT": "Delivers", "TYPE": "REALIZATION" }
+  ]
+}

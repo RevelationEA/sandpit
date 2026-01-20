@@ -1,0 +1,60 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "BPMN Lite: Employee Onboarding"
+    },
+    "AUTHOR": {
+      "value": "Revelation EA"
+    },
+    "MODELTYPE": {
+      "value": "BPMN_LITE",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "A lightweight BPMN example covering onboarding tasks across HR, IT, and Facilities.",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "HorizontalFlow",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    { "ID": "SE1", "TEXT": "Start", "TYPE": "BPMN_START_EVENT", "Pool": "Company", "Lane": "HR" },
+    { "ID": "TK1", "TEXT": "Collect Details", "TYPE": "BPMN_TASK", "Pool": "Company", "Lane": "HR" },
+    { "ID": "GW1", "TEXT": "", "TYPE": "BPMN_XOR_GATEWAY", "Pool": "Company", "Lane": "HR" },
+    { "ID": "TK2", "TEXT": "Background Check", "TYPE": "BPMN_TASK", "Pool": "Company", "Lane": "HR" },
+    { "ID": "TK3", "TEXT": "Skip Check", "TYPE": "BPMN_TASK", "Pool": "Company", "Lane": "HR" },
+    { "ID": "GW2", "TEXT": "", "TYPE": "BPMN_GATEWAY_EXCLUSIVE_PLAIN", "Pool": "Company", "Lane": "HR" },
+    { "ID": "GW3", "TEXT": "", "TYPE": "BPMN_AND_GATEWAY", "Pool": "Company", "Lane": "IT" },
+    { "ID": "TK4", "TEXT": "Provision Accounts", "TYPE": "BPMN_TASK", "Pool": "Company", "Lane": "IT" },
+    { "ID": "SP1", "TEXT": "Order Equipment", "TYPE": "BPMN_SUBPROCESS", "Pool": "Company", "Lane": "IT" },
+    { "ID": "TK5", "TEXT": "Prepare Workspace", "TYPE": "BPMN_TASK", "Pool": "Company", "Lane": "Facilities" },
+    { "ID": "GW4", "TEXT": "", "TYPE": "BPMN_AND_GATEWAY", "Pool": "Company", "Lane": "IT" },
+    { "ID": "IE1", "TEXT": "Await Start Date", "TYPE": "BPMN_INTERMEDIATE_EVENT", "Pool": "Company", "Lane": "HR" },
+    { "ID": "EE1", "TEXT": "Onboarded", "TYPE": "BPMN_END_EVENT", "Pool": "Company", "Lane": "HR" },
+    { "ID": "DO1", "TEXT": "Offer Letter", "TYPE": "BPMN_DATA_OBJECT", "Pool": "Company", "Lane": "HR" },
+    { "ID": "DS1", "TEXT": "HR System", "TYPE": "BPMN_DATA_STORE", "Pool": "Company", "Lane": "HR" }
+  ],
+  "interactions": [
+    { "ID": "I1", "FROMID": "SE1", "TOID": "TK1", "TEXT": "Trigger", "TYPE": "->" },
+    { "ID": "I2", "FROMID": "TK1", "TOID": "DO1", "TEXT": "Generate", "TYPE": "->" },
+    { "ID": "I3", "FROMID": "DO1", "TOID": "DS1", "TEXT": "Store", "TYPE": "->" },
+    { "ID": "I4", "FROMID": "TK1", "TOID": "GW1", "TEXT": "", "TYPE": "->" },
+    { "ID": "I5", "FROMID": "GW1", "TOID": "TK2", "TEXT": "Required", "TYPE": "->" },
+    { "ID": "I6", "FROMID": "GW1", "TOID": "TK3", "TEXT": "Not Required", "TYPE": "->" },
+    { "ID": "I7", "FROMID": "TK2", "TOID": "GW2", "TEXT": "Complete", "TYPE": "->" },
+    { "ID": "I8", "FROMID": "TK3", "TOID": "GW2", "TEXT": "Continue", "TYPE": "->" },
+    { "ID": "I9", "FROMID": "GW2", "TOID": "GW3", "TEXT": "", "TYPE": "->" },
+    { "ID": "I10", "FROMID": "GW3", "TOID": "TK4", "TEXT": "Account", "TYPE": "->" },
+    { "ID": "I11", "FROMID": "GW3", "TOID": "SP1", "TEXT": "Equipment", "TYPE": "->" },
+    { "ID": "I12", "FROMID": "GW3", "TOID": "TK5", "TEXT": "Workspace", "TYPE": "->" },
+    { "ID": "I13", "FROMID": "TK4", "TOID": "GW4", "TEXT": "Done", "TYPE": "->" },
+    { "ID": "I14", "FROMID": "SP1", "TOID": "GW4", "TEXT": "Done", "TYPE": "->" },
+    { "ID": "I15", "FROMID": "TK5", "TOID": "GW4", "TEXT": "Done", "TYPE": "->" },
+    { "ID": "I16", "FROMID": "GW4", "TOID": "IE1", "TEXT": "Wait", "TYPE": "->" },
+    { "ID": "I17", "FROMID": "IE1", "TOID": "EE1", "TEXT": "Start Day", "TYPE": "->" }
+  ]
+}

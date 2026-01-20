@@ -1,0 +1,70 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Test 1: Linear Chain"
+    },
+    "AUTHOR": {
+      "value": "Test Suite",
+      "readOnly": "true"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Simple linear chain of systems",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "Dynamic",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    {
+      "ID": "A",
+      "TEXT": "System A",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "B",
+      "TEXT": "System B",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "C",
+      "TEXT": "System C",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "D",
+      "TEXT": "System D",
+      "TYPE": "SYSTEM"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "AB",
+      "FROMID": "A",
+      "TOID": "B",
+      "TEXT": "Data Flow",
+      "TYPE": "->"
+    },
+    {
+      "ID": "BC",
+      "FROMID": "B",
+      "TOID": "C",
+      "TEXT": "Data Flow",
+      "TYPE": "->"
+    },
+    {
+      "ID": "CD",
+      "FROMID": "C",
+      "TOID": "D",
+      "TEXT": "Data Flow",
+      "TYPE": "->"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Test 7: Circular Dependencies"
+    },
+    "AUTHOR": {
+      "value": "Test Suite",
+      "readOnly": "true"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Systems with circular dependencies",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "Dynamic",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    {
+      "ID": "SVC_A",
+      "TEXT": "Service A",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "SVC_B",
+      "TEXT": "Service B",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "SVC_C",
+      "TEXT": "Service C",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "SVC_D",
+      "TEXT": "Service D",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "SVC_E",
+      "TEXT": "Service E",
+      "TYPE": "SYSTEM"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "AB",
+      "FROMID": "SVC_A",
+      "TOID": "SVC_B",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "BC",
+      "FROMID": "SVC_B",
+      "TOID": "SVC_C",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "CD",
+      "FROMID": "SVC_C",
+      "TOID": "SVC_D",
+      "TEXT": "Call",
+      "TYPE": "->"
+    },
+    {
+      "ID": "DA",
+      "FROMID": "SVC_D",
+      "TOID": "SVC_A",
+      "TEXT": "Callback",
+      "TYPE": "->"
+    },
+    {
+      "ID": "AE",
+      "FROMID": "SVC_A",
+      "TOID": "SVC_E",
+      "TEXT": "Event",
+      "TYPE": "->"
+    },
+    {
+      "ID": "EB",
+      "FROMID": "SVC_E",
+      "TOID": "SVC_B",
+      "TEXT": "Event",
+      "TYPE": "->"
+    },
+    {
+      "ID": "EC",
+      "FROMID": "SVC_E",
+      "TOID": "SVC_C",
+      "TEXT": "Event",
+      "TYPE": "->"
+    }
+  ]
+}

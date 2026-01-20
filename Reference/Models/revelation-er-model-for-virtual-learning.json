@@ -1,0 +1,307 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Revelation ER Model for Virtual Learning",
+      "inputType": "text"
+    },
+    "MODELTYPE": {
+      "value": "ERD",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "LAYOUT": {
+      "value": "HorizontalFlow",
+      "inputType": "select",
+      "refData": "LAYOUTTYPE"
+    },
+    "VIEW": {
+      "value": "Architecture",
+      "inputType": "select",
+      "refData": "VIEWTYPE"
+    },
+    "SYSTEMS": {
+      "value": "Entities",
+      "inputType": "text"
+    },
+    "INTERACTIONS": {
+      "value": "Relationships",
+      "inputType": "text"
+    },
+    "Author": {
+      "inputType": "text",
+      "value": "Revelation Team"
+    },
+    "Description": {
+      "inputType": "text",
+      "value": "A high-level model describing entity relationships for  Moodle type Virtual Learning Environment "
+    },
+    "RevelationCore": {
+      "inputType": "url",
+      "value": "https://revelationcore.com/"
+    }
+  },
+  "systems": [
+    {
+      "ID": "USER",
+      "TEXT": "User",
+      "TYPE": "ENTITY",
+      "Description": "Stores information on system users (student, teacher, administrator) including authentication and profile details.",
+      "Higher Education Domain": "Student Lifecycle / Teaching & Learning",
+      "isExpanded": true
+    },
+    {
+      "ID": "COURSE",
+      "TEXT": "Course",
+      "TYPE": "ENTITY",
+      "Description": "Represents an individual course offering with details such as name, summary, start date, and description.",
+      "Higher Education Domain": "Teaching & Learning",
+      "isExpanded": true
+    },
+    {
+      "ID": "CATGRY",
+      "TEXT": "Category",
+      "TYPE": "ENTITY",
+      "Description": "Groups courses into hierarchical categories for easier navigation and organizational management.",
+      "Higher Education Domain": "Academic Management",
+      "isExpanded": true
+    },
+    {
+      "ID": "ENROLL",
+      "TEXT": "Enrolment",
+      "TYPE": "ENTITY",
+      "Description": "Tracks a record linking a user to a course and the specific enrolment method used.",
+      "Higher Education Domain": "Student Lifecycle",
+      "isExpanded": true
+    },
+    {
+      "ID": "ROLE",
+      "TEXT": "Role",
+      "TYPE": "ENTITY",
+      "Description": "Defines a role (e.g., student, teacher, administrator) and its associated permissions within the system.",
+      "Higher Education Domain": "IT & Digital Infrastructure",
+      "isExpanded": true
+    },
+    {
+      "ID": "GRDITEM",
+      "TEXT": "GradeItem",
+      "TYPE": "ENTITY",
+      "Description": "Specifies an assessment element for a course such as an assignment, quiz, or exam.",
+      "Higher Education Domain": "Academic Performance",
+      "isExpanded": true
+    },
+    {
+      "ID": "GRDGRADE",
+      "TEXT": "Grade",
+      "TYPE": "ENTITY",
+      "Description": "Records the grade awarded to a user for a specific assessment item.",
+      "Higher Education Domain": "Academic Performance",
+      "isExpanded": true
+    },
+    {
+      "ID": "ASSIGN",
+      "TEXT": "Assignment",
+      "TYPE": "ENTITY",
+      "Description": "Represents an assignment activity within a course, including submission details and deadlines.",
+      "Higher Education Domain": "Teaching & Learning",
+      "isExpanded": true
+    },
+    {
+      "ID": "QUIZ",
+      "TEXT": "Quiz",
+      "TYPE": "ENTITY",
+      "Description": "Manages a quiz activity, including questions, attempts, and timing controls.",
+      "Higher Education Domain": "Teaching & Learning",
+      "isExpanded": true
+    },
+    {
+      "ID": "FORUM",
+      "TEXT": "Forum",
+      "TYPE": "ENTITY",
+      "Description": "Supports a discussion forum activity with threads, posts, and replies.",
+      "Higher Education Domain": "Teaching & Learning",
+      "isExpanded": true
+    },
+    {
+      "ID": "COURMOD",
+      "TEXT": "Module",
+      "TYPE": "ENTITY",
+      "Description": "A generic container for a course activity or resource. Each Module corresponds one-to-one with its specialized record (e.g., Assignment, Quiz, Forum, Video Lecture, Slide Deck, eLearning)",
+      "Higher Education Domain": "Teaching & Learning",
+      "isExpanded": true
+    },
+    {
+      "ID": "FILES",
+      "TEXT": "File",
+      "TYPE": "ENTITY",
+      "Description": "Holds a file or multimedia content uploaded by a user and associated with a course.",
+      "Higher Education Domain": "IT & Digital Infrastructure",
+      "isExpanded": true
+    },
+    {
+      "ID": "CALENEVT",
+      "TEXT": "CalendarEvent",
+      "TYPE": "ENTITY",
+      "Description": "Stores a scheduled event, deadline, or notification within the system calendar.",
+      "Higher Education Domain": "Academic Scheduling",
+      "isExpanded": true
+    },
+    {
+      "ID": "QUESTBK",
+      "TEXT": "QuestionBank",
+      "TYPE": "ENTITY",
+      "Description": "Represents a repository of questions used in quizzes and assessments, including metadata and categorization.",
+      "Higher Education Domain": "Teaching & Learning",
+      "isExpanded": true
+    },
+    {
+      "ID": "BADGES",
+      "TEXT": "Badge",
+      "TYPE": "ENTITY",
+      "Description": "Represents an achievement badge awarded to a user to recognize milestones or accomplishments.",
+      "Higher Education Domain": "Student Engagement",
+      "isExpanded": true
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "CATGRY-COURSE",
+      "FROMID": "CATGRY",
+      "TOID": "COURSE",
+      "TEXT": "contains",
+      "TYPE": "|-O<",
+      "Description": "A course category groups multiple courses for organizational purposes. Conversely, each course is assigned to one category.",
+      "From": "Category",
+      "To": "Course"
+    },
+    {
+      "ID": "COURSE-COURMOD",
+      "FROMID": "COURSE",
+      "TOID": "COURMOD",
+      "TEXT": "includes",
+      "TYPE": "|-|<",
+      "Description": "A course is composed of one or more course modules that represent activities and resources. Conversely, each course module is associated with exactly one course.",
+      "From": "Course",
+      "To": "Module"
+    },
+    {
+      "ID": "COURSE-GRDITEM",
+      "FROMID": "COURSE",
+      "TOID": "GRDITEM",
+      "TEXT": "has",
+      "TYPE": "|-|<",
+      "Description": "Each course has one or more grade items that define its assessments. Conversely, each grade item is linked to a specific course.",
+      "From": "Course",
+      "To": "GradeItem"
+    },
+    {
+      "ID": "GRDITEM-GRDGRADE",
+      "FROMID": "GRDITEM",
+      "TOID": "GRDGRADE",
+      "TEXT": "yields",
+      "TYPE": "|-|<",
+      "Description": "A grade item produces grades for enrolled users based on performance. Conversely, each grade record is associated with one grade item.",
+      "From": "GradeItem",
+      "To": "Grade"
+    },
+    {
+      "ID": "USER-ENROLL",
+      "FROMID": "USER",
+      "TOID": "ENROLL",
+      "TEXT": "enrolls",
+      "TYPE": "|-O<",
+      "Description": "A user enrollment record links a user to the courses in which they are enrolled. Conversely, each enrollment record belongs to a specific user.",
+      "From": "User",
+      "To": "Enrolment"
+    },
+    {
+      "ID": "COURSE-ENROLL",
+      "FROMID": "COURSE",
+      "TOID": "ENROLL",
+      "TEXT": "includes",
+      "TYPE": "|-O<",
+      "Description": "A course includes enrollment records that connect it to its participants. Conversely, each enrollment record corresponds to a single course.",
+      "From": "Course",
+      "To": "Enrolment"
+    },
+    {
+      "ID": "USER-ROLE",
+      "FROMID": "USER",
+      "TOID": "ROLE",
+      "TEXT": "assigned",
+      "TYPE": ">-<",
+      "Description": "Users can be assigned one or more roles that determine their permissions and access levels. Conversely, each role may be assigned to multiple users.",
+      "From": "User",
+      "To": "Role"
+    },
+    {
+      "ID": "COURMOD-ASSIGN",
+      "FROMID": "COURMOD",
+      "TOID": "ASSIGN",
+      "TEXT": "instance of",
+      "TYPE": "|-|",
+      "Description": "A course module may instantiate an assignment activity within the course. Conversely, each assignment instance is uniquely linked to a course module.",
+      "From": "Module",
+      "To": "Assignment"
+    },
+    {
+      "ID": "COURMOD-QUIZ",
+      "FROMID": "COURMOD",
+      "TOID": "QUIZ",
+      "TEXT": "instance of",
+      "TYPE": "|-|",
+      "Description": "A course module may instantiate a quiz activity within the course. Conversely, each quiz instance is uniquely linked to a course module.",
+      "From": "Module",
+      "To": "Quiz"
+    },
+    {
+      "ID": "COURMOD-FORUM",
+      "FROMID": "COURMOD",
+      "TOID": "FORUM",
+      "TEXT": "instance of",
+      "TYPE": "|-|",
+      "Description": "A course module may instantiate a forum activity for discussion. Conversely, each forum instance is uniquely linked to a course module.",
+      "From": "Module",
+      "To": "Forum"
+    },
+    {
+      "ID": "COURMOD-FILES",
+      "FROMID": "COURMOD",
+      "TOID": "FILES",
+      "TEXT": "includes",
+      "TYPE": "|-O<",
+      "Description": "A course module may include file attachments or resources used in the activity. Conversely, each file resource is associated with a specific course module.",
+      "From": "Module",
+      "To": "File"
+    },
+    {
+      "ID": "COURSE-CALENEVT",
+      "FROMID": "COURSE",
+      "TOID": "CALENEVT",
+      "TEXT": "schedules",
+      "TYPE": "|-O<",
+      "Description": "A course schedules calendar events such as deadlines, sessions, or meetings. Conversely, each calendar event is linked to a specific course.",
+      "From": "Course",
+      "To": "CalendarEvent"
+    },
+    {
+      "ID": "QUIZ-QUESTBK",
+      "FROMID": "QUIZ",
+      "TOID": "QUESTBK",
+      "TEXT": "draws",
+      "TYPE": ">-<",
+      "Description": "A quiz may draw questions from the question bank for its assessments. Conversely, questions in the question bank can be used in multiple quizzes.",
+      "From": "Quiz",
+      "To": "QuestionBank"
+    },
+    {
+      "ID": "USER-BADGES",
+      "FROMID": "USER",
+      "TOID": "BADGES",
+      "TEXT": "earns",
+      "TYPE": ">-<",
+      "Description": "Users can earn badges for achievements and milestones within the system. Conversely, each badge can be awarded to multiple users.",
+      "From": "User",
+      "To": "Badge"
+    }
+  ]
+}

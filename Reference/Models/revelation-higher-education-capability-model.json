@@ -1,0 +1,5067 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "UK Higher Education Enterprise Capability Model",
+      "inputType": "text"
+    },
+    "MODELTYPE": {
+      "value": "OTHER",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "LAYOUT": {
+      "value": "HorizontalFlow",
+      "inputType": "select",
+      "refData": "LAYOUTTYPE"
+    },
+    "VIEW": {
+      "value": "Capability",
+      "inputType": "select",
+      "refData": "VIEWTYPE"
+    },
+    "Description": {
+      "inputType": "text",
+      "value": "A comprehensive multi-level capability model for UK higher education."
+    },
+    "Source": {
+      "inputType": "text",
+      "value": "UK HE sector analysis"
+    }
+  },
+  "systems": [
+    {
+      "ID": "1",
+      "TEXT": "1. STUDENT LIFECYCLE MANAGEMENT",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the end-to-end lifecycle of students from application to graduation and alumni."
+    },
+    {
+      "ID": "1.1",
+      "TEXT": "1.1. Admissions & Application Management",
+      "TYPE": "SYSTEM",
+      "Description": "Handles prospective student applications and admissions decisions."
+    },
+    {
+      "ID": "1.1.1",
+      "TEXT": "1.1.1. Applicant Profile Management",
+      "TYPE": "SYSTEM",
+      "Description": "Maintains applicant personal, identity and history data."
+    },
+    {
+      "ID": "1.1.1.1",
+      "TEXT": "1.1.1.1. Personal Data Capture",
+      "TYPE": "SYSTEM",
+      "Description": "Captures core personal and contact information for applicants."
+    },
+    {
+      "ID": "1.1.1.2",
+      "TEXT": "1.1.1.2. Identity Evidence Management",
+      "TYPE": "SYSTEM",
+      "Description": "Captures and manages identity evidence for applicants."
+    },
+    {
+      "ID": "1.1.1.3",
+      "TEXT": "1.1.1.3. Application History Tracking",
+      "TYPE": "SYSTEM",
+      "Description": "Tracks applications and decisions across cycles."
+    },
+    {
+      "ID": "1.1.1.3.1",
+      "TEXT": "1.1.1.3.1. Prior Qualification Verification",
+      "TYPE": "SYSTEM",
+      "Description": "Verifies prior academic qualifications presented by applicants."
+    },
+    {
+      "ID": "1.1.1.3.2",
+      "TEXT": "1.1.1.3.2. Personal Statement Storage",
+      "TYPE": "SYSTEM",
+      "Description": "Stores personal statements submitted by applicants."
+    },
+    {
+      "ID": "1.1.1.3.3",
+      "TEXT": "1.1.1.3.3. Reference/Recommendation Capture",
+      "TYPE": "SYSTEM",
+      "Description": "Captures and stores references or recommendations for applicants."
+    },
+    {
+      "ID": "1.1.2",
+      "TEXT": "1.1.2. Entry Requirements Evaluation",
+      "TYPE": "SYSTEM",
+      "Description": "Evaluates applicants against academic and other entry requirements."
+    },
+    {
+      "ID": "1.1.3",
+      "TEXT": "1.1.3. Application Data Capture",
+      "TYPE": "SYSTEM",
+      "Description": "Captures application form data and supporting information."
+    },
+    {
+      "ID": "1.1.4",
+      "TEXT": "1.1.4. Application Assessment",
+      "TYPE": "SYSTEM",
+      "Description": "Assesses applications and makes recommendations."
+    },
+    {
+      "ID": "1.1.5",
+      "TEXT": "1.1.5. Offer Creation & Management",
+      "TYPE": "SYSTEM",
+      "Description": "Creates and manages offers to applicants."
+    },
+    {
+      "ID": "1.1.5.1",
+      "TEXT": "1.1.5.1. Conditional Offer Parameter Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines conditions associated with conditional offers."
+    },
+    {
+      "ID": "1.1.5.2",
+      "TEXT": "1.1.5.2. Unconditional Offer Issuance",
+      "TYPE": "SYSTEM",
+      "Description": "Issues unconditional offers to eligible applicants."
+    },
+    {
+      "ID": "1.1.5.3",
+      "TEXT": "1.1.5.3. Offer Acceptance Tracking",
+      "TYPE": "SYSTEM",
+      "Description": "Tracks applicant responses to offers."
+    },
+    {
+      "ID": "1.1.5.3.1",
+      "TEXT": "1.1.5.3.1. Deposit Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages deposits associated with offer acceptance."
+    },
+    {
+      "ID": "1.1.5.3.2",
+      "TEXT": "1.1.5.3.2. CAS (Confirmation of Acceptance) Readiness Tracking",
+      "TYPE": "SYSTEM",
+      "Description": "Tracks readiness for issuing CAS or equivalent."
+    },
+    {
+      "ID": "1.1.5.3.3",
+      "TEXT": "1.1.5.3.3. Offer Withdrawal Rules Management",
+      "TYPE": "SYSTEM",
+      "Description": "Defines and manages rules for withdrawing offers."
+    },
+    {
+      "ID": "1.1.6",
+      "TEXT": "1.1.6. Applicant Communication Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages communications with applicants throughout the admissions process."
+    },
+    {
+      "ID": "1.1.7",
+      "TEXT": "1.1.7. Admission Decision Governance",
+      "TYPE": "SYSTEM",
+      "Description": "Governs decision-making for admissions including approvals and audit trail."
+    },
+    {
+      "ID": "1.1.8",
+      "TEXT": "1.1.8. Conditional Offer Compliance Validation",
+      "TYPE": "SYSTEM",
+      "Description": "Validates that applicants have met the conditions of conditional offers."
+    },
+    {
+      "ID": "1.1.9",
+      "TEXT": "1.1.9. Admissions Document Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages documents associated with admissions and applications."
+    },
+    {
+      "ID": "1.2",
+      "TEXT": "1.2. New-Student Onboarding & Registration",
+      "TYPE": "SYSTEM",
+      "Description": "Registers and onboards new students into the institution."
+    },
+    {
+      "ID": "1.2.1",
+      "TEXT": "1.2.1. Identity Verification",
+      "TYPE": "SYSTEM",
+      "Description": "Verifies identity of new students for registration."
+    },
+    {
+      "ID": "1.2.1.1",
+      "TEXT": "1.2.1.1. Photo Verification",
+      "TYPE": "SYSTEM",
+      "Description": "Verifies student photographs."
+    },
+    {
+      "ID": "1.2.1.2",
+      "TEXT": "1.2.1.2. Document Verification",
+      "TYPE": "SYSTEM",
+      "Description": "Verifies identity documents such as passports and visas."
+    },
+    {
+      "ID": "1.2.1.2.1",
+      "TEXT": "1.2.1.2.1. Passport/ID Validation",
+      "TYPE": "SYSTEM",
+      "Description": "Validates passport or other identification documents."
+    },
+    {
+      "ID": "1.2.1.2.2",
+      "TEXT": "1.2.1.2.2. Visa Validation (if required)",
+      "TYPE": "SYSTEM",
+      "Description": "Validates visa documentation where required."
+    },
+    {
+      "ID": "1.2.2",
+      "TEXT": "1.2.2. Registration Status Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the registration status of new students."
+    },
+    {
+      "ID": "1.2.3",
+      "TEXT": "1.2.3. Documentation Collection",
+      "TYPE": "SYSTEM",
+      "Description": "Collects required documentation from new students."
+    },
+    {
+      "ID": "1.2.4",
+      "TEXT": "1.2.4. Induction Management",
+      "TYPE": "SYSTEM",
+      "Description": "Plans and manages induction for new students."
+    },
+    {
+      "ID": "1.2.4.1",
+      "TEXT": "1.2.4.1. Induction Programme Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines the structure and content of induction programmes."
+    },
+    {
+      "ID": "1.2.4.2",
+      "TEXT": "1.2.4.2. Orientation Session Scheduling",
+      "TYPE": "SYSTEM",
+      "Description": "Schedules induction and orientation sessions."
+    },
+    {
+      "ID": "1.2.4.2.1",
+      "TEXT": "1.2.4.2.1. Academic Induction Content Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages content for academic induction."
+    },
+    {
+      "ID": "1.2.4.2.2",
+      "TEXT": "1.2.4.2.2. Welcome Event Coordination",
+      "TYPE": "SYSTEM",
+      "Description": "Coordinates welcome events and activities."
+    },
+    {
+      "ID": "1.2.4.2.3",
+      "TEXT": "1.2.4.2.3. Safety/Wellbeing Briefing Provision",
+      "TYPE": "SYSTEM",
+      "Description": "Provides safety and wellbeing briefings to new students."
+    },
+    {
+      "ID": "1.2.5",
+      "TEXT": "1.2.5. Student Finance Eligibility Confirmation",
+      "TYPE": "SYSTEM",
+      "Description": "Confirms eligibility for student finance and funding during onboarding."
+    },
+    {
+      "ID": "1.2.6",
+      "TEXT": "1.2.6. Pre-arrival Compliance Checks",
+      "TYPE": "SYSTEM",
+      "Description": "Performs pre-arrival checks such as immigration, fees and prerequisites."
+    },
+    {
+      "ID": "1.3",
+      "TEXT": "1.3. Enrolment & Programme Administration",
+      "TYPE": "SYSTEM",
+      "Description": "Administers student enrolment and ongoing programme-level data."
+    },
+    {
+      "ID": "1.3.1",
+      "TEXT": "1.3.1. Module Selection Enablement",
+      "TYPE": "SYSTEM",
+      "Description": "Enables students to select modules within rules and constraints."
+    },
+    {
+      "ID": "1.3.1.1",
+      "TEXT": "1.3.1.1. Module Availability Publication",
+      "TYPE": "SYSTEM",
+      "Description": "Publishes available modules and associated information."
+    },
+    {
+      "ID": "1.3.1.2",
+      "TEXT": "1.3.1.2. Enrolment Rule Enforcement",
+      "TYPE": "SYSTEM",
+      "Description": "Enforces enrolment rules for module selection."
+    },
+    {
+      "ID": "1.3.1.2.1",
+      "TEXT": "1.3.1.2.1. Capacity Constraint Application",
+      "TYPE": "SYSTEM",
+      "Description": "Applies capacity limits for modules."
+    },
+    {
+      "ID": "1.3.1.2.2",
+      "TEXT": "1.3.1.2.2. Academic Approval Routing",
+      "TYPE": "SYSTEM",
+      "Description": "Routes module selection for academic approval where required."
+    },
+    {
+      "ID": "1.3.1.2.3",
+      "TEXT": "1.3.1.2.3. Preclusion/Clash Detection",
+      "TYPE": "SYSTEM",
+      "Description": "Detects timetable clashes and preclusion conflicts."
+    },
+    {
+      "ID": "1.3.2",
+      "TEXT": "1.3.2. Programme Enrolment Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages enrolment of students into programmes and years of study."
+    },
+    {
+      "ID": "1.3.3",
+      "TEXT": "1.3.3. Co-requisite / Pre-requisite Validation",
+      "TYPE": "SYSTEM",
+      "Description": "Validates co-requisite and pre-requisite requirements for enrolment."
+    },
+    {
+      "ID": "1.3.4",
+      "TEXT": "1.3.4. Student Status Changes",
+      "TYPE": "SYSTEM",
+      "Description": "Manages changes to student status such as intermission or transfer."
+    },
+    {
+      "ID": "1.3.4.1",
+      "TEXT": "1.3.4.1. Intermission Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages periods of intermission or suspension of studies."
+    },
+    {
+      "ID": "1.3.4.2",
+      "TEXT": "1.3.4.2. Transfer Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages programme or institution transfer processes."
+    },
+    {
+      "ID": "1.3.4.2.1",
+      "TEXT": "1.3.4.2.1. Eligibility Validation",
+      "TYPE": "SYSTEM",
+      "Description": "Validates eligibility for status changes or transfers."
+    },
+    {
+      "ID": "1.3.4.2.2",
+      "TEXT": "1.3.4.2.2. Financial Impact Assessment",
+      "TYPE": "SYSTEM",
+      "Description": "Assesses financial impacts of status changes."
+    },
+    {
+      "ID": "1.3.4.2.3",
+      "TEXT": "1.3.4.2.3. Visa Impact Assessment",
+      "TYPE": "SYSTEM",
+      "Description": "Assesses visa implications of status changes for international students."
+    },
+    {
+      "ID": "1.3.5",
+      "TEXT": "1.3.5. Attendance & Engagement Tracking",
+      "TYPE": "SYSTEM",
+      "Description": "Tracks student attendance and engagement for academic and compliance purposes."
+    },
+    {
+      "ID": "1.4",
+      "TEXT": "1.4. Progression & Graduation",
+      "TYPE": "SYSTEM",
+      "Description": "Manages academic progression decisions and graduation."
+    },
+    {
+      "ID": "1.4.1",
+      "TEXT": "1.4.1. Progression Rules Management",
+      "TYPE": "SYSTEM",
+      "Description": "Defines and manages rules governing academic progression."
+    },
+    {
+      "ID": "1.4.1.1",
+      "TEXT": "1.4.1.1. Progression Criteria Configuration",
+      "TYPE": "SYSTEM",
+      "Description": "Configures progression criteria for programmes and stages."
+    },
+    {
+      "ID": "1.4.1.1.1",
+      "TEXT": "1.4.1.1.1. Credit Requirements Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines credit thresholds required for progression."
+    },
+    {
+      "ID": "1.4.1.1.2",
+      "TEXT": "1.4.1.1.2. Failed Module Handling Rules",
+      "TYPE": "SYSTEM",
+      "Description": "Defines rules for handling failed modules for progression."
+    },
+    {
+      "ID": "1.4.1.1.3",
+      "TEXT": "1.4.1.1.3. Compensatable Grade Rules",
+      "TYPE": "SYSTEM",
+      "Description": "Defines rules on compensating marginal failures."
+    },
+    {
+      "ID": "1.4.2",
+      "TEXT": "1.4.2. Board of Studies/Examiners Governance",
+      "TYPE": "SYSTEM",
+      "Description": "Governs academic boards and exam boards for progression and awards."
+    },
+    {
+      "ID": "1.4.3",
+      "TEXT": "1.4.3. Eligibility Check Automation",
+      "TYPE": "SYSTEM",
+      "Description": "Automates eligibility checking for progression and awards."
+    },
+    {
+      "ID": "1.4.4",
+      "TEXT": "1.4.4. Award Classification Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages algorithms and decisions for award classifications."
+    },
+    {
+      "ID": "1.4.4.1",
+      "TEXT": "1.4.4.1. Classification Algorithm Configuration",
+      "TYPE": "SYSTEM",
+      "Description": "Configures the algorithms used for calculating classifications."
+    },
+    {
+      "ID": "1.4.4.1.1",
+      "TEXT": "1.4.4.1.1. Weighted Averaging Rules",
+      "TYPE": "SYSTEM",
+      "Description": "Defines weighted averaging rules for marks and credits."
+    },
+    {
+      "ID": "1.4.4.1.2",
+      "TEXT": "1.4.4.1.2. Borderline Review Rules",
+      "TYPE": "SYSTEM",
+      "Description": "Defines rules for borderline classification reviews."
+    },
+    {
+      "ID": "1.4.4.1.3",
+      "TEXT": "1.4.4.1.3. Exceptional Case Overrides",
+      "TYPE": "SYSTEM",
+      "Description": "Defines and manages overrides for exceptional cases."
+    },
+    {
+      "ID": "1.4.5",
+      "TEXT": "1.4.5. Graduation Ceremony Management",
+      "TYPE": "SYSTEM",
+      "Description": "Plans and manages graduation ceremonies and associated logistics."
+    },
+    {
+      "ID": "2",
+      "TEXT": "2. ASSESSMENT & ACADEMIC PROCESS MANAGEMENT",
+      "TYPE": "SYSTEM",
+      "Description": "Defines, delivers and governs assessments and academic academic processes."
+    },
+    {
+      "ID": "2.1",
+      "TEXT": "2.1. Assessment Design & Configuration",
+      "TYPE": "SYSTEM",
+      "Description": "Designs and configures assessment structures, rules and accessibility parameters."
+    },
+    {
+      "ID": "2.1.1",
+      "TEXT": "2.1.1. Assessment Definition & Taxonomy",
+      "TYPE": "SYSTEM",
+      "Description": "Defines assessment types, purposes and attempts."
+    },
+    {
+      "ID": "2.1.1.1",
+      "TEXT": "2.1.1.1. Assessment Type Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines available assessment types such as exam, coursework, presentation."
+    },
+    {
+      "ID": "2.1.1.1.1",
+      "TEXT": "2.1.1.1.1. Written / Practical / Presentation / Exam Types",
+      "TYPE": "SYSTEM",
+      "Description": "Maintains the taxonomy of assessment method types."
+    },
+    {
+      "ID": "2.1.1.2",
+      "TEXT": "2.1.1.2. Assessment Purpose Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines the purpose of assessments."
+    },
+    {
+      "ID": "2.1.1.2.1",
+      "TEXT": "2.1.1.2.1. Formative / Summative Parameters",
+      "TYPE": "SYSTEM",
+      "Description": "Defines parameters distinguishing formative and summative assessments."
+    },
+    {
+      "ID": "2.1.1.3",
+      "TEXT": "2.1.1.3. Assessment Attempt Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines allowed assessment attempts."
+    },
+    {
+      "ID": "2.1.1.3.1",
+      "TEXT": "2.1.1.3.1. First Sit / Resit Rules",
+      "TYPE": "SYSTEM",
+      "Description": "Defines rules for first sits, resits and repeats."
+    },
+    {
+      "ID": "2.1.2",
+      "TEXT": "2.1.2. Assessment Weighting Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages weighting of assessments within modules and programmes."
+    },
+    {
+      "ID": "2.1.3",
+      "TEXT": "2.1.3. Assessment Timing & Scheduling",
+      "TYPE": "SYSTEM",
+      "Description": "Manages timing and scheduling of assessments and exams."
+    },
+    {
+      "ID": "2.1.4",
+      "TEXT": "2.1.4. Rubric & Criteria Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines marking rubrics and assessment criteria."
+    },
+    {
+      "ID": "2.1.5",
+      "TEXT": "2.1.5. Assessment Accessibility Configuration",
+      "TYPE": "SYSTEM",
+      "Description": "Configures accessibility requirements and adjustments for assessments."
+    },
+    {
+      "ID": "2.2",
+      "TEXT": "2.2. Submission & Assessment Handling",
+      "TYPE": "SYSTEM",
+      "Description": "Enables students to submit assessments and manages handling of submitted work."
+    },
+    {
+      "ID": "2.2.1",
+      "TEXT": "2.2.1. Submission Point Creation",
+      "TYPE": "SYSTEM",
+      "Description": "Creates and manages assessment submission points and channels."
+    },
+    {
+      "ID": "2.2.2",
+      "TEXT": "2.2.2. Submission Validation",
+      "TYPE": "SYSTEM",
+      "Description": "Validates submissions before acceptance."
+    },
+    {
+      "ID": "2.2.2.1",
+      "TEXT": "2.2.2.1. File Format Validation",
+      "TYPE": "SYSTEM",
+      "Description": "Validates file types and sizes for submission."
+    },
+    {
+      "ID": "2.2.2.2",
+      "TEXT": "2.2.2.2. Versioning & Timestamp Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages version control and timestamps for submissions."
+    },
+    {
+      "ID": "2.2.2.2.1",
+      "TEXT": "2.2.2.2.1. Late Submission Rule Evaluation",
+      "TYPE": "SYSTEM",
+      "Description": "Evaluates submissions against late submission policies."
+    },
+    {
+      "ID": "2.2.2.2.2",
+      "TEXT": "2.2.2.2.2. File Corruption/Unreadable File Detection",
+      "TYPE": "SYSTEM",
+      "Description": "Detects corrupted or unreadable files."
+    },
+    {
+      "ID": "2.2.3",
+      "TEXT": "2.2.3. Academic Integrity Detection Enablement",
+      "TYPE": "SYSTEM",
+      "Description": "Enables detection of academic integrity issues such as plagiarism."
+    },
+    {
+      "ID": "2.2.4",
+      "TEXT": "2.2.4. Submission Receipt Management",
+      "TYPE": "SYSTEM",
+      "Description": "Provides receipts and confirmations for submitted work."
+    },
+    {
+      "ID": "2.3",
+      "TEXT": "2.3. Marking & Feedback Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages marking, moderation and feedback publication."
+    },
+    {
+      "ID": "2.3.1",
+      "TEXT": "2.3.1. Mark Entry Enablement",
+      "TYPE": "SYSTEM",
+      "Description": "Enables and controls entry of marks for assessments."
+    },
+    {
+      "ID": "2.3.2",
+      "TEXT": "2.3.2. Anonymous Marking Enablement",
+      "TYPE": "SYSTEM",
+      "Description": "Enables and controls anonymous marking processes."
+    },
+    {
+      "ID": "2.3.3",
+      "TEXT": "2.3.3. Moderation Configuration",
+      "TYPE": "SYSTEM",
+      "Description": "Configures and supports internal and external moderation."
+    },
+    {
+      "ID": "2.3.3.1",
+      "TEXT": "2.3.3.1. First Mark/Second Mark Assignment",
+      "TYPE": "SYSTEM",
+      "Description": "Assigns first and second markers to assessments."
+    },
+    {
+      "ID": "2.3.3.1.1",
+      "TEXT": "2.3.3.1.1. Discrepancy Threshold Rules",
+      "TYPE": "SYSTEM",
+      "Description": "Defines thresholds for mark discrepancies requiring resolution."
+    },
+    {
+      "ID": "2.3.3.1.2",
+      "TEXT": "2.3.3.1.2. External Examiner Review Triggers",
+      "TYPE": "SYSTEM",
+      "Description": "Defines triggers for external examiner review."
+    },
+    {
+      "ID": "2.3.4",
+      "TEXT": "2.3.4. Feedback Publication Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages publication of assessment feedback and marks to students."
+    },
+    {
+      "ID": "2.4",
+      "TEXT": "2.4. Assessment Resolution & Governance",
+      "TYPE": "SYSTEM",
+      "Description": "Resolves escalated assessment issues and governs assessment policies and procedures."
+    },
+    {
+      "ID": "2.4.1",
+      "TEXT": "2.4.1. Academic Misconduct Adjudication",
+      "TYPE": "SYSTEM",
+      "Description": "Adjudicates suspected academic misconduct cases."
+    },
+    {
+      "ID": "2.4.1.1",
+      "TEXT": "2.4.1.1. Case Evidence Collection",
+      "TYPE": "SYSTEM",
+      "Description": "Collects evidence for academic misconduct cases."
+    },
+    {
+      "ID": "2.4.1.1.1",
+      "TEXT": "2.4.1.1.1. Plagiarism Report Capture",
+      "TYPE": "SYSTEM",
+      "Description": "Captures plagiarism and similarity reports."
+    },
+    {
+      "ID": "2.4.1.1.2",
+      "TEXT": "2.4.1.1.2. Witness/Marker Statement Capture",
+      "TYPE": "SYSTEM",
+      "Description": "Captures statements from markers and witnesses."
+    },
+    {
+      "ID": "2.4.1.2",
+      "TEXT": "2.4.1.2. Panel Decision Governance",
+      "TYPE": "SYSTEM",
+      "Description": "Governs panel decision-making."
+    },
+    {
+      "ID": "2.4.1.2.1",
+      "TEXT": "2.4.1.2.1. Penalty Band Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines penalty bands for academic misconduct."
+    },
+    {
+      "ID": "2.4.1.2.2",
+      "TEXT": "2.4.1.2.2. Mitigating Factors Review",
+      "TYPE": "SYSTEM",
+      "Description": "Reviews mitigating factors in misconduct cases."
+    },
+    {
+      "ID": "2.4.2",
+      "TEXT": "2.4.2. Appeals Process Enablement",
+      "TYPE": "SYSTEM",
+      "Description": "Enables and governs appeals against academic decisions."
+    },
+    {
+      "ID": "2.4.3",
+      "TEXT": "2.4.3. Resit/Repeat Eligibility Validation",
+      "TYPE": "SYSTEM",
+      "Description": "Validates eligibility for resits and repeats."
+    },
+    {
+      "ID": "2.4.4",
+      "TEXT": "2.4.4. Assessment Data Retention Governance",
+      "TYPE": "SYSTEM",
+      "Description": "Governs retention and disposal of assessment records and artefacts."
+    },
+    {
+      "ID": "3",
+      "TEXT": "3. STUDENT SUPPORT & WELFARE",
+      "TYPE": "SYSTEM",
+      "Description": "Provides wellbeing, disability, casework and immigration support to students."
+    },
+    {
+      "ID": "3.1",
+      "TEXT": "3.1. Wellbeing & Mental Health Support",
+      "TYPE": "SYSTEM",
+      "Description": "Provides wellbeing and mental health triage, support and crisis management."
+    },
+    {
+      "ID": "3.1.1",
+      "TEXT": "3.1.1. Initial Wellbeing Triage",
+      "TYPE": "SYSTEM",
+      "Description": "Assesses initial wellbeing requests and directs them appropriately."
+    },
+    {
+      "ID": "3.1.2",
+      "TEXT": "3.1.2. Risk Assessment Capability",
+      "TYPE": "SYSTEM",
+      "Description": "Assesses risk for wellbeing and mental health cases."
+    },
+    {
+      "ID": "3.1.2.1",
+      "TEXT": "3.1.2.1. Risk Categorisation Rules",
+      "TYPE": "SYSTEM",
+      "Description": "Defines risk categories for wellbeing cases."
+    },
+    {
+      "ID": "3.1.2.1.1",
+      "TEXT": "3.1.2.1.1. Suicidal Ideation Protocol Enablement",
+      "TYPE": "SYSTEM",
+      "Description": "Enables protocols for suicidal ideation risk."
+    },
+    {
+      "ID": "3.1.2.1.2",
+      "TEXT": "3.1.2.1.2. Immediate Safeguarding Trigger Conditions",
+      "TYPE": "SYSTEM",
+      "Description": "Defines conditions that trigger immediate safeguarding action."
+    },
+    {
+      "ID": "3.1.3",
+      "TEXT": "3.1.3. Appointment Scheduling Enablement",
+      "TYPE": "SYSTEM",
+      "Description": "Enables scheduling of wellbeing and mental health appointments."
+    },
+    {
+      "ID": "3.1.4",
+      "TEXT": "3.1.4. Support Plan Management",
+      "TYPE": "SYSTEM",
+      "Description": "Creates, maintains and reviews wellbeing support plans."
+    },
+    {
+      "ID": "3.1.5",
+      "TEXT": "3.1.5. Crisis Escalation Enablement",
+      "TYPE": "SYSTEM",
+      "Description": "Enables escalation pathways for students in crisis."
+    },
+    {
+      "ID": "3.2",
+      "TEXT": "3.2. Disability & Accessibility Support",
+      "TYPE": "SYSTEM",
+      "Description": "Provides disability-related support, adjustments and assistive technology."
+    },
+    {
+      "ID": "3.2.1",
+      "TEXT": "3.2.1. Needs Assessment Enablement",
+      "TYPE": "SYSTEM",
+      "Description": "Enables assessment of students' disability and accessibility needs."
+    },
+    {
+      "ID": "3.2.2",
+      "TEXT": "3.2.2. Reasonable Adjustment Planning",
+      "TYPE": "SYSTEM",
+      "Description": "Plans and maintains reasonable adjustments for disabled students."
+    },
+    {
+      "ID": "3.2.2.1",
+      "TEXT": "3.2.2.1. Adjustment Type Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines types of reasonable adjustments."
+    },
+    {
+      "ID": "3.2.2.1.1",
+      "TEXT": "3.2.2.1.1. Extra Time Config",
+      "TYPE": "SYSTEM",
+      "Description": "Configures extra time rules for exams and assessments."
+    },
+    {
+      "ID": "3.2.2.1.2",
+      "TEXT": "3.2.2.1.2. Equipment / Software Provision",
+      "TYPE": "SYSTEM",
+      "Description": "Manages provision of specialist equipment and software."
+    },
+    {
+      "ID": "3.2.3",
+      "TEXT": "3.2.3. Assistive Technology Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages provision and support for assistive technologies."
+    },
+    {
+      "ID": "3.2.4",
+      "TEXT": "3.2.4. Accessibility Compliance Monitoring",
+      "TYPE": "SYSTEM",
+      "Description": "Monitors adherence to accessibility standards (e.g., WCAG) across institutional digital content and physical spaces."
+    },
+    {
+      "ID": "3.3",
+      "TEXT": "3.3. Mitigating Circumstances & Academic Casework",
+      "TYPE": "SYSTEM",
+      "Description": "Manages academic casework including mitigating circumstances and fitness to study."
+    },
+    {
+      "ID": "3.3.1",
+      "TEXT": "3.3.1. Mitigating Circumstances Application",
+      "TYPE": "SYSTEM",
+      "Description": "Enables students to apply for mitigating circumstances."
+    },
+    {
+      "ID": "3.3.1.1",
+      "TEXT": "3.3.1.1. Evidence Submission & Validation",
+      "TYPE": "SYSTEM",
+      "Description": "Submits and validates evidence for mitigating circumstances."
+    },
+    {
+      "ID": "3.3.1.2",
+      "TEXT": "3.3.1.2. Condonement / Deferral Decision Rules",
+      "TYPE": "SYSTEM",
+      "Description": "Defines rules for condonement or deferral decisions."
+    },
+    {
+      "ID": "3.3.2",
+      "TEXT": "3.3.2. Student Case Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages complex student cases such as fitness to study or disciplinary issues."
+    },
+    {
+      "ID": "3.3.2.1",
+      "TEXT": "3.3.2.1. Disciplinary Casework",
+      "TYPE": "SYSTEM",
+      "Description": "Manages non-academic disciplinary cases."
+    },
+    {
+      "ID": "3.3.2.1.1",
+      "TEXT": "3.3.2.1. Hearing & Review Scheduling",
+      "TYPE": "SYSTEM",
+      "Description": "Schedules disciplinary hearings and reviews."
+    },
+    {
+      "ID": "3.3.2.2",
+      "TEXT": "3.3.2.2. Fitness to Study Process",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the fitness to study process."
+    },
+    {
+      "ID": "3.4",
+      "TEXT": "3.4. Immigration & Visa Compliance",
+      "TYPE": "SYSTEM",
+      "Description": "Provides immigration advice and manages institutional compliance for international students."
+    },
+    {
+      "ID": "3.4.1",
+      "TEXT": "3.4.1. Student Visa Advice Provision",
+      "TYPE": "SYSTEM",
+      "Description": "Provides regulated visa and immigration advice to students."
+    },
+    {
+      "ID": "3.4.2",
+      "TEXT": "3.4.2. Institutional Compliance Management (Sponsor)",
+      "TYPE": "SYSTEM",
+      "Description": "Manages institutional compliance with visa sponsor duties."
+    },
+    {
+      "ID": "3.4.2.1",
+      "TEXT": "3.4.2.1. CAS Issuance & Tracking",
+      "TYPE": "SYSTEM",
+      "Description": "Issues and tracks Confirmation of Acceptance for Studies (CAS)."
+    },
+    {
+      "ID": "3.4.2.2",
+      "TEXT": "3.4.2.2. Engagement Monitoring",
+      "TYPE": "SYSTEM",
+      "Description": "Monitors student engagement for visa compliance reporting."
+    },
+    {
+      "ID": "3.4.2.3",
+      "TEXT": "3.4.2.3. Compliance Record Keeping",
+      "TYPE": "SYSTEM",
+      "Description": "Maintains required records for regulatory compliance."
+    },
+    {
+      "ID": "4",
+      "TEXT": "4. STUDENT EXPERIENCE & ENGAGEMENT",
+      "TYPE": "SYSTEM",
+      "Description": "Manages student engagement, non-academic services and alumni relations."
+    },
+    {
+      "ID": "4.1",
+      "TEXT": "4.1. Student Communication & CRM",
+      "TYPE": "SYSTEM",
+      "Description": "Manages communication channels and non-academic interactions with students."
+    },
+    {
+      "ID": "4.1.1",
+      "TEXT": "4.1.1. Student Information Hub Provision",
+      "TYPE": "SYSTEM",
+      "Description": "Provides a central, personalised hub for student information and self-service."
+    },
+    {
+      "ID": "4.1.2",
+      "TEXT": "4.1.2. General Enquiry Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages non-academic student enquiries and support tickets."
+    },
+    {
+      "ID": "4.1.3",
+      "TEXT": "4.1.3. Student Feedback Collection",
+      "TYPE": "SYSTEM",
+      "Description": "Collects and analyses student feedback on services and experience."
+    },
+    {
+      "ID": "4.1.4",
+      "TEXT": "4.1.4. Targeted Student Communications",
+      "TYPE": "SYSTEM",
+      "Description": "Manages targeted communications to specific student cohorts (e.g., specific year, international)."
+    },
+    {
+      "ID": "4.2",
+      "TEXT": "4.2. Alumni & Supporter Relations",
+      "TYPE": "SYSTEM",
+      "Description": "Manages relationships and engagement with alumni and supporters."
+    },
+    {
+      "ID": "4.2.1",
+      "TEXT": "4.2.1. Alumni Database Management",
+      "TYPE": "SYSTEM",
+      "Description": "Maintains and updates alumni records."
+    },
+    {
+      "ID": "4.2.2",
+      "TEXT": "4.2.2. Alumni Communications",
+      "TYPE": "SYSTEM",
+      "Description": "Manages communications and events for alumni."
+    },
+    {
+      "ID": "4.2.3",
+      "TEXT": "4.2.3. Donor Identification & Cultivation",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies potential donors and nurtures philanthropic relationships."
+    },
+    {
+      "ID": "4.2.4",
+      "TEXT": "4.2.4. Giving Programme Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages fundraising campaigns and giving programmes."
+    },
+    {
+      "ID": "4.2.5",
+      "TEXT": "4.2.5. HESA DLHE/Graduate Outcome Survey",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the HESA DLHE and Graduate Outcome Survey processes."
+    },
+    {
+      "ID": "5",
+      "TEXT": "5. RESEARCH & KNOWLEDGE EXCHANGE",
+      "TYPE": "SYSTEM",
+      "Description": "Supports the planning, delivery and dissemination of institutional research and knowledge exchange activities."
+    },
+    {
+      "ID": "5.1",
+      "TEXT": "5.1. Research Strategy & Planning",
+      "TYPE": "SYSTEM",
+      "Description": "Defines institutional research strategy and planning."
+    },
+    {
+      "ID": "5.1.1",
+      "TEXT": "5.1.1. Research Theme Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines and manages institutional research themes and priorities."
+    },
+    {
+      "ID": "5.1.2",
+      "TEXT": "5.1.2. Research Investment Planning",
+      "TYPE": "SYSTEM",
+      "Description": "Plans and allocates internal investment in research infrastructure and projects."
+    },
+    {
+      "ID": "5.1.3",
+      "TEXT": "5.1.3. Doctoral Training Centre Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the operation of Doctoral Training Centres or equivalent."
+    },
+    {
+      "ID": "5.2",
+      "TEXT": "5.2. Research Grant Management (Pre-Award)",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the process of seeking and securing external research funding."
+    },
+    {
+      "ID": "5.2.1",
+      "TEXT": "5.2.1. Funding Opportunity Identification",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies relevant external funding opportunities for researchers."
+    },
+    {
+      "ID": "5.2.2",
+      "TEXT": "5.2.2. Proposal Development Support",
+      "TYPE": "SYSTEM",
+      "Description": "Supports researchers in developing competitive grant proposals."
+    },
+    {
+      "ID": "5.2.3",
+      "TEXT": "5.2.3. Costing & Pricing Approval",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the costing, pricing and institutional approval of research proposals."
+    },
+    {
+      "ID": "5.2.4",
+      "TEXT": "5.2.4. Grant Submission Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the formal submission of grant applications to funders."
+    },
+    {
+      "ID": "5.3",
+      "TEXT": "5.3. Research Grant Management (Post-Award)",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the operational and financial administration of successful grants."
+    },
+    {
+      "ID": "5.3.1",
+      "TEXT": "5.3.1. Contract Negotiation & Signing",
+      "TYPE": "SYSTEM",
+      "Description": "Negotiates and signs legal contracts with research funders."
+    },
+    {
+      "ID": "5.3.2",
+      "TEXT": "5.3.2. Grant Project Setup",
+      "TYPE": "SYSTEM",
+      "Description": "Sets up internal financial codes and project structures for awarded grants."
+    },
+    {
+      "ID": "5.3.3",
+      "TEXT": "5.3.3. Financial Monitoring & Reporting",
+      "TYPE": "SYSTEM",
+      "Description": "Monitors grant expenditure against budget and produces funder reports."
+    },
+    {
+      "ID": "5.3.4",
+      "TEXT": "5.3.4. Grant Claim Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the process of claiming funds from sponsors."
+    },
+    {
+      "ID": "5.4",
+      "TEXT": "5.4. Research Quality Assurance & Assessment",
+      "TYPE": "SYSTEM",
+      "Description": "Manages internal and external research assessment processes."
+    },
+    {
+      "ID": "5.4.1",
+      "TEXT": "5.4.1. Research Environment Assessment",
+      "TYPE": "SYSTEM",
+      "Description": "Assesses and manages the quality and support of the research environment."
+    },
+    {
+      "ID": "5.4.2",
+      "TEXT": "5.4.2. Research Output Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the identification, collection and tracking of research outputs."
+    },
+    {
+      "ID": "5.4.3",
+      "TEXT": "5.4.3. Research Impact Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the collection and narrative of research impact case studies."
+    },
+    {
+      "ID": "5.4.4",
+      "TEXT": "5.4.4. REF/Equivalent Submission Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the institutional submission to Research Excellence Framework or equivalent."
+    },
+    {
+      "ID": "5.5",
+      "TEXT": "5.5. Ethics, Integrity & Governance",
+      "TYPE": "SYSTEM",
+      "Description": "Governs research ethics, integrity and compliance."
+    },
+    {
+      "ID": "5.5.1",
+      "TEXT": "5.5.1. Ethical Review Board Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the operation and review processes of Research Ethics Committees (RECs)."
+    },
+    {
+      "ID": "5.5.2",
+      "TEXT": "5.5.2. Research Integrity Case Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages suspected cases of research misconduct."
+    },
+    {
+      "ID": "5.5.3",
+      "TEXT": "5.5.3. External Regulatory Compliance",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures compliance with external research regulations (e.g., GDPR, HRA, Animals Act)."
+    },
+    {
+      "ID": "5.6",
+      "TEXT": "5.6. Knowledge Exchange & Commercialisation",
+      "TYPE": "SYSTEM",
+      "Description": "Manages activities to transfer knowledge and commercialise research outputs."
+    },
+    {
+      "ID": "5.6.1",
+      "TEXT": "5.6.1. Intellectual Property (IP) Management",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies, protects and manages institutional Intellectual Property."
+    },
+    {
+      "ID": "5.6.2",
+      "TEXT": "5.6.2. Technology Transfer",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the process of transferring technology to industry partners."
+    },
+    {
+      "ID": "5.6.3",
+      "TEXT": "5.6.3. Spin-out / Start-up Creation",
+      "TYPE": "SYSTEM",
+      "Description": "Supports and manages the creation of spin-out and start-up companies."
+    },
+    {
+      "ID": "5.6.4",
+      "TEXT": "5.6.4. Consultancy Services Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the provision of institutional and academic consultancy services."
+    },
+    {
+      "ID": "5.6.5",
+      "TEXT": "5.6.5. Knowledge Exchange Metrics",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the collection and reporting of knowledge exchange and business engagement metrics (e.g., KEF)."
+    },
+    {
+      "ID": "6",
+      "TEXT": "6. INSTITUTIONAL STRATEGY & GOVERNANCE",
+      "TYPE": "SYSTEM",
+      "Description": "Defines institutional strategy, risk appetite and statutory compliance."
+    },
+    {
+      "ID": "6.1",
+      "TEXT": "6.1. Strategic Planning",
+      "TYPE": "SYSTEM",
+      "Description": "Defines and manages the institutional strategy."
+    },
+    {
+      "ID": "6.1.1",
+      "TEXT": "6.1.1. Strategic Goals Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines institutional strategic goals and associated KPIs."
+    },
+    {
+      "ID": "6.1.2",
+      "TEXT": "6.1.2. Strategic Alignment Management",
+      "TYPE": "SYSTEM",
+      "Description": "Aligns academic, resource, estate and IT strategies to the institutional strategy."
+    },
+    {
+      "ID": "6.2",
+      "TEXT": "6.2. Regulatory Compliance & Assurance",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures compliance with sector-specific and statutory regulations."
+    },
+    {
+      "ID": "6.2.1",
+      "TEXT": "6.2.1. Statutory Body Returns (e.g., HESA)",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the collection and submission of statutory returns (e.g., HESA, OFS, SLC)."
+    },
+    {
+      "ID": "6.2.2",
+      "TEXT": "6.2.2. Internal Audit Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages internal audit programme and remediation tracking."
+    },
+    {
+      "ID": "6.2.3",
+      "TEXT": "6.2.3. Data Protection & GDPR Compliance",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures compliance with data protection laws."
+    },
+    {
+      "ID": "6.2.4",
+      "TEXT": "6.2.4. Freedom of Information (FOI) Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages Freedom of Information requests and responses."
+    },
+    {
+      "ID": "6.3",
+      "TEXT": "6.3. Risk Management & Control",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies, assesses and manages institutional risk."
+    },
+    {
+      "ID": "6.3.1",
+      "TEXT": "6.3.1. Risk Register Maintenance",
+      "TYPE": "SYSTEM",
+      "Description": "Maintains and updates the institutional risk register."
+    },
+    {
+      "ID": "6.3.2",
+      "TEXT": "6.3.2. Risk Appetite Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines and monitors institutional risk appetite."
+    },
+    {
+      "ID": "6.3.3",
+      "TEXT": "6.3.3. Mitigation Strategy Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines and tracks strategies to mitigate key risks."
+    },
+    {
+      "ID": "6.4",
+      "TEXT": "6.4. Quality & Academic Standards",
+      "TYPE": "SYSTEM",
+      "Description": "Governs academic quality, standards and validation."
+    },
+    {
+      "ID": "6.4.1",
+      "TEXT": "6.4.1. Academic Standards Framework",
+      "TYPE": "SYSTEM",
+      "Description": "Defines and governs the institutional academic standards framework."
+    },
+    {
+      "ID": "6.4.2",
+      "TEXT": "6.4.2. Programme Validation & Review",
+      "TYPE": "SYSTEM",
+      "Description": "Manages validation and periodic review of academic programmes."
+    },
+    {
+      "ID": "6.4.3",
+      "TEXT": "6.4.3. External Examiner Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the appointment, reporting and payment of external examiners."
+    },
+    {
+      "ID": "7",
+      "TEXT": "7. ACADEMIC & CURRICULUM MANAGEMENT",
+      "TYPE": "SYSTEM",
+      "Description": "Defines and manages the curriculum, catalogue and teaching resources."
+    },
+    {
+      "ID": "7.1",
+      "TEXT": "7.1. Curriculum Design & Catalogue",
+      "TYPE": "SYSTEM",
+      "Description": "Designs and maintains the curriculum structure, modules and catalogue data."
+    },
+    {
+      "ID": "7.1.1",
+      "TEXT": "7.1.1. Programme Design & Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines new programmes, pathways and awards."
+    },
+    {
+      "ID": "7.1.2",
+      "TEXT": "7.1.2. Module Design & Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines module content, learning outcomes and prerequisites."
+    },
+    {
+      "ID": "7.1.3",
+      "TEXT": "7.1.3. Curriculum Change Governance",
+      "TYPE": "SYSTEM",
+      "Description": "Governs the approval and implementation of curriculum changes."
+    },
+    {
+      "ID": "7.1.4",
+      "TEXT": "7.1.4. Course/Module Catalogue Publication",
+      "TYPE": "SYSTEM",
+      "Description": "Publishes the definitive course and module catalogue for internal and external use."
+    },
+    {
+      "ID": "7.2",
+      "TEXT": "7.2. Learning Management & Delivery",
+      "TYPE": "SYSTEM",
+      "Description": "Manages online learning environments and content delivery."
+    },
+    {
+      "ID": "7.2.1",
+      "TEXT": "7.2.1. VLE (Virtual Learning Environment) Provision",
+      "TYPE": "SYSTEM",
+      "Description": "Provides and maintains the core VLE platform."
+    },
+    {
+      "ID": "7.2.2",
+      "TEXT": "7.2.2. Course Content Authoring & Management",
+      "TYPE": "SYSTEM",
+      "Description": "Supports staff in creating, managing and reusing learning content."
+    },
+    {
+      "ID": "7.2.3",
+      "TEXT": "7.2.3. Online Collaboration & Interaction Tools",
+      "TYPE": "SYSTEM",
+      "Description": "Provides tools for synchronous and asynchronous online collaboration."
+    },
+    {
+      "ID": "7.2.4",
+      "TEXT": "7.2.4. Lecture Capture & Streaming",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the technology and process for capturing and streaming lectures and teaching sessions."
+    },
+    {
+      "ID": "7.2.5",
+      "TEXT": "7.2.5. Learning Analytics & Engagement Reporting",
+      "TYPE": "SYSTEM",
+      "Description": "Tracks student activity in the VLE to support engagement monitoring and intervention."
+    },
+    {
+      "ID": "8",
+      "TEXT": "8. FINANCIAL MANAGEMENT",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the core financial accounting, general ledger and reporting."
+    },
+    {
+      "ID": "8.1",
+      "TEXT": "8.1. General Ledger & Financial Accounting",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the chart of accounts, postings and financial statements."
+    },
+    {
+      "ID": "8.1.1",
+      "TEXT": "8.1.1. Chart of Accounts Management",
+      "TYPE": "SYSTEM",
+      "Description": "Defines and manages the institutional chart of accounts."
+    },
+    {
+      "ID": "8.1.2",
+      "TEXT": "8.1.2. Transaction Processing",
+      "TYPE": "SYSTEM",
+      "Description": "Processes and records financial transactions into the general ledger."
+    },
+    {
+      "ID": "8.1.3",
+      "TEXT": "8.1.3. Period-End Close",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the process for monthly and annual financial close."
+    },
+    {
+      "ID": "8.2",
+      "TEXT": "8.2. Accounts Payable (AP)",
+      "TYPE": "SYSTEM",
+      "Description": "Manages institutional liabilities to suppliers."
+    },
+    {
+      "ID": "8.2.1",
+      "TEXT": "8.2.1. Invoice Processing & Validation",
+      "TYPE": "SYSTEM",
+      "Description": "Processes supplier invoices and validates them against purchase orders."
+    },
+    {
+      "ID": "8.2.2",
+      "TEXT": "8.2.2. Supplier Payment Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the scheduling and execution of supplier payments."
+    },
+    {
+      "ID": "8.3",
+      "TEXT": "8.3. Accounts Receivable (AR)",
+      "TYPE": "SYSTEM",
+      "Description": "Manages institutional assets from debtors."
+    },
+    {
+      "ID": "8.3.1",
+      "TEXT": "8.3.1. Non-Tuition Fee Invoicing",
+      "TYPE": "SYSTEM",
+      "Description": "Generates and distributes invoices for non-tuition fees."
+    },
+    {
+      "ID": "8.3.2",
+      "TEXT": "8.3.2. Cash & Collections Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages receipt and allocation of cash and pursues outstanding debts."
+    },
+    {
+      "ID": "8.4",
+      "TEXT": "8.4. Asset & Capital Accounting",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the lifecycle and accounting of institutional assets."
+    },
+    {
+      "ID": "8.4.1",
+      "TEXT": "8.4.1. Fixed Asset Register Management",
+      "TYPE": "SYSTEM",
+      "Description": "Maintains the register of fixed assets."
+    },
+    {
+      "ID": "8.4.2",
+      "TEXT": "8.4.2. Depreciation & Impairment Accounting",
+      "TYPE": "SYSTEM",
+      "Description": "Calculates and records depreciation and asset impairment."
+    },
+    {
+      "ID": "8.5",
+      "TEXT": "8.5. Treasury & Cash Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages banking, liquidity and investments."
+    },
+    {
+      "ID": "8.5.1",
+      "TEXT": "8.5.1. Bank Reconciliation",
+      "TYPE": "SYSTEM",
+      "Description": "Reconciles bank statements with the general ledger."
+    },
+    {
+      "ID": "8.5.2",
+      "TEXT": "8.5.2. Investment Portfolio Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages institutional investments and associated risk."
+    },
+    {
+      "ID": "9",
+      "TEXT": "9. MARKETING, RECRUITMENT & WIDER ENGAGEMENT",
+      "TYPE": "SYSTEM",
+      "Description": "Manages institutional marketing, student recruitment and external partnerships."
+    },
+    {
+      "ID": "9.1",
+      "TEXT": "9.1. Marketing & Brand Management",
+      "TYPE": "SYSTEM",
+      "Description": "Defines and manages the institutional brand and marketing campaigns."
+    },
+    {
+      "ID": "9.1.1",
+      "TEXT": "9.1.1. Brand Strategy Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines institutional brand positioning and guidelines."
+    },
+    {
+      "ID": "9.1.2",
+      "TEXT": "9.1.2. Content Creation & Asset Management",
+      "TYPE": "SYSTEM",
+      "Description": "Creates and manages marketing content and digital assets."
+    },
+    {
+      "ID": "9.1.3",
+      "TEXT": "9.1.3. Marketing Campaign Management",
+      "TYPE": "SYSTEM",
+      "Description": "Plans, executes and measures performance of marketing campaigns."
+    },
+    {
+      "ID": "9.2",
+      "TEXT": "9.2. Prospective Student Recruitment",
+      "TYPE": "SYSTEM",
+      "Description": "Manages recruitment activities for prospective students."
+    },
+    {
+      "ID": "9.2.1",
+      "TEXT": "9.2.1. Prospect Data Capture & Tracking",
+      "TYPE": "SYSTEM",
+      "Description": "Captures and tracks data for prospective students."
+    },
+    {
+      "ID": "9.2.2",
+      "TEXT": "9.2.2. Enquiry Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages enquiries from prospective students."
+    },
+    {
+      "ID": "9.2.3",
+      "TEXT": "9.2.3. Recruitment Event Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages open days, recruitment fairs and visits."
+    },
+    {
+      "ID": "9.2.4",
+      "TEXT": "9.2.4. Conversion Communications",
+      "TYPE": "SYSTEM",
+      "Description": "Manages communications campaigns aimed at converting prospects to applicants."
+    },
+    {
+      "ID": "9.3",
+      "TEXT": "9.3. Partner & Collaborative Provision",
+      "TYPE": "SYSTEM",
+      "Description": "Manages relationships and administration for collaborative academic partners."
+    },
+    {
+      "ID": "9.3.1",
+      "TEXT": "9.3.1. Partner Vetting & Selection",
+      "TYPE": "SYSTEM",
+      "Description": "Vets and selects appropriate collaborative partners."
+    },
+    {
+      "ID": "9.3.2",
+      "TEXT": "9.3.2. Collaborative Agreement Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the creation, review and renewal of collaborative agreements."
+    },
+    {
+      "ID": "9.3.3",
+      "TEXT": "9.3.3. Partner Governance & Monitoring",
+      "TYPE": "SYSTEM",
+      "Description": "Governs and monitors partner performance and quality."
+    },
+    {
+      "ID": "9.4",
+      "TEXT": "9.4. External Relationship Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages strategic external relationships with government, industry and community."
+    },
+    {
+      "ID": "9.4.1",
+      "TEXT": "9.4.1. Government Relations & Lobbying",
+      "TYPE": "SYSTEM",
+      "Description": "Manages relationships and lobbying activities with governmental bodies."
+    },
+    {
+      "ID": "9.4.2",
+      "TEXT": "9.4.2. Industry Partnership Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages non-research strategic relationships with industry."
+    },
+    {
+      "ID": "9.4.3",
+      "TEXT": "9.4.3. Community Engagement & Outreach",
+      "TYPE": "SYSTEM",
+      "Description": "Manages community engagement and public outreach programmes."
+    },
+    {
+      "ID": "10",
+      "TEXT": "10. PEOPLE & HR MANAGEMENT",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the full employee lifecycle, payroll and workforce strategy."
+    },
+    {
+      "ID": "10.1",
+      "TEXT": "10.1. Workforce Planning & Analytics",
+      "TYPE": "SYSTEM",
+      "Description": "Plans workforce needs and provides HR analytics."
+    },
+    {
+      "ID": "10.1.1",
+      "TEXT": "10.1.1. Workforce Needs Forecasting",
+      "TYPE": "SYSTEM",
+      "Description": "Forecasts future staffing and skill requirements."
+    },
+    {
+      "ID": "10.1.2",
+      "TEXT": "10.1.2. HR Analytics & Reporting",
+      "TYPE": "SYSTEM",
+      "Description": "Provides workforce metrics and analytics (e.g., turnover, diversity)."
+    },
+    {
+      "ID": "10.2",
+      "TEXT": "10.2. Recruitment & Onboarding",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the recruitment process from vacancy to contract."
+    },
+    {
+      "ID": "10.2.1",
+      "TEXT": "10.2.1. Job Requisition Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the creation and approval of job requisitions."
+    },
+    {
+      "ID": "10.2.2",
+      "TEXT": "10.2.2. Candidate Sourcing & Tracking",
+      "TYPE": "SYSTEM",
+      "Description": "Sources and tracks candidates through the recruitment pipeline."
+    },
+    {
+      "ID": "10.2.3",
+      "TEXT": "10.2.3. Offer & Contract Management",
+      "TYPE": "SYSTEM",
+      "Description": "Generates offers of employment and manages contracts."
+    },
+    {
+      "ID": "10.2.4",
+      "TEXT": "10.2.4. New Starter Onboarding",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the onboarding of new employees including pre-employment checks."
+    },
+    {
+      "ID": "10.3",
+      "TEXT": "10.3. Core HR Administration",
+      "TYPE": "SYSTEM",
+      "Description": "Manages employee records, payroll and benefits."
+    },
+    {
+      "ID": "10.3.1",
+      "TEXT": "10.3.1. Employee Master Data Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the single source of truth for employee data."
+    },
+    {
+      "ID": "10.3.2",
+      "TEXT": "10.3.2. Payroll Processing & Compliance",
+      "TYPE": "SYSTEM",
+      "Description": "Calculates and processes employee payroll and ensures tax compliance."
+    },
+    {
+      "ID": "10.3.3",
+      "TEXT": "10.3.3. Compensation & Benefits Management",
+      "TYPE": "SYSTEM",
+      "Description": "Administers compensation and benefits schemes."
+    },
+    {
+      "ID": "10.3.4",
+      "TEXT": "10.3.4. Leave & Absence Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages employee leave requests and sickness absence."
+    },
+    {
+      "ID": "10.4",
+      "TEXT": "10.4. Performance & Development",
+      "TYPE": "SYSTEM",
+      "Description": "Manages employee performance, training and development."
+    },
+    {
+      "ID": "10.4.1",
+      "TEXT": "10.4.1. Performance Review Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the annual performance review cycle."
+    },
+    {
+      "ID": "10.4.2",
+      "TEXT": "10.4.2. Training Needs Assessment",
+      "TYPE": "SYSTEM",
+      "Description": "Assesses and tracks employee training and development needs."
+    },
+    {
+      "ID": "10.4.3",
+      "TEXT": "10.4.3. Learning Management System (LMS) Provision",
+      "TYPE": "SYSTEM",
+      "Description": "Provides and manages the internal LMS for staff training."
+    },
+    {
+      "ID": "10.4.4",
+      "TEXT": "10.4.4. Succession Planning",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies and develops potential internal successors for key roles."
+    },
+    {
+      "ID": "11",
+      "TEXT": "11. PROCUREMENT & SUPPLY CHAIN",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the acquisition of goods and services and institutional spend."
+    },
+    {
+      "ID": "11.1",
+      "TEXT": "11.1. Strategic Sourcing & Category Management",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies sourcing strategies and manages supplier categories."
+    },
+    {
+      "ID": "11.1.1",
+      "TEXT": "11.1.1. Spend Analysis & Reporting",
+      "TYPE": "SYSTEM",
+      "Description": "Analyses and reports on institutional spend by category."
+    },
+    {
+      "ID": "11.1.2",
+      "TEXT": "11.1.2. Category Strategy Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines sourcing and negotiation strategies for key spend categories."
+    },
+    {
+      "ID": "11.2",
+      "TEXT": "11.2. Procure-to-Pay (P2P)",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the process from creating a requisition to payment."
+    },
+    {
+      "ID": "11.2.1",
+      "TEXT": "11.2.1. Purchasing Requisition Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the creation and approval of internal purchasing requisitions."
+    },
+    {
+      "ID": "11.2.2",
+      "TEXT": "11.2.2. Purchase Order Management",
+      "TYPE": "SYSTEM",
+      "Description": "Creates, transmits and tracks purchase orders."
+    },
+    {
+      "ID": "11.2.3",
+      "TEXT": "11.2.3. Goods Receipting & Matching",
+      "TYPE": "SYSTEM",
+      "Description": "Records receipt of goods and services and matches against P.O. and invoice."
+    },
+    {
+      "ID": "11.3",
+      "TEXT": "11.3. Contract & Supplier Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages supplier contracts and ongoing supplier relationships."
+    },
+    {
+      "ID": "11.3.1",
+      "TEXT": "11.3.1. Contract Register Management",
+      "TYPE": "SYSTEM",
+      "Description": "Maintains a central register of institutional contracts."
+    },
+    {
+      "ID": "11.3.2",
+      "TEXT": "11.3.2. Supplier Master Data Management",
+      "TYPE": "SYSTEM",
+      "Description": "Maintains and governs master data for all suppliers."
+    },
+    {
+      "ID": "11.3.3",
+      "TEXT": "11.3.3. Supplier Performance Monitoring",
+      "TYPE": "SYSTEM",
+      "Description": "Monitors and manages supplier performance against agreed KPIs."
+    },
+    {
+      "ID": "12",
+      "TEXT": "12. ESTATES & FACILITIES",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the institutional property portfolio, facilities and environmental impact."
+    },
+    {
+      "ID": "12.5",
+      "TEXT": "12.5. Facilities Maintenance & Operations",
+      "TYPE": "SYSTEM",
+      "Description": "Delivers planned and reactive maintenance, and manages day-to-day operations (e.g., cleaning, catering)."
+    },
+    {
+      "ID": "12.5.1",
+      "TEXT": "12.5.1. Planned Preventative Maintenance (PPM)",
+      "TYPE": "SYSTEM",
+      "Description": "Plans and executes scheduled preventative maintenance activities on building assets."
+    },
+    {
+      "ID": "12.5.2",
+      "TEXT": "12.5.2. Reactive Maintenance & Helpdesk",
+      "TYPE": "SYSTEM",
+      "Description": "Manages fault reporting, work order creation, scheduling, and response to urgent repairs."
+    },
+    {
+      "ID": "12.5.3",
+      "TEXT": "12.5.3. Hard Facilities Operations",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the day-to-day operation of building fabric and services (e.g., HVAC, electrical)."
+    },
+    {
+      "ID": "12.5.4",
+      "TEXT": "12.5.4. Soft Facilities Services",
+      "TYPE": "SYSTEM",
+      "Description": "Manages non-structural services like cleaning, catering, mail, and grounds maintenance."
+    },
+    {
+      "ID": "12.5.5",
+      "TEXT": "12.5.5. Building Asset Register",
+      "TYPE": "SYSTEM",
+      "Description": "Maintains a detailed register of building assets (e.g., plant, equipment) for lifecycle management."
+    },
+    {
+      "ID": "12.6",
+      "TEXT": "12.6. Campus Security & Safety",
+      "TYPE": "SYSTEM",
+      "Description": "Provides physical security, access control, and emergency planning."
+    },
+    {
+      "ID": "12.6.1",
+      "TEXT": "12.6.1. Physical Security Operations",
+      "TYPE": "SYSTEM",
+      "Description": "Manages 24/7 security presence, patrol operations, and incident response."
+    },
+    {
+      "ID": "12.6.2",
+      "TEXT": "12.6.2. Access Control System Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages and configures access control systems, keys, and staff/student ID card permissions."
+    },
+    {
+      "ID": "12.6.3",
+      "TEXT": "12.6.3. CCTV & Surveillance Management",
+      "TYPE": "SYSTEM",
+      "Description": "Operates and maintains the closed-circuit television and surveillance infrastructure."
+    },
+    {
+      "ID": "12.6.4",
+      "TEXT": "12.6.4. Emergency Planning & Response",
+      "TYPE": "SYSTEM",
+      "Description": "Develops and tests emergency plans (e.g., fire, major incident) and coordinates first response."
+    },
+    {
+      "ID": "12.6.5",
+      "TEXT": "12.6.5. Health & Safety Compliance",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures institutional compliance with health and safety regulations, including risk assessment and training."
+    },
+    {
+      "ID": "13",
+      "TEXT": "13. LIBRARY & LEARNING RESOURCES",
+      "TYPE": "SYSTEM",
+      "Description": "Provides information, collections, and learning spaces to support academic activity."
+    },
+    {
+      "ID": "13.2",
+      "TEXT": "13.2. Deliver academic skills support",
+      "TYPE": "SYSTEM",
+      "Description": "Provides structured development for core academic skills, including literacy and research."
+    },
+    {
+      "ID": "13.3",
+      "TEXT": "13.3. Manage library spaces and user services",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the physical and digital spaces, including service desk provision and lending operations."
+    },
+    {
+      "ID": "13.5",
+      "TEXT": "13.5. Manage resource licencing and copyright",
+      "TYPE": "SYSTEM",
+      "Description": "Manages legal compliance for copyrighted content usage and administers licenses for resources."
+    },
+    {
+      "ID": "14",
+      "TEXT": "14. DIGITAL & IT SERVICES",
+      "TYPE": "SYSTEM",
+      "Description": "Delivers technology services, infrastructure and cyber security."
+    },
+    {
+      "ID": "14.1",
+      "TEXT": "14.1. IT Strategy & Governance",
+      "TYPE": "SYSTEM",
+      "Description": "Defines IT strategy, enterprise architecture and portfolio governance."
+    },
+    {
+      "ID": "14.1.1",
+      "TEXT": "14.1.1. IT Strategy Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines the institutional IT strategy and roadmap."
+    },
+    {
+      "ID": "14.1.2",
+      "TEXT": "14.1.2. Enterprise Architecture",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the institutional application, data and technology architecture."
+    },
+    {
+      "ID": "14.1.3",
+      "TEXT": "14.1.3. IT Portfolio Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the institutional portfolio of IT projects and prioritisation."
+    },
+    {
+      "ID": "14.2",
+      "TEXT": "14.2. Service Operations & Support",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the IT Service Desk and operational IT service delivery."
+    },
+    {
+      "ID": "14.2.1",
+      "TEXT": "14.2.1. IT Service Desk & Incident Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the IT Service Desk, incident logging and resolution."
+    },
+    {
+      "ID": "14.2.2",
+      "TEXT": "14.2.2. Problem Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the investigation and resolution of root causes of recurring incidents."
+    },
+    {
+      "ID": "14.2.3",
+      "TEXT": "14.2.3. Service Level Agreement (SLA) Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages service level agreements and performance reporting."
+    },
+    {
+      "ID": "14.3",
+      "TEXT": "14.3. Infrastructure & Platforms",
+      "TYPE": "SYSTEM",
+      "Description": "Manages core IT infrastructure, cloud services and networking."
+    },
+    {
+      "ID": "14.3.1",
+      "TEXT": "14.3.1. Network Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages wired and wireless networking infrastructure."
+    },
+    {
+      "ID": "14.3.2",
+      "TEXT": "14.3.2. Server & Cloud Platform Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages physical and cloud-based server infrastructure."
+    },
+    {
+      "ID": "14.3.3",
+      "TEXT": "14.3.3. Identity & Access Management (IAM)",
+      "TYPE": "SYSTEM",
+      "Description": "Manages digital identities, authentication and authorisation."
+    },
+    {
+      "ID": "14.4",
+      "TEXT": "14.4. Information & Cyber Security",
+      "TYPE": "SYSTEM",
+      "Description": "Manages information security policy, defence and incident response."
+    },
+    {
+      "ID": "14.4.1",
+      "TEXT": "14.4.1. Security Policy & Compliance",
+      "TYPE": "SYSTEM",
+      "Description": "Defines security policy and ensures compliance with relevant standards."
+    },
+    {
+      "ID": "14.4.2",
+      "TEXT": "14.4.2. Threat Detection & Defence",
+      "TYPE": "SYSTEM",
+      "Description": "Monitors networks and systems to detect and prevent cyber threats."
+    },
+    {
+      "ID": "14.4.3",
+      "TEXT": "14.4.3. Incident Response & Recovery",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the response to and recovery from security incidents."
+    },
+    {
+      "ID": "15",
+      "TEXT": "15. DATA & ANALYTICS",
+      "TYPE": "SYSTEM",
+      "Description": "Manages institutional data assets, quality and business intelligence."
+    },
+    {
+      "ID": "15.1",
+      "TEXT": "15.1. Data Governance & Quality",
+      "TYPE": "SYSTEM",
+      "Description": "Governs institutional data policy, standards and quality."
+    },
+    {
+      "ID": "15.1.1",
+      "TEXT": "15.1.1. Data Strategy Definition",
+      "TYPE": "SYSTEM",
+      "Description": "Defines the institutional data strategy and roadmap."
+    },
+    {
+      "ID": "15.1.2",
+      "TEXT": "15.1.2. Data Quality Management",
+      "TYPE": "SYSTEM",
+      "Description": "Monitors, measures and improves institutional data quality."
+    },
+    {
+      "ID": "15.1.3",
+      "TEXT": "15.1.3. Data Stewardship & Ownership",
+      "TYPE": "SYSTEM",
+      "Description": "Defines data ownership and stewardship roles."
+    },
+    {
+      "ID": "15.2",
+      "TEXT": "15.2. Business Intelligence & Reporting",
+      "TYPE": "SYSTEM",
+      "Description": "Provides data insights, reports and dashboards."
+    },
+    {
+      "ID": "15.2.1",
+      "TEXT": "15.2.1. Reporting Tool Provision",
+      "TYPE": "SYSTEM",
+      "Description": "Provides tools and platforms for self-service reporting and analysis."
+    },
+    {
+      "ID": "15.2.2",
+      "TEXT": "15.2.2. Enterprise Data Warehouse Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the central data warehouse/lake and ETL processes."
+    },
+    {
+      "ID": "15.2.3",
+      "TEXT": "15.2.3. Predictive Analytics & Data Science",
+      "TYPE": "SYSTEM",
+      "Description": "Develops and deploys predictive models (e.g., retention risk)."
+    },
+    {
+      "ID": "15.2.4",
+      "TEXT": "15.2.4. Statutory Reporting Support",
+      "TYPE": "SYSTEM",
+      "Description": "Supports the extraction and validation of data for statutory returns."
+    },
+    {
+      "ID": "4.3",
+      "TEXT": "4.3. Manage student residential accommodation",
+      "TYPE": "SYSTEM",
+      "Description": "Processes and administers applications, allocations, contracts, and residential life support."
+    },
+    {
+      "ID": "4.3.1",
+      "TEXT": "4.3.1. Develop the accommodation guarantee and allocation policy",
+      "TYPE": "SYSTEM",
+      "Description": "Defines eligibility, priority criteria, and deadlines for securing university or managed partnership accommodation."
+    },
+    {
+      "ID": "4.3.2",
+      "TEXT": "4.3.2. Process accommodation applications and preferences",
+      "TYPE": "SYSTEM",
+      "Description": "Handles the application process, manages student room and flat preferences, and addresses specific requirements."
+    },
+    {
+      "ID": "4.3.3",
+      "TEXT": "4.3.3. Allocate rooms and manage occupancy",
+      "TYPE": "SYSTEM",
+      "Description": "Executes the allocation process, issues room offers, manages the contract signing/acceptance, and oversees check-in/check-out procedures."
+    },
+    {
+      "ID": "4.3.4",
+      "TEXT": "4.3.4. Administer residential rents and fees",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the billing and collection of rent payments, including advance deposits, and handles rent adjustments or refunds."
+    },
+    {
+      "ID": "4.3.5",
+      "TEXT": "4.3.5. Deliver residential life support and conduct",
+      "TYPE": "SYSTEM",
+      "Description": "Manages community standards, resident well-being, disciplinary issues, and out-of-hours support in residences."
+    },
+    {
+      "ID": "7.3",
+      "TEXT": "7.3. Manage the academic timetable",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the annual cycle for planning, building, publishing, and maintaining the academic teaching timetable."
+    },
+    {
+      "ID": "7.3.1",
+      "TEXT": "7.3.1. Define the annual timetabling cycle",
+      "TYPE": "SYSTEM",
+      "Description": "Sets the schedule for data collection, amendment periods, and draft/final publication dates for the academic year."
+    },
+    {
+      "ID": "7.3.2",
+      "TEXT": "7.3.2. Collect teaching requirements",
+      "TYPE": "SYSTEM",
+      "Description": "Gathers course, module, staff, and essential space data from academic departments for scheduling."
+    },
+    {
+      "ID": "7.3.3",
+      "TEXT": "7.3.3. Optimise room and space utilisation",
+      "TYPE": "SYSTEM",
+      "Description": "Uses scheduling algorithms to efficiently allocate teaching rooms, manage capacity, and monitor space usage against strategic KPIs."
+    },
+    {
+      "ID": "7.3.4",
+      "TEXT": "7.3.4. Verify and resolve timetable conflicts",
+      "TYPE": "SYSTEM",
+      "Description": "Runs clash-checking procedures to eliminate conflicts between student enrollments, staff constraints, and module requirements."
+    },
+    {
+      "ID": "7.3.5",
+      "TEXT": "7.3.5. Publish and communicate timetables",
+      "TYPE": "SYSTEM",
+      "Description": "Distributes final, personalized timetables to students and staff via online platforms."
+    },
+    {
+      "ID": "7.3.6",
+      "TEXT": "7.3.6. Govern post-publication changes",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the process for approving and communicating necessary timetable amendments during the teaching term."
+    },
+    {
+      "ID": "9.5",
+      "TEXT": "9.5. Govern student employability and placements",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the development of student skills, sourcing of placement opportunities, and compliance/risk for work experience."
+    },
+    {
+      "ID": "9.5.1",
+      "TEXT": "9.5.1. Develop student careers and skills programmes",
+      "TYPE": "SYSTEM",
+      "Description": "Designs and delivers workshops, modules, and resources to enhance professional development and commercial awareness."
+    },
+    {
+      "ID": "9.5.2",
+      "TEXT": "9.5.2. Source and manage work placement opportunities",
+      "TYPE": "SYSTEM",
+      "Description": "Establishes and maintains relationships with industry employers, secures placement roles, and manages exclusive placement job boards."
+    },
+    {
+      "ID": "9.5.3",
+      "TEXT": "9.5.3. Approve and accredit placement activity",
+      "TYPE": "SYSTEM",
+      "Description": "Defines the eligibility criteria and minimum standards for placements and formally approves them for degree credit."
+    },
+    {
+      "ID": "9.5.4",
+      "TEXT": "9.5.4. Manage placement compliance and risk",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures safeguarding, completes risk assessments (e.g., Health & Safety), and maintains a full audit trail of compliance documentation."
+    },
+    {
+      "ID": "9.5.5",
+      "TEXT": "9.5.5. Provide in-placement student support",
+      "TYPE": "SYSTEM",
+      "Description": "Offers ongoing support, guidance, and monitoring to students while they are on placement to ensure success and address issues."
+    },
+    {
+      "ID": "10.5",
+      "TEXT": "10.5. Manage academic careers and tracks",
+      "TYPE": "SYSTEM",
+      "Description": "Defines and administers the career pathways for academic, teaching, and research staff."
+    },
+    {
+      "ID": "10.5.1",
+      "TEXT": "10.5.1. Define academic career tracks",
+      "TYPE": "SYSTEM",
+      "Description": "Establishes distinct pathways for staff, such as Teaching & Research, Research-Only, and Teaching & Scholarship."
+    },
+    {
+      "ID": "10.5.2",
+      "TEXT": "10.5.2. Govern the academic promotion process",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the annual cycle for assessing and approving promotions based on defined academic criteria and contribution pillars."
+    },
+    {
+      "ID": "10.5.3",
+      "TEXT": "10.5.3. Define and assess contribution pillars",
+      "TYPE": "SYSTEM",
+      "Description": "Establishes the metrics and evidence required for core areas like Research, Education, and Engagement/Impact at each grade level."
+    },
+    {
+      "ID": "10.5.4",
+      "TEXT": "10.5.4. Ensure equity in academic review",
+      "TYPE": "SYSTEM",
+      "Description": "Applies policies for Equality, Diversity, and Inclusion (EDI), and formally considers personal circumstances in career progression reviews."
+    },
+    {
+      "ID": "10.6",
+      "TEXT": "10.6. Perform academic workload planning",
+      "TYPE": "SYSTEM",
+      "Description": "Allocates teaching, research, and administrative duties to academic staff based on institutional models and equity principles."
+    },
+    {
+      "ID": "12.3",
+      "TEXT": "12.3. Manage the strategic estate portfolio",
+      "TYPE": "SYSTEM",
+      "Description": "Develops the long-term estate strategy, manages space allocation, and tracks performance across the property portfolio."
+    },
+    {
+      "ID": "12.3.1",
+      "TEXT": "12.3.1. Develop the Estate Strategy",
+      "TYPE": "SYSTEM",
+      "Description": "Creates and updates the strategic plan for the physical estate, aligning it with institutional academic and research objectives."
+    },
+    {
+      "ID": "12.3.2",
+      "TEXT": "12.3.2. Govern space allocation",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the process for allocating space to academic and professional services departments based on needs and strategic priorities."
+    },
+    {
+      "ID": "12.3.3",
+      "TEXT": "12.3.3. Monitor space performance and utilisation",
+      "TYPE": "SYSTEM",
+      "Description": "Collects and reports on space utilisation metrics (e.g., HESA EMR data submission)."
+    },
+    {
+      "ID": "12.3.4",
+      "TEXT": "12.3.4. Administer space change requests",
+      "TYPE": "SYSTEM",
+      "Description": "Processes requests from departments to acquire, reconfigure, or release space, including financial impact assessment."
+    },
+    {
+      "ID": "12.4",
+      "TEXT": "12.4. Deliver capital projects",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the end-to-end lifecycle for major new builds, extensions, and strategic refurbishment programmes."
+    },
+    {
+      "ID": "12.4.1",
+      "TEXT": "12.4.1. Define project feasibility",
+      "TYPE": "SYSTEM",
+      "Description": "Conducts initial client briefing, pre-feasibility studies, and cost estimations for proposed capital works."
+    },
+    {
+      "ID": "12.4.2",
+      "TEXT": "12.4.2. Design and plan projects",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the design process, including town planning approvals, environmental assessments, and detailed technical design."
+    },
+    {
+      "ID": "12.4.3",
+      "TEXT": "12.4.3. Manage project procurement and contracts",
+      "TYPE": "SYSTEM",
+      "Description": "Selects design teams and main contractors, manages the tendering process, and administers contracts."
+    },
+    {
+      "ID": "12.4.4",
+      "TEXT": "12.4.4. Oversee construction and delivery",
+      "TYPE": "SYSTEM",
+      "Description": "Manages site safety, construction phases, budget control, and risk management through to practical completion."
+    },
+    {
+      "ID": "12.4.5",
+      "TEXT": "12.4.5. Conduct post-project evaluation",
+      "TYPE": "SYSTEM",
+      "Description": "Performs final financial close-out, project review, and post-occupancy evaluation."
+    },
+    {
+      "ID": "13.1",
+      "TEXT": "13.1. Manage collections and resources",
+      "TYPE": "SYSTEM",
+      "Description": "Acquires, manages access to, and maintains the institution's content, prioritising digital resources."
+    },
+    {
+      "ID": "13.1.1",
+      "TEXT": "13.1.1. Develop the content acquisition strategy",
+      "TYPE": "SYSTEM",
+      "Description": "Defines the strategy for acquiring content, prioritising digital resources and promoting open access."
+    },
+    {
+      "ID": "13.1.2",
+      "TEXT": "13.1.2. Acquire and license content",
+      "TYPE": "SYSTEM",
+      "Description": "Manages procurement, licensing, and access for physical and digital resources (e.g., \"big deals\" and PDA)."
+    },
+    {
+      "ID": "13.1.3",
+      "TEXT": "13.1.3. Curate and preserve digital assets",
+      "TYPE": "SYSTEM",
+      "Description": "Develops and executes a digital preservation strategy to ensure long-term accessibility of e-content and institutional collections."
+    },
+    {
+      "ID": "13.1.4",
+      "TEXT": "13.1.4. Administer discovery and access systems",
+      "TYPE": "SYSTEM",
+      "Description": "Maintains systems (e.g., catalogues, search layers) to enable seamless user discovery and authentication to licensed resources."
+    },
+    {
+      "ID": "13.4",
+      "TEXT": "13.4. Enable research data and open access",
+      "TYPE": "SYSTEM",
+      "Description": "Provides services and infrastructure to support researchers in managing, sharing, and preserving their data and publications."
+    },
+    {
+      "ID": "13.4.1",
+      "TEXT": "13.4.1. Provide research data management support",
+      "TYPE": "SYSTEM",
+      "Description": "Offers guidance and infrastructure (e.g., repositories) for researchers to manage, store, and preserve their data throughout the research lifecycle."
+    },
+    {
+      "ID": "13.4.2",
+      "TEXT": "13.4.2. Support open access compliance",
+      "TYPE": "SYSTEM",
+      "Description": "Manages processes and funding to ensure research outputs are made openly available in line with funder and institutional policies."
+    },
+    {
+      "ID": "13.4.3",
+      "TEXT": "13.4.3. Manage the institutional repository",
+      "TYPE": "SYSTEM",
+      "Description": "Operates and maintains the platform for capturing, archiving, and disseminating the institution's research outputs and doctoral theses."
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "1-1.1",
+      "FROMID": "1",
+      "TOID": "1.1",
+      "TYPE": "->",
+      "From": "1. STUDENT LIFECYCLE MANAGEMENT",
+      "To": "1.1. Admissions & Application Management"
+    },
+    {
+      "ID": "1.1-1.1.1",
+      "FROMID": "1.1",
+      "TOID": "1.1.1",
+      "TYPE": "->",
+      "From": "1.1. Admissions & Application Management",
+      "To": "1.1.1. Applicant Profile Management"
+    },
+    {
+      "ID": "1.1.1-1.1.1.1",
+      "FROMID": "1.1.1",
+      "TOID": "1.1.1.1",
+      "TYPE": "->",
+      "From": "1.1.1. Applicant Profile Management",
+      "To": "1.1.1.1. Personal Data Capture"
+    },
+    {
+      "ID": "1.1.1-1.1.1.2",
+      "FROMID": "1.1.1",
+      "TOID": "1.1.1.2",
+      "TYPE": "->",
+      "From": "1.1.1. Applicant Profile Management",
+      "To": "1.1.1.2. Identity Evidence Management"
+    },
+    {
+      "ID": "1.1.1-1.1.1.3",
+      "FROMID": "1.1.1",
+      "TOID": "1.1.1.3",
+      "TYPE": "->",
+      "From": "1.1.1. Applicant Profile Management",
+      "To": "1.1.1.3. Application History Tracking"
+    },
+    {
+      "ID": "1.1.1.3-1.1.1.3.1",
+      "FROMID": "1.1.1.3",
+      "TOID": "1.1.1.3.1",
+      "TYPE": "->",
+      "From": "1.1.1.3. Application History Tracking",
+      "To": "1.1.1.3.1. Prior Qualification Verification"
+    },
+    {
+      "ID": "1.1.1.3-1.1.1.3.2",
+      "FROMID": "1.1.1.3",
+      "TOID": "1.1.1.3.2",
+      "TYPE": "->",
+      "From": "1.1.1.3. Application History Tracking",
+      "To": "1.1.1.3.2. Personal Statement Storage"
+    },
+    {
+      "ID": "1.1.1.3-1.1.1.3.3",
+      "FROMID": "1.1.1.3",
+      "TOID": "1.1.1.3.3",
+      "TYPE": "->",
+      "From": "1.1.1.3. Application History Tracking",
+      "To": "1.1.1.3.3. Reference/Recommendation Capture"
+    },
+    {
+      "ID": "1.1-1.1.2",
+      "FROMID": "1.1",
+      "TOID": "1.1.2",
+      "TYPE": "->",
+      "From": "1.1. Admissions & Application Management",
+      "To": "1.1.2. Entry Requirements Evaluation"
+    },
+    {
+      "ID": "1.1-1.1.3",
+      "FROMID": "1.1",
+      "TOID": "1.1.3",
+      "TYPE": "->",
+      "From": "1.1. Admissions & Application Management",
+      "To": "1.1.3. Application Data Capture"
+    },
+    {
+      "ID": "1.1-1.1.4",
+      "FROMID": "1.1",
+      "TOID": "1.1.4",
+      "TYPE": "->",
+      "From": "1.1. Admissions & Application Management",
+      "To": "1.1.4. Application Assessment"
+    },
+    {
+      "ID": "1.1-1.1.5",
+      "FROMID": "1.1",
+      "TOID": "1.1.5",
+      "TYPE": "->",
+      "From": "1.1. Admissions & Application Management",
+      "To": "1.1.5. Offer Creation & Management"
+    },
+    {
+      "ID": "1.1.5-1.1.5.1",
+      "FROMID": "1.1.5",
+      "TOID": "1.1.5.1",
+      "TYPE": "->",
+      "From": "1.1.5. Offer Creation & Management",
+      "To": "1.1.5.1. Conditional Offer Parameter Definition"
+    },
+    {
+      "ID": "1.1.5-1.1.5.2",
+      "FROMID": "1.1.5",
+      "TOID": "1.1.5.2",
+      "TYPE": "->",
+      "From": "1.1.5. Offer Creation & Management",
+      "To": "1.1.5.2. Unconditional Offer Issuance"
+    },
+    {
+      "ID": "1.1.5-1.1.5.3",
+      "FROMID": "1.1.5",
+      "TOID": "1.1.5.3",
+      "TYPE": "->",
+      "From": "1.1.5. Offer Creation & Management",
+      "To": "1.1.5.3. Offer Acceptance Tracking"
+    },
+    {
+      "ID": "1.1.5.3-1.1.5.3.1",
+      "FROMID": "1.1.5.3",
+      "TOID": "1.1.5.3.1",
+      "TYPE": "->",
+      "From": "1.1.5.3. Offer Acceptance Tracking",
+      "To": "1.1.5.3.1. Deposit Management"
+    },
+    {
+      "ID": "1.1.5.3-1.1.5.3.2",
+      "FROMID": "1.1.5.3",
+      "TOID": "1.1.5.3.2",
+      "TYPE": "->",
+      "From": "1.1.5.3. Offer Acceptance Tracking",
+      "To": "1.1.5.3.2. CAS (Confirmation of Acceptance) Readiness Tracking"
+    },
+    {
+      "ID": "1.1.5.3-1.1.5.3.3",
+      "FROMID": "1.1.5.3",
+      "TOID": "1.1.5.3.3",
+      "TYPE": "->",
+      "From": "1.1.5.3. Offer Acceptance Tracking",
+      "To": "1.1.5.3.3. Offer Withdrawal Rules Management"
+    },
+    {
+      "ID": "1.1-1.1.6",
+      "FROMID": "1.1",
+      "TOID": "1.1.6",
+      "TYPE": "->",
+      "From": "1.1. Admissions & Application Management",
+      "To": "1.1.6. Applicant Communication Management"
+    },
+    {
+      "ID": "1.1-1.1.7",
+      "FROMID": "1.1",
+      "TOID": "1.1.7",
+      "TYPE": "->",
+      "From": "1.1. Admissions & Application Management",
+      "To": "1.1.7. Admission Decision Governance"
+    },
+    {
+      "ID": "1.1-1.1.8",
+      "FROMID": "1.1",
+      "TOID": "1.1.8",
+      "TYPE": "->",
+      "From": "1.1. Admissions & Application Management",
+      "To": "1.1.8. Conditional Offer Compliance Validation"
+    },
+    {
+      "ID": "1.1-1.1.9",
+      "FROMID": "1.1",
+      "TOID": "1.1.9",
+      "TYPE": "->",
+      "From": "1.1. Admissions & Application Management",
+      "To": "1.1.9. Admissions Document Management"
+    },
+    {
+      "ID": "1-1.2",
+      "FROMID": "1",
+      "TOID": "1.2",
+      "TYPE": "->",
+      "From": "1. STUDENT LIFECYCLE MANAGEMENT",
+      "To": "1.2. New-Student Onboarding & Registration"
+    },
+    {
+      "ID": "1.2-1.2.1",
+      "FROMID": "1.2",
+      "TOID": "1.2.1",
+      "TYPE": "->",
+      "From": "1.2. New-Student Onboarding & Registration",
+      "To": "1.2.1. Identity Verification"
+    },
+    {
+      "ID": "1.2.1-1.2.1.1",
+      "FROMID": "1.2.1",
+      "TOID": "1.2.1.1",
+      "TYPE": "->",
+      "From": "1.2.1. Identity Verification",
+      "To": "1.2.1.1. Photo Verification"
+    },
+    {
+      "ID": "1.2.1-1.2.1.2",
+      "FROMID": "1.2.1",
+      "TOID": "1.2.1.2",
+      "TYPE": "->",
+      "From": "1.2.1. Identity Verification",
+      "To": "1.2.1.2. Document Verification"
+    },
+    {
+      "ID": "1.2.1.2-1.2.1.2.1",
+      "FROMID": "1.2.1.2",
+      "TOID": "1.2.1.2.1",
+      "TYPE": "->",
+      "From": "1.2.1.2. Document Verification",
+      "To": "1.2.1.2.1. Passport/ID Validation"
+    },
+    {
+      "ID": "1.2.1.2-1.2.1.2.2",
+      "FROMID": "1.2.1.2",
+      "TOID": "1.2.1.2.2",
+      "TYPE": "->",
+      "From": "1.2.1.2. Document Verification",
+      "To": "1.2.1.2.2. Visa Validation (if required)"
+    },
+    {
+      "ID": "1.2-1.2.2",
+      "FROMID": "1.2",
+      "TOID": "1.2.2",
+      "TYPE": "->",
+      "From": "1.2. New-Student Onboarding & Registration",
+      "To": "1.2.2. Registration Status Management"
+    },
+    {
+      "ID": "1.2-1.2.3",
+      "FROMID": "1.2",
+      "TOID": "1.2.3",
+      "TYPE": "->",
+      "From": "1.2. New-Student Onboarding & Registration",
+      "To": "1.2.3. Documentation Collection"
+    },
+    {
+      "ID": "1.2-1.2.4",
+      "FROMID": "1.2",
+      "TOID": "1.2.4",
+      "TYPE": "->",
+      "From": "1.2. New-Student Onboarding & Registration",
+      "To": "1.2.4. Induction Management"
+    },
+    {
+      "ID": "1.2.4-1.2.4.1",
+      "FROMID": "1.2.4",
+      "TOID": "1.2.4.1",
+      "TYPE": "->",
+      "From": "1.2.4. Induction Management",
+      "To": "1.2.4.1. Induction Programme Definition"
+    },
+    {
+      "ID": "1.2.4-1.2.4.2",
+      "FROMID": "1.2.4",
+      "TOID": "1.2.4.2",
+      "TYPE": "->",
+      "From": "1.2.4. Induction Management",
+      "To": "1.2.4.2. Orientation Session Scheduling"
+    },
+    {
+      "ID": "1.2.4.2-1.2.4.2.1",
+      "FROMID": "1.2.4.2",
+      "TOID": "1.2.4.2.1",
+      "TYPE": "->",
+      "From": "1.2.4.2. Orientation Session Scheduling",
+      "To": "1.2.4.2.1. Academic Induction Content Management"
+    },
+    {
+      "ID": "1.2.4.2-1.2.4.2.2",
+      "FROMID": "1.2.4.2",
+      "TOID": "1.2.4.2.2",
+      "TYPE": "->",
+      "From": "1.2.4.2. Orientation Session Scheduling",
+      "To": "1.2.4.2.2. Welcome Event Coordination"
+    },
+    {
+      "ID": "1.2.4.2-1.2.4.2.3",
+      "FROMID": "1.2.4.2",
+      "TOID": "1.2.4.2.3",
+      "TYPE": "->",
+      "From": "1.2.4.2. Orientation Session Scheduling",
+      "To": "1.2.4.2.3. Safety/Wellbeing Briefing Provision"
+    },
+    {
+      "ID": "1.2-1.2.5",
+      "FROMID": "1.2",
+      "TOID": "1.2.5",
+      "TYPE": "->",
+      "From": "1.2. New-Student Onboarding & Registration",
+      "To": "1.2.5. Student Finance Eligibility Confirmation"
+    },
+    {
+      "ID": "1.2-1.2.6",
+      "FROMID": "1.2",
+      "TOID": "1.2.6",
+      "TYPE": "->",
+      "From": "1.2. New-Student Onboarding & Registration",
+      "To": "1.2.6. Pre-arrival Compliance Checks"
+    },
+    {
+      "ID": "1-1.3",
+      "FROMID": "1",
+      "TOID": "1.3",
+      "TYPE": "->",
+      "From": "1. STUDENT LIFECYCLE MANAGEMENT",
+      "To": "1.3. Enrolment & Programme Administration"
+    },
+    {
+      "ID": "1.3-1.3.1",
+      "FROMID": "1.3",
+      "TOID": "1.3.1",
+      "TYPE": "->",
+      "From": "1.3. Enrolment & Programme Administration",
+      "To": "1.3.1. Module Selection Enablement"
+    },
+    {
+      "ID": "1.3.1-1.3.1.1",
+      "FROMID": "1.3.1",
+      "TOID": "1.3.1.1",
+      "TYPE": "->",
+      "From": "1.3.1. Module Selection Enablement",
+      "To": "1.3.1.1. Module Availability Publication"
+    },
+    {
+      "ID": "1.3.1-1.3.1.2",
+      "FROMID": "1.3.1",
+      "TOID": "1.3.1.2",
+      "TYPE": "->",
+      "From": "1.3.1. Module Selection Enablement",
+      "To": "1.3.1.2. Enrolment Rule Enforcement"
+    },
+    {
+      "ID": "1.3.1.2-1.3.1.2.1",
+      "FROMID": "1.3.1.2",
+      "TOID": "1.3.1.2.1",
+      "TYPE": "->",
+      "From": "1.3.1.2. Enrolment Rule Enforcement",
+      "To": "1.3.1.2.1. Capacity Constraint Application"
+    },
+    {
+      "ID": "1.3.1.2-1.3.1.2.2",
+      "FROMID": "1.3.1.2",
+      "TOID": "1.3.1.2.2",
+      "TYPE": "->",
+      "From": "1.3.1.2. Enrolment Rule Enforcement",
+      "To": "1.3.1.2.2. Academic Approval Routing"
+    },
+    {
+      "ID": "1.3.1.2-1.3.1.2.3",
+      "FROMID": "1.3.1.2",
+      "TOID": "1.3.1.2.3",
+      "TYPE": "->",
+      "From": "1.3.1.2. Enrolment Rule Enforcement",
+      "To": "1.3.1.2.3. Preclusion/Clash Detection"
+    },
+    {
+      "ID": "1.3-1.3.2",
+      "FROMID": "1.3",
+      "TOID": "1.3.2",
+      "TYPE": "->",
+      "From": "1.3. Enrolment & Programme Administration",
+      "To": "1.3.2. Programme Enrolment Management"
+    },
+    {
+      "ID": "1.3-1.3.3",
+      "FROMID": "1.3",
+      "TOID": "1.3.3",
+      "TYPE": "->",
+      "From": "1.3. Enrolment & Programme Administration",
+      "To": "1.3.3. Co-requisite / Pre-requisite Validation"
+    },
+    {
+      "ID": "1.3-1.3.4",
+      "FROMID": "1.3",
+      "TOID": "1.3.4",
+      "TYPE": "->",
+      "From": "1.3. Enrolment & Programme Administration",
+      "To": "1.3.4. Student Status Changes"
+    },
+    {
+      "ID": "1.3.4-1.3.4.1",
+      "FROMID": "1.3.4",
+      "TOID": "1.3.4.1",
+      "TYPE": "->",
+      "From": "1.3.4. Student Status Changes",
+      "To": "1.3.4.1. Intermission Management"
+    },
+    {
+      "ID": "1.3.4-1.3.4.2",
+      "FROMID": "1.3.4",
+      "TOID": "1.3.4.2",
+      "TYPE": "->",
+      "From": "1.3.4. Student Status Changes",
+      "To": "1.3.4.2. Transfer Management"
+    },
+    {
+      "ID": "1.3.4.2-1.3.4.2.1",
+      "FROMID": "1.3.4.2",
+      "TOID": "1.3.4.2.1",
+      "TYPE": "->",
+      "From": "1.3.4.2. Transfer Management",
+      "To": "1.3.4.2.1. Eligibility Validation"
+    },
+    {
+      "ID": "1.3.4.2-1.3.4.2.2",
+      "FROMID": "1.3.4.2",
+      "TOID": "1.3.4.2.2",
+      "TYPE": "->",
+      "From": "1.3.4.2. Transfer Management",
+      "To": "1.3.4.2.2. Financial Impact Assessment"
+    },
+    {
+      "ID": "1.3.4.2-1.3.4.2.3",
+      "FROMID": "1.3.4.2",
+      "TOID": "1.3.4.2.3",
+      "TYPE": "->",
+      "From": "1.3.4.2. Transfer Management",
+      "To": "1.3.4.2.3. Visa Impact Assessment"
+    },
+    {
+      "ID": "1.3-1.3.5",
+      "FROMID": "1.3",
+      "TOID": "1.3.5",
+      "TYPE": "->",
+      "From": "1.3. Enrolment & Programme Administration",
+      "To": "1.3.5. Attendance & Engagement Tracking"
+    },
+    {
+      "ID": "1-1.4",
+      "FROMID": "1",
+      "TOID": "1.4",
+      "TYPE": "->",
+      "From": "1. STUDENT LIFECYCLE MANAGEMENT",
+      "To": "1.4. Progression & Graduation"
+    },
+    {
+      "ID": "1.4-1.4.1",
+      "FROMID": "1.4",
+      "TOID": "1.4.1",
+      "TYPE": "->",
+      "From": "1.4. Progression & Graduation",
+      "To": "1.4.1. Progression Rules Management"
+    },
+    {
+      "ID": "1.4.1-1.4.1.1",
+      "FROMID": "1.4.1",
+      "TOID": "1.4.1.1",
+      "TYPE": "->",
+      "From": "1.4.1. Progression Rules Management",
+      "To": "1.4.1.1. Progression Criteria Configuration"
+    },
+    {
+      "ID": "1.4.1.1-1.4.1.1.1",
+      "FROMID": "1.4.1.1",
+      "TOID": "1.4.1.1.1",
+      "TYPE": "->",
+      "From": "1.4.1.1. Progression Criteria Configuration",
+      "To": "1.4.1.1.1. Credit Requirements Definition"
+    },
+    {
+      "ID": "1.4.1.1-1.4.1.1.2",
+      "FROMID": "1.4.1.1",
+      "TOID": "1.4.1.1.2",
+      "TYPE": "->",
+      "From": "1.4.1.1. Progression Criteria Configuration",
+      "To": "1.4.1.1.2. Failed Module Handling Rules"
+    },
+    {
+      "ID": "1.4.1.1-1.4.1.1.3",
+      "FROMID": "1.4.1.1",
+      "TOID": "1.4.1.1.3",
+      "TYPE": "->",
+      "From": "1.4.1.1. Progression Criteria Configuration",
+      "To": "1.4.1.1.3. Compensatable Grade Rules"
+    },
+    {
+      "ID": "1.4-1.4.2",
+      "FROMID": "1.4",
+      "TOID": "1.4.2",
+      "TYPE": "->",
+      "From": "1.4. Progression & Graduation",
+      "To": "1.4.2. Board of Studies/Examiners Governance"
+    },
+    {
+      "ID": "1.4-1.4.3",
+      "FROMID": "1.4",
+      "TOID": "1.4.3",
+      "TYPE": "->",
+      "From": "1.4. Progression & Graduation",
+      "To": "1.4.3. Eligibility Check Automation"
+    },
+    {
+      "ID": "1.4-1.4.4",
+      "FROMID": "1.4",
+      "TOID": "1.4.4",
+      "TYPE": "->",
+      "From": "1.4. Progression & Graduation",
+      "To": "1.4.4. Award Classification Management"
+    },
+    {
+      "ID": "1.4.4-1.4.4.1",
+      "FROMID": "1.4.4",
+      "TOID": "1.4.4.1",
+      "TYPE": "->",
+      "From": "1.4.4. Award Classification Management",
+      "To": "1.4.4.1. Classification Algorithm Configuration"
+    },
+    {
+      "ID": "1.4.4.1-1.4.4.1.1",
+      "FROMID": "1.4.4.1",
+      "TOID": "1.4.4.1.1",
+      "TYPE": "->",
+      "From": "1.4.4.1. Classification Algorithm Configuration",
+      "To": "1.4.4.1.1. Weighted Averaging Rules"
+    },
+    {
+      "ID": "1.4.4.1-1.4.4.1.2",
+      "FROMID": "1.4.4.1",
+      "TOID": "1.4.4.1.2",
+      "TYPE": "->",
+      "From": "1.4.4.1. Classification Algorithm Configuration",
+      "To": "1.4.4.1.2. Borderline Review Rules"
+    },
+    {
+      "ID": "1.4.4.1-1.4.4.1.3",
+      "FROMID": "1.4.4.1",
+      "TOID": "1.4.4.1.3",
+      "TYPE": "->",
+      "From": "1.4.4.1. Classification Algorithm Configuration",
+      "To": "1.4.4.1.3. Exceptional Case Overrides"
+    },
+    {
+      "ID": "1.4-1.4.5",
+      "FROMID": "1.4",
+      "TOID": "1.4.5",
+      "TYPE": "->",
+      "From": "1.4. Progression & Graduation",
+      "To": "1.4.5. Graduation Ceremony Management"
+    },
+    {
+      "ID": "2-2.1",
+      "FROMID": "2",
+      "TOID": "2.1",
+      "TYPE": "->",
+      "From": "2. ASSESSMENT & ACADEMIC PROCESS MANAGEMENT",
+      "To": "2.1. Assessment Design & Configuration"
+    },
+    {
+      "ID": "2.1-2.1.1",
+      "FROMID": "2.1",
+      "TOID": "2.1.1",
+      "TYPE": "->",
+      "From": "2.1. Assessment Design & Configuration",
+      "To": "2.1.1. Assessment Definition & Taxonomy"
+    },
+    {
+      "ID": "2.1.1-2.1.1.1",
+      "FROMID": "2.1.1",
+      "TOID": "2.1.1.1",
+      "TYPE": "->",
+      "From": "2.1.1. Assessment Definition & Taxonomy",
+      "To": "2.1.1.1. Assessment Type Definition"
+    },
+    {
+      "ID": "2.1.1.1-2.1.1.1.1",
+      "FROMID": "2.1.1.1",
+      "TOID": "2.1.1.1.1",
+      "TYPE": "->",
+      "From": "2.1.1.1. Assessment Type Definition",
+      "To": "2.1.1.1.1. Written / Practical / Presentation / Exam Types"
+    },
+    {
+      "ID": "2.1.1-2.1.1.2",
+      "FROMID": "2.1.1",
+      "TOID": "2.1.1.2",
+      "TYPE": "->",
+      "From": "2.1.1. Assessment Definition & Taxonomy",
+      "To": "2.1.1.2. Assessment Purpose Definition"
+    },
+    {
+      "ID": "2.1.1.2-2.1.1.2.1",
+      "FROMID": "2.1.1.2",
+      "TOID": "2.1.1.2.1",
+      "TYPE": "->",
+      "From": "2.1.1.2. Assessment Purpose Definition",
+      "To": "2.1.1.2.1. Formative / Summative Parameters"
+    },
+    {
+      "ID": "2.1.1-2.1.1.3",
+      "FROMID": "2.1.1",
+      "TOID": "2.1.1.3",
+      "TYPE": "->",
+      "From": "2.1.1. Assessment Definition & Taxonomy",
+      "To": "2.1.1.3. Assessment Attempt Definition"
+    },
+    {
+      "ID": "2.1.1.3-2.1.1.3.1",
+      "FROMID": "2.1.1.3",
+      "TOID": "2.1.1.3.1",
+      "TYPE": "->",
+      "From": "2.1.1.3. Assessment Attempt Definition",
+      "To": "2.1.1.3.1. First Sit / Resit Rules"
+    },
+    {
+      "ID": "2.1-2.1.2",
+      "FROMID": "2.1",
+      "TOID": "2.1.2",
+      "TYPE": "->",
+      "From": "2.1. Assessment Design & Configuration",
+      "To": "2.1.2. Assessment Weighting Management"
+    },
+    {
+      "ID": "2.1-2.1.3",
+      "FROMID": "2.1",
+      "TOID": "2.1.3",
+      "TYPE": "->",
+      "From": "2.1. Assessment Design & Configuration",
+      "To": "2.1.3. Assessment Timing & Scheduling"
+    },
+    {
+      "ID": "2.1-2.1.4",
+      "FROMID": "2.1",
+      "TOID": "2.1.4",
+      "TYPE": "->",
+      "From": "2.1. Assessment Design & Configuration",
+      "To": "2.1.4. Rubric & Criteria Definition"
+    },
+    {
+      "ID": "2.1-2.1.5",
+      "FROMID": "2.1",
+      "TOID": "2.1.5",
+      "TYPE": "->",
+      "From": "2.1. Assessment Design & Configuration",
+      "To": "2.1.5. Assessment Accessibility Configuration"
+    },
+    {
+      "ID": "2-2.2",
+      "FROMID": "2",
+      "TOID": "2.2",
+      "TYPE": "->",
+      "From": "2. ASSESSMENT & ACADEMIC PROCESS MANAGEMENT",
+      "To": "2.2. Submission & Assessment Handling"
+    },
+    {
+      "ID": "2.2-2.2.1",
+      "FROMID": "2.2",
+      "TOID": "2.2.1",
+      "TYPE": "->",
+      "From": "2.2. Submission & Assessment Handling",
+      "To": "2.2.1. Submission Point Creation"
+    },
+    {
+      "ID": "2.2-2.2.2",
+      "FROMID": "2.2",
+      "TOID": "2.2.2",
+      "TYPE": "->",
+      "From": "2.2. Submission & Assessment Handling",
+      "To": "2.2.2. Submission Validation"
+    },
+    {
+      "ID": "2.2.2-2.2.2.1",
+      "FROMID": "2.2.2",
+      "TOID": "2.2.2.1",
+      "TYPE": "->",
+      "From": "2.2.2. Submission Validation",
+      "To": "2.2.2.1. File Format Validation"
+    },
+    {
+      "ID": "2.2.2-2.2.2.2",
+      "FROMID": "2.2.2",
+      "TOID": "2.2.2.2",
+      "TYPE": "->",
+      "From": "2.2.2. Submission Validation",
+      "To": "2.2.2.2. Versioning & Timestamp Management"
+    },
+    {
+      "ID": "2.2.2.2-2.2.2.2.1",
+      "FROMID": "2.2.2.2",
+      "TOID": "2.2.2.2.1",
+      "TYPE": "->",
+      "From": "2.2.2.2. Versioning & Timestamp Management",
+      "To": "2.2.2.2.1. Late Submission Rule Evaluation"
+    },
+    {
+      "ID": "2.2.2.2-2.2.2.2.2",
+      "FROMID": "2.2.2.2",
+      "TOID": "2.2.2.2.2",
+      "TYPE": "->",
+      "From": "2.2.2.2. Versioning & Timestamp Management",
+      "To": "2.2.2.2.2. File Corruption/Unreadable File Detection"
+    },
+    {
+      "ID": "2.2-2.2.3",
+      "FROMID": "2.2",
+      "TOID": "2.2.3",
+      "TYPE": "->",
+      "From": "2.2. Submission & Assessment Handling",
+      "To": "2.2.3. Academic Integrity Detection Enablement"
+    },
+    {
+      "ID": "2.2-2.2.4",
+      "FROMID": "2.2",
+      "TOID": "2.2.4",
+      "TYPE": "->",
+      "From": "2.2. Submission & Assessment Handling",
+      "To": "2.2.4. Submission Receipt Management"
+    },
+    {
+      "ID": "2-2.3",
+      "FROMID": "2",
+      "TOID": "2.3",
+      "TYPE": "->",
+      "From": "2. ASSESSMENT & ACADEMIC PROCESS MANAGEMENT",
+      "To": "2.3. Marking & Feedback Management"
+    },
+    {
+      "ID": "2.3-2.3.1",
+      "FROMID": "2.3",
+      "TOID": "2.3.1",
+      "TYPE": "->",
+      "From": "2.3. Marking & Feedback Management",
+      "To": "2.3.1. Mark Entry Enablement"
+    },
+    {
+      "ID": "2.3-2.3.2",
+      "FROMID": "2.3",
+      "TOID": "2.3.2",
+      "TYPE": "->",
+      "From": "2.3. Marking & Feedback Management",
+      "To": "2.3.2. Anonymous Marking Enablement"
+    },
+    {
+      "ID": "2.3-2.3.3",
+      "FROMID": "2.3",
+      "TOID": "2.3.3",
+      "TYPE": "->",
+      "From": "2.3. Marking & Feedback Management",
+      "To": "2.3.3. Moderation Configuration"
+    },
+    {
+      "ID": "2.3.3-2.3.3.1",
+      "FROMID": "2.3.3",
+      "TOID": "2.3.3.1",
+      "TYPE": "->",
+      "From": "2.3.3. Moderation Configuration",
+      "To": "2.3.3.1. First Mark/Second Mark Assignment"
+    },
+    {
+      "ID": "2.3.3.1-2.3.3.1.1",
+      "FROMID": "2.3.3.1",
+      "TOID": "2.3.3.1.1",
+      "TYPE": "->",
+      "From": "2.3.3.1. First Mark/Second Mark Assignment",
+      "To": "2.3.3.1.1. Discrepancy Threshold Rules"
+    },
+    {
+      "ID": "2.3.3.1-2.3.3.1.2",
+      "FROMID": "2.3.3.1",
+      "TOID": "2.3.3.1.2",
+      "TYPE": "->",
+      "From": "2.3.3.1. First Mark/Second Mark Assignment",
+      "To": "2.3.3.1.2. External Examiner Review Triggers"
+    },
+    {
+      "ID": "2.3-2.3.4",
+      "FROMID": "2.3",
+      "TOID": "2.3.4",
+      "TYPE": "->",
+      "From": "2.3. Marking & Feedback Management",
+      "To": "2.3.4. Feedback Publication Management"
+    },
+    {
+      "ID": "2-2.4",
+      "FROMID": "2",
+      "TOID": "2.4",
+      "TYPE": "->",
+      "From": "2. ASSESSMENT & ACADEMIC PROCESS MANAGEMENT",
+      "To": "2.4. Assessment Resolution & Governance"
+    },
+    {
+      "ID": "2.4-2.4.1",
+      "FROMID": "2.4",
+      "TOID": "2.4.1",
+      "TYPE": "->",
+      "From": "2.4. Assessment Resolution & Governance",
+      "To": "2.4.1. Academic Misconduct Adjudication"
+    },
+    {
+      "ID": "2.4.1-2.4.1.1",
+      "FROMID": "2.4.1",
+      "TOID": "2.4.1.1",
+      "TYPE": "->",
+      "From": "2.4.1. Academic Misconduct Adjudication",
+      "To": "2.4.1.1. Case Evidence Collection"
+    },
+    {
+      "ID": "2.4.1.1-2.4.1.1.1",
+      "FROMID": "2.4.1.1",
+      "TOID": "2.4.1.1.1",
+      "TYPE": "->",
+      "From": "2.4.1.1. Case Evidence Collection",
+      "To": "2.4.1.1.1. Plagiarism Report Capture"
+    },
+    {
+      "ID": "2.4.1.1-2.4.1.1.2",
+      "FROMID": "2.4.1.1",
+      "TOID": "2.4.1.1.2",
+      "TYPE": "->",
+      "From": "2.4.1.1. Case Evidence Collection",
+      "To": "2.4.1.1.2. Witness/Marker Statement Capture"
+    },
+    {
+      "ID": "2.4.1-2.4.1.2",
+      "FROMID": "2.4.1",
+      "TOID": "2.4.1.2",
+      "TYPE": "->",
+      "From": "2.4.1. Academic Misconduct Adjudication",
+      "To": "2.4.1.2. Panel Decision Governance"
+    },
+    {
+      "ID": "2.4.1.2-2.4.1.2.1",
+      "FROMID": "2.4.1.2",
+      "TOID": "2.4.1.2.1",
+      "TYPE": "->",
+      "From": "2.4.1.2. Panel Decision Governance",
+      "To": "2.4.1.2.1. Penalty Band Definition"
+    },
+    {
+      "ID": "2.4.1.2-2.4.1.2.2",
+      "FROMID": "2.4.1.2",
+      "TOID": "2.4.1.2.2",
+      "TYPE": "->",
+      "From": "2.4.1.2. Panel Decision Governance",
+      "To": "2.4.1.2.2. Mitigating Factors Review"
+    },
+    {
+      "ID": "2.4-2.4.2",
+      "FROMID": "2.4",
+      "TOID": "2.4.2",
+      "TYPE": "->",
+      "From": "2.4. Assessment Resolution & Governance",
+      "To": "2.4.2. Appeals Process Enablement"
+    },
+    {
+      "ID": "2.4-2.4.3",
+      "FROMID": "2.4",
+      "TOID": "2.4.3",
+      "TYPE": "->",
+      "From": "2.4. Assessment Resolution & Governance",
+      "To": "2.4.3. Resit/Repeat Eligibility Validation"
+    },
+    {
+      "ID": "2.4-2.4.4",
+      "FROMID": "2.4",
+      "TOID": "2.4.4",
+      "TYPE": "->",
+      "From": "2.4. Assessment Resolution & Governance",
+      "To": "2.4.4. Assessment Data Retention Governance"
+    },
+    {
+      "ID": "3-3.1",
+      "FROMID": "3",
+      "TOID": "3.1",
+      "TYPE": "->",
+      "From": "3. STUDENT SUPPORT & WELFARE",
+      "To": "3.1. Wellbeing & Mental Health Support"
+    },
+    {
+      "ID": "3.1-3.1.1",
+      "FROMID": "3.1",
+      "TOID": "3.1.1",
+      "TYPE": "->",
+      "From": "3.1. Wellbeing & Mental Health Support",
+      "To": "3.1.1. Initial Wellbeing Triage"
+    },
+    {
+      "ID": "3.1-3.1.2",
+      "FROMID": "3.1",
+      "TOID": "3.1.2",
+      "TYPE": "->",
+      "From": "3.1. Wellbeing & Mental Health Support",
+      "To": "3.1.2. Risk Assessment Capability"
+    },
+    {
+      "ID": "3.1.2-3.1.2.1",
+      "FROMID": "3.1.2",
+      "TOID": "3.1.2.1",
+      "TYPE": "->",
+      "From": "3.1.2. Risk Assessment Capability",
+      "To": "3.1.2.1. Risk Categorisation Rules"
+    },
+    {
+      "ID": "3.1.2.1-3.1.2.1.1",
+      "FROMID": "3.1.2.1",
+      "TOID": "3.1.2.1.1",
+      "TYPE": "->",
+      "From": "3.1.2.1. Risk Categorisation Rules",
+      "To": "3.1.2.1.1. Suicidal Ideation Protocol Enablement"
+    },
+    {
+      "ID": "3.1.2.1-3.1.2.1.2",
+      "FROMID": "3.1.2.1",
+      "TOID": "3.1.2.1.2",
+      "TYPE": "->",
+      "From": "3.1.2.1. Risk Categorisation Rules",
+      "To": "3.1.2.1.2. Immediate Safeguarding Trigger Conditions"
+    },
+    {
+      "ID": "3.1-3.1.3",
+      "FROMID": "3.1",
+      "TOID": "3.1.3",
+      "TYPE": "->",
+      "From": "3.1. Wellbeing & Mental Health Support",
+      "To": "3.1.3. Appointment Scheduling Enablement"
+    },
+    {
+      "ID": "3.1-3.1.4",
+      "FROMID": "3.1",
+      "TOID": "3.1.4",
+      "TYPE": "->",
+      "From": "3.1. Wellbeing & Mental Health Support",
+      "To": "3.1.4. Support Plan Management"
+    },
+    {
+      "ID": "3.1-3.1.5",
+      "FROMID": "3.1",
+      "TOID": "3.1.5",
+      "TYPE": "->",
+      "From": "3.1. Wellbeing & Mental Health Support",
+      "To": "3.1.5. Crisis Escalation Enablement"
+    },
+    {
+      "ID": "3-3.2",
+      "FROMID": "3",
+      "TOID": "3.2",
+      "TYPE": "->",
+      "From": "3. STUDENT SUPPORT & WELFARE",
+      "To": "3.2. Disability & Accessibility Support"
+    },
+    {
+      "ID": "3.2-3.2.1",
+      "FROMID": "3.2",
+      "TOID": "3.2.1",
+      "TYPE": "->",
+      "From": "3.2. Disability & Accessibility Support",
+      "To": "3.2.1. Needs Assessment Enablement"
+    },
+    {
+      "ID": "3.2-3.2.2",
+      "FROMID": "3.2",
+      "TOID": "3.2.2",
+      "TYPE": "->",
+      "From": "3.2. Disability & Accessibility Support",
+      "To": "3.2.2. Reasonable Adjustment Planning"
+    },
+    {
+      "ID": "3.2.2-3.2.2.1",
+      "FROMID": "3.2.2",
+      "TOID": "3.2.2.1",
+      "TYPE": "->",
+      "From": "3.2.2. Reasonable Adjustment Planning",
+      "To": "3.2.2.1. Adjustment Type Definition"
+    },
+    {
+      "ID": "3.2.2.1-3.2.2.1.1",
+      "FROMID": "3.2.2.1",
+      "TOID": "3.2.2.1.1",
+      "TYPE": "->",
+      "From": "3.2.2.1. Adjustment Type Definition",
+      "To": "3.2.2.1.1. Extra Time Config"
+    },
+    {
+      "ID": "3.2.2.1-3.2.2.1.2",
+      "FROMID": "3.2.2.1",
+      "TOID": "3.2.2.1.2",
+      "TYPE": "->",
+      "From": "3.2.2.1. Adjustment Type Definition",
+      "To": "3.2.2.1.2. Equipment / Software Provision"
+    },
+    {
+      "ID": "3.2-3.2.3",
+      "FROMID": "3.2",
+      "TOID": "3.2.3",
+      "TYPE": "->",
+      "From": "3.2. Disability & Accessibility Support",
+      "To": "3.2.3. Assistive Technology Management"
+    },
+    {
+      "ID": "3.2-3.2.4",
+      "FROMID": "3.2",
+      "TOID": "3.2.4",
+      "TYPE": "->",
+      "From": "3.2. Disability & Accessibility Support",
+      "To": "3.2.4. Accessibility Compliance Monitoring"
+    },
+    {
+      "ID": "3-3.3",
+      "FROMID": "3",
+      "TOID": "3.3",
+      "TYPE": "->",
+      "From": "3. STUDENT SUPPORT & WELFARE",
+      "To": "3.3. Mitigating Circumstances & Academic Casework"
+    },
+    {
+      "ID": "3.3-3.3.1",
+      "FROMID": "3.3",
+      "TOID": "3.3.1",
+      "TYPE": "->",
+      "From": "3.3. Mitigating Circumstances & Academic Casework",
+      "To": "3.3.1. Mitigating Circumstances Application"
+    },
+    {
+      "ID": "3.3.1-3.3.1.1",
+      "FROMID": "3.3.1",
+      "TOID": "3.3.1.1",
+      "TYPE": "->",
+      "From": "3.3.1. Mitigating Circumstances Application",
+      "To": "3.3.1.1. Evidence Submission & Validation"
+    },
+    {
+      "ID": "3.3.1-3.3.1.2",
+      "FROMID": "3.3.1",
+      "TOID": "3.3.1.2",
+      "TYPE": "->",
+      "From": "3.3.1. Mitigating Circumstances Application",
+      "To": "3.3.1.2. Condonement / Deferral Decision Rules"
+    },
+    {
+      "ID": "3.3-3.3.2",
+      "FROMID": "3.3",
+      "TOID": "3.3.2",
+      "TYPE": "->",
+      "From": "3.3. Mitigating Circumstances & Academic Casework",
+      "To": "3.3.2. Student Case Management"
+    },
+    {
+      "ID": "3.3.2-3.3.2.1",
+      "FROMID": "3.3.2",
+      "TOID": "3.3.2.1",
+      "TYPE": "->",
+      "From": "3.3.2. Student Case Management",
+      "To": "3.3.2.1. Disciplinary Casework"
+    },
+    {
+      "ID": "3.3.2.1-3.3.2.1.1",
+      "FROMID": "3.3.2.1",
+      "TOID": "3.3.2.1.1",
+      "TYPE": "->",
+      "From": "3.3.2.1. Disciplinary Casework",
+      "To": "3.3.2.1.1. Hearing & Review Scheduling"
+    },
+    {
+      "ID": "3.3.2-3.3.2.2",
+      "FROMID": "3.3.2",
+      "TOID": "3.3.2.2",
+      "TYPE": "->",
+      "From": "3.3.2. Student Case Management",
+      "To": "3.3.2.2. Fitness to Study Process"
+    },
+    {
+      "ID": "3-3.4",
+      "FROMID": "3",
+      "TOID": "3.4",
+      "TYPE": "->",
+      "From": "3. STUDENT SUPPORT & WELFARE",
+      "To": "3.4. Immigration & Visa Compliance"
+    },
+    {
+      "ID": "3.4-3.4.1",
+      "FROMID": "3.4",
+      "TOID": "3.4.1",
+      "TYPE": "->",
+      "From": "3.4. Immigration & Visa Compliance",
+      "To": "3.4.1. Student Visa Advice Provision"
+    },
+    {
+      "ID": "3.4-3.4.2",
+      "FROMID": "3.4",
+      "TOID": "3.4.2",
+      "TYPE": "->",
+      "From": "3.4. Immigration & Visa Compliance",
+      "To": "3.4.2. Institutional Compliance Management (Sponsor)"
+    },
+    {
+      "ID": "3.4.2-3.4.2.1",
+      "FROMID": "3.4.2",
+      "TOID": "3.4.2.1",
+      "TYPE": "->",
+      "From": "3.4.2. Institutional Compliance Management (Sponsor)",
+      "To": "3.4.2.1. CAS Issuance & Tracking"
+    },
+    {
+      "ID": "3.4.2-3.4.2.2",
+      "FROMID": "3.4.2",
+      "TOID": "3.4.2.2",
+      "TYPE": "->",
+      "From": "3.4.2. Institutional Compliance Management (Sponsor)",
+      "To": "3.4.2.2. Engagement Monitoring"
+    },
+    {
+      "ID": "3.4.2-3.4.2.3",
+      "FROMID": "3.4.2",
+      "TOID": "3.4.2.3",
+      "TYPE": "->",
+      "From": "3.4.2. Institutional Compliance Management (Sponsor)",
+      "To": "3.4.2.3. Compliance Record Keeping"
+    },
+    {
+      "ID": "4-4.1",
+      "FROMID": "4",
+      "TOID": "4.1",
+      "TYPE": "->",
+      "From": "4. STUDENT EXPERIENCE & ENGAGEMENT",
+      "To": "4.1. Student Communication & CRM"
+    },
+    {
+      "ID": "4.1-4.1.1",
+      "FROMID": "4.1",
+      "TOID": "4.1.1",
+      "TYPE": "->",
+      "From": "4.1. Student Communication & CRM",
+      "To": "4.1.1. Student Information Hub Provision"
+    },
+    {
+      "ID": "4.1-4.1.2",
+      "FROMID": "4.1",
+      "TOID": "4.1.2",
+      "TYPE": "->",
+      "From": "4.1. Student Communication & CRM",
+      "To": "4.1.2. General Enquiry Management"
+    },
+    {
+      "ID": "4.1-4.1.3",
+      "FROMID": "4.1",
+      "TOID": "4.1.3",
+      "TYPE": "->",
+      "From": "4.1. Student Communication & CRM",
+      "To": "4.1.3. Student Feedback Collection"
+    },
+    {
+      "ID": "4.1-4.1.4",
+      "FROMID": "4.1",
+      "TOID": "4.1.4",
+      "TYPE": "->",
+      "From": "4.1. Student Communication & CRM",
+      "To": "4.1.4. Targeted Student Communications"
+    },
+    {
+      "ID": "4-4.2",
+      "FROMID": "4",
+      "TOID": "4.2",
+      "TYPE": "->",
+      "From": "4. STUDENT EXPERIENCE & ENGAGEMENT",
+      "To": "4.2. Alumni & Supporter Relations"
+    },
+    {
+      "ID": "4.2-4.2.1",
+      "FROMID": "4.2",
+      "TOID": "4.2.1",
+      "TYPE": "->",
+      "From": "4.2. Alumni & Supporter Relations",
+      "To": "4.2.1. Alumni Database Management"
+    },
+    {
+      "ID": "4.2-4.2.2",
+      "FROMID": "4.2",
+      "TOID": "4.2.2",
+      "TYPE": "->",
+      "From": "4.2. Alumni & Supporter Relations",
+      "To": "4.2.2. Alumni Communications"
+    },
+    {
+      "ID": "4.2-4.2.3",
+      "FROMID": "4.2",
+      "TOID": "4.2.3",
+      "TYPE": "->",
+      "From": "4.2. Alumni & Supporter Relations",
+      "To": "4.2.3. Donor Identification & Cultivation"
+    },
+    {
+      "ID": "4.2-4.2.4",
+      "FROMID": "4.2",
+      "TOID": "4.2.4",
+      "TYPE": "->",
+      "From": "4.2. Alumni & Supporter Relations",
+      "To": "4.2.4. Giving Programme Management"
+    },
+    {
+      "ID": "4.2-4.2.5",
+      "FROMID": "4.2",
+      "TOID": "4.2.5",
+      "TYPE": "->",
+      "From": "4.2. Alumni & Supporter Relations",
+      "To": "4.2.5. HESA DLHE/Graduate Outcome Survey"
+    },
+    {
+      "ID": "5-5.1",
+      "FROMID": "5",
+      "TOID": "5.1",
+      "TYPE": "->",
+      "From": "5. RESEARCH & KNOWLEDGE EXCHANGE",
+      "To": "5.1. Research Strategy & Planning"
+    },
+    {
+      "ID": "5.1-5.1.1",
+      "FROMID": "5.1",
+      "TOID": "5.1.1",
+      "TYPE": "->",
+      "From": "5.1. Research Strategy & Planning",
+      "To": "5.1.1. Research Theme Definition"
+    },
+    {
+      "ID": "5.1-5.1.2",
+      "FROMID": "5.1",
+      "TOID": "5.1.2",
+      "TYPE": "->",
+      "From": "5.1. Research Strategy & Planning",
+      "To": "5.1.2. Research Investment Planning"
+    },
+    {
+      "ID": "5.1-5.1.3",
+      "FROMID": "5.1",
+      "TOID": "5.1.3",
+      "TYPE": "->",
+      "From": "5.1. Research Strategy & Planning",
+      "To": "5.1.3. Doctoral Training Centre Management"
+    },
+    {
+      "ID": "5-5.2",
+      "FROMID": "5",
+      "TOID": "5.2",
+      "TYPE": "->",
+      "From": "5. RESEARCH & KNOWLEDGE EXCHANGE",
+      "To": "5.2. Research Grant Management (Pre-Award)"
+    },
+    {
+      "ID": "5.2-5.2.1",
+      "FROMID": "5.2",
+      "TOID": "5.2.1",
+      "TYPE": "->",
+      "From": "5.2. Research Grant Management (Pre-Award)",
+      "To": "5.2.1. Funding Opportunity Identification"
+    },
+    {
+      "ID": "5.2-5.2.2",
+      "FROMID": "5.2",
+      "TOID": "5.2.2",
+      "TYPE": "->",
+      "From": "5.2. Research Grant Management (Pre-Award)",
+      "To": "5.2.2. Proposal Development Support"
+    },
+    {
+      "ID": "5.2-5.2.3",
+      "FROMID": "5.2",
+      "TOID": "5.2.3",
+      "TYPE": "->",
+      "From": "5.2. Research Grant Management (Pre-Award)",
+      "To": "5.2.3. Costing & Pricing Approval"
+    },
+    {
+      "ID": "5.2-5.2.4",
+      "FROMID": "5.2",
+      "TOID": "5.2.4",
+      "TYPE": "->",
+      "From": "5.2. Research Grant Management (Pre-Award)",
+      "To": "5.2.4. Grant Submission Management"
+    },
+    {
+      "ID": "5-5.3",
+      "FROMID": "5",
+      "TOID": "5.3",
+      "TYPE": "->",
+      "From": "5. RESEARCH & KNOWLEDGE EXCHANGE",
+      "To": "5.3. Research Grant Management (Post-Award)"
+    },
+    {
+      "ID": "5.3-5.3.1",
+      "FROMID": "5.3",
+      "TOID": "5.3.1",
+      "TYPE": "->",
+      "From": "5.3. Research Grant Management (Post-Award)",
+      "To": "5.3.1. Contract Negotiation & Signing"
+    },
+    {
+      "ID": "5.3-5.3.2",
+      "FROMID": "5.3",
+      "TOID": "5.3.2",
+      "TYPE": "->",
+      "From": "5.3. Research Grant Management (Post-Award)",
+      "To": "5.3.2. Grant Project Setup"
+    },
+    {
+      "ID": "5.3-5.3.3",
+      "FROMID": "5.3",
+      "TOID": "5.3.3",
+      "TYPE": "->",
+      "From": "5.3. Research Grant Management (Post-Award)",
+      "To": "5.3.3. Financial Monitoring & Reporting"
+    },
+    {
+      "ID": "5.3-5.3.4",
+      "FROMID": "5.3",
+      "TOID": "5.3.4",
+      "TYPE": "->",
+      "From": "5.3. Research Grant Management (Post-Award)",
+      "To": "5.3.4. Grant Claim Management"
+    },
+    {
+      "ID": "5-5.4",
+      "FROMID": "5",
+      "TOID": "5.4",
+      "TYPE": "->",
+      "From": "5. RESEARCH & KNOWLEDGE EXCHANGE",
+      "To": "5.4. Research Quality Assurance & Assessment"
+    },
+    {
+      "ID": "5.4-5.4.1",
+      "FROMID": "5.4",
+      "TOID": "5.4.1",
+      "TYPE": "->",
+      "From": "5.4. Research Quality Assurance & Assessment",
+      "To": "5.4.1. Research Environment Assessment"
+    },
+    {
+      "ID": "5.4-5.4.2",
+      "FROMID": "5.4",
+      "TOID": "5.4.2",
+      "TYPE": "->",
+      "From": "5.4. Research Quality Assurance & Assessment",
+      "To": "5.4.2. Research Output Management"
+    },
+    {
+      "ID": "5.4-5.4.3",
+      "FROMID": "5.4",
+      "TOID": "5.4.3",
+      "TYPE": "->",
+      "From": "5.4. Research Quality Assurance & Assessment",
+      "To": "5.4.3. Research Impact Management"
+    },
+    {
+      "ID": "5.4-5.4.4",
+      "FROMID": "5.4",
+      "TOID": "5.4.4",
+      "TYPE": "->",
+      "From": "5.4. Research Quality Assurance & Assessment",
+      "To": "5.4.4. REF/Equivalent Submission Management"
+    },
+    {
+      "ID": "5-5.5",
+      "FROMID": "5",
+      "TOID": "5.5",
+      "TYPE": "->",
+      "From": "5. RESEARCH & KNOWLEDGE EXCHANGE",
+      "To": "5.5. Ethics, Integrity & Governance"
+    },
+    {
+      "ID": "5.5-5.5.1",
+      "FROMID": "5.5",
+      "TOID": "5.5.1",
+      "TYPE": "->",
+      "From": "5.5. Ethics, Integrity & Governance",
+      "To": "5.5.1. Ethical Review Board Management"
+    },
+    {
+      "ID": "5.5-5.5.2",
+      "FROMID": "5.5",
+      "TOID": "5.5.2",
+      "TYPE": "->",
+      "From": "5.5. Ethics, Integrity & Governance",
+      "To": "5.5.2. Research Integrity Case Management"
+    },
+    {
+      "ID": "5.5-5.5.3",
+      "FROMID": "5.5",
+      "TOID": "5.5.3",
+      "TYPE": "->",
+      "From": "5.5. Ethics, Integrity & Governance",
+      "To": "5.5.3. External Regulatory Compliance"
+    },
+    {
+      "ID": "5-5.6",
+      "FROMID": "5",
+      "TOID": "5.6",
+      "TYPE": "->",
+      "From": "5. RESEARCH & KNOWLEDGE EXCHANGE",
+      "To": "5.6. Knowledge Exchange & Commercialisation"
+    },
+    {
+      "ID": "5.6-5.6.1",
+      "FROMID": "5.6",
+      "TOID": "5.6.1",
+      "TYPE": "->",
+      "From": "5.6. Knowledge Exchange & Commercialisation",
+      "To": "5.6.1. Intellectual Property (IP) Management"
+    },
+    {
+      "ID": "5.6-5.6.2",
+      "FROMID": "5.6",
+      "TOID": "5.6.2",
+      "TYPE": "->",
+      "From": "5.6. Knowledge Exchange & Commercialisation",
+      "To": "5.6.2. Technology Transfer"
+    },
+    {
+      "ID": "5.6-5.6.3",
+      "FROMID": "5.6",
+      "TOID": "5.6.3",
+      "TYPE": "->",
+      "From": "5.6. Knowledge Exchange & Commercialisation",
+      "To": "5.6.3. Spin-out / Start-up Creation"
+    },
+    {
+      "ID": "5.6-5.6.4",
+      "FROMID": "5.6",
+      "TOID": "5.6.4",
+      "TYPE": "->",
+      "From": "5.6. Knowledge Exchange & Commercialisation",
+      "To": "5.6.4. Consultancy Services Management"
+    },
+    {
+      "ID": "5.6-5.6.5",
+      "FROMID": "5.6",
+      "TOID": "5.6.5",
+      "TYPE": "->",
+      "From": "5.6. Knowledge Exchange & Commercialisation",
+      "To": "5.6.5. Knowledge Exchange Metrics"
+    },
+    {
+      "ID": "6-6.1",
+      "FROMID": "6",
+      "TOID": "6.1",
+      "TYPE": "->",
+      "From": "6. INSTITUTIONAL STRATEGY & GOVERNANCE",
+      "To": "6.1. Strategic Planning"
+    },
+    {
+      "ID": "6.1-6.1.1",
+      "FROMID": "6.1",
+      "TOID": "6.1.1",
+      "TYPE": "->",
+      "From": "6.1. Strategic Planning",
+      "To": "6.1.1. Strategic Goals Definition"
+    },
+    {
+      "ID": "6.1-6.1.2",
+      "FROMID": "6.1",
+      "TOID": "6.1.2",
+      "TYPE": "->",
+      "From": "6.1. Strategic Planning",
+      "To": "6.1.2. Strategic Alignment Management"
+    },
+    {
+      "ID": "6-6.2",
+      "FROMID": "6",
+      "TOID": "6.2",
+      "TYPE": "->",
+      "From": "6. INSTITUTIONAL STRATEGY & GOVERNANCE",
+      "To": "6.2. Regulatory Compliance & Assurance"
+    },
+    {
+      "ID": "6.2-6.2.1",
+      "FROMID": "6.2",
+      "TOID": "6.2.1",
+      "TYPE": "->",
+      "From": "6.2. Regulatory Compliance & Assurance",
+      "To": "6.2.1. Statutory Body Returns (e.g., HESA)"
+    },
+    {
+      "ID": "6.2-6.2.2",
+      "FROMID": "6.2",
+      "TOID": "6.2.2",
+      "TYPE": "->",
+      "From": "6.2. Regulatory Compliance & Assurance",
+      "To": "6.2.2. Internal Audit Management"
+    },
+    {
+      "ID": "6.2-6.2.3",
+      "FROMID": "6.2",
+      "TOID": "6.2.3",
+      "TYPE": "->",
+      "From": "6.2. Regulatory Compliance & Assurance",
+      "To": "6.2.3. Data Protection & GDPR Compliance"
+    },
+    {
+      "ID": "6.2-6.2.4",
+      "FROMID": "6.2",
+      "TOID": "6.2.4",
+      "TYPE": "->",
+      "From": "6.2. Regulatory Compliance & Assurance",
+      "To": "6.2.4. Freedom of Information (FOI) Management"
+    },
+    {
+      "ID": "6-6.3",
+      "FROMID": "6",
+      "TOID": "6.3",
+      "TYPE": "->",
+      "From": "6. INSTITUTIONAL STRATEGY & GOVERNANCE",
+      "To": "6.3. Risk Management & Control"
+    },
+    {
+      "ID": "6.3-6.3.1",
+      "FROMID": "6.3",
+      "TOID": "6.3.1",
+      "TYPE": "->",
+      "From": "6.3. Risk Management & Control",
+      "To": "6.3.1. Risk Register Maintenance"
+    },
+    {
+      "ID": "6.3-6.3.2",
+      "FROMID": "6.3",
+      "TOID": "6.3.2",
+      "TYPE": "->",
+      "From": "6.3. Risk Management & Control",
+      "To": "6.3.2. Risk Appetite Definition"
+    },
+    {
+      "ID": "6.3-6.3.3",
+      "FROMID": "6.3",
+      "TOID": "6.3.3",
+      "TYPE": "->",
+      "From": "6.3. Risk Management & Control",
+      "To": "6.3.3. Mitigation Strategy Definition"
+    },
+    {
+      "ID": "6-6.4",
+      "FROMID": "6",
+      "TOID": "6.4",
+      "TYPE": "->",
+      "From": "6. INSTITUTIONAL STRATEGY & GOVERNANCE",
+      "To": "6.4. Quality & Academic Standards"
+    },
+    {
+      "ID": "6.4-6.4.1",
+      "FROMID": "6.4",
+      "TOID": "6.4.1",
+      "TYPE": "->",
+      "From": "6.4. Quality & Academic Standards",
+      "To": "6.4.1. Academic Standards Framework"
+    },
+    {
+      "ID": "6.4-6.4.2",
+      "FROMID": "6.4",
+      "TOID": "6.4.2",
+      "TYPE": "->",
+      "From": "6.4. Quality & Academic Standards",
+      "To": "6.4.2. Programme Validation & Review"
+    },
+    {
+      "ID": "6.4-6.4.3",
+      "FROMID": "6.4",
+      "TOID": "6.4.3",
+      "TYPE": "->",
+      "From": "6.4. Quality & Academic Standards",
+      "To": "6.4.3. External Examiner Management"
+    },
+    {
+      "ID": "7-7.1",
+      "FROMID": "7",
+      "TOID": "7.1",
+      "TYPE": "->",
+      "From": "7. ACADEMIC & CURRICULUM MANAGEMENT",
+      "To": "7.1. Curriculum Design & Catalogue"
+    },
+    {
+      "ID": "7.1-7.1.1",
+      "FROMID": "7.1",
+      "TOID": "7.1.1",
+      "TYPE": "->",
+      "From": "7.1. Curriculum Design & Catalogue",
+      "To": "7.1.1. Programme Design & Definition"
+    },
+    {
+      "ID": "7.1-7.1.2",
+      "FROMID": "7.1",
+      "TOID": "7.1.2",
+      "TYPE": "->",
+      "From": "7.1. Curriculum Design & Catalogue",
+      "To": "7.1.2. Module Design & Definition"
+    },
+    {
+      "ID": "7.1-7.1.3",
+      "FROMID": "7.1",
+      "TOID": "7.1.3",
+      "TYPE": "->",
+      "From": "7.1. Curriculum Design & Catalogue",
+      "To": "7.1.3. Curriculum Change Governance"
+    },
+    {
+      "ID": "7.1-7.1.4",
+      "FROMID": "7.1",
+      "TOID": "7.1.4",
+      "TYPE": "->",
+      "From": "7.1. Curriculum Design & Catalogue",
+      "To": "7.1.4. Course/Module Catalogue Publication"
+    },
+    {
+      "ID": "7-7.2",
+      "FROMID": "7",
+      "TOID": "7.2",
+      "TYPE": "->",
+      "From": "7. ACADEMIC & CURRICULUM MANAGEMENT",
+      "To": "7.2. Learning Management & Delivery"
+    },
+    {
+      "ID": "7.2-7.2.1",
+      "FROMID": "7.2",
+      "TOID": "7.2.1",
+      "TYPE": "->",
+      "From": "7.2. Learning Management & Delivery",
+      "To": "7.2.1. VLE (Virtual Learning Environment) Provision"
+    },
+    {
+      "ID": "7.2-7.2.2",
+      "FROMID": "7.2",
+      "TOID": "7.2.2",
+      "TYPE": "->",
+      "From": "7.2. Learning Management & Delivery",
+      "To": "7.2.2. Course Content Authoring & Management"
+    },
+    {
+      "ID": "7.2-7.2.3",
+      "FROMID": "7.2",
+      "TOID": "7.2.3",
+      "TYPE": "->",
+      "From": "7.2. Learning Management & Delivery",
+      "To": "7.2.3. Online Collaboration & Interaction Tools"
+    },
+    {
+      "ID": "7.2-7.2.4",
+      "FROMID": "7.2",
+      "TOID": "7.2.4",
+      "TYPE": "->",
+      "From": "7.2. Learning Management & Delivery",
+      "To": "7.2.4. Lecture Capture & Streaming"
+    },
+    {
+      "ID": "7.2-7.2.5",
+      "FROMID": "7.2",
+      "TOID": "7.2.5",
+      "TYPE": "->",
+      "From": "7.2. Learning Management & Delivery",
+      "To": "7.2.5. Learning Analytics & Engagement Reporting"
+    },
+    {
+      "ID": "8-8.1",
+      "FROMID": "8",
+      "TOID": "8.1",
+      "TYPE": "->",
+      "From": "8. FINANCIAL MANAGEMENT",
+      "To": "8.1. General Ledger & Financial Accounting"
+    },
+    {
+      "ID": "8.1-8.1.1",
+      "FROMID": "8.1",
+      "TOID": "8.1.1",
+      "TYPE": "->",
+      "From": "8.1. General Ledger & Financial Accounting",
+      "To": "8.1.1. Chart of Accounts Management"
+    },
+    {
+      "ID": "8.1-8.1.2",
+      "FROMID": "8.1",
+      "TOID": "8.1.2",
+      "TYPE": "->",
+      "From": "8.1. General Ledger & Financial Accounting",
+      "To": "8.1.2. Transaction Processing"
+    },
+    {
+      "ID": "8.1-8.1.3",
+      "FROMID": "8.1",
+      "TOID": "8.1.3",
+      "TYPE": "->",
+      "From": "8.1. General Ledger & Financial Accounting",
+      "To": "8.1.3. Period-End Close"
+    },
+    {
+      "ID": "8-8.2",
+      "FROMID": "8",
+      "TOID": "8.2",
+      "TYPE": "->",
+      "From": "8. FINANCIAL MANAGEMENT",
+      "To": "8.2. Accounts Payable (AP)"
+    },
+    {
+      "ID": "8.2-8.2.1",
+      "FROMID": "8.2",
+      "TOID": "8.2.1",
+      "TYPE": "->",
+      "From": "8.2. Accounts Payable (AP)",
+      "To": "8.2.1. Invoice Processing & Validation"
+    },
+    {
+      "ID": "8.2-8.2.2",
+      "FROMID": "8.2",
+      "TOID": "8.2.2",
+      "TYPE": "->",
+      "From": "8.2. Accounts Payable (AP)",
+      "To": "8.2.2. Supplier Payment Management"
+    },
+    {
+      "ID": "8-8.3",
+      "FROMID": "8",
+      "TOID": "8.3",
+      "TYPE": "->",
+      "From": "8. FINANCIAL MANAGEMENT",
+      "To": "8.3. Accounts Receivable (AR)"
+    },
+    {
+      "ID": "8.3-8.3.1",
+      "FROMID": "8.3",
+      "TOID": "8.3.1",
+      "TYPE": "->",
+      "From": "8.3. Accounts Receivable (AR)",
+      "To": "8.3.1. Non-Tuition Fee Invoicing"
+    },
+    {
+      "ID": "8.3-8.3.2",
+      "FROMID": "8.3",
+      "TOID": "8.3.2",
+      "TYPE": "->",
+      "From": "8.3. Accounts Receivable (AR)",
+      "To": "8.3.2. Cash & Collections Management"
+    },
+    {
+      "ID": "8-8.4",
+      "FROMID": "8",
+      "TOID": "8.4",
+      "TYPE": "->",
+      "From": "8. FINANCIAL MANAGEMENT",
+      "To": "8.4. Asset & Capital Accounting"
+    },
+    {
+      "ID": "8.4-8.4.1",
+      "FROMID": "8.4",
+      "TOID": "8.4.1",
+      "TYPE": "->",
+      "From": "8.4. Asset & Capital Accounting",
+      "To": "8.4.1. Fixed Asset Register Management"
+    },
+    {
+      "ID": "8.4-8.4.2",
+      "FROMID": "8.4",
+      "TOID": "8.4.2",
+      "TYPE": "->",
+      "From": "8.4. Asset & Capital Accounting",
+      "To": "8.4.2. Depreciation & Impairment Accounting"
+    },
+    {
+      "ID": "8-8.5",
+      "FROMID": "8",
+      "TOID": "8.5",
+      "TYPE": "->",
+      "From": "8. FINANCIAL MANAGEMENT",
+      "To": "8.5. Treasury & Cash Management"
+    },
+    {
+      "ID": "8.5-8.5.1",
+      "FROMID": "8.5",
+      "TOID": "8.5.1",
+      "TYPE": "->",
+      "From": "8.5. Treasury & Cash Management",
+      "To": "8.5.1. Bank Reconciliation"
+    },
+    {
+      "ID": "8.5-8.5.2",
+      "FROMID": "8.5",
+      "TOID": "8.5.2",
+      "TYPE": "->",
+      "From": "8.5. Treasury & Cash Management",
+      "To": "8.5.2. Investment Portfolio Management"
+    },
+    {
+      "ID": "9-9.1",
+      "FROMID": "9",
+      "TOID": "9.1",
+      "TYPE": "->",
+      "From": "9. MARKETING, RECRUITMENT & WIDER ENGAGEMENT",
+      "To": "9.1. Marketing & Brand Management"
+    },
+    {
+      "ID": "9.1-9.1.1",
+      "FROMID": "9.1",
+      "TOID": "9.1.1",
+      "TYPE": "->",
+      "From": "9.1. Marketing & Brand Management",
+      "To": "9.1.1. Brand Strategy Definition"
+    },
+    {
+      "ID": "9.1-9.1.2",
+      "FROMID": "9.1",
+      "TOID": "9.1.2",
+      "TYPE": "->",
+      "From": "9.1. Marketing & Brand Management",
+      "To": "9.1.2. Content Creation & Asset Management"
+    },
+    {
+      "ID": "9.1-9.1.3",
+      "FROMID": "9.1",
+      "TOID": "9.1.3",
+      "TYPE": "->",
+      "From": "9.1. Marketing & Brand Management",
+      "To": "9.1.3. Marketing Campaign Management"
+    },
+    {
+      "ID": "9-9.2",
+      "FROMID": "9",
+      "TOID": "9.2",
+      "TYPE": "->",
+      "From": "9. MARKETING, RECRUITMENT & WIDER ENGAGEMENT",
+      "To": "9.2. Prospective Student Recruitment"
+    },
+    {
+      "ID": "9.2-9.2.1",
+      "FROMID": "9.2",
+      "TOID": "9.2.1",
+      "TYPE": "->",
+      "From": "9.2. Prospective Student Recruitment",
+      "To": "9.2.1. Prospect Data Capture & Tracking"
+    },
+    {
+      "ID": "9.2-9.2.2",
+      "FROMID": "9.2",
+      "TOID": "9.2.2",
+      "TYPE": "->",
+      "From": "9.2. Prospective Student Recruitment",
+      "To": "9.2.2. Enquiry Management"
+    },
+    {
+      "ID": "9.2-9.2.3",
+      "FROMID": "9.2",
+      "TOID": "9.2.3",
+      "TYPE": "->",
+      "From": "9.2. Prospective Student Recruitment",
+      "To": "9.2.3. Recruitment Event Management"
+    },
+    {
+      "ID": "9.2-9.2.4",
+      "FROMID": "9.2",
+      "TOID": "9.2.4",
+      "TYPE": "->",
+      "From": "9.2. Prospective Student Recruitment",
+      "To": "9.2.4. Conversion Communications"
+    },
+    {
+      "ID": "9-9.3",
+      "FROMID": "9",
+      "TOID": "9.3",
+      "TYPE": "->",
+      "From": "9. MARKETING, RECRUITMENT & WIDER ENGAGEMENT",
+      "To": "9.3. Partner & Collaborative Provision"
+    },
+    {
+      "ID": "9.3-9.3.1",
+      "FROMID": "9.3",
+      "TOID": "9.3.1",
+      "TYPE": "->",
+      "From": "9.3. Partner & Collaborative Provision",
+      "To": "9.3.1. Partner Vetting & Selection"
+    },
+    {
+      "ID": "9.3-9.3.2",
+      "FROMID": "9.3",
+      "TOID": "9.3.2",
+      "TYPE": "->",
+      "From": "9.3. Partner & Collaborative Provision",
+      "To": "9.3.2. Collaborative Agreement Management"
+    },
+    {
+      "ID": "9.3-9.3.3",
+      "FROMID": "9.3",
+      "TOID": "9.3.3",
+      "TYPE": "->",
+      "From": "9.3. Partner & Collaborative Provision",
+      "To": "9.3.3. Partner Governance & Monitoring"
+    },
+    {
+      "ID": "9-9.4",
+      "FROMID": "9",
+      "TOID": "9.4",
+      "TYPE": "->",
+      "From": "9. MARKETING, RECRUITMENT & WIDER ENGAGEMENT",
+      "To": "9.4. External Relationship Management"
+    },
+    {
+      "ID": "9.4-9.4.1",
+      "FROMID": "9.4",
+      "TOID": "9.4.1",
+      "TYPE": "->",
+      "From": "9.4. External Relationship Management",
+      "To": "9.4.1. Government Relations & Lobbying"
+    },
+    {
+      "ID": "9.4-9.4.2",
+      "FROMID": "9.4",
+      "TOID": "9.4.2",
+      "TYPE": "->",
+      "From": "9.4. External Relationship Management",
+      "To": "9.4.2. Industry Partnership Management"
+    },
+    {
+      "ID": "9.4-9.4.3",
+      "FROMID": "9.4",
+      "TOID": "9.4.3",
+      "TYPE": "->",
+      "From": "9.4. External Relationship Management",
+      "To": "9.4.3. Community Engagement & Outreach"
+    },
+    {
+      "ID": "10-10.1",
+      "FROMID": "10",
+      "TOID": "10.1",
+      "TYPE": "->",
+      "From": "10. PEOPLE & HR MANAGEMENT",
+      "To": "10.1. Workforce Planning & Analytics"
+    },
+    {
+      "ID": "10.1-10.1.1",
+      "FROMID": "10.1",
+      "TOID": "10.1.1",
+      "TYPE": "->",
+      "From": "10.1. Workforce Planning & Analytics",
+      "To": "10.1.1. Workforce Needs Forecasting"
+    },
+    {
+      "ID": "10.1-10.1.2",
+      "FROMID": "10.1",
+      "TOID": "10.1.2",
+      "TYPE": "->",
+      "From": "10.1. Workforce Planning & Analytics",
+      "To": "10.1.2. HR Analytics & Reporting"
+    },
+    {
+      "ID": "10-10.2",
+      "FROMID": "10",
+      "TOID": "10.2",
+      "TYPE": "->",
+      "From": "10. PEOPLE & HR MANAGEMENT",
+      "To": "10.2. Recruitment & Onboarding"
+    },
+    {
+      "ID": "10.2-10.2.1",
+      "FROMID": "10.2",
+      "TOID": "10.2.1",
+      "TYPE": "->",
+      "From": "10.2. Recruitment & Onboarding",
+      "To": "10.2.1. Job Requisition Management"
+    },
+    {
+      "ID": "10.2-10.2.2",
+      "FROMID": "10.2",
+      "TOID": "10.2.2",
+      "TYPE": "->",
+      "From": "10.2. Recruitment & Onboarding",
+      "To": "10.2.2. Candidate Sourcing & Tracking"
+    },
+    {
+      "ID": "10.2-10.2.3",
+      "FROMID": "10.2",
+      "TOID": "10.2.3",
+      "TYPE": "->",
+      "From": "10.2. Recruitment & Onboarding",
+      "To": "10.2.3. Offer & Contract Management"
+    },
+    {
+      "ID": "10.2-10.2.4",
+      "FROMID": "10.2",
+      "TOID": "10.2.4",
+      "TYPE": "->",
+      "From": "10.2. Recruitment & Onboarding",
+      "To": "10.2.4. New Starter Onboarding"
+    },
+    {
+      "ID": "10-10.3",
+      "FROMID": "10",
+      "TOID": "10.3",
+      "TYPE": "->",
+      "From": "10. PEOPLE & HR MANAGEMENT",
+      "To": "10.3. Core HR Administration"
+    },
+    {
+      "ID": "10.3-10.3.1",
+      "FROMID": "10.3",
+      "TOID": "10.3.1",
+      "TYPE": "->",
+      "From": "10.3. Core HR Administration",
+      "To": "10.3.1. Employee Master Data Management"
+    },
+    {
+      "ID": "10.3-10.3.2",
+      "FROMID": "10.3",
+      "TOID": "10.3.2",
+      "TYPE": "->",
+      "From": "10.3. Core HR Administration",
+      "To": "10.3.2. Payroll Processing & Compliance"
+    },
+    {
+      "ID": "10.3-10.3.3",
+      "FROMID": "10.3",
+      "TOID": "10.3.3",
+      "TYPE": "->",
+      "From": "10.3. Core HR Administration",
+      "To": "10.3.3. Compensation & Benefits Management"
+    },
+    {
+      "ID": "10.3-10.3.4",
+      "FROMID": "10.3",
+      "TOID": "10.3.4",
+      "TYPE": "->",
+      "From": "10.3. Core HR Administration",
+      "To": "10.3.4. Leave & Absence Management"
+    },
+    {
+      "ID": "10-10.4",
+      "FROMID": "10",
+      "TOID": "10.4",
+      "TYPE": "->",
+      "From": "10. PEOPLE & HR MANAGEMENT",
+      "To": "10.4. Performance & Development"
+    },
+    {
+      "ID": "10.4-10.4.1",
+      "FROMID": "10.4",
+      "TOID": "10.4.1",
+      "TYPE": "->",
+      "From": "10.4. Performance & Development",
+      "To": "10.4.1. Performance Review Management"
+    },
+    {
+      "ID": "10.4-10.4.2",
+      "FROMID": "10.4",
+      "TOID": "10.4.2",
+      "TYPE": "->",
+      "From": "10.4. Performance & Development",
+      "To": "10.4.2. Training Needs Assessment"
+    },
+    {
+      "ID": "10.4-10.4.3",
+      "FROMID": "10.4",
+      "TOID": "10.4.3",
+      "TYPE": "->",
+      "From": "10.4. Performance & Development",
+      "To": "10.4.3. Learning Management System (LMS) Provision"
+    },
+    {
+      "ID": "10.4-10.4.4",
+      "FROMID": "10.4",
+      "TOID": "10.4.4",
+      "TYPE": "->",
+      "From": "10.4. Performance & Development",
+      "To": "10.4.4. Succession Planning"
+    },
+    {
+      "ID": "11-11.1",
+      "FROMID": "11",
+      "TOID": "11.1",
+      "TYPE": "->",
+      "From": "11. PROCUREMENT & SUPPLY CHAIN",
+      "To": "11.1. Strategic Sourcing & Category Management"
+    },
+    {
+      "ID": "11.1-11.1.1",
+      "FROMID": "11.1",
+      "TOID": "11.1.1",
+      "TYPE": "->",
+      "From": "11.1. Strategic Sourcing & Category Management",
+      "To": "11.1.1. Spend Analysis & Reporting"
+    },
+    {
+      "ID": "11.1-11.1.2",
+      "FROMID": "11.1",
+      "TOID": "11.1.2",
+      "TYPE": "->",
+      "From": "11.1. Strategic Sourcing & Category Management",
+      "To": "11.1.2. Category Strategy Definition"
+    },
+    {
+      "ID": "11-11.2",
+      "FROMID": "11",
+      "TOID": "11.2",
+      "TYPE": "->",
+      "From": "11. PROCUREMENT & SUPPLY CHAIN",
+      "To": "11.2. Procure-to-Pay (P2P)"
+    },
+    {
+      "ID": "11.2-11.2.1",
+      "FROMID": "11.2",
+      "TOID": "11.2.1",
+      "TYPE": "->",
+      "From": "11.2. Procure-to-Pay (P2P)",
+      "To": "11.2.1. Purchasing Requisition Management"
+    },
+    {
+      "ID": "11.2-11.2.2",
+      "FROMID": "11.2",
+      "TOID": "11.2.2",
+      "TYPE": "->",
+      "From": "11.2. Procure-to-Pay (P2P)",
+      "To": "11.2.2. Purchase Order Management"
+    },
+    {
+      "ID": "11.2-11.2.3",
+      "FROMID": "11.2",
+      "TOID": "11.2.3",
+      "TYPE": "->",
+      "From": "11.2. Procure-to-Pay (P2P)",
+      "To": "11.2.3. Goods Receipting & Matching"
+    },
+    {
+      "ID": "11-11.3",
+      "FROMID": "11",
+      "TOID": "11.3",
+      "TYPE": "->",
+      "From": "11. PROCUREMENT & SUPPLY CHAIN",
+      "To": "11.3. Contract & Supplier Management"
+    },
+    {
+      "ID": "11.3-11.3.1",
+      "FROMID": "11.3",
+      "TOID": "11.3.1",
+      "TYPE": "->",
+      "From": "11.3. Contract & Supplier Management",
+      "To": "11.3.1. Contract Register Management"
+    },
+    {
+      "ID": "11.3-11.3.2",
+      "FROMID": "11.3",
+      "TOID": "11.3.2",
+      "TYPE": "->",
+      "From": "11.3. Contract & Supplier Management",
+      "To": "11.3.2. Supplier Master Data Management"
+    },
+    {
+      "ID": "11.3-11.3.3",
+      "FROMID": "11.3",
+      "TOID": "11.3.3",
+      "TYPE": "->",
+      "From": "11.3. Contract & Supplier Management",
+      "To": "11.3.3. Supplier Performance Monitoring"
+    },
+    {
+      "ID": "12-12.5",
+      "FROMID": "12",
+      "TOID": "12.5",
+      "TYPE": "->",
+      "From": "12. ESTATES & FACILITIES",
+      "To": "12.5. Facilities Maintenance & Operations"
+    },
+    {
+      "ID": "12.5-12.5.1",
+      "FROMID": "12.5",
+      "TOID": "12.5.1",
+      "TYPE": "->",
+      "From": "12.5. Facilities Maintenance & Operations",
+      "To": "12.5.1. Planned Preventative Maintenance (PPM)"
+    },
+    {
+      "ID": "12.5-12.5.2",
+      "FROMID": "12.5",
+      "TOID": "12.5.2",
+      "TYPE": "->",
+      "From": "12.5. Facilities Maintenance & Operations",
+      "To": "12.5.2. Reactive Maintenance & Helpdesk"
+    },
+    {
+      "ID": "12.5-12.5.3",
+      "FROMID": "12.5",
+      "TOID": "12.5.3",
+      "TYPE": "->",
+      "From": "12.5. Facilities Maintenance & Operations",
+      "To": "12.5.3. Hard Facilities Operations"
+    },
+    {
+      "ID": "12.5-12.5.4",
+      "FROMID": "12.5",
+      "TOID": "12.5.4",
+      "TYPE": "->",
+      "From": "12.5. Facilities Maintenance & Operations",
+      "To": "12.5.4. Soft Facilities Services"
+    },
+    {
+      "ID": "12.5-12.5.5",
+      "FROMID": "12.5",
+      "TOID": "12.5.5",
+      "TYPE": "->",
+      "From": "12.5. Facilities Maintenance & Operations",
+      "To": "12.5.5. Building Asset Register"
+    },
+    {
+      "ID": "12-12.6",
+      "FROMID": "12",
+      "TOID": "12.6",
+      "TYPE": "->",
+      "From": "12. ESTATES & FACILITIES",
+      "To": "12.6. Campus Security & Safety"
+    },
+    {
+      "ID": "12.6-12.6.1",
+      "FROMID": "12.6",
+      "TOID": "12.6.1",
+      "TYPE": "->",
+      "From": "12.6. Campus Security & Safety",
+      "To": "12.6.1. Physical Security Operations"
+    },
+    {
+      "ID": "12.6-12.6.2",
+      "FROMID": "12.6",
+      "TOID": "12.6.2",
+      "TYPE": "->",
+      "From": "12.6. Campus Security & Safety",
+      "To": "12.6.2. Access Control System Management"
+    },
+    {
+      "ID": "12.6-12.6.3",
+      "FROMID": "12.6",
+      "TOID": "12.6.3",
+      "TYPE": "->",
+      "From": "12.6. Campus Security & Safety",
+      "To": "12.6.3. CCTV & Surveillance Management"
+    },
+    {
+      "ID": "12.6-12.6.4",
+      "FROMID": "12.6",
+      "TOID": "12.6.4",
+      "TYPE": "->",
+      "From": "12.6. Campus Security & Safety",
+      "To": "12.6.4. Emergency Planning & Response"
+    },
+    {
+      "ID": "12.6-12.6.5",
+      "FROMID": "12.6",
+      "TOID": "12.6.5",
+      "TYPE": "->",
+      "From": "12.6. Campus Security & Safety",
+      "To": "12.6.5. Health & Safety Compliance"
+    },
+    {
+      "ID": "13-13.2",
+      "FROMID": "13",
+      "TOID": "13.2",
+      "TYPE": "->",
+      "From": "13. LIBRARY & LEARNING RESOURCES",
+      "To": "13.2. Deliver academic skills support"
+    },
+    {
+      "ID": "13-13.3",
+      "FROMID": "13",
+      "TOID": "13.3",
+      "TYPE": "->",
+      "From": "13. LIBRARY & LEARNING RESOURCES",
+      "To": "13.3. Manage library spaces and user services"
+    },
+    {
+      "ID": "13-13.5",
+      "FROMID": "13",
+      "TOID": "13.5",
+      "TYPE": "->",
+      "From": "13. LIBRARY & LEARNING RESOURCES",
+      "To": "13.5. Manage resource licencing and copyright"
+    },
+    {
+      "ID": "14-14.1",
+      "FROMID": "14",
+      "TOID": "14.1",
+      "TYPE": "->",
+      "From": "14. DIGITAL & IT SERVICES",
+      "To": "14.1. IT Strategy & Governance"
+    },
+    {
+      "ID": "14.1-14.1.1",
+      "FROMID": "14.1",
+      "TOID": "14.1.1",
+      "TYPE": "->",
+      "From": "14.1. IT Strategy & Governance",
+      "To": "14.1.1. IT Strategy Definition"
+    },
+    {
+      "ID": "14.1-14.1.2",
+      "FROMID": "14.1",
+      "TOID": "14.1.2",
+      "TYPE": "->",
+      "From": "14.1. IT Strategy & Governance",
+      "To": "14.1.2. Enterprise Architecture"
+    },
+    {
+      "ID": "14.1-14.1.3",
+      "FROMID": "14.1",
+      "TOID": "14.1.3",
+      "TYPE": "->",
+      "From": "14.1. IT Strategy & Governance",
+      "To": "14.1.3. IT Portfolio Management"
+    },
+    {
+      "ID": "14-14.2",
+      "FROMID": "14",
+      "TOID": "14.2",
+      "TYPE": "->",
+      "From": "14. DIGITAL & IT SERVICES",
+      "To": "14.2. Service Operations & Support"
+    },
+    {
+      "ID": "14.2-14.2.1",
+      "FROMID": "14.2",
+      "TOID": "14.2.1",
+      "TYPE": "->",
+      "From": "14.2. Service Operations & Support",
+      "To": "14.2.1. IT Service Desk & Incident Management"
+    },
+    {
+      "ID": "14.2-14.2.2",
+      "FROMID": "14.2",
+      "TOID": "14.2.2",
+      "TYPE": "->",
+      "From": "14.2. Service Operations & Support",
+      "To": "14.2.2. Problem Management"
+    },
+    {
+      "ID": "14.2-14.2.3",
+      "FROMID": "14.2",
+      "TOID": "14.2.3",
+      "TYPE": "->",
+      "From": "14.2. Service Operations & Support",
+      "To": "14.2.3. Service Level Agreement (SLA) Management"
+    },
+    {
+      "ID": "14-14.3",
+      "FROMID": "14",
+      "TOID": "14.3",
+      "TYPE": "->",
+      "From": "14. DIGITAL & IT SERVICES",
+      "To": "14.3. Infrastructure & Platforms"
+    },
+    {
+      "ID": "14.3-14.3.1",
+      "FROMID": "14.3",
+      "TOID": "14.3.1",
+      "TYPE": "->",
+      "From": "14.3. Infrastructure & Platforms",
+      "To": "14.3.1. Network Management"
+    },
+    {
+      "ID": "14.3-14.3.2",
+      "FROMID": "14.3",
+      "TOID": "14.3.2",
+      "TYPE": "->",
+      "From": "14.3. Infrastructure & Platforms",
+      "To": "14.3.2. Server & Cloud Platform Management"
+    },
+    {
+      "ID": "14.3-14.3.3",
+      "FROMID": "14.3",
+      "TOID": "14.3.3",
+      "TYPE": "->",
+      "From": "14.3. Infrastructure & Platforms",
+      "To": "14.3.3. Identity & Access Management (IAM)"
+    },
+    {
+      "ID": "14-14.4",
+      "FROMID": "14",
+      "TOID": "14.4",
+      "TYPE": "->",
+      "From": "14. DIGITAL & IT SERVICES",
+      "To": "14.4. Information & Cyber Security"
+    },
+    {
+      "ID": "14.4-14.4.1",
+      "FROMID": "14.4",
+      "TOID": "14.4.1",
+      "TYPE": "->",
+      "From": "14.4. Information & Cyber Security",
+      "To": "14.4.1. Security Policy & Compliance"
+    },
+    {
+      "ID": "14.4-14.4.2",
+      "FROMID": "14.4",
+      "TOID": "14.4.2",
+      "TYPE": "->",
+      "From": "14.4. Information & Cyber Security",
+      "To": "14.4.2. Threat Detection & Defence"
+    },
+    {
+      "ID": "14.4-14.4.3",
+      "FROMID": "14.4",
+      "TOID": "14.4.3",
+      "TYPE": "->",
+      "From": "14.4. Information & Cyber Security",
+      "To": "14.4.3. Incident Response & Recovery"
+    },
+    {
+      "ID": "15-15.1",
+      "FROMID": "15",
+      "TOID": "15.1",
+      "TYPE": "->",
+      "From": "15. DATA & ANALYTICS",
+      "To": "15.1. Data Governance & Quality"
+    },
+    {
+      "ID": "15.1-15.1.1",
+      "FROMID": "15.1",
+      "TOID": "15.1.1",
+      "TYPE": "->",
+      "From": "15.1. Data Governance & Quality",
+      "To": "15.1.1. Data Strategy Definition"
+    },
+    {
+      "ID": "15.1-15.1.2",
+      "FROMID": "15.1",
+      "TOID": "15.1.2",
+      "TYPE": "->",
+      "From": "15.1. Data Governance & Quality",
+      "To": "15.1.2. Data Quality Management"
+    },
+    {
+      "ID": "15.1-15.1.3",
+      "FROMID": "15.1",
+      "TOID": "15.1.3",
+      "TYPE": "->",
+      "From": "15.1. Data Governance & Quality",
+      "To": "15.1.3. Data Stewardship & Ownership"
+    },
+    {
+      "ID": "15-15.2",
+      "FROMID": "15",
+      "TOID": "15.2",
+      "TYPE": "->",
+      "From": "15. DATA & ANALYTICS",
+      "To": "15.2. Business Intelligence & Reporting"
+    },
+    {
+      "ID": "15.2-15.2.1",
+      "FROMID": "15.2",
+      "TOID": "15.2.1",
+      "TYPE": "->",
+      "From": "15.2. Business Intelligence & Reporting",
+      "To": "15.2.1. Reporting Tool Provision"
+    },
+    {
+      "ID": "15.2-15.2.2",
+      "FROMID": "15.2",
+      "TOID": "15.2.2",
+      "TYPE": "->",
+      "From": "15.2. Business Intelligence & Reporting",
+      "To": "15.2.2. Enterprise Data Warehouse Management"
+    },
+    {
+      "ID": "15.2-15.2.3",
+      "FROMID": "15.2",
+      "TOID": "15.2.3",
+      "TYPE": "->",
+      "From": "15.2. Business Intelligence & Reporting",
+      "To": "15.2.3. Predictive Analytics & Data Science"
+    },
+    {
+      "ID": "15.2-15.2.4",
+      "FROMID": "15.2",
+      "TOID": "15.2.4",
+      "TYPE": "->",
+      "From": "15.2. Business Intelligence & Reporting",
+      "To": "15.2.4. Statutory Reporting Support"
+    },
+    {
+      "ID": "4-4.3",
+      "FROMID": "4",
+      "TOID": "4.3",
+      "TYPE": "->",
+      "From": "4. STUDENT EXPERIENCE & ENGAGEMENT",
+      "To": "4.3. Manage student residential accommodation"
+    },
+    {
+      "ID": "4.3-4.3.1",
+      "FROMID": "4.3",
+      "TOID": "4.3.1",
+      "TYPE": "->",
+      "From": "4.3. Manage student residential accommodation",
+      "To": "4.3.1. Develop the accommodation guarantee and allocation policy"
+    },
+    {
+      "ID": "4.3-4.3.2",
+      "FROMID": "4.3",
+      "TOID": "4.3.2",
+      "TYPE": "->",
+      "From": "4.3. Manage student residential accommodation",
+      "To": "4.3.2. Process accommodation applications and preferences"
+    },
+    {
+      "ID": "4.3-4.3.3",
+      "FROMID": "4.3",
+      "TOID": "4.3.3",
+      "TYPE": "->",
+      "From": "4.3. Manage student residential accommodation",
+      "To": "4.3.3. Allocate rooms and manage occupancy"
+    },
+    {
+      "ID": "4.3-4.3.4",
+      "FROMID": "4.3",
+      "TOID": "4.3.4",
+      "TYPE": "->",
+      "From": "4.3. Manage student residential accommodation",
+      "To": "4.3.4. Administer residential rents and fees"
+    },
+    {
+      "ID": "4.3-4.3.5",
+      "FROMID": "4.3",
+      "TOID": "4.3.5",
+      "TYPE": "->",
+      "From": "4.3. Manage student residential accommodation",
+      "To": "4.3.5. Deliver residential life support and conduct"
+    },
+    {
+      "ID": "7-7.3",
+      "FROMID": "7",
+      "TOID": "7.3",
+      "TYPE": "->",
+      "From": "7. ACADEMIC & CURRICULUM MANAGEMENT",
+      "To": "7.3. Manage the academic timetable"
+    },
+    {
+      "ID": "7.3-7.3.1",
+      "FROMID": "7.3",
+      "TOID": "7.3.1",
+      "TYPE": "->",
+      "From": "7.3. Manage the academic timetable",
+      "To": "7.3.1. Define the annual timetabling cycle"
+    },
+    {
+      "ID": "7.3-7.3.2",
+      "FROMID": "7.3",
+      "TOID": "7.3.2",
+      "TYPE": "->",
+      "From": "7.3. Manage the academic timetable",
+      "To": "7.3.2. Collect teaching requirements"
+    },
+    {
+      "ID": "7.3-7.3.3",
+      "FROMID": "7.3",
+      "TOID": "7.3.3",
+      "TYPE": "->",
+      "From": "7.3. Manage the academic timetable",
+      "To": "7.3.3. Optimise room and space utilisation"
+    },
+    {
+      "ID": "7.3-7.3.4",
+      "FROMID": "7.3",
+      "TOID": "7.3.4",
+      "TYPE": "->",
+      "From": "7.3. Manage the academic timetable",
+      "To": "7.3.4. Verify and resolve timetable conflicts"
+    },
+    {
+      "ID": "7.3-7.3.5",
+      "FROMID": "7.3",
+      "TOID": "7.3.5",
+      "TYPE": "->",
+      "From": "7.3. Manage the academic timetable",
+      "To": "7.3.5. Publish and communicate timetables"
+    },
+    {
+      "ID": "7.3-7.3.6",
+      "FROMID": "7.3",
+      "TOID": "7.3.6",
+      "TYPE": "->",
+      "From": "7.3. Manage the academic timetable",
+      "To": "7.3.6. Govern post-publication changes"
+    },
+    {
+      "ID": "9-9.5",
+      "FROMID": "9",
+      "TOID": "9.5",
+      "TYPE": "->",
+      "From": "9. MARKETING, RECRUITMENT & WIDER ENGAGEMENT",
+      "To": "9.5. Govern student employability and placements"
+    },
+    {
+      "ID": "9.5-9.5.1",
+      "FROMID": "9.5",
+      "TOID": "9.5.1",
+      "TYPE": "->",
+      "From": "9.5. Govern student employability and placements",
+      "To": "9.5.1. Develop student careers and skills programmes"
+    },
+    {
+      "ID": "9.5-9.5.2",
+      "FROMID": "9.5",
+      "TOID": "9.5.2",
+      "TYPE": "->",
+      "From": "9.5. Govern student employability and placements",
+      "To": "9.5.2. Source and manage work placement opportunities"
+    },
+    {
+      "ID": "9.5-9.5.3",
+      "FROMID": "9.5",
+      "TOID": "9.5.3",
+      "TYPE": "->",
+      "From": "9.5. Govern student employability and placements",
+      "To": "9.5.3. Approve and accredit placement activity"
+    },
+    {
+      "ID": "9.5-9.5.4",
+      "FROMID": "9.5",
+      "TOID": "9.5.4",
+      "TYPE": "->",
+      "From": "9.5. Govern student employability and placements",
+      "To": "9.5.4. Manage placement compliance and risk"
+    },
+    {
+      "ID": "9.5-9.5.5",
+      "FROMID": "9.5",
+      "TOID": "9.5.5",
+      "TYPE": "->",
+      "From": "9.5. Govern student employability and placements",
+      "To": "9.5.5. Provide in-placement student support"
+    },
+    {
+      "ID": "10-10.5",
+      "FROMID": "10",
+      "TOID": "10.5",
+      "TYPE": "->",
+      "From": "10. PEOPLE & HR MANAGEMENT",
+      "To": "10.5. Manage academic careers and tracks"
+    },
+    {
+      "ID": "10.5-10.5.1",
+      "FROMID": "10.5",
+      "TOID": "10.5.1",
+      "TYPE": "->",
+      "From": "10.5. Manage academic careers and tracks",
+      "To": "10.5.1. Define academic career tracks"
+    },
+    {
+      "ID": "10.5-10.5.2",
+      "FROMID": "10.5",
+      "TOID": "10.5.2",
+      "TYPE": "->",
+      "From": "10.5. Manage academic careers and tracks",
+      "To": "10.5.2. Govern the academic promotion process"
+    },
+    {
+      "ID": "10.5-10.5.3",
+      "FROMID": "10.5",
+      "TOID": "10.5.3",
+      "TYPE": "->",
+      "From": "10.5. Manage academic careers and tracks",
+      "To": "10.5.3. Define and assess contribution pillars"
+    },
+    {
+      "ID": "10.5-10.5.4",
+      "FROMID": "10.5",
+      "TOID": "10.5.4",
+      "TYPE": "->",
+      "From": "10.5. Manage academic careers and tracks",
+      "To": "10.5.4. Ensure equity in academic review"
+    },
+    {
+      "ID": "10-10.6",
+      "FROMID": "10",
+      "TOID": "10.6",
+      "TYPE": "->",
+      "From": "10. PEOPLE & HR MANAGEMENT",
+      "To": "10.6. Perform academic workload planning"
+    },
+    {
+      "ID": "12-12.3",
+      "FROMID": "12",
+      "TOID": "12.3",
+      "TYPE": "->",
+      "From": "12. ESTATES & FACILITIES",
+      "To": "12.3. Manage the strategic estate portfolio"
+    },
+    {
+      "ID": "12.3-12.3.1",
+      "FROMID": "12.3",
+      "TOID": "12.3.1",
+      "TYPE": "->",
+      "From": "12.3. Manage the strategic estate portfolio",
+      "To": "12.3.1. Develop the Estate Strategy"
+    },
+    {
+      "ID": "12.3-12.3.2",
+      "FROMID": "12.3",
+      "TOID": "12.3.2",
+      "TYPE": "->",
+      "From": "12.3. Manage the strategic estate portfolio",
+      "To": "12.3.2. Govern space allocation"
+    },
+    {
+      "ID": "12.3-12.3.3",
+      "FROMID": "12.3",
+      "TOID": "12.3.3",
+      "TYPE": "->",
+      "From": "12.3. Manage the strategic estate portfolio",
+      "To": "12.3.3. Monitor space performance and utilisation"
+    },
+    {
+      "ID": "12.3-12.3.4",
+      "FROMID": "12.3",
+      "TOID": "12.3.4",
+      "TYPE": "->",
+      "From": "12.3. Manage the strategic estate portfolio",
+      "To": "12.3.4. Administer space change requests"
+    },
+    {
+      "ID": "12-12.4",
+      "FROMID": "12",
+      "TOID": "12.4",
+      "TYPE": "->",
+      "From": "12. ESTATES & FACILITIES",
+      "To": "12.4. Deliver capital projects"
+    },
+    {
+      "ID": "12.4-12.4.1",
+      "FROMID": "12.4",
+      "TOID": "12.4.1",
+      "TYPE": "->",
+      "From": "12.4. Deliver capital projects",
+      "To": "12.4.1. Define project feasibility"
+    },
+    {
+      "ID": "12.4-12.4.2",
+      "FROMID": "12.4",
+      "TOID": "12.4.2",
+      "TYPE": "->",
+      "From": "12.4. Deliver capital projects",
+      "To": "12.4.2. Design and plan projects"
+    },
+    {
+      "ID": "12.4-12.4.3",
+      "FROMID": "12.4",
+      "TOID": "12.4.3",
+      "TYPE": "->",
+      "From": "12.4. Deliver capital projects",
+      "To": "12.4.3. Manage project procurement and contracts"
+    },
+    {
+      "ID": "12.4-12.4.4",
+      "FROMID": "12.4",
+      "TOID": "12.4.4",
+      "TYPE": "->",
+      "From": "12.4. Deliver capital projects",
+      "To": "12.4.4. Oversee construction and delivery"
+    },
+    {
+      "ID": "12.4-12.4.5",
+      "FROMID": "12.4",
+      "TOID": "12.4.5",
+      "TYPE": "->",
+      "From": "12.4. Deliver capital projects",
+      "To": "12.4.5. Conduct post-project evaluation"
+    },
+    {
+      "ID": "13-13.1",
+      "FROMID": "13",
+      "TOID": "13.1",
+      "TYPE": "->",
+      "From": "13. LIBRARY & LEARNING RESOURCES",
+      "To": "13.1. Manage collections and resources"
+    },
+    {
+      "ID": "13.1-13.1.1",
+      "FROMID": "13.1",
+      "TOID": "13.1.1",
+      "TYPE": "->",
+      "From": "13.1. Manage collections and resources",
+      "To": "13.1.1. Develop the content acquisition strategy"
+    },
+    {
+      "ID": "13.1-13.1.2",
+      "FROMID": "13.1",
+      "TOID": "13.1.2",
+      "TYPE": "->",
+      "From": "13.1. Manage collections and resources",
+      "To": "13.1.2. Acquire and license content"
+    },
+    {
+      "ID": "13.1-13.1.3",
+      "FROMID": "13.1",
+      "TOID": "13.1.3",
+      "TYPE": "->",
+      "From": "13.1. Manage collections and resources",
+      "To": "13.1.3. Curate and preserve digital assets"
+    },
+    {
+      "ID": "13.1-13.1.4",
+      "FROMID": "13.1",
+      "TOID": "13.1.4",
+      "TYPE": "->",
+      "From": "13.1. Manage collections and resources",
+      "To": "13.1.4. Administer discovery and access systems"
+    },
+    {
+      "ID": "13-13.4",
+      "FROMID": "13",
+      "TOID": "13.4",
+      "TYPE": "->",
+      "From": "13. LIBRARY & LEARNING RESOURCES",
+      "To": "13.4. Enable research data and open access"
+    },
+    {
+      "ID": "13.4-13.4.1",
+      "FROMID": "13.4",
+      "TOID": "13.4.1",
+      "TYPE": "->",
+      "From": "13.4. Enable research data and open access",
+      "To": "13.4.1. Provide research data management support"
+    },
+    {
+      "ID": "13.4-13.4.2",
+      "FROMID": "13.4",
+      "TOID": "13.4.2",
+      "TYPE": "->",
+      "From": "13.4. Enable research data and open access",
+      "To": "13.4.2. Support open access compliance"
+    },
+    {
+      "ID": "13.4-13.4.3",
+      "FROMID": "13.4",
+      "TOID": "13.4.3",
+      "TYPE": "->",
+      "From": "13.4. Enable research data and open access",
+      "To": "13.4.3. Manage the institutional repository"
+    }
+  ]
+}

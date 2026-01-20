@@ -1,0 +1,103 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Test 9: Sparse Long Distance"
+    },
+    "AUTHOR": {
+      "value": "Test Suite",
+      "readOnly": "true"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Few nodes with long-distance connections",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "Dynamic",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    {
+      "ID": "REGION_US",
+      "TEXT": "US Region",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "REGION_EU",
+      "TEXT": "EU Region",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "REGION_ASIA",
+      "TEXT": "Asia Region",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "GLOBAL_LB",
+      "TEXT": "Global Load Balancer",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "CDN",
+      "TEXT": "CDN",
+      "TYPE": "SYSTEM"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "LB_US",
+      "FROMID": "GLOBAL_LB",
+      "TOID": "REGION_US",
+      "TEXT": "Route US",
+      "TYPE": "->"
+    },
+    {
+      "ID": "LB_EU",
+      "FROMID": "GLOBAL_LB",
+      "TOID": "REGION_EU",
+      "TEXT": "Route EU",
+      "TYPE": "->"
+    },
+    {
+      "ID": "LB_ASIA",
+      "FROMID": "GLOBAL_LB",
+      "TOID": "REGION_ASIA",
+      "TEXT": "Route Asia",
+      "TYPE": "->"
+    },
+    {
+      "ID": "US_EU",
+      "FROMID": "REGION_US",
+      "TOID": "REGION_EU",
+      "TEXT": "Replicate",
+      "TYPE": "->"
+    },
+    {
+      "ID": "EU_ASIA",
+      "FROMID": "REGION_EU",
+      "TOID": "REGION_ASIA",
+      "TEXT": "Replicate",
+      "TYPE": "->"
+    },
+    {
+      "ID": "CDN_US",
+      "FROMID": "CDN",
+      "TOID": "REGION_US",
+      "TEXT": "Origin Pull",
+      "TYPE": "->"
+    },
+    {
+      "ID": "CDN_EU",
+      "FROMID": "CDN",
+      "TOID": "REGION_EU",
+      "TEXT": "Origin Pull",
+      "TYPE": "->"
+    }
+  ]
+}

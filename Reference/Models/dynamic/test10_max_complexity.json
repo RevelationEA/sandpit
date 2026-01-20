@@ -1,0 +1,246 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Test 10: Maximum Complexity"
+    },
+    "AUTHOR": {
+      "value": "Test Suite",
+      "readOnly": "true"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Large complex system with many interconnections",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "Dynamic",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    {
+      "ID": "N1",
+      "TEXT": "Node 1",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "N2",
+      "TEXT": "Node 2",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "N3",
+      "TEXT": "Node 3",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "N4",
+      "TEXT": "Node 4",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "N5",
+      "TEXT": "Node 5",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "N6",
+      "TEXT": "Node 6",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "N7",
+      "TEXT": "Node 7",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "N8",
+      "TEXT": "Node 8",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "N9",
+      "TEXT": "Node 9",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "N10",
+      "TEXT": "Node 10",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "D1",
+      "TEXT": "Datastore 1",
+      "TYPE": "DATASTORE"
+    },
+    {
+      "ID": "D2",
+      "TEXT": "Datastore 2",
+      "TYPE": "DATASTORE"
+    },
+    {
+      "ID": "A1",
+      "TEXT": "Actor 1",
+      "TYPE": "ACTOR"
+    },
+    {
+      "ID": "A2",
+      "TEXT": "Actor 2",
+      "TYPE": "ACTOR"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "E1",
+      "FROMID": "A1",
+      "TOID": "N1",
+      "TEXT": "Input",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E2",
+      "FROMID": "A2",
+      "TOID": "N2",
+      "TEXT": "Input",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E3",
+      "FROMID": "N1",
+      "TOID": "N3",
+      "TEXT": "Process",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E4",
+      "FROMID": "N1",
+      "TOID": "N4",
+      "TEXT": "Process",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E5",
+      "FROMID": "N2",
+      "TOID": "N3",
+      "TEXT": "Process",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E6",
+      "FROMID": "N2",
+      "TOID": "N5",
+      "TEXT": "Process",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E7",
+      "FROMID": "N3",
+      "TOID": "N6",
+      "TEXT": "Transform",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E8",
+      "FROMID": "N4",
+      "TOID": "N6",
+      "TEXT": "Transform",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E9",
+      "FROMID": "N4",
+      "TOID": "N7",
+      "TEXT": "Transform",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E10",
+      "FROMID": "N5",
+      "TOID": "N7",
+      "TEXT": "Transform",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E11",
+      "FROMID": "N5",
+      "TOID": "N8",
+      "TEXT": "Transform",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E12",
+      "FROMID": "N6",
+      "TOID": "N9",
+      "TEXT": "Aggregate",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E13",
+      "FROMID": "N7",
+      "TOID": "N9",
+      "TEXT": "Aggregate",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E14",
+      "FROMID": "N7",
+      "TOID": "N10",
+      "TEXT": "Aggregate",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E15",
+      "FROMID": "N8",
+      "TOID": "N10",
+      "TEXT": "Aggregate",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E16",
+      "FROMID": "N3",
+      "TOID": "D1",
+      "TEXT": "Store",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E17",
+      "FROMID": "N6",
+      "TOID": "D1",
+      "TEXT": "Store",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E18",
+      "FROMID": "N9",
+      "TOID": "D2",
+      "TEXT": "Store",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E19",
+      "FROMID": "N10",
+      "TOID": "D2",
+      "TEXT": "Store",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E20",
+      "FROMID": "N9",
+      "TOID": "N1",
+      "TEXT": "Feedback",
+      "TYPE": "->"
+    },
+    {
+      "ID": "E21",
+      "FROMID": "N10",
+      "TOID": "N2",
+      "TEXT": "Feedback",
+      "TYPE": "->"
+    }
+  ]
+}

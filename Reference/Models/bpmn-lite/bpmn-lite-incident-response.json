@@ -1,0 +1,52 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "BPMN Lite: Incident Response"
+    },
+    "AUTHOR": {
+      "value": "Revelation EA"
+    },
+    "MODELTYPE": {
+      "value": "BPMN_LITE",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Incident response flow with parallel handling and subprocess containment.",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "HorizontalFlow",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    { "ID": "SE1", "TEXT": "Detect Incident", "TYPE": "BPMN_START_EVENT", "Pool": "Security", "Lane": "SOC" },
+    { "ID": "TK1", "TEXT": "Triage", "TYPE": "BPMN_TASK", "Pool": "Security", "Lane": "SOC" },
+    { "ID": "TK1B", "TEXT": "Decision: Major Incident?", "TYPE": "BPMN_TASK", "Pool": "Security", "Lane": "SOC" },
+    { "ID": "GW1", "TEXT": "", "TYPE": "BPMN_XOR_GATEWAY", "Pool": "Security", "Lane": "SOC" },
+    { "ID": "SP1", "TEXT": "Containment", "TYPE": "BPMN_SUBPROCESS", "Pool": "Security", "Lane": "IR Team" },
+    { "ID": "GW2", "TEXT": "", "TYPE": "BPMN_AND_GATEWAY", "Pool": "Security", "Lane": "IR Team" },
+    { "ID": "TK2", "TEXT": "Isolate Systems", "TYPE": "BPMN_TASK", "Pool": "Security", "Lane": "Infrastructure" },
+    { "ID": "TK3", "TEXT": "Notify Stakeholders", "TYPE": "BPMN_TASK", "Pool": "Security", "Lane": "Comms" },
+    { "ID": "IE1", "TEXT": "Await Approval", "TYPE": "BPMN_INTERMEDIATE_EVENT", "Pool": "Security", "Lane": "Governance" },
+    { "ID": "DO1", "TEXT": "Incident Report", "TYPE": "BPMN_DATA_OBJECT", "Pool": "Security", "Lane": "Governance" },
+    { "ID": "DS1", "TEXT": "Ticketing", "TYPE": "BPMN_DATA_STORE", "Pool": "Security", "Lane": "Governance" },
+    { "ID": "EE1", "TEXT": "Resolved", "TYPE": "BPMN_END_EVENT", "Pool": "Security", "Lane": "SOC" }
+  ],
+  "interactions": [
+    { "ID": "I1", "FROMID": "SE1", "TOID": "TK1", "TEXT": "Start", "TYPE": "->" },
+    { "ID": "I2", "FROMID": "TK1", "TOID": "TK1B", "TEXT": "Assess", "TYPE": "->" },
+    { "ID": "I3", "FROMID": "TK1B", "TOID": "GW1", "TEXT": "", "TYPE": "->" },
+    { "ID": "I4", "FROMID": "GW1", "TOID": "SP1", "TEXT": "Yes", "TYPE": "->" },
+    { "ID": "I5", "FROMID": "GW1", "TOID": "DO1", "TEXT": "No", "TYPE": "->" },
+    { "ID": "I6", "FROMID": "SP1", "TOID": "GW2", "TEXT": "Initiate", "TYPE": "->" },
+    { "ID": "I7", "FROMID": "GW2", "TOID": "TK2", "TEXT": "Contain", "TYPE": "->" },
+    { "ID": "I8", "FROMID": "GW2", "TOID": "TK3", "TEXT": "Communicate", "TYPE": "->" },
+    { "ID": "I9", "FROMID": "TK2", "TOID": "DS1", "TEXT": "Update", "TYPE": "->" },
+    { "ID": "I10", "FROMID": "TK3", "TOID": "IE1", "TEXT": "Approve", "TYPE": "->" },
+    { "ID": "I11", "FROMID": "IE1", "TOID": "DO1", "TEXT": "Draft", "TYPE": "->" },
+    { "ID": "I12", "FROMID": "DO1", "TOID": "EE1", "TEXT": "Close", "TYPE": "->" }
+  ]
+}

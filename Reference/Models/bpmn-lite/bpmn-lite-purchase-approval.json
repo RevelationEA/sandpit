@@ -1,0 +1,49 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "BPMN Lite: Purchase Approval"
+    },
+    "AUTHOR": {
+      "value": "Revelation EA"
+    },
+    "MODELTYPE": {
+      "value": "BPMN_LITE",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "A lightweight BPMN example for a purchase request and approval flow.",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "HorizontalFlow",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    { "ID": "SE1", "TEXT": "Request Submitted", "TYPE": "BPMN_START_EVENT", "Pool": "Company", "Lane": "Requester" },
+    { "ID": "TK1", "TEXT": "Draft Request", "TYPE": "BPMN_TASK", "Pool": "Company", "Lane": "Requester" },
+    { "ID": "DO1", "TEXT": "Purchase Request", "TYPE": "BPMN_DATA_OBJECT", "Pool": "Company", "Lane": "Requester" },
+    { "ID": "GW1", "TEXT": "", "TYPE": "BPMN_XOR_GATEWAY", "Pool": "Company", "Lane": "Requester" },
+    { "ID": "TK2", "TEXT": "Manager Review", "TYPE": "BPMN_TASK", "Pool": "Company", "Lane": "Manager" },
+    { "ID": "GW2", "TEXT": "", "TYPE": "BPMN_XOR_GATEWAY", "Pool": "Company", "Lane": "Manager" },
+    { "ID": "TK3", "TEXT": "Finance Approval", "TYPE": "BPMN_TASK", "Pool": "Company", "Lane": "Finance" },
+    { "ID": "TK4", "TEXT": "Place Order", "TYPE": "BPMN_TASK", "Pool": "Company", "Lane": "Procurement" },
+    { "ID": "DS1", "TEXT": "ERP", "TYPE": "BPMN_DATA_STORE", "Pool": "Company", "Lane": "Procurement" },
+    { "ID": "EE1", "TEXT": "Request Completed", "TYPE": "BPMN_END_EVENT", "Pool": "Company", "Lane": "Procurement" }
+  ],
+  "interactions": [
+    { "ID": "I1", "FROMID": "SE1", "TOID": "TK1", "TEXT": "Initiate", "TYPE": "->" },
+    { "ID": "I2", "FROMID": "TK1", "TOID": "DO1", "TEXT": "Create", "TYPE": "->" },
+    { "ID": "I3", "FROMID": "DO1", "TOID": "GW1", "TEXT": "Submit", "TYPE": "->" },
+    { "ID": "I4", "FROMID": "GW1", "TOID": "TK2", "TEXT": "Above Threshold", "TYPE": "->" },
+    { "ID": "I5", "FROMID": "GW1", "TOID": "TK4", "TEXT": "Within Threshold", "TYPE": "->" },
+    { "ID": "I6", "FROMID": "TK2", "TOID": "GW2", "TEXT": "Review", "TYPE": "->" },
+    { "ID": "I7", "FROMID": "GW2", "TOID": "TK3", "TEXT": "Approved", "TYPE": "->" },
+    { "ID": "I8", "FROMID": "GW2", "TOID": "TK1", "TEXT": "Revise", "TYPE": "->" },
+    { "ID": "I9", "FROMID": "TK3", "TOID": "TK4", "TEXT": "Authorize", "TYPE": "->" },
+    { "ID": "I10", "FROMID": "TK4", "TOID": "DS1", "TEXT": "Create PO", "TYPE": "->" },
+    { "ID": "I11", "FROMID": "DS1", "TOID": "EE1", "TEXT": "Complete", "TYPE": "->" }
+  ]
+}

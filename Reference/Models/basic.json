@@ -1,0 +1,70 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Basic Start Model"
+    },
+    "AUTHOR": {
+      "value": "Steve White",
+      "readOnly": "true"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Basic starter model demonstrating simple systems and interactions",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "VerticalFlow",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    {
+      "ID": "SYS1",
+      "TEXT": "System 1",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "SYS2",
+      "TEXT": "System 2",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "ACT1",
+      "TEXT": "Actor 1",
+      "TYPE": "ACTOR"
+    },
+    {
+      "ID": "DS1",
+      "TEXT": "Datastore 1",
+      "TYPE": "DATASTORE"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "INT1",
+      "FROMID": "SYS1",
+      "TOID": "SYS2",
+      "TEXT": "Order",
+      "TYPE": "->"
+    },
+    {
+      "ID": "INT2",
+      "FROMID": "ACT1",
+      "TOID": "SYS1",
+      "TEXT": "Customer Order",
+      "TYPE": "->"
+    },
+    {
+      "ID": "INT3",
+      "FROMID": "SYS1",
+      "TOID": "DS1",
+      "TEXT": "Data",
+      "TYPE": "->"
+    }
+  ]
+}

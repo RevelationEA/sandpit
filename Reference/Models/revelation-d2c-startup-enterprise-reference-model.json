@@ -1,0 +1,1098 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Revelation D2C Startup Enterprise Reference Model",
+      "inputType": "text"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "LAYOUT": {
+      "value": "CenteredRectangle",
+      "inputType": "select",
+      "refData": "LAYOUTTYPE"
+    },
+    "VIEW": {
+      "value": "Architecture",
+      "inputType": "select",
+      "refData": "VIEWTYPE"
+    },
+    "Detailed Description": {
+      "value": "https://revelationcore.com/blogs/d2c-startup-to-multi-million-buyout-a-systems-blueprint.html",
+      "inputType": "url"
+    },
+    "Author": {
+      "value": "Steve J White",
+      "inputType": "text"
+    }
+  },
+  "systems": [
+    {
+      "ID": "ACCT",
+      "TEXT": "Accounting",
+      "TYPE": "SYSTEM",
+      "Example Products": "QuickBooks, Xero, NetSuite",
+      "Description": "Central finance system for managing ledgers, invoices, and financial statements",
+      "Key Capabilities": "General ledger, AP/AR, Bank reconciliation, Financial reporting",
+      "Business Domain": "Finance & Accounting"
+    },
+    {
+      "ID": "AFF",
+      "TEXT": "Affiliate Network",
+      "TYPE": "SYSTEM",
+      "Example Products": "Impact, Partnerize, Rakuten Advertising",
+      "Description": "Tracks affiliate-driven sales and manages commission payouts",
+      "Key Capabilities": "Affiliate tracking, Commission calculations, Partner management",
+      "Business Domain": "Sales & Marketing"
+    },
+    {
+      "ID": "AIR",
+      "TEXT": "Flexible Database",
+      "TYPE": "SYSTEM",
+      "Example Products": "Airtable, Knack, Caspio",
+      "Description": "Cloud-based no-code database/spreadsheet for custom data tracking and workflows",
+      "Key Capabilities": "Data modeling, Collaboration, Automation, Form-based inputs",
+      "Business Domain": "Product & Project Management"
+    },
+    {
+      "ID": "AMZ",
+      "TEXT": "Marketplace Platform",
+      "TYPE": "SYSTEM",
+      "Example Products": "Amazon, eBay, Walmart Marketplace",
+      "Description": "Online storefront listing and order management for products",
+      "Key Capabilities": "Product listings, Order processing, Shipping updates, Seller metrics",
+      "Business Domain": "Sales Operations"
+    },
+    {
+      "ID": "APP",
+      "TEXT": "Finance Approvals",
+      "TYPE": "SYSTEM",
+      "Example Products": "ApprovalMax, Tipalti",
+      "Description": "Facilitates multi-step approvals for bills, invoices, or purchase orders",
+      "Key Capabilities": "Approval workflows, Audit trail, Integration with accounting",
+      "Business Domain": "Finance & Accounting"
+    },
+    {
+      "ID": "BNK",
+      "TEXT": "Banking",
+      "TYPE": "SYSTEM",
+      "Example Products": "Chase, Wells Fargo, Bank of America",
+      "Description": "Manages business bank accounts and processes incoming/outgoing transactions",
+      "Key Capabilities": "Funds transfer, Bank statements, Payment processing, Balance tracking",
+      "Business Domain": "Finance & Accounting"
+    },
+    {
+      "ID": "CHAT",
+      "TEXT": "Team Communication",
+      "TYPE": "SYSTEM",
+      "Example Products": "Slack, Microsoft Teams, Discord",
+      "Description": "Real-time messaging and channels for internal collaboration",
+      "Key Capabilities": "Chat rooms, File sharing, Notifications, Bot integrations",
+      "Business Domain": "Internal Communication"
+    },
+    {
+      "ID": "CMS",
+      "TEXT": "Headless CMS",
+      "TYPE": "SYSTEM",
+      "Example Products": "DatoCMS, Contentful, Strapi",
+      "Description": "Central repository for website or app content delivered via APIs",
+      "Key Capabilities": "Content modeling, Editorial workflow, Multi-channel publishing, Versioning",
+      "Business Domain": "Sales & Marketing"
+    },
+    {
+      "ID": "CS",
+      "TEXT": "Customer Support",
+      "TYPE": "SYSTEM",
+      "Example Products": "Zendesk, Freshdesk, ServiceNow",
+      "Description": "Manages customer inquiries, tickets, and service interactions",
+      "Key Capabilities": "Ticketing, Multi-channel support, Knowledge base, SLA tracking",
+      "Business Domain": "Customer Support & Service"
+    },
+    {
+      "ID": "CUS",
+      "TEXT": "Customers",
+      "TYPE": "ACTOR",
+      "Example Products": "N/A",
+      "Description": "End consumers purchasing products or subscriptions",
+      "Key Capabilities": "N/A",
+      "Business Domain": "Customer & Sales"
+    },
+    {
+      "ID": "DWH",
+      "TEXT": "Data Warehouse",
+      "TYPE": "SYSTEM",
+      "Example Products": "Snowflake, Amazon Redshift, Google BigQuery",
+      "Description": "Centralized storage of consolidated enterprise data for analysis and reporting",
+      "Key Capabilities": "ETL/ELT, Historical data, Integration with BI tools, Scalable queries",
+      "Business Domain": "Analytics & Reporting"
+    },
+    {
+      "ID": "ECP",
+      "TEXT": "E-Commerce Platform",
+      "TYPE": "SYSTEM",
+      "Example Products": "Shopify, Magento, WooCommerce",
+      "Description": "Online storefront with product catalog, checkout, and order tracking",
+      "Key Capabilities": "Direct-to-consumer sales, Payment integration, Promotions, Order management",
+      "Business Domain": "Sales Operations"
+    },
+    {
+      "ID": "ERP",
+      "TEXT": "ERP & Fulfillment",
+      "TYPE": "SYSTEM",
+      "Example Products": "Fulfil, NetSuite ERP, SAP Business One",
+      "Description": "Coordinates inventory, procurement, and order fulfillment across channels",
+      "Key Capabilities": "Inventory mgmt, Multi-channel orders, Warehouse operations, Purchasing",
+      "Business Domain": "Operations & Supply Chain"
+    },
+    {
+      "ID": "FIN",
+      "TEXT": "Finance",
+      "TYPE": "ACTOR",
+      "Example Products": "N/A",
+      "Description": "Finance team handling budgets, reporting, and manual financial processes",
+      "Key Capabilities": "Budget oversight, Financial analysis, Payments, Compliance",
+      "Business Domain": "Finance & Accounting"
+    },
+    {
+      "ID": "HRG",
+      "TEXT": "Human Resources",
+      "TYPE": "ACTOR",
+      "Example Products": "N/A",
+      "Description": "HR team handling hiring, onboarding, and other manual HR activities",
+      "Key Capabilities": "Recruitment, Policy compliance, Performance management, Employee relations",
+      "Business Domain": "Human Resources"
+    },
+    {
+      "ID": "HRIS",
+      "TEXT": "HR Information System",
+      "TYPE": "SYSTEM",
+      "Example Products": "Workday, BambooHR, ADP Workforce Now",
+      "Description": "Maintains employee records, roles, and HR workflows",
+      "Key Capabilities": "Employee data, Onboarding, Time-off tracking, Org charts",
+      "Business Domain": "Human Resources"
+    },
+    {
+      "ID": "KB",
+      "TEXT": "Knowledge Base",
+      "TYPE": "SYSTEM",
+      "Example Products": "Confluence, Notion, SharePoint",
+      "Description": "Central documentation platform for internal knowledge sharing",
+      "Key Capabilities": "Wiki pages, Document collaboration, Version history, Search",
+      "Business Domain": "Internal Communication"
+    },
+    {
+      "ID": "MA",
+      "TEXT": "Marketing Automation",
+      "TYPE": "SYSTEM",
+      "Example Products": "Klaviyo, HubSpot, Marketo",
+      "Description": "Manages email, SMS, and other automated campaigns based on customer behavior",
+      "Key Capabilities": "Segmentation, Campaign triggers, Analytics, Personalization",
+      "Business Domain": "Sales & Marketing"
+    },
+    {
+      "ID": "PAY",
+      "TEXT": "Payment Processor",
+      "TYPE": "SYSTEM",
+      "Example Products": "Stripe, PayPal, Adyen",
+      "Description": "External gateway for card or digital payments authorization and settlement",
+      "Key Capabilities": "Payment authorization, Refunds, Secure tokenization, Fraud checks",
+      "Business Domain": "Finance & Accounting"
+    },
+    {
+      "ID": "PLN",
+      "TEXT": "Enterprise Planning",
+      "TYPE": "SYSTEM",
+      "Example Products": "Anaplan, Adaptive Insights, Oracle Hyperion",
+      "Description": "Budgeting, forecasting, and scenario modeling across finance and operations",
+      "Key Capabilities": "Multi-dimensional modeling, What-if analysis, Collaboration, Reporting",
+      "Business Domain": "Finance & Strategy"
+    },
+    {
+      "ID": "POS",
+      "TEXT": "POS Terminal",
+      "TYPE": "SYSTEM",
+      "Example Products": "Square, Lightspeed, Toast",
+      "Description": "Physical device for in-person card transactions and payment capture",
+      "Key Capabilities": "Card processing, Payment approvals, Receipt printing, Offline mode",
+      "Business Domain": "Sales Operations"
+    },
+    {
+      "ID": "PRG",
+      "TEXT": "Payroll",
+      "TYPE": "ACTOR",
+      "Example Products": "N/A",
+      "Description": "Payroll function for managing employee compensation and compliance",
+      "Key Capabilities": "Manual wage calculations, Payslip distribution, Tax compliance",
+      "Business Domain": "HR & Finance"
+    },
+    {
+      "ID": "PRL",
+      "TEXT": "Payroll System",
+      "TYPE": "SYSTEM",
+      "Example Products": "IRIS, ADP Payroll, Paychex",
+      "Description": "Calculates employee wages, taxes, and generates payslips",
+      "Key Capabilities": "Pay runs, Tax & pension processing, Payslip generation, Compliance reporting",
+      "Business Domain": "HR & Finance"
+    },
+    {
+      "ID": "REV",
+      "TEXT": "Reviews Platform",
+      "TYPE": "SYSTEM",
+      "Example Products": "Trustpilot, Yotpo, Feefo",
+      "Description": "Collects and displays customer feedback and product/service ratings",
+      "Key Capabilities": "Review invitations, Rating widgets, Reputation management, Analytics",
+      "Business Domain": "Customer Service & Marketing"
+    },
+    {
+      "ID": "RTP",
+      "TEXT": "Retail Partners",
+      "TYPE": "ACTOR",
+      "Example Products": "N/A",
+      "Description": "Wholesale or retail partners that carry or resell the company’s products",
+      "Key Capabilities": "N/A",
+      "Business Domain": "B2B Sales & Distribution"
+    },
+    {
+      "ID": "SEA",
+      "TEXT": "Search Ads",
+      "TYPE": "SYSTEM",
+      "Example Products": "Google Ads, Bing Ads, Yahoo Gemini",
+      "Description": "Paid search advertising platform for keyword bidding and campaign management",
+      "Key Capabilities": "Keyword targeting, Ad creation, Conversion tracking, Reporting",
+      "Business Domain": "Sales & Marketing"
+    },
+    {
+      "ID": "SCM",
+      "TEXT": "Social Commerce",
+      "TYPE": "SYSTEM",
+      "Example Products": "TikTok Shop, Instagram Shopping, Facebook Shop",
+      "Description": "In-app product listings, checkout, and promotions on social media platforms",
+      "Key Capabilities": "Product feeds, In-app checkout, Influencer campaigns, Order sync",
+      "Business Domain": "Sales & Marketing"
+    },
+    {
+      "ID": "SOC",
+      "TEXT": "Social Ads Platform",
+      "TYPE": "SYSTEM",
+      "Example Products": "Meta Ads Manager, LinkedIn Ads, Twitter Ads",
+      "Description": "Runs advertising campaigns on social media networks and tracks performance",
+      "Key Capabilities": "Audience targeting, Retargeting, Creative management, Conversion metrics",
+      "Business Domain": "Sales & Marketing"
+    },
+    {
+      "ID": "SHT",
+      "TEXT": "Spreadsheets",
+      "TYPE": "SYSTEM",
+      "Example Products": "Microsoft Excel, Google Sheets, Apple Numbers",
+      "Description": "Manual data entry and collaboration tool for ad hoc reporting or analysis",
+      "Key Capabilities": "Flexible data tables, Formulas, Shared editing, Quick exports",
+      "Business Domain": "General Productivity"
+    },
+    {
+      "ID": "SUB",
+      "TEXT": "Subscription Management",
+      "TYPE": "SYSTEM",
+      "Example Products": "Recharge, Zuora, Chargebee",
+      "Description": "Oversees recurring billing and subscription-based product orders",
+      "Key Capabilities": "Recurring payments, Plan management, Customer portal, Billing cycles",
+      "Business Domain": "Sales Operations"
+    },
+    {
+      "ID": "SUP",
+      "TEXT": "Suppliers",
+      "TYPE": "ACTOR",
+      "Example Products": "N/A",
+      "Description": "External vendors providing materials or finished goods for production",
+      "Key Capabilities": "N/A",
+      "Business Domain": "Supply Chain"
+    },
+    {
+      "ID": "TPL",
+      "TEXT": "3PL Fulfillment",
+      "TYPE": "ACTOR",
+      "Example Products": "N/A",
+      "Description": "Third-party logistics provider handling warehousing and shipping",
+      "Key Capabilities": "Inventory storage, Pick/pack/ship, Returns processing, Delivery tracking",
+      "Business Domain": "Operations & Logistics"
+    },
+    {
+      "ID": "WAN",
+      "TEXT": "Web Analytics",
+      "TYPE": "SYSTEM",
+      "Example Products": "Google Analytics, Adobe Analytics, Mixpanel",
+      "Description": "Tracks website visitor behavior, conversions, and performance metrics",
+      "Key Capabilities": "Traffic analysis, Funnel reports, E-commerce tracking, Real-time data",
+      "Business Domain": "Sales & Marketing"
+    },
+    {
+      "ID": "PM",
+      "TEXT": "Project Management",
+      "TYPE": "SYSTEM",
+      "Example Products": "Jira, Asana, Trello",
+      "Description": "Central platform for planning, tracking, and managing projects and tasks",
+      "Key Capabilities": "Task tracking, Project planning, Collaboration, Deadline management",
+      "Business Domain": "Product & Project Management"
+    },
+    {
+      "ID": "BI",
+      "TEXT": "Business Intelligence",
+      "TYPE": "SYSTEM",
+      "Example Products": "Tableau, Microsoft Power BI, Looker",
+      "Description": "Analytics and reporting tools for visualizing data and insights",
+      "Key Capabilities": "Data visualization, Dashboarding, Ad-hoc analysis, Reporting",
+      "Business Domain": "Analytics & Reporting"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "F001",
+      "FROMID": "CUS",
+      "TOID": "ECP",
+      "TEXT": "Order Submission",
+      "TYPE": "->",
+      "Description of Data Flow": "Customer places order on E-Commerce Platform (provides order details and payment info)",
+      "Entities": "Customer,Order,PaymentInfo",
+      "From": "Customers",
+      "To": "E-Commerce Platform"
+    },
+    {
+      "ID": "F002",
+      "FROMID": "ECP",
+      "TOID": "PAY",
+      "TEXT": "Payment Request",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform sends payment authorization request to Payment Processor (credit card charge)",
+      "Entities": "CardDetails,PaymentAmount,TransactionID",
+      "From": "E-Commerce Platform",
+      "To": "Payment Processor"
+    },
+    {
+      "ID": "F003",
+      "FROMID": "PAY",
+      "TOID": "ECP",
+      "TEXT": "Payment Confirm",
+      "TYPE": "->",
+      "Description of Data Flow": "Payment Processor confirms payment result back to E-Commerce Platform (success or failure)",
+      "Entities": "PaymentStatus,TransactionID,AuthorizationCode",
+      "From": "Payment Processor",
+      "To": "E-Commerce Platform"
+    },
+    {
+      "ID": "F004",
+      "FROMID": "ECP",
+      "TOID": "CUS",
+      "TEXT": "Order Confirm",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform sends order confirmation to Customer (receipt/email for purchase)",
+      "Entities": "OrderConfirmation,Receipt,Email",
+      "From": "E-Commerce Platform",
+      "To": "Customers"
+    },
+    {
+      "ID": "F005",
+      "FROMID": "ECP",
+      "TOID": "ERP",
+      "TEXT": "Order Transfer",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform transfers new order data to ERP & Fulfillment for fulfillment processing",
+      "Entities": "OrderDetails,PaymentInfo,CustomerInfo",
+      "From": "E-Commerce Platform",
+      "To": "ERP & Fulfillment"
+    },
+    {
+      "ID": "F006",
+      "FROMID": "ERP",
+      "TOID": "ECP",
+      "TEXT": "Status Update",
+      "TYPE": "->",
+      "Description of Data Flow": "ERP & Fulfillment updates order status and tracking back to E-Commerce Platform, also syncs inventory levels back to online store",
+      "Entities": "OrderStatus,TrackingNumber,InventoryLevels",
+      "From": "ERP & Fulfillment",
+      "To": "E-Commerce Platform"
+    },
+    {
+      "ID": "F007",
+      "FROMID": "ERP",
+      "TOID": "TPL",
+      "TEXT": "Fulfill Request",
+      "TYPE": "->",
+      "Description of Data Flow": "ERP & Fulfillment sends order fulfillment request to 3PL Fulfillment (order details for picking/shipping)",
+      "Entities": "OrderID,SKUList,ShippingMethod,CustomerAddress",
+      "From": "ERP & Fulfillment",
+      "To": "3PL Fulfillment"
+    },
+    {
+      "ID": "F008",
+      "FROMID": "TPL",
+      "TOID": "ERP",
+      "TEXT": "Ship Confirm",
+      "TYPE": "->",
+      "Description of Data Flow": "3PL Fulfillment provides shipment confirmation and tracking info back to ERP & Fulfillment (order shipped, with tracking number)",
+      "Entities": "OrderID,TrackingNumber,ShippedDate",
+      "From": "3PL Fulfillment",
+      "To": "ERP & Fulfillment"
+    },
+    {
+      "ID": "F009",
+      "FROMID": "ERP",
+      "TOID": "CUS",
+      "TEXT": "Ship Notice",
+      "TYPE": "->",
+      "Description of Data Flow": "ERP & Fulfillment triggers shipment notification to Customer (e.g., email with tracking information)",
+      "Entities": "ShipmentNotification,TrackingNumber,DeliveryDate",
+      "From": "ERP & Fulfillment",
+      "To": "Customers"
+    },
+    {
+      "ID": "F010",
+      "FROMID": "ECP",
+      "TOID": "REV",
+      "TEXT": "Review Invite",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform provides purchase data to Reviews Platform (to initiate a review invitation for that order)",
+      "Entities": "OrderID,CustomerEmail,ProductID",
+      "From": "E-Commerce Platform",
+      "To": "Reviews Platform"
+    },
+    {
+      "ID": "F011",
+      "FROMID": "REV",
+      "TOID": "CUS",
+      "TEXT": "Invite Email",
+      "TYPE": "->",
+      "Description of Data Flow": "Reviews Platform emails the Customer a review invitation (post-purchase review request)",
+      "Entities": "ReviewInvitation,OrderID,CustomerEmail",
+      "From": "Reviews Platform",
+      "To": "Customers"
+    },
+    {
+      "ID": "F012",
+      "FROMID": "CUS",
+      "TOID": "REV",
+      "TEXT": "Review Submit",
+      "TYPE": "->",
+      "Description of Data Flow": "Customer submits a review on Reviews Platform (rating/comments about the product/service)",
+      "Entities": "ReviewRating,ReviewComments,OrderID",
+      "From": "Customers",
+      "To": "Reviews Platform"
+    },
+    {
+      "ID": "F013",
+      "FROMID": "REV",
+      "TOID": "ECP",
+      "TEXT": "Review Share",
+      "TYPE": "->",
+      "Description of Data Flow": "Reviews Platform shares review content and ratings via API to E-Commerce Platform (so reviews can be displayed on the site)",
+      "Entities": "ReviewContent,ReviewRating,VerifiedPurchase",
+      "From": "Reviews Platform",
+      "To": "E-Commerce Platform"
+    },
+    {
+      "ID": "F014",
+      "FROMID": "CUS",
+      "TOID": "CS",
+      "TEXT": "Support Ticket",
+      "TYPE": "->",
+      "Description of Data Flow": "Customer contacts Customer Support (creates a support ticket with issue details)",
+      "Entities": "SupportTicket,CustomerQuery,OrderReference",
+      "From": "Customers",
+      "To": "Customer Support"
+    },
+    {
+      "ID": "F015",
+      "FROMID": "CS",
+      "TOID": "CUS",
+      "TEXT": "Ticket Reply",
+      "TYPE": "->",
+      "Description of Data Flow": "Customer Support sends responses and updates to Customer (ticket replies via email/chat)",
+      "Entities": "TicketResponse,StatusUpdate,ResolutionDetails",
+      "From": "Customer Support",
+      "To": "Customers"
+    },
+    {
+      "ID": "F016",
+      "FROMID": "ECP",
+      "TOID": "CS",
+      "TEXT": "Order Context",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform shares customer and order info to Customer Support (order history for customer context in tickets)",
+      "Entities": "CustomerProfile,OrderHistory,PurchaseData",
+      "From": "E-Commerce Platform",
+      "To": "Customer Support"
+    },
+    {
+      "ID": "F017",
+      "FROMID": "CS",
+      "TOID": "CHAT",
+      "TEXT": "Support Alert",
+      "TYPE": "->",
+      "Description of Data Flow": "Customer Support posts an alert to Team Communication (e.g., notification for high-priority or overdue ticket)",
+      "Entities": "TicketAlert,PriorityFlag,TicketID",
+      "From": "Customer Support",
+      "To": "Team Communication"
+    },
+    {
+      "ID": "F019",
+      "FROMID": "ECP",
+      "TOID": "MA",
+      "TEXT": "Marketing Event",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform pushes customer and order events to Marketing Automation (new customer signup, order placed triggers for marketing)",
+      "Entities": "CustomerData,OrderEvent,SignupInfo",
+      "From": "E-Commerce Platform",
+      "To": "Marketing Automation"
+    },
+    {
+      "ID": "F020",
+      "FROMID": "SUB",
+      "TOID": "MA",
+      "TEXT": "Subs Event",
+      "TYPE": "->",
+      "Description of Data Flow": "Subscription Management sends subscription events to Marketing Automation (e.g., upcoming renewal, subscription started or canceled)",
+      "Entities": "SubscriptionStatus,RenewalDate,CustomerInfo",
+      "From": "Subscription Management",
+      "To": "Marketing Automation"
+    },
+    {
+      "ID": "F021",
+      "FROMID": "MA",
+      "TOID": "CUS",
+      "TEXT": "Marketing Comm",
+      "TYPE": "->",
+      "Description of Data Flow": "Marketing Automation sends marketing communications to Customer (emails, SMS based on segments or triggers)",
+      "Entities": "MarketingEmail,SMSCampaign,CustomerSegment",
+      "From": "Marketing Automation",
+      "To": "Customers"
+    },
+    {
+      "ID": "F022",
+      "FROMID": "ECP",
+      "TOID": "AFF",
+      "TEXT": "Affiliate Notify",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform notifies Affiliate Network of a completed purchase (affiliate tracking pixel fires with order and affiliate ID)",
+      "Entities": "OrderID,AffiliateID,PurchaseValue",
+      "From": "E-Commerce Platform",
+      "To": "Affiliate Network"
+    },
+    {
+      "ID": "F023",
+      "FROMID": "AFF",
+      "TOID": "ACCT",
+      "TEXT": "Affiliate Comms",
+      "TYPE": "->",
+      "Description of Data Flow": "Affiliate Network provides affiliate commission details to Accounting (via invoice or entry of commission owed for sales)",
+      "Entities": "AffiliateID,CommissionAmount,InvoiceDetails",
+      "From": "Affiliate Network",
+      "To": "Accounting"
+    },
+    {
+      "ID": "F024",
+      "FROMID": "ECP",
+      "TOID": "SOC",
+      "TEXT": "Catalog/Conv",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform sends conversion events and product catalog updates to Social Ads Platform (for ad tracking and dynamic ads)",
+      "Entities": "ConversionEvent,ProductCatalog,AdMetrics",
+      "From": "E-Commerce Platform",
+      "To": "Social Ads Platform"
+    },
+    {
+      "ID": "F025",
+      "FROMID": "ECP",
+      "TOID": "SEA",
+      "TEXT": "Search Conv",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform sends conversion data to Search Ads (tracking purchase for ad attribution)",
+      "Entities": "ConversionData,ClickID,PurchaseValue",
+      "From": "E-Commerce Platform",
+      "To": "Search Ads"
+    },
+    {
+      "ID": "F026",
+      "FROMID": "ECP",
+      "TOID": "WAN",
+      "TEXT": "Analytics Event",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform generates analytics events to Web Analytics (page views, e-commerce transactions, etc.)",
+      "Entities": "AnalyticsEvent,SessionData,TransactionMetrics",
+      "From": "E-Commerce Platform",
+      "To": "Web Analytics"
+    },
+    {
+      "ID": "F027",
+      "FROMID": "WAN",
+      "TOID": "DWH",
+      "TEXT": "GA Export",
+      "TYPE": "->",
+      "Description of Data Flow": "Web Analytics exports web analytics data to Data Warehouse (raw events or aggregated metrics for analysis)",
+      "Entities": "TrafficMetrics,ConversionRates,TimeStamps",
+      "From": "Web Analytics",
+      "To": "Data Warehouse"
+    },
+    {
+      "ID": "F028",
+      "FROMID": "SOC",
+      "TOID": "DWH",
+      "TEXT": "Social Ads",
+      "TYPE": "->",
+      "Description of Data Flow": "Social Ads Platform data imported to Data Warehouse (ad impressions, clicks, cost, etc. for marketing analytics)",
+      "Entities": "AdImpressions,Clicks,AdCost,ROI",
+      "From": "Social Ads Platform",
+      "To": "Data Warehouse"
+    },
+    {
+      "ID": "F029",
+      "FROMID": "SEA",
+      "TOID": "DWH",
+      "TEXT": "Search Ads",
+      "TYPE": "->",
+      "Description of Data Flow": "Search Ads campaign data imported to Data Warehouse (ad spend, clicks, conversions by campaign for ROI analysis)",
+      "Entities": "AdSpend,Clicks,Conversions,CampaignMetrics",
+      "From": "Search Ads",
+      "To": "Data Warehouse"
+    },
+    {
+      "ID": "F030",
+      "FROMID": "MA",
+      "TOID": "DWH",
+      "TEXT": "Marketing Met",
+      "TYPE": "->",
+      "Description of Data Flow": "Marketing Automation marketing engagement data exported to Data Warehouse (email sends, opens, revenue attribution)",
+      "Entities": "EmailMetrics,OpenRates,RevenueAttribution",
+      "From": "Marketing Automation",
+      "To": "Data Warehouse"
+    },
+    {
+      "ID": "F031",
+      "FROMID": "AFF",
+      "TOID": "DWH",
+      "TEXT": "Affiliate Data",
+      "TYPE": "->",
+      "Description of Data Flow": "Affiliate Network affiliate performance data exported to Data Warehouse (affiliate sales and costs for analysis)",
+      "Entities": "AffiliateSales,CommissionCosts,PerformanceMetrics",
+      "From": "Affiliate Network",
+      "To": "Data Warehouse"
+    },
+    {
+      "ID": "F032",
+      "FROMID": "ECP",
+      "TOID": "DWH",
+      "TEXT": "E-Com Load",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform e-commerce data loaded into Data Warehouse (orders, customers, products for central reporting)",
+      "Entities": "OrderDetails,CustomerInfo,ProductData",
+      "From": "E-Commerce Platform",
+      "To": "Data Warehouse"
+    },
+    {
+      "ID": "F033",
+      "FROMID": "ERP",
+      "TOID": "DWH",
+      "TEXT": "Fulfill Data",
+      "TYPE": "->",
+      "Description of Data Flow": "ERP & Fulfillment data loaded into Data Warehouse (fulfillment status, inventory levels, supplier POs, etc.)",
+      "Entities": "FulfillmentStatus,InventoryLevels,SupplierPOs",
+      "From": "ERP & Fulfillment",
+      "To": "Data Warehouse"
+    },
+    {
+      "ID": "F034",
+      "FROMID": "ACCT",
+      "TOID": "DWH",
+      "TEXT": "Financial Data",
+      "TYPE": "->",
+      "Description of Data Flow": "Accounting financial data loaded into Data Warehouse (transactions, revenues, expenses for BI reporting)",
+      "Entities": "FinancialTransactions,RevenueData,ExpenseReports",
+      "From": "Accounting",
+      "To": "Data Warehouse"
+    },
+    {
+      "ID": "F036",
+      "FROMID": "DWH",
+      "TOID": "BI",
+      "TEXT": "BI Supply",
+      "TYPE": "->",
+      "Description of Data Flow": "Data Warehouse provides consolidated data to Business Intelligence (datasets for reports, dashboards, and analysis)",
+      "Entities": "AggregatedData,BIExtract,Metadata",
+      "From": "Data Warehouse",
+      "To": "Business Intelligence"
+    },
+    {
+      "ID": "F037",
+      "FROMID": "ACCT",
+      "TOID": "PLN",
+      "TEXT": "Financial Actuals",
+      "TYPE": "->",
+      "Description of Data Flow": "Accounting actuals imported into Enterprise Planning (to compare against budget and inform forecasts)",
+      "Entities": "FinancialResults,Actuals,VarianceReports",
+      "From": "Accounting",
+      "To": "Enterprise Planning"
+    },
+    {
+      "ID": "F038",
+      "FROMID": "ERP",
+      "TOID": "PLN",
+      "TEXT": "Ops Data",
+      "TYPE": "->",
+      "Description of Data Flow": "ERP & Fulfillment operational data sent to Enterprise Planning (e.g., sales volumes, inventory levels for supply/demand planning)",
+      "Entities": "SalesVolumes,InventoryLevels,OrderMetrics",
+      "From": "ERP & Fulfillment",
+      "To": "Enterprise Planning"
+    },
+    {
+      "ID": "F039",
+      "FROMID": "HRIS",
+      "TOID": "PLN",
+      "TEXT": "Workforce Data",
+      "TYPE": "->",
+      "Description of Data Flow": "HR Information System employee data sent to Enterprise Planning (headcount, salaries for workforce and cost planning)",
+      "Entities": "EmployeeHeadcount,SalaryData,WorkforceMetrics",
+      "From": "HR Information System",
+      "To": "Enterprise Planning"
+    },
+    {
+      "ID": "F040",
+      "FROMID": "SHT",
+      "TOID": "PLN",
+      "TEXT": "Planning Assumpt",
+      "TYPE": "->",
+      "Description of Data Flow": "Spreadsheets data imported into Enterprise Planning (manual assumptions, supplemental data for planning models)",
+      "Entities": "Assumptions,SupplementalData,PlanningInputs",
+      "From": "Spreadsheets",
+      "To": "Enterprise Planning"
+    },
+    {
+      "ID": "F041",
+      "FROMID": "ACCT",
+      "TOID": "APP",
+      "TEXT": "Payable Docs",
+      "TYPE": "->",
+      "Description of Data Flow": "Accounting sends payable documents to Finance Approvals (new supplier bills, purchase orders awaiting approval)",
+      "Entities": "PayableDocs,SupplierBills,POData",
+      "From": "Accounting",
+      "To": "Finance Approvals"
+    },
+    {
+      "ID": "F042",
+      "FROMID": "APP",
+      "TOID": "ACCT",
+      "TEXT": "Approval Update",
+      "TYPE": "->",
+      "Description of Data Flow": "Finance Approvals updates approval decisions in Accounting (marks bills/POs approved or rejected with audit trail)",
+      "Entities": "ApprovalStatus,JournalEntries,AuditTrail",
+      "From": "Finance Approvals",
+      "To": "Accounting"
+    },
+    {
+      "ID": "F043",
+      "FROMID": "ERP",
+      "TOID": "SUP",
+      "TEXT": "Purchase Order",
+      "TYPE": "->",
+      "Description of Data Flow": "ERP & Fulfillment issues a purchase order to Supplier (PO details sent via email or portal for procurement)",
+      "Entities": "POID,ItemList,DeliveryDate,PaymentTerms",
+      "From": "ERP & Fulfillment",
+      "To": "Suppliers"
+    },
+    {
+      "ID": "F044",
+      "FROMID": "SUP",
+      "TOID": "APP",
+      "TEXT": "Supplier Invoice",
+      "TYPE": "->",
+      "Description of Data Flow": "Supplier sends invoice into Finance Approvals (invoice received, entered for approval in finance system)",
+      "Entities": "InvoiceData,SupplierID,AmountDue",
+      "From": "Suppliers",
+      "To": "Finance Approvals"
+    },
+    {
+      "ID": "F045",
+      "FROMID": "SUP",
+      "TOID": "ERP",
+      "TEXT": "Goods Delivery",
+      "TYPE": "->",
+      "Description of Data Flow": "Supplier delivers goods and provides delivery info to ERP & Fulfillment (packing slip, ASN, inventory received)",
+      "Entities": "DeliveryInfo,ReceivedQuantity,ASN",
+      "From": "Suppliers",
+      "To": "ERP & Fulfillment"
+    },
+    {
+      "ID": "F046",
+      "FROMID": "RTP",
+      "TOID": "ERP",
+      "TEXT": "Bulk Order",
+      "TYPE": "->",
+      "Description of Data Flow": "Retail Partner sends bulk order or PO to ERP & Fulfillment (wholesale order details provided for fulfillment)",
+      "Entities": "BulkOrderData,POID,DeliverySchedule",
+      "From": "Retail Partners",
+      "To": "ERP & Fulfillment"
+    },
+    {
+      "ID": "F047",
+      "FROMID": "ERP",
+      "TOID": "RTP",
+      "TEXT": "Fulfill Info",
+      "TYPE": "->",
+      "Description of Data Flow": "ERP & Fulfillment shares fulfillment info with Retail Partner (shipping confirmation, packing list, ASN)",
+      "Entities": "ShippingConfirmation,PackingList,ASN",
+      "From": "ERP & Fulfillment",
+      "To": "Retail Partners"
+    },
+    {
+      "ID": "F048",
+      "FROMID": "ACCT",
+      "TOID": "RTP",
+      "TEXT": "Wholesale Invoice",
+      "TYPE": "->",
+      "Description of Data Flow": "Accounting issues invoice to Retail Partner (invoice for wholesale order sent to B2B customer)",
+      "Entities": "InvoiceDetails,OrderSummary,PaymentTerms",
+      "From": "Accounting",
+      "To": "Retail Partners"
+    },
+    {
+      "ID": "F049",
+      "FROMID": "RTP",
+      "TOID": "BNK",
+      "TEXT": "Retail Payment",
+      "TYPE": "->",
+      "Description of Data Flow": "Retail Partner pays invoice via Banking (B2B payment, bank transfer or cheque deposit)",
+      "Entities": "PaymentAmount,PaymentReference,BankDetails",
+      "From": "Retail Partners",
+      "To": "Banking"
+    },
+    {
+      "ID": "F050",
+      "FROMID": "BNK",
+      "TOID": "ACCT",
+      "TEXT": "Bank Feed",
+      "TYPE": "->",
+      "Description of Data Flow": "Banking feeds transaction to Accounting (payment notifications, bank transactions for reconciliation)",
+      "Entities": "TransactionRecords,PaymentStatus,StatementData",
+      "From": "Banking",
+      "To": "Accounting"
+    },
+    {
+      "ID": "F051",
+      "FROMID": "ERP",
+      "TOID": "CHAT",
+      "TEXT": "Ops Alert",
+      "TYPE": "->",
+      "Description of Data Flow": "ERP & Fulfillment posts alerts to Team Communication (e.g., low inventory warnings, order delay notifications)",
+      "Entities": "AlertMessage,InventoryData,OrderStatus",
+      "From": "ERP & Fulfillment",
+      "To": "Team Communication"
+    },
+    {
+      "ID": "F053",
+      "FROMID": "CS",
+      "TOID": "PM",
+      "TEXT": "Task Create",
+      "TYPE": "->",
+      "Description of Data Flow": "Customer Support creates a linked task in Project Management (e.g., bug report or feature request stemming from a support ticket)",
+      "Entities": "TicketID,IssueDetails,Priority",
+      "From": "Customer Support",
+      "To": "Project Management"
+    },
+    {
+      "ID": "F054",
+      "FROMID": "PM",
+      "TOID": "CS",
+      "TEXT": "Issue Update",
+      "TYPE": "->",
+      "Description of Data Flow": "Project Management sends status updates to Customer Support (e.g., notifies support when a linked issue is resolved or changes status)",
+      "Entities": "TicketID,IssueStatus,ResolutionNotes",
+      "From": "Project Management",
+      "To": "Customer Support"
+    },
+    {
+      "ID": "F055",
+      "FROMID": "PM",
+      "TOID": "CHAT",
+      "TEXT": "Task Notify",
+      "TYPE": "->",
+      "Description of Data Flow": "Project Management posts task notifications to Team Communication channels (alerts about new tasks, due dates, or status changes)",
+      "Entities": "TaskID,NotificationType,TaskSummary",
+      "From": "Project Management",
+      "To": "Team Communication"
+    },
+    {
+      "ID": "F056",
+      "FROMID": "CHAT",
+      "TOID": "PM",
+      "TEXT": "Task Request",
+      "TYPE": "->",
+      "Description of Data Flow": "Team Communication sends user input to Project Management (e.g., a command converts a chat message into a new task or comment)",
+      "Entities": "TaskDetails,Requester,ChannelInfo",
+      "From": "Team Communication",
+      "To": "Project Management"
+    },
+    {
+      "ID": "F057",
+      "FROMID": "ECP",
+      "TOID": "AMZ",
+      "TEXT": "Product Sync",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform sends product listings and inventory updates to Marketplace Platform (keeping marketplace store in sync with latest catalog)",
+      "Entities": "ProductCatalog,InventoryLevels,PricingInfo",
+      "From": "E-Commerce Platform",
+      "To": "Marketplace Platform"
+    },
+    {
+      "ID": "F058",
+      "FROMID": "AMZ",
+      "TOID": "ECP",
+      "TEXT": "Marketplace Order",
+      "TYPE": "->",
+      "Description of Data Flow": "Marketplace Platform provides order data back to E-Commerce Platform (importing marketplace sales for fulfillment and records)",
+      "Entities": "OrderDetails,CustomerInfo,MarketplaceID",
+      "From": "Marketplace Platform",
+      "To": "E-Commerce Platform"
+    },
+    {
+      "ID": "F059",
+      "FROMID": "ECP",
+      "TOID": "SCM",
+      "TEXT": "Catalog Feed",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform shares product catalog and updates to Social Commerce platform (enabling in-app product listings with current info)",
+      "Entities": "ProductFeed,InventoryUpdates,PriceUpdates",
+      "From": "E-Commerce Platform",
+      "To": "Social Commerce"
+    },
+    {
+      "ID": "F060",
+      "FROMID": "SCM",
+      "TOID": "ECP",
+      "TEXT": "Social Order",
+      "TYPE": "->",
+      "Description of Data Flow": "Social Commerce sends order information back to E-Commerce Platform (orders placed on social platforms delivered to online store for fulfillment)",
+      "Entities": "OrderDetails,CustomerInfo,SocialChannelID",
+      "From": "Social Commerce",
+      "To": "E-Commerce Platform"
+    },
+    {
+      "ID": "F061",
+      "FROMID": "ECP",
+      "TOID": "ACCT",
+      "TEXT": "Sales Export",
+      "TYPE": "->",
+      "Description of Data Flow": "E-Commerce Platform sends completed order and payout data to Accounting system (recording sales revenue and payment details for bookkeeping)",
+      "Entities": "OrderSummary,PaymentPayout,CustomerInvoice",
+      "From": "E-Commerce Platform",
+      "To": "Accounting"
+    },
+    {
+      "ID": "F062",
+      "FROMID": "ACCT",
+      "TOID": "ECP",
+      "TEXT": "Financial Sync",
+      "TYPE": "->",
+      "Description of Data Flow": "Accounting system updates financial status or stock value back to E-Commerce Platform (e.g., marking orders paid or adjusting inventory valuation after reconciliation)",
+      "Entities": "PaymentStatus,AccountBalance,InventoryValuation",
+      "From": "Accounting",
+      "To": "E-Commerce Platform"
+    },
+    {
+      "ID": "F063",
+      "FROMID": "BI",
+      "TOID": "DWH",
+      "TEXT": "BI Query",
+      "TYPE": "->",
+      "Description of Data Flow": "Business Intelligence tool queries data from Data Warehouse on-demand (requesting specific datasets or running analytics queries)",
+      "Entities": "QueryParameters,ReportRequest,UserCredentials",
+      "From": "Business Intelligence",
+      "To": "Data Warehouse"
+    },
+    {
+      "ID": "F064",
+      "FROMID": "HRIS",
+      "TOID": "PRL",
+      "TEXT": "Payroll Data",
+      "TYPE": "->",
+      "Description of Data Flow": "HR Information System sends employee and compensation data to Payroll System (ensuring payroll has updated employee records, salaries, and deductions for each pay cycle)",
+      "Entities": "EmployeeInfo,SalaryDetails,TaxWithholdings",
+      "From": "HR Information System",
+      "To": "Payroll System"
+    },
+    {
+      "ID": "F065",
+      "FROMID": "PRL",
+      "TOID": "HRIS",
+      "TEXT": "Payroll Results",
+      "TYPE": "->",
+      "Description of Data Flow": "Payroll System returns processed payroll outcomes to HR Information System (pay stubs, payroll summaries, and updates to employee records post-paycycle)",
+      "Entities": "Payslip,PayrollSummary,BenefitDeductions",
+      "From": "Payroll System",
+      "To": "HR Information System"
+    },
+    {
+      "ID": "F066",
+      "FROMID": "ERP",
+      "TOID": "POS",
+      "TEXT": "Inventory Sync",
+      "TYPE": "->",
+      "Description of Data Flow": "ERP & Fulfillment sends product and inventory updates to POS Terminal systems (so in-store points of sale have current item availability and pricing)",
+      "Entities": "ProductList,StockLevels,PriceList",
+      "From": "ERP & Fulfillment",
+      "To": "POS Terminal"
+    },
+    {
+      "ID": "F067",
+      "FROMID": "POS",
+      "TOID": "ERP",
+      "TEXT": "Sales Report",
+      "TYPE": "->",
+      "Description of Data Flow": "POS Terminal submits daily sales and transaction data to ERP & Fulfillment (retail sales are logged for inventory deduction and financial reporting)",
+      "Entities": "StoreSales,TransactionLogs,PaymentSummary",
+      "From": "POS Terminal",
+      "To": "ERP & Fulfillment"
+    },
+    {
+      "ID": "F068",
+      "FROMID": "HRIS",
+      "TOID": "CHAT",
+      "TEXT": "HR Notice",
+      "TYPE": "->",
+      "Description of Data Flow": "HR Information System sends notifications to Team Communication (e.g., alerts for new hires, time-off approvals, or company announcements)",
+      "Entities": "AnnouncementType,EmployeeName,Details",
+      "From": "HR Information System",
+      "To": "Team Communication"
+    },
+    {
+      "ID": "F069",
+      "FROMID": "CHAT",
+      "TOID": "HRIS",
+      "TEXT": "HR Request",
+      "TYPE": "->",
+      "Description of Data Flow": "Team Communication passes employee requests or inputs to HR Information System (e.g., an employee submits a time-off request or update through a chat command)",
+      "Entities": "RequestType,EmployeeID,RequestData",
+      "From": "Team Communication",
+      "To": "HR Information System"
+    },
+    {
+      "ID": "F070",
+      "FROMID": "CS",
+      "TOID": "KB",
+      "TEXT": "Knowledge Query",
+      "TYPE": "->",
+      "Description of Data Flow": "Customer Support fetches knowledge base content during ticket resolution (agent searches or pulls an article from Knowledge Base to assist with a customer query)",
+      "Entities": "SearchQuery,ArticleID,AgentID",
+      "From": "Customer Support",
+      "To": "Knowledge Base"
+    },
+    {
+      "ID": "F071",
+      "FROMID": "KB",
+      "TOID": "CS",
+      "TEXT": "Article Suggest",
+      "TYPE": "->",
+      "Description of Data Flow": "Knowledge Base suggests or syncs content to Customer Support platform (recommended help articles or synced documentation appears in the support interface for relevant issues)",
+      "Entities": "ArticleContent,SuggestionCriteria,LinkReference",
+      "From": "Knowledge Base",
+      "To": "Customer Support"
+    }
+  ]
+}

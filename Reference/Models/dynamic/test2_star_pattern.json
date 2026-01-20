@@ -1,0 +1,106 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Test 2: Star Pattern"
+    },
+    "AUTHOR": {
+      "value": "Test Suite",
+      "readOnly": "true"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Central hub with 6 spokes",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "Dynamic",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    {
+      "ID": "HUB",
+      "TEXT": "Central Hub",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "S1",
+      "TEXT": "Service 1",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "S2",
+      "TEXT": "Service 2",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "S3",
+      "TEXT": "Service 3",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "S4",
+      "TEXT": "Service 4",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "S5",
+      "TEXT": "Service 5",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "S6",
+      "TEXT": "Service 6",
+      "TYPE": "SYSTEM"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "H1",
+      "FROMID": "HUB",
+      "TOID": "S1",
+      "TEXT": "Request",
+      "TYPE": "->"
+    },
+    {
+      "ID": "H2",
+      "FROMID": "HUB",
+      "TOID": "S2",
+      "TEXT": "Request",
+      "TYPE": "->"
+    },
+    {
+      "ID": "H3",
+      "FROMID": "HUB",
+      "TOID": "S3",
+      "TEXT": "Request",
+      "TYPE": "->"
+    },
+    {
+      "ID": "H4",
+      "FROMID": "HUB",
+      "TOID": "S4",
+      "TEXT": "Request",
+      "TYPE": "->"
+    },
+    {
+      "ID": "H5",
+      "FROMID": "HUB",
+      "TOID": "S5",
+      "TEXT": "Request",
+      "TYPE": "->"
+    },
+    {
+      "ID": "H6",
+      "FROMID": "HUB",
+      "TOID": "S6",
+      "TEXT": "Request",
+      "TYPE": "->"
+    }
+  ]
+}

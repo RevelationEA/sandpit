@@ -1,0 +1,41 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "ArchiMate Technology Layer"
+    },
+    "AUTHOR": {
+      "value": "Revelation EA"
+    },
+    "MODELTYPE": {
+      "value": "ARCHIMATE",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Technology layer example with nodes, devices, system software, and networks. Uses mxArchiMate symbols.",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "HorizontalFlow",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    { "ID": "TN1", "TEXT": "Compute Node", "TYPE": "ARCHI_TECH_NODE" },
+    { "ID": "TD1", "TEXT": "Edge Device", "TYPE": "ARCHI_TECH_DEVICE" },
+    { "ID": "TSW1", "TEXT": "Runtime Platform", "TYPE": "ARCHI_SYSTEM_SOFTWARE" },
+    { "ID": "TCN1", "TEXT": "WAN", "TYPE": "ARCHI_COMMUNICATION_NETWORK" },
+    { "ID": "TS1", "TEXT": "Hosting Service", "TYPE": "ARCHI_TECH_SERVICE" },
+    { "ID": "TI1", "TEXT": "Network Interface", "TYPE": "ARCHI_TECH_INTERFACE" },
+    { "ID": "TA1", "TEXT": "Deployment Artifact", "TYPE": "ARCHI_ARTIFACT" }
+  ],
+  "interactions": [
+    { "ID": "INT1", "FROMID": "TN1", "TOID": "TD1", "TEXT": "Composed Of", "TYPE": "COMPOSITION" },
+    { "ID": "INT2", "FROMID": "TN1", "TOID": "TSW1", "TEXT": "Hosts", "TYPE": "ASSIGNMENT" },
+    { "ID": "INT3", "FROMID": "TSW1", "TOID": "TS1", "TEXT": "Realizes", "TYPE": "REALIZATION" },
+    { "ID": "INT4", "FROMID": "TS1", "TOID": "TI1", "TEXT": "Serves", "TYPE": "SERVING" },
+    { "ID": "INT5", "FROMID": "TI1", "TOID": "TCN1", "TEXT": "Connects", "TYPE": "ASSOCIATION" },
+    { "ID": "INT6", "FROMID": "TSW1", "TOID": "TA1", "TEXT": "Accesses", "TYPE": "ACCESS" }
+  ]
+}

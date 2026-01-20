@@ -1,0 +1,91 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Test 3: Bidirectional"
+    },
+    "AUTHOR": {
+      "value": "Test Suite",
+      "readOnly": "true"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Systems with bidirectional communication",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "Dynamic",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    {
+      "ID": "API1",
+      "TEXT": "API Gateway",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "API2",
+      "TEXT": "Auth Service",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "API3",
+      "TEXT": "Data Service",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "DB",
+      "TEXT": "Database",
+      "TYPE": "DATASTORE"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "REQ1",
+      "FROMID": "API1",
+      "TOID": "API2",
+      "TEXT": "Auth Request",
+      "TYPE": "->"
+    },
+    {
+      "ID": "RES1",
+      "FROMID": "API2",
+      "TOID": "API1",
+      "TEXT": "Auth Response",
+      "TYPE": "->"
+    },
+    {
+      "ID": "REQ2",
+      "FROMID": "API1",
+      "TOID": "API3",
+      "TEXT": "Data Request",
+      "TYPE": "->"
+    },
+    {
+      "ID": "RES2",
+      "FROMID": "API3",
+      "TOID": "API1",
+      "TEXT": "Data Response",
+      "TYPE": "->"
+    },
+    {
+      "ID": "SYNC",
+      "FROMID": "API2",
+      "TOID": "API3",
+      "TEXT": "Sync",
+      "TYPE": "->"
+    },
+    {
+      "ID": "DB1",
+      "FROMID": "API3",
+      "TOID": "DB",
+      "TEXT": "Query",
+      "TYPE": "->"
+    }
+  ]
+}

@@ -1,0 +1,369 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "BPMN Lite: Supplier Onboarding (Swimlanes)"
+    },
+    "AUTHOR": {
+      "value": "Revelation EA"
+    },
+    "MODELTYPE": {
+      "value": "BPMN_LITE",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Swimlane example with supplier onboarding across Procurement, Legal, and Finance.",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "HorizontalFlow",
+      "refData": "LAYOUTTYPE"
+    },
+    "LAYOUTOPTION": {
+      "inputType": "text",
+      "value": "initial state"
+    }
+  },
+  "systems": [
+    {
+      "ID": "SE1",
+      "TEXT": "Request Submitted",
+      "TYPE": "BPMN_START_EVENT",
+      "Pool": "Company",
+      "Lane": "Procurement"
+    },
+    {
+      "ID": "TK1",
+      "TEXT": "Collect Supplier Info",
+      "TYPE": "BPMN_TASK",
+      "Pool": "Company",
+      "Lane": "Procurement"
+    },
+    {
+      "ID": "DO1",
+      "TEXT": "Supplier Profile",
+      "TYPE": "BPMN_DATA_OBJECT",
+      "Pool": "Company",
+      "Lane": "Procurement"
+    },
+    {
+      "ID": "TK2",
+      "TEXT": "Draft Contract",
+      "TYPE": "BPMN_TASK",
+      "Pool": "Company",
+      "Lane": "Legal"
+    },
+    {
+      "ID": "GW1",
+      "TEXT": "",
+      "TYPE": "BPMN_XOR_GATEWAY",
+      "Pool": "Company",
+      "Lane": "Legal"
+    },
+    {
+      "ID": "TK3",
+      "TEXT": "Negotiate Terms",
+      "TYPE": "BPMN_TASK",
+      "Pool": "Company",
+      "Lane": "Legal"
+    },
+    {
+      "ID": "TK4",
+      "TEXT": "Approve Terms",
+      "TYPE": "BPMN_TASK",
+      "Pool": "Company",
+      "Lane": "Legal"
+    },
+    {
+      "ID": "TK5",
+      "TEXT": "Setup Vendor in ERP",
+      "TYPE": "BPMN_TASK",
+      "Pool": "Company",
+      "Lane": "Finance"
+    },
+    {
+      "ID": "DS1",
+      "TEXT": "ERP",
+      "TYPE": "BPMN_DATA_STORE",
+      "Pool": "Company",
+      "Lane": "Finance"
+    },
+    {
+      "ID": "EE1",
+      "TEXT": "Onboarded",
+      "TYPE": "BPMN_END_EVENT",
+      "Pool": "Company",
+      "Lane": "Procurement"
+    },
+    {
+      "ID": "99f1b6e4-ede9-4b17-858d-71eddd8c750f",
+      "TEXT": "Procurement",
+      "TYPE": "BPMN_SWIMLANE_VERTICAL",
+      "Lane": "",
+      "Pool": ""
+    },
+    {
+      "ID": "dcb33d7b-a95c-4a1c-93f0-664f903c5373",
+      "TEXT": "Legal",
+      "TYPE": "BPMN_SWIMLANE_VERTICAL",
+      "Lane": "",
+      "Pool": ""
+    },
+    {
+      "ID": "8829932d-fd03-4882-9e63-51e2794425a6",
+      "TEXT": "Finance",
+      "TYPE": "BPMN_SWIMLANE_VERTICAL",
+      "Lane": "",
+      "Pool": ""
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "I1",
+      "FROMID": "SE1",
+      "TOID": "TK1",
+      "TEXT": "Initiate",
+      "TYPE": "->",
+      "From": "Request Submitted",
+      "To": "Collect Supplier Info"
+    },
+    {
+      "ID": "I2",
+      "FROMID": "TK1",
+      "TOID": "DO1",
+      "TEXT": "Create",
+      "TYPE": "->",
+      "From": "Collect Supplier Info",
+      "To": "Supplier Profile"
+    },
+    {
+      "ID": "I3",
+      "FROMID": "DO1",
+      "TOID": "TK2",
+      "TEXT": "Review",
+      "TYPE": "->",
+      "From": "Supplier Profile",
+      "To": "Draft Contract"
+    },
+    {
+      "ID": "I4",
+      "FROMID": "TK2",
+      "TOID": "GW1",
+      "TEXT": "",
+      "TYPE": "->",
+      "From": "Draft Contract",
+      "To": ""
+    },
+    {
+      "ID": "I5",
+      "FROMID": "GW1",
+      "TOID": "TK3",
+      "TEXT": "Changes",
+      "TYPE": "->",
+      "From": "",
+      "To": "Negotiate Terms"
+    },
+    {
+      "ID": "I6",
+      "FROMID": "GW1",
+      "TOID": "TK4",
+      "TEXT": "Accept",
+      "TYPE": "->",
+      "From": "",
+      "To": "Approve Terms"
+    },
+    {
+      "ID": "I7",
+      "FROMID": "TK3",
+      "TOID": "TK2",
+      "TEXT": "Redraft",
+      "TYPE": "->",
+      "From": "Negotiate Terms",
+      "To": "Draft Contract"
+    },
+    {
+      "ID": "I8",
+      "FROMID": "TK4",
+      "TOID": "TK5",
+      "TEXT": "Approved",
+      "TYPE": "->",
+      "From": "Approve Terms",
+      "To": "Setup Vendor in ERP"
+    },
+    {
+      "ID": "I9",
+      "FROMID": "TK5",
+      "TOID": "DS1",
+      "TEXT": "Create Vendor",
+      "TYPE": "->",
+      "From": "Setup Vendor in ERP",
+      "To": "ERP"
+    },
+    {
+      "ID": "I10",
+      "FROMID": "DS1",
+      "TOID": "EE1",
+      "TEXT": "Complete",
+      "TYPE": "->",
+      "From": "ERP",
+      "To": "Onboarded"
+    }
+  ],
+  "layouts": {
+    "initial state": {
+      "systems": {
+        "SE1": {
+          "isSelected": true,
+          "geometry": {
+            "x": 40,
+            "y": 380.00444444444446,
+            "width": 40,
+            "height": 40
+          }
+        },
+        "TK1": {
+          "isSelected": true,
+          "geometry": {
+            "x": 0,
+            "y": 530.0044444444445,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "DO1": {
+          "isSelected": true,
+          "geometry": {
+            "x": 20,
+            "y": 680.0022222222221,
+            "width": 80,
+            "height": 80
+          }
+        },
+        "TK2": {
+          "isSelected": true,
+          "geometry": {
+            "x": 330,
+            "y": 679.9977777777779,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "GW1": {
+          "isSelected": true,
+          "geometry": {
+            "x": 430,
+            "y": 810,
+            "width": 40,
+            "height": 40
+          }
+        },
+        "TK3": {
+          "isSelected": true,
+          "geometry": {
+            "x": 330,
+            "y": 930,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "TK4": {
+          "isSelected": true,
+          "geometry": {
+            "x": 490,
+            "y": 930,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "TK5": {
+          "isSelected": true,
+          "geometry": {
+            "x": 770,
+            "y": 929.9980901718139,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "DS1": {
+          "isSelected": true,
+          "geometry": {
+            "x": 790,
+            "y": 1070.002135257721,
+            "width": 80,
+            "height": 80
+          }
+        },
+        "EE1": {
+          "isSelected": true,
+          "geometry": {
+            "x": 810,
+            "y": 1220.002135257721,
+            "width": 40,
+            "height": 40
+          }
+        },
+        "99f1b6e4-ede9-4b17-858d-71eddd8c750f": {
+          "isSelected": true,
+          "geometry": {
+            "x": -120,
+            "y": 320,
+            "width": 380,
+            "height": 1010
+          }
+        },
+        "dcb33d7b-a95c-4a1c-93f0-664f903c5373": {
+          "isSelected": true,
+          "geometry": {
+            "x": 260,
+            "y": 320,
+            "width": 380,
+            "height": 1010
+          }
+        },
+        "8829932d-fd03-4882-9e63-51e2794425a6": {
+          "isSelected": true,
+          "geometry": {
+            "x": 640,
+            "y": 320,
+            "width": 380,
+            "height": 1010
+          }
+        }
+      },
+      "edges": {
+        "I1": {
+          "isSelected": true
+        },
+        "I2": {
+          "isSelected": true
+        },
+        "I3": {
+          "isSelected": true
+        },
+        "I4": {
+          "isSelected": true
+        },
+        "I5": {
+          "isSelected": true
+        },
+        "I6": {
+          "isSelected": true
+        },
+        "I7": {
+          "isSelected": true
+        },
+        "I8": {
+          "isSelected": true
+        },
+        "I9": {
+          "isSelected": true
+        },
+        "I10": {
+          "isSelected": true
+        }
+      },
+      "isHydrated": true
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Test 5: Obstacle Course"
+    },
+    "AUTHOR": {
+      "value": "Test Suite",
+      "readOnly": "true"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Long-distance routing with obstacles in between",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "Dynamic",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    {
+      "ID": "CLIENT",
+      "TEXT": "Client",
+      "TYPE": "ACTOR"
+    },
+    {
+      "ID": "PROXY",
+      "TEXT": "Proxy Server",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "LB",
+      "TEXT": "Load Balancer",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "AUTH",
+      "TEXT": "Auth Service",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "API",
+      "TEXT": "API Server",
+      "TYPE": "SYSTEM"
+    },
+    {
+      "ID": "CACHE",
+      "TEXT": "Cache",
+      "TYPE": "DATASTORE"
+    },
+    {
+      "ID": "DB",
+      "TEXT": "Database",
+      "TYPE": "DATASTORE"
+    },
+    {
+      "ID": "LOGGER",
+      "TEXT": "Logger",
+      "TYPE": "SYSTEM"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "C_P",
+      "FROMID": "CLIENT",
+      "TOID": "PROXY",
+      "TEXT": "Request",
+      "TYPE": "->"
+    },
+    {
+      "ID": "P_LB",
+      "FROMID": "PROXY",
+      "TOID": "LB",
+      "TEXT": "Forward",
+      "TYPE": "->"
+    },
+    {
+      "ID": "LB_AUTH",
+      "FROMID": "LB",
+      "TOID": "AUTH",
+      "TEXT": "Authenticate",
+      "TYPE": "->"
+    },
+    {
+      "ID": "LB_API",
+      "FROMID": "LB",
+      "TOID": "API",
+      "TEXT": "Route",
+      "TYPE": "->"
+    },
+    {
+      "ID": "API_CACHE",
+      "FROMID": "API",
+      "TOID": "CACHE",
+      "TEXT": "Check Cache",
+      "TYPE": "->"
+    },
+    {
+      "ID": "API_DB",
+      "FROMID": "API",
+      "TOID": "DB",
+      "TEXT": "Query",
+      "TYPE": "->"
+    },
+    {
+      "ID": "PROXY_LOG",
+      "FROMID": "PROXY",
+      "TOID": "LOGGER",
+      "TEXT": "Log",
+      "TYPE": "->"
+    },
+    {
+      "ID": "API_LOG",
+      "FROMID": "API",
+      "TOID": "LOGGER",
+      "TEXT": "Log",
+      "TYPE": "->"
+    }
+  ]
+}

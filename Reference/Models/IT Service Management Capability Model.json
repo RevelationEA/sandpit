@@ -1,0 +1,2050 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "IT Service Management Capability Model",
+      "inputType": "text"
+    },
+    "MODELTYPE": {
+      "value": "OTHER",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "LAYOUT": {
+      "value": "HorizontalFlow",
+      "inputType": "select",
+      "refData": "LAYOUTTYPE"
+    },
+    "VIEW": {
+      "value": "Capability",
+      "inputType": "select",
+      "refData": "VIEWTYPE"
+    },
+    "Description": {
+      "inputType": "text",
+      "value": "A capability model based on ITIL V3 "
+    },
+    "Source": {
+      "inputType": "text",
+      "value": "GPT"
+    }
+  },
+  "systems": [
+    {
+      "ID": "1",
+      "TEXT": "1. Service Strategy",
+      "TYPE": "SYSTEM",
+      "Description": "Defines the overall strategy and direction for IT services to align with business objectives.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.1",
+      "TEXT": "1.1. Strategy Management for IT Services",
+      "TYPE": "SYSTEM",
+      "Description": "Develops and maintains the IT service strategy to ensure alignment with business goals.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.1.1",
+      "TEXT": "1.1.1. Develop IT Service Strategy",
+      "TYPE": "SYSTEM",
+      "Description": "Creates strategies for IT services that support the organization's objectives.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.1.2",
+      "TEXT": "1.1.2. Align IT Strategy with Business Goals",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures IT strategies are in sync with the overall business goals and objectives.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.1.3",
+      "TEXT": "1.1.3. Market Analysis and Service Portfolio",
+      "TYPE": "SYSTEM",
+      "Description": "Conducts market analysis to manage and optimize the service portfolio.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.2",
+      "TEXT": "1.2. Service Portfolio Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the complete lifecycle of all IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.2.1",
+      "TEXT": "1.2.1. Manage Service Portfolio",
+      "TYPE": "SYSTEM",
+      "Description": "Oversees the service portfolio to ensure it meets current and future business needs.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.2.2",
+      "TEXT": "1.2.2. Service Lifecycle Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the lifecycle of services from inception to retirement.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.2.3",
+      "TEXT": "1.2.3. Service Financial Management",
+      "TYPE": "SYSTEM",
+      "Description": "Handles the budgeting, accounting, and charging requirements for IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.3",
+      "TEXT": "1.3. Financial Management for IT Services",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the financial aspects of IT services to ensure cost-effectiveness.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.3.1",
+      "TEXT": "1.3.1. Budgeting and Accounting",
+      "TYPE": "SYSTEM",
+      "Description": "Plans and controls the budget for IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.3.2",
+      "TEXT": "1.3.2. Cost Optimization",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies and implements cost-saving measures without compromising service quality.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.3.3",
+      "TEXT": "1.3.3. Financial Reporting",
+      "TYPE": "SYSTEM",
+      "Description": "Generates financial reports related to IT service expenditures and revenues.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.4",
+      "TEXT": "1.4. Demand Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages and forecasts the demand for IT services to ensure adequate capacity.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.4.1",
+      "TEXT": "1.4.1. Forecasting Demand",
+      "TYPE": "SYSTEM",
+      "Description": "Predicts future demand for IT services based on trends and business needs.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.4.2",
+      "TEXT": "1.4.2. Capacity Planning",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures that IT services have sufficient capacity to meet current and future demands.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.4.3",
+      "TEXT": "1.4.3. Demand Control",
+      "TYPE": "SYSTEM",
+      "Description": "Controls and manages the demand for IT services to balance supply and demand.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.5",
+      "TEXT": "1.5. Business Relationship Management",
+      "TYPE": "SYSTEM",
+      "Description": "Maintains and enhances relationships with business stakeholders.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.5.1",
+      "TEXT": "1.5.1. Stakeholder Engagement",
+      "TYPE": "SYSTEM",
+      "Description": "Engages with stakeholders to understand their needs and expectations.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.5.2",
+      "TEXT": "1.5.2. Service Level Agreements (SLAs)",
+      "TYPE": "SYSTEM",
+      "Description": "Defines and manages SLAs to ensure service quality and performance.",
+      "isExpanded": false
+    },
+    {
+      "ID": "1.5.3",
+      "TEXT": "1.5.3. Customer Feedback Management",
+      "TYPE": "SYSTEM",
+      "Description": "Gathers and analyzes customer feedback to improve IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2",
+      "TEXT": "2. Service Design",
+      "TYPE": "SYSTEM",
+      "Description": "Designs IT services, architectures, and processes to meet current and future business requirements.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.1",
+      "TEXT": "2.1. Design Coordination",
+      "TYPE": "SYSTEM",
+      "Description": "Coordinates all service design activities.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.1.1",
+      "TEXT": "2.1.1. Design Project Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages projects related to the design of IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.1.2",
+      "TEXT": "2.1.2. Design Architectures and Guidelines",
+      "TYPE": "SYSTEM",
+      "Description": "Establishes standards and guidelines for service design.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.1.3",
+      "TEXT": "2.1.3. Integration of Design Processes",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures seamless integration of various design processes.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.2",
+      "TEXT": "2.2. Service Catalog Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the service catalog to provide clear information about available IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.2.1",
+      "TEXT": "2.2.1. Develop Service Catalog",
+      "TYPE": "SYSTEM",
+      "Description": "Creates and maintains the service catalog with detailed service descriptions.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.2.2",
+      "TEXT": "2.2.2. Maintain Service Listings",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures that all service listings are up-to-date and accurate.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.2.3",
+      "TEXT": "2.2.3. Service Description and Documentation",
+      "TYPE": "SYSTEM",
+      "Description": "Provides comprehensive documentation for each service.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.3",
+      "TEXT": "2.3. Service Level Management",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures that all IT services meet agreed-upon service levels.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.3.1",
+      "TEXT": "2.3.1. Define SLAs",
+      "TYPE": "SYSTEM",
+      "Description": "Establishes SLAs that specify service expectations and metrics.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.3.2",
+      "TEXT": "2.3.2. Monitor SLA Compliance",
+      "TYPE": "SYSTEM",
+      "Description": "Tracks and ensures compliance with SLAs.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.3.3",
+      "TEXT": "2.3.3. Service Reporting",
+      "TYPE": "SYSTEM",
+      "Description": "Generates reports on service performance against SLAs.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.4",
+      "TEXT": "2.4. Capacity Management",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures IT services have adequate capacity to meet demand.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.4.1",
+      "TEXT": "2.4.1. Capacity Planning",
+      "TYPE": "SYSTEM",
+      "Description": "Plans for future capacity needs based on demand forecasts.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.4.2",
+      "TEXT": "2.4.2. Performance Monitoring",
+      "TYPE": "SYSTEM",
+      "Description": "Monitors the performance of IT services to ensure they meet required standards.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.4.3",
+      "TEXT": "2.4.3. Resource Optimization",
+      "TYPE": "SYSTEM",
+      "Description": "Optimizes the use of resources to improve efficiency and performance.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.5",
+      "TEXT": "2.5. Availability Management",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures IT services are available as agreed.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.5.1",
+      "TEXT": "2.5.1. Availability Planning",
+      "TYPE": "SYSTEM",
+      "Description": "Plans for maintaining and improving service availability.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.5.2",
+      "TEXT": "2.5.2. Monitor Availability",
+      "TYPE": "SYSTEM",
+      "Description": "Continuously monitors service availability and performance.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.5.3",
+      "TEXT": "2.5.3. Disaster Recovery Planning",
+      "TYPE": "SYSTEM",
+      "Description": "Develops and maintains plans to recover IT services in case of disasters.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.6",
+      "TEXT": "2.6. IT Service Continuity Management",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures that IT services can continue during and after a major disruption.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.6.1",
+      "TEXT": "2.6.1. Business Impact Analysis",
+      "TYPE": "SYSTEM",
+      "Description": "Assesses the impact of disruptions on business operations.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.6.2",
+      "TEXT": "2.6.2. Continuity Planning",
+      "TYPE": "SYSTEM",
+      "Description": "Develops plans to maintain IT service continuity.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.6.3",
+      "TEXT": "2.6.3. Testing and Validation",
+      "TYPE": "SYSTEM",
+      "Description": "Tests and validates continuity plans to ensure effectiveness.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.7",
+      "TEXT": "2.7. Information Security Management",
+      "TYPE": "SYSTEM",
+      "Description": "Protects information assets through effective security measures.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.7.1",
+      "TEXT": "2.7.1. Risk Assessment and Management",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies and manages security risks.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.7.2",
+      "TEXT": "2.7.2. Security Policy Development",
+      "TYPE": "SYSTEM",
+      "Description": "Develops and maintains security policies.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.7.3",
+      "TEXT": "2.7.3. Security Incident Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages security incidents to minimize impact.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.8",
+      "TEXT": "2.8. Supplier Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages relationships with external suppliers.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.8.1",
+      "TEXT": "2.8.1. Supplier Selection and Evaluation",
+      "TYPE": "SYSTEM",
+      "Description": "Selects and evaluates suppliers based on performance and reliability.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.8.2",
+      "TEXT": "2.8.2. Contract Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages supplier contracts to ensure compliance and performance.",
+      "isExpanded": false
+    },
+    {
+      "ID": "2.8.3",
+      "TEXT": "2.8.3. Supplier Performance Monitoring",
+      "TYPE": "SYSTEM",
+      "Description": "Monitors and assesses supplier performance against agreements.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3",
+      "TEXT": "3. Service Transition",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the transition of new or changed services into the live environment.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.1",
+      "TEXT": "3.1. Transition Planning and Support",
+      "TYPE": "SYSTEM",
+      "Description": "Plans and supports service transitions.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.1.1",
+      "TEXT": "3.1.1. Transition Strategy Development",
+      "TYPE": "SYSTEM",
+      "Description": "Develops strategies for effective service transitions.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.1.2",
+      "TEXT": "3.1.2. Resource Allocation for Transition",
+      "TYPE": "SYSTEM",
+      "Description": "Allocates resources necessary for service transitions.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.1.3",
+      "TEXT": "3.1.3. Transition Risk Management",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies and manages risks associated with service transitions.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.2",
+      "TEXT": "3.2. Change Management",
+      "TYPE": "SYSTEM",
+      "Description": "Controls the lifecycle of all changes.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.2.1",
+      "TEXT": "3.2.1. Change Request Handling",
+      "TYPE": "SYSTEM",
+      "Description": "Processes and manages change requests.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.2.2",
+      "TEXT": "3.2.2. Change Assessment and Approval",
+      "TYPE": "SYSTEM",
+      "Description": "Assesses and approves changes based on impact and risk.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.2.3",
+      "TEXT": "3.2.3. Change Implementation and Review",
+      "TYPE": "SYSTEM",
+      "Description": "Implements approved changes and reviews their outcomes.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.3",
+      "TEXT": "3.3. Service Asset and Configuration Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages service assets and configuration items.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.3.1",
+      "TEXT": "3.3.1. Configuration Identification",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies and records configuration items.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.3.2",
+      "TEXT": "3.3.2. Configuration Control",
+      "TYPE": "SYSTEM",
+      "Description": "Controls changes to configuration items to maintain integrity.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.3.3",
+      "TEXT": "3.3.3. Configuration Status Accounting",
+      "TYPE": "SYSTEM",
+      "Description": "Maintains records of configuration item statuses and histories.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.4",
+      "TEXT": "3.4. Release and Deployment Management",
+      "TYPE": "SYSTEM",
+      "Description": "Plans and manages the release of new or changed services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.4.1",
+      "TEXT": "3.4.1. Release Planning",
+      "TYPE": "SYSTEM",
+      "Description": "Plans the release of new or updated services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.4.2",
+      "TEXT": "3.4.2. Deployment Execution",
+      "TYPE": "SYSTEM",
+      "Description": "Executes the deployment of releases into the live environment.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.4.3",
+      "TEXT": "3.4.3. Release Validation and Testing",
+      "TYPE": "SYSTEM",
+      "Description": "Validates and tests releases to ensure they meet requirements.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.5",
+      "TEXT": "3.5. Service Validation and Testing",
+      "TYPE": "SYSTEM",
+      "Description": "Ensures that new or changed services meet specifications.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.5.1",
+      "TEXT": "3.5.1. Test Planning",
+      "TYPE": "SYSTEM",
+      "Description": "Develops plans for testing services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.5.2",
+      "TEXT": "3.5.2. Test Execution",
+      "TYPE": "SYSTEM",
+      "Description": "Executes tests to validate service functionality and performance.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.5.3",
+      "TEXT": "3.5.3. Defect Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages and resolves defects identified during testing.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.6",
+      "TEXT": "3.6. Change Evaluation",
+      "TYPE": "SYSTEM",
+      "Description": "Evaluates changes to ensure they achieve desired outcomes.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.6.1",
+      "TEXT": "3.6.1. Post-Implementation Review",
+      "TYPE": "SYSTEM",
+      "Description": "Reviews changes after implementation to assess success and lessons learned.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.6.2",
+      "TEXT": "3.6.2. Change Impact Analysis",
+      "TYPE": "SYSTEM",
+      "Description": "Analyzes the impact of changes on services and operations.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.6.3",
+      "TEXT": "3.6.3. Continuous Improvement of Changes",
+      "TYPE": "SYSTEM",
+      "Description": "Continuously improves the change management process based on feedback.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.7",
+      "TEXT": "3.7. Knowledge Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages knowledge to support IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.7.1",
+      "TEXT": "3.7.1. Knowledge Base Maintenance",
+      "TYPE": "SYSTEM",
+      "Description": "Maintains a repository of knowledge articles and information.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.7.2",
+      "TEXT": "3.7.2. Knowledge Sharing and Dissemination",
+      "TYPE": "SYSTEM",
+      "Description": "Facilitates the sharing and dissemination of knowledge across the organization.",
+      "isExpanded": false
+    },
+    {
+      "ID": "3.7.3",
+      "TEXT": "3.7.3. Knowledge Utilization Monitoring",
+      "TYPE": "SYSTEM",
+      "Description": "Monitors the use of knowledge to ensure it is effectively applied.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4",
+      "TEXT": "4. Service Operation",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the day-to-day operation of IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.1",
+      "TEXT": "4.1. Event Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages events throughout their lifecycle.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.1.1",
+      "TEXT": "4.1.1. Event Detection",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies and detects events that occur within IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.1.2",
+      "TEXT": "4.1.2. Event Filtering",
+      "TYPE": "SYSTEM",
+      "Description": "Filters events to determine their significance and necessary response.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.1.3",
+      "TEXT": "4.1.3. Event Response",
+      "TYPE": "SYSTEM",
+      "Description": "Responds to events to ensure minimal impact on services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.2",
+      "TEXT": "4.2. Incident Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the lifecycle of incidents to restore normal service operation.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.2.1",
+      "TEXT": "4.2.1. Incident Detection and Recording",
+      "TYPE": "SYSTEM",
+      "Description": "Detects and logs incidents as they occur.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.2.2",
+      "TEXT": "4.2.2. Incident Classification and Prioritization",
+      "TYPE": "SYSTEM",
+      "Description": "Classifies and prioritizes incidents based on their impact and urgency.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.2.3",
+      "TEXT": "4.2.3. Incident Resolution and Recovery",
+      "TYPE": "SYSTEM",
+      "Description": "Resolves and recovers from incidents to restore services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.3",
+      "TEXT": "4.3. Request Fulfillment",
+      "TYPE": "SYSTEM",
+      "Description": "Handles service requests from users.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.3.1",
+      "TEXT": "4.3.1. Service Request Handling",
+      "TYPE": "SYSTEM",
+      "Description": "Processes and fulfills user service requests.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.3.2",
+      "TEXT": "4.3.2. Request Routing",
+      "TYPE": "SYSTEM",
+      "Description": "Routes service requests to the appropriate fulfillment teams.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.3.3",
+      "TEXT": "4.3.3. Request Closure",
+      "TYPE": "SYSTEM",
+      "Description": "Closes service requests after fulfillment.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.4",
+      "TEXT": "4.4. Problem Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the lifecycle of problems to prevent incidents.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.4.1",
+      "TEXT": "4.4.1. Problem Detection and Logging",
+      "TYPE": "SYSTEM",
+      "Description": "Detects and logs problems within IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.4.2",
+      "TEXT": "4.4.2. Problem Investigation and Diagnosis",
+      "TYPE": "SYSTEM",
+      "Description": "Investigates and diagnoses the root causes of problems.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.4.3",
+      "TEXT": "4.4.3. Problem Resolution and Closure",
+      "TYPE": "SYSTEM",
+      "Description": "Resolves problems and closes them once resolved.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.5",
+      "TEXT": "4.5. Access Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages user access to IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.5.1",
+      "TEXT": "4.5.1. Access Request Handling",
+      "TYPE": "SYSTEM",
+      "Description": "Processes and handles access requests from users.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.5.2",
+      "TEXT": "4.5.2. Access Authorization",
+      "TYPE": "SYSTEM",
+      "Description": "Authorizes user access based on policies and roles.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.5.3",
+      "TEXT": "4.5.3. Access Review and Audit",
+      "TYPE": "SYSTEM",
+      "Description": "Reviews and audits user access to ensure compliance.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.6",
+      "TEXT": "4.6. Service Desk",
+      "TYPE": "SYSTEM",
+      "Description": "Acts as the single point of contact for users.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.6.1",
+      "TEXT": "4.6.1. User Support and Assistance",
+      "TYPE": "SYSTEM",
+      "Description": "Provides support and assistance to users for IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.6.2",
+      "TEXT": "4.6.2. Incident Logging and Tracking",
+      "TYPE": "SYSTEM",
+      "Description": "Logs and tracks incidents reported by users.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.6.3",
+      "TEXT": "4.6.3. Communication Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages communication with users regarding incidents and requests.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.7",
+      "TEXT": "4.7. Technical Management",
+      "TYPE": "SYSTEM",
+      "Description": "Provides technical expertise and support.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.7.1",
+      "TEXT": "4.7.1. Technical Support Services",
+      "TYPE": "SYSTEM",
+      "Description": "Offers technical support services to maintain IT infrastructure.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.7.2",
+      "TEXT": "4.7.2. Technical Knowledge Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages technical knowledge to support IT operations.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.7.3",
+      "TEXT": "4.7.3. Technical Documentation",
+      "TYPE": "SYSTEM",
+      "Description": "Creates and maintains technical documentation for IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.8",
+      "TEXT": "4.8. IT Operations Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages day-to-day IT operations.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.8.1",
+      "TEXT": "4.8.1. System Monitoring",
+      "TYPE": "SYSTEM",
+      "Description": "Monitors IT systems to ensure they are functioning correctly.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.8.2",
+      "TEXT": "4.8.2. Job Scheduling and Automation",
+      "TYPE": "SYSTEM",
+      "Description": "Automates and schedules IT operational tasks.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.8.3",
+      "TEXT": "4.8.3. Operational Reporting",
+      "TYPE": "SYSTEM",
+      "Description": "Generates reports on IT operations performance and activities.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.9",
+      "TEXT": "4.9. Application Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages applications throughout their lifecycle.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.9.1",
+      "TEXT": "4.9.1. Application Support",
+      "TYPE": "SYSTEM",
+      "Description": "Provides support for applications to ensure they meet user needs.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.9.2",
+      "TEXT": "4.9.2. Application Development Coordination",
+      "TYPE": "SYSTEM",
+      "Description": "Coordinates the development and enhancement of applications.",
+      "isExpanded": false
+    },
+    {
+      "ID": "4.9.3",
+      "TEXT": "4.9.3. Application Lifecycle Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the entire lifecycle of applications from development to retirement.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5",
+      "TEXT": "5. Continual Service Improvement",
+      "TYPE": "SYSTEM",
+      "Description": "Continuously improves IT services and processes.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.1",
+      "TEXT": "5.1. Continual Service Improvement",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies and implements improvements to IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.1.1",
+      "TEXT": "5.1.1. Identify Improvement Opportunities",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies areas where IT services can be improved.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.1.2",
+      "TEXT": "5.1.2. Implement Improvement Initiatives",
+      "TYPE": "SYSTEM",
+      "Description": "Executes initiatives to enhance IT services and processes.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.1.3",
+      "TEXT": "5.1.3. Measure Improvement Outcomes",
+      "TYPE": "SYSTEM",
+      "Description": "Measures the outcomes of improvement initiatives to assess their effectiveness.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.2",
+      "TEXT": "5.2. Service Measurement and Reporting",
+      "TYPE": "SYSTEM",
+      "Description": "Measures and reports on IT service performance.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.2.1",
+      "TEXT": "5.2.1. Define Metrics and KPIs",
+      "TYPE": "SYSTEM",
+      "Description": "Defines key metrics and performance indicators for IT services.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.2.2",
+      "TEXT": "5.2.2. Data Collection and Analysis",
+      "TYPE": "SYSTEM",
+      "Description": "Collects and analyzes data to evaluate service performance.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.2.3",
+      "TEXT": "5.2.3. Reporting and Dashboarding",
+      "TYPE": "SYSTEM",
+      "Description": "Creates reports and dashboards to communicate service performance.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.3",
+      "TEXT": "5.3. Process Evaluation",
+      "TYPE": "SYSTEM",
+      "Description": "Evaluates IT processes to ensure they are effective and efficient.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.3.1",
+      "TEXT": "5.3.1. Process Performance Assessment",
+      "TYPE": "SYSTEM",
+      "Description": "Assesses the performance of IT processes against standards.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.3.2",
+      "TEXT": "5.3.2. Process Gap Analysis",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies gaps between current and desired process performance.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.3.3",
+      "TEXT": "5.3.3. Process Optimization",
+      "TYPE": "SYSTEM",
+      "Description": "Optimizes IT processes to improve efficiency and effectiveness.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.4",
+      "TEXT": "5.4. Service Level Management",
+      "TYPE": "SYSTEM",
+      "Description": "Manages and improves service levels.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.4.1",
+      "TEXT": "5.4.1. Review SLAs",
+      "TYPE": "SYSTEM",
+      "Description": "Regularly reviews SLAs to ensure they remain relevant and effective.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.4.2",
+      "TEXT": "5.4.2. Monitor SLA Performance",
+      "TYPE": "SYSTEM",
+      "Description": "Monitors performance against SLAs to ensure compliance.",
+      "isExpanded": false
+    },
+    {
+      "ID": "5.4.3",
+      "TEXT": "5.4.3. SLA Improvement",
+      "TYPE": "SYSTEM",
+      "Description": "Identifies and implements improvements to SLAs based on performance data and feedback.",
+      "isExpanded": false
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "1-1.1",
+      "FROMID": "1",
+      "TOID": "1.1",
+      "TYPE": "->",
+      "From": "1. Service Strategy",
+      "To": "1.1. Strategy Management for IT Services"
+    },
+    {
+      "ID": "1.1-1.1.1",
+      "FROMID": "1.1",
+      "TOID": "1.1.1",
+      "TYPE": "->",
+      "From": "1.1. Strategy Management for IT Services",
+      "To": "1.1.1. Develop IT Service Strategy"
+    },
+    {
+      "ID": "1.1-1.1.2",
+      "FROMID": "1.1",
+      "TOID": "1.1.2",
+      "TYPE": "->",
+      "From": "1.1. Strategy Management for IT Services",
+      "To": "1.1.2. Align IT Strategy with Business Goals"
+    },
+    {
+      "ID": "1.1-1.1.3",
+      "FROMID": "1.1",
+      "TOID": "1.1.3",
+      "TYPE": "->",
+      "From": "1.1. Strategy Management for IT Services",
+      "To": "1.1.3. Market Analysis and Service Portfolio"
+    },
+    {
+      "ID": "1-1.2",
+      "FROMID": "1",
+      "TOID": "1.2",
+      "TYPE": "->",
+      "From": "1. Service Strategy",
+      "To": "1.2. Service Portfolio Management"
+    },
+    {
+      "ID": "1.2-1.2.1",
+      "FROMID": "1.2",
+      "TOID": "1.2.1",
+      "TYPE": "->",
+      "From": "1.2. Service Portfolio Management",
+      "To": "1.2.1. Manage Service Portfolio"
+    },
+    {
+      "ID": "1.2-1.2.2",
+      "FROMID": "1.2",
+      "TOID": "1.2.2",
+      "TYPE": "->",
+      "From": "1.2. Service Portfolio Management",
+      "To": "1.2.2. Service Lifecycle Management"
+    },
+    {
+      "ID": "1.2-1.2.3",
+      "FROMID": "1.2",
+      "TOID": "1.2.3",
+      "TYPE": "->",
+      "From": "1.2. Service Portfolio Management",
+      "To": "1.2.3. Service Financial Management"
+    },
+    {
+      "ID": "1-1.3",
+      "FROMID": "1",
+      "TOID": "1.3",
+      "TYPE": "->",
+      "From": "1. Service Strategy",
+      "To": "1.3. Financial Management for IT Services"
+    },
+    {
+      "ID": "1.3-1.3.1",
+      "FROMID": "1.3",
+      "TOID": "1.3.1",
+      "TYPE": "->",
+      "From": "1.3. Financial Management for IT Services",
+      "To": "1.3.1. Budgeting and Accounting"
+    },
+    {
+      "ID": "1.3-1.3.2",
+      "FROMID": "1.3",
+      "TOID": "1.3.2",
+      "TYPE": "->",
+      "From": "1.3. Financial Management for IT Services",
+      "To": "1.3.2. Cost Optimization"
+    },
+    {
+      "ID": "1.3-1.3.3",
+      "FROMID": "1.3",
+      "TOID": "1.3.3",
+      "TYPE": "->",
+      "From": "1.3. Financial Management for IT Services",
+      "To": "1.3.3. Financial Reporting"
+    },
+    {
+      "ID": "1-1.4",
+      "FROMID": "1",
+      "TOID": "1.4",
+      "TYPE": "->",
+      "From": "1. Service Strategy",
+      "To": "1.4. Demand Management"
+    },
+    {
+      "ID": "1.4-1.4.1",
+      "FROMID": "1.4",
+      "TOID": "1.4.1",
+      "TYPE": "->",
+      "From": "1.4. Demand Management",
+      "To": "1.4.1. Forecasting Demand"
+    },
+    {
+      "ID": "1.4-1.4.2",
+      "FROMID": "1.4",
+      "TOID": "1.4.2",
+      "TYPE": "->",
+      "From": "1.4. Demand Management",
+      "To": "1.4.2. Capacity Planning"
+    },
+    {
+      "ID": "1.4-1.4.3",
+      "FROMID": "1.4",
+      "TOID": "1.4.3",
+      "TYPE": "->",
+      "From": "1.4. Demand Management",
+      "To": "1.4.3. Demand Control"
+    },
+    {
+      "ID": "1-1.5",
+      "FROMID": "1",
+      "TOID": "1.5",
+      "TYPE": "->",
+      "From": "1. Service Strategy",
+      "To": "1.5. Business Relationship Management"
+    },
+    {
+      "ID": "1.5-1.5.1",
+      "FROMID": "1.5",
+      "TOID": "1.5.1",
+      "TYPE": "->",
+      "From": "1.5. Business Relationship Management",
+      "To": "1.5.1. Stakeholder Engagement"
+    },
+    {
+      "ID": "1.5-1.5.2",
+      "FROMID": "1.5",
+      "TOID": "1.5.2",
+      "TYPE": "->",
+      "From": "1.5. Business Relationship Management",
+      "To": "1.5.2. Service Level Agreements (SLAs)"
+    },
+    {
+      "ID": "1.5-1.5.3",
+      "FROMID": "1.5",
+      "TOID": "1.5.3",
+      "TYPE": "->",
+      "From": "1.5. Business Relationship Management",
+      "To": "1.5.3. Customer Feedback Management"
+    },
+    {
+      "ID": "2-2.1",
+      "FROMID": "2",
+      "TOID": "2.1",
+      "TYPE": "->",
+      "From": "2. Service Design",
+      "To": "2.1. Design Coordination"
+    },
+    {
+      "ID": "2.1-2.1.1",
+      "FROMID": "2.1",
+      "TOID": "2.1.1",
+      "TYPE": "->",
+      "From": "2.1. Design Coordination",
+      "To": "2.1.1. Design Project Management"
+    },
+    {
+      "ID": "2.1-2.1.2",
+      "FROMID": "2.1",
+      "TOID": "2.1.2",
+      "TYPE": "->",
+      "From": "2.1. Design Coordination",
+      "To": "2.1.2. Design Architectures and Guidelines"
+    },
+    {
+      "ID": "2.1-2.1.3",
+      "FROMID": "2.1",
+      "TOID": "2.1.3",
+      "TYPE": "->",
+      "From": "2.1. Design Coordination",
+      "To": "2.1.3. Integration of Design Processes"
+    },
+    {
+      "ID": "2-2.2",
+      "FROMID": "2",
+      "TOID": "2.2",
+      "TYPE": "->",
+      "From": "2. Service Design",
+      "To": "2.2. Service Catalog Management"
+    },
+    {
+      "ID": "2.2-2.2.1",
+      "FROMID": "2.2",
+      "TOID": "2.2.1",
+      "TYPE": "->",
+      "From": "2.2. Service Catalog Management",
+      "To": "2.2.1. Develop Service Catalog"
+    },
+    {
+      "ID": "2.2-2.2.2",
+      "FROMID": "2.2",
+      "TOID": "2.2.2",
+      "TYPE": "->",
+      "From": "2.2. Service Catalog Management",
+      "To": "2.2.2. Maintain Service Listings"
+    },
+    {
+      "ID": "2.2-2.2.3",
+      "FROMID": "2.2",
+      "TOID": "2.2.3",
+      "TYPE": "->",
+      "From": "2.2. Service Catalog Management",
+      "To": "2.2.3. Service Description and Documentation"
+    },
+    {
+      "ID": "2-2.3",
+      "FROMID": "2",
+      "TOID": "2.3",
+      "TYPE": "->",
+      "From": "2. Service Design",
+      "To": "2.3. Service Level Management"
+    },
+    {
+      "ID": "2.3-2.3.1",
+      "FROMID": "2.3",
+      "TOID": "2.3.1",
+      "TYPE": "->",
+      "From": "2.3. Service Level Management",
+      "To": "2.3.1. Define SLAs"
+    },
+    {
+      "ID": "2.3-2.3.2",
+      "FROMID": "2.3",
+      "TOID": "2.3.2",
+      "TYPE": "->",
+      "From": "2.3. Service Level Management",
+      "To": "2.3.2. Monitor SLA Compliance"
+    },
+    {
+      "ID": "2.3-2.3.3",
+      "FROMID": "2.3",
+      "TOID": "2.3.3",
+      "TYPE": "->",
+      "From": "2.3. Service Level Management",
+      "To": "2.3.3. Service Reporting"
+    },
+    {
+      "ID": "2-2.4",
+      "FROMID": "2",
+      "TOID": "2.4",
+      "TYPE": "->",
+      "From": "2. Service Design",
+      "To": "2.4. Capacity Management"
+    },
+    {
+      "ID": "2.4-2.4.1",
+      "FROMID": "2.4",
+      "TOID": "2.4.1",
+      "TYPE": "->",
+      "From": "2.4. Capacity Management",
+      "To": "2.4.1. Capacity Planning"
+    },
+    {
+      "ID": "2.4-2.4.2",
+      "FROMID": "2.4",
+      "TOID": "2.4.2",
+      "TYPE": "->",
+      "From": "2.4. Capacity Management",
+      "To": "2.4.2. Performance Monitoring"
+    },
+    {
+      "ID": "2.4-2.4.3",
+      "FROMID": "2.4",
+      "TOID": "2.4.3",
+      "TYPE": "->",
+      "From": "2.4. Capacity Management",
+      "To": "2.4.3. Resource Optimization"
+    },
+    {
+      "ID": "2-2.5",
+      "FROMID": "2",
+      "TOID": "2.5",
+      "TYPE": "->",
+      "From": "2. Service Design",
+      "To": "2.5. Availability Management"
+    },
+    {
+      "ID": "2.5-2.5.1",
+      "FROMID": "2.5",
+      "TOID": "2.5.1",
+      "TYPE": "->",
+      "From": "2.5. Availability Management",
+      "To": "2.5.1. Availability Planning"
+    },
+    {
+      "ID": "2.5-2.5.2",
+      "FROMID": "2.5",
+      "TOID": "2.5.2",
+      "TYPE": "->",
+      "From": "2.5. Availability Management",
+      "To": "2.5.2. Monitor Availability"
+    },
+    {
+      "ID": "2.5-2.5.3",
+      "FROMID": "2.5",
+      "TOID": "2.5.3",
+      "TYPE": "->",
+      "From": "2.5. Availability Management",
+      "To": "2.5.3. Disaster Recovery Planning"
+    },
+    {
+      "ID": "2-2.6",
+      "FROMID": "2",
+      "TOID": "2.6",
+      "TYPE": "->",
+      "From": "2. Service Design",
+      "To": "2.6. IT Service Continuity Management"
+    },
+    {
+      "ID": "2.6-2.6.1",
+      "FROMID": "2.6",
+      "TOID": "2.6.1",
+      "TYPE": "->",
+      "From": "2.6. IT Service Continuity Management",
+      "To": "2.6.1. Business Impact Analysis"
+    },
+    {
+      "ID": "2.6-2.6.2",
+      "FROMID": "2.6",
+      "TOID": "2.6.2",
+      "TYPE": "->",
+      "From": "2.6. IT Service Continuity Management",
+      "To": "2.6.2. Continuity Planning"
+    },
+    {
+      "ID": "2.6-2.6.3",
+      "FROMID": "2.6",
+      "TOID": "2.6.3",
+      "TYPE": "->",
+      "From": "2.6. IT Service Continuity Management",
+      "To": "2.6.3. Testing and Validation"
+    },
+    {
+      "ID": "2-2.7",
+      "FROMID": "2",
+      "TOID": "2.7",
+      "TYPE": "->",
+      "From": "2. Service Design",
+      "To": "2.7. Information Security Management"
+    },
+    {
+      "ID": "2.7-2.7.1",
+      "FROMID": "2.7",
+      "TOID": "2.7.1",
+      "TYPE": "->",
+      "From": "2.7. Information Security Management",
+      "To": "2.7.1. Risk Assessment and Management"
+    },
+    {
+      "ID": "2.7-2.7.2",
+      "FROMID": "2.7",
+      "TOID": "2.7.2",
+      "TYPE": "->",
+      "From": "2.7. Information Security Management",
+      "To": "2.7.2. Security Policy Development"
+    },
+    {
+      "ID": "2.7-2.7.3",
+      "FROMID": "2.7",
+      "TOID": "2.7.3",
+      "TYPE": "->",
+      "From": "2.7. Information Security Management",
+      "To": "2.7.3. Security Incident Management"
+    },
+    {
+      "ID": "2-2.8",
+      "FROMID": "2",
+      "TOID": "2.8",
+      "TYPE": "->",
+      "From": "2. Service Design",
+      "To": "2.8. Supplier Management"
+    },
+    {
+      "ID": "2.8-2.8.1",
+      "FROMID": "2.8",
+      "TOID": "2.8.1",
+      "TYPE": "->",
+      "From": "2.8. Supplier Management",
+      "To": "2.8.1. Supplier Selection and Evaluation"
+    },
+    {
+      "ID": "2.8-2.8.2",
+      "FROMID": "2.8",
+      "TOID": "2.8.2",
+      "TYPE": "->",
+      "From": "2.8. Supplier Management",
+      "To": "2.8.2. Contract Management"
+    },
+    {
+      "ID": "2.8-2.8.3",
+      "FROMID": "2.8",
+      "TOID": "2.8.3",
+      "TYPE": "->",
+      "From": "2.8. Supplier Management",
+      "To": "2.8.3. Supplier Performance Monitoring"
+    },
+    {
+      "ID": "3-3.1",
+      "FROMID": "3",
+      "TOID": "3.1",
+      "TYPE": "->",
+      "From": "3. Service Transition",
+      "To": "3.1. Transition Planning and Support"
+    },
+    {
+      "ID": "3.1-3.1.1",
+      "FROMID": "3.1",
+      "TOID": "3.1.1",
+      "TYPE": "->",
+      "From": "3.1. Transition Planning and Support",
+      "To": "3.1.1. Transition Strategy Development"
+    },
+    {
+      "ID": "3.1-3.1.2",
+      "FROMID": "3.1",
+      "TOID": "3.1.2",
+      "TYPE": "->",
+      "From": "3.1. Transition Planning and Support",
+      "To": "3.1.2. Resource Allocation for Transition"
+    },
+    {
+      "ID": "3.1-3.1.3",
+      "FROMID": "3.1",
+      "TOID": "3.1.3",
+      "TYPE": "->",
+      "From": "3.1. Transition Planning and Support",
+      "To": "3.1.3. Transition Risk Management"
+    },
+    {
+      "ID": "3-3.2",
+      "FROMID": "3",
+      "TOID": "3.2",
+      "TYPE": "->",
+      "From": "3. Service Transition",
+      "To": "3.2. Change Management"
+    },
+    {
+      "ID": "3.2-3.2.1",
+      "FROMID": "3.2",
+      "TOID": "3.2.1",
+      "TYPE": "->",
+      "From": "3.2. Change Management",
+      "To": "3.2.1. Change Request Handling"
+    },
+    {
+      "ID": "3.2-3.2.2",
+      "FROMID": "3.2",
+      "TOID": "3.2.2",
+      "TYPE": "->",
+      "From": "3.2. Change Management",
+      "To": "3.2.2. Change Assessment and Approval"
+    },
+    {
+      "ID": "3.2-3.2.3",
+      "FROMID": "3.2",
+      "TOID": "3.2.3",
+      "TYPE": "->",
+      "From": "3.2. Change Management",
+      "To": "3.2.3. Change Implementation and Review"
+    },
+    {
+      "ID": "3-3.3",
+      "FROMID": "3",
+      "TOID": "3.3",
+      "TYPE": "->",
+      "From": "3. Service Transition",
+      "To": "3.3. Service Asset and Configuration Management"
+    },
+    {
+      "ID": "3.3-3.3.1",
+      "FROMID": "3.3",
+      "TOID": "3.3.1",
+      "TYPE": "->",
+      "From": "3.3. Service Asset and Configuration Management",
+      "To": "3.3.1. Configuration Identification"
+    },
+    {
+      "ID": "3.3-3.3.2",
+      "FROMID": "3.3",
+      "TOID": "3.3.2",
+      "TYPE": "->",
+      "From": "3.3. Service Asset and Configuration Management",
+      "To": "3.3.2. Configuration Control"
+    },
+    {
+      "ID": "3.3-3.3.3",
+      "FROMID": "3.3",
+      "TOID": "3.3.3",
+      "TYPE": "->",
+      "From": "3.3. Service Asset and Configuration Management",
+      "To": "3.3.3. Configuration Status Accounting"
+    },
+    {
+      "ID": "3-3.4",
+      "FROMID": "3",
+      "TOID": "3.4",
+      "TYPE": "->",
+      "From": "3. Service Transition",
+      "To": "3.4. Release and Deployment Management"
+    },
+    {
+      "ID": "3.4-3.4.1",
+      "FROMID": "3.4",
+      "TOID": "3.4.1",
+      "TYPE": "->",
+      "From": "3.4. Release and Deployment Management",
+      "To": "3.4.1. Release Planning"
+    },
+    {
+      "ID": "3.4-3.4.2",
+      "FROMID": "3.4",
+      "TOID": "3.4.2",
+      "TYPE": "->",
+      "From": "3.4. Release and Deployment Management",
+      "To": "3.4.2. Deployment Execution"
+    },
+    {
+      "ID": "3.4-3.4.3",
+      "FROMID": "3.4",
+      "TOID": "3.4.3",
+      "TYPE": "->",
+      "From": "3.4. Release and Deployment Management",
+      "To": "3.4.3. Release Validation and Testing"
+    },
+    {
+      "ID": "3-3.5",
+      "FROMID": "3",
+      "TOID": "3.5",
+      "TYPE": "->",
+      "From": "3. Service Transition",
+      "To": "3.5. Service Validation and Testing"
+    },
+    {
+      "ID": "3.5-3.5.1",
+      "FROMID": "3.5",
+      "TOID": "3.5.1",
+      "TYPE": "->",
+      "From": "3.5. Service Validation and Testing",
+      "To": "3.5.1. Test Planning"
+    },
+    {
+      "ID": "3.5-3.5.2",
+      "FROMID": "3.5",
+      "TOID": "3.5.2",
+      "TYPE": "->",
+      "From": "3.5. Service Validation and Testing",
+      "To": "3.5.2. Test Execution"
+    },
+    {
+      "ID": "3.5-3.5.3",
+      "FROMID": "3.5",
+      "TOID": "3.5.3",
+      "TYPE": "->",
+      "From": "3.5. Service Validation and Testing",
+      "To": "3.5.3. Defect Management"
+    },
+    {
+      "ID": "3-3.6",
+      "FROMID": "3",
+      "TOID": "3.6",
+      "TYPE": "->",
+      "From": "3. Service Transition",
+      "To": "3.6. Change Evaluation"
+    },
+    {
+      "ID": "3.6-3.6.1",
+      "FROMID": "3.6",
+      "TOID": "3.6.1",
+      "TYPE": "->",
+      "From": "3.6. Change Evaluation",
+      "To": "3.6.1. Post-Implementation Review"
+    },
+    {
+      "ID": "3.6-3.6.2",
+      "FROMID": "3.6",
+      "TOID": "3.6.2",
+      "TYPE": "->",
+      "From": "3.6. Change Evaluation",
+      "To": "3.6.2. Change Impact Analysis"
+    },
+    {
+      "ID": "3.6-3.6.3",
+      "FROMID": "3.6",
+      "TOID": "3.6.3",
+      "TYPE": "->",
+      "From": "3.6. Change Evaluation",
+      "To": "3.6.3. Continuous Improvement of Changes"
+    },
+    {
+      "ID": "3-3.7",
+      "FROMID": "3",
+      "TOID": "3.7",
+      "TYPE": "->",
+      "From": "3. Service Transition",
+      "To": "3.7. Knowledge Management"
+    },
+    {
+      "ID": "3.7-3.7.1",
+      "FROMID": "3.7",
+      "TOID": "3.7.1",
+      "TYPE": "->",
+      "From": "3.7. Knowledge Management",
+      "To": "3.7.1. Knowledge Base Maintenance"
+    },
+    {
+      "ID": "3.7-3.7.2",
+      "FROMID": "3.7",
+      "TOID": "3.7.2",
+      "TYPE": "->",
+      "From": "3.7. Knowledge Management",
+      "To": "3.7.2. Knowledge Sharing and Dissemination"
+    },
+    {
+      "ID": "3.7-3.7.3",
+      "FROMID": "3.7",
+      "TOID": "3.7.3",
+      "TYPE": "->",
+      "From": "3.7. Knowledge Management",
+      "To": "3.7.3. Knowledge Utilization Monitoring"
+    },
+    {
+      "ID": "4-4.1",
+      "FROMID": "4",
+      "TOID": "4.1",
+      "TYPE": "->",
+      "From": "4. Service Operation",
+      "To": "4.1. Event Management"
+    },
+    {
+      "ID": "4.1-4.1.1",
+      "FROMID": "4.1",
+      "TOID": "4.1.1",
+      "TYPE": "->",
+      "From": "4.1. Event Management",
+      "To": "4.1.1. Event Detection"
+    },
+    {
+      "ID": "4.1-4.1.2",
+      "FROMID": "4.1",
+      "TOID": "4.1.2",
+      "TYPE": "->",
+      "From": "4.1. Event Management",
+      "To": "4.1.2. Event Filtering"
+    },
+    {
+      "ID": "4.1-4.1.3",
+      "FROMID": "4.1",
+      "TOID": "4.1.3",
+      "TYPE": "->",
+      "From": "4.1. Event Management",
+      "To": "4.1.3. Event Response"
+    },
+    {
+      "ID": "4-4.2",
+      "FROMID": "4",
+      "TOID": "4.2",
+      "TYPE": "->",
+      "From": "4. Service Operation",
+      "To": "4.2. Incident Management"
+    },
+    {
+      "ID": "4.2-4.2.1",
+      "FROMID": "4.2",
+      "TOID": "4.2.1",
+      "TYPE": "->",
+      "From": "4.2. Incident Management",
+      "To": "4.2.1. Incident Detection and Recording"
+    },
+    {
+      "ID": "4.2-4.2.2",
+      "FROMID": "4.2",
+      "TOID": "4.2.2",
+      "TYPE": "->",
+      "From": "4.2. Incident Management",
+      "To": "4.2.2. Incident Classification and Prioritization"
+    },
+    {
+      "ID": "4.2-4.2.3",
+      "FROMID": "4.2",
+      "TOID": "4.2.3",
+      "TYPE": "->",
+      "From": "4.2. Incident Management",
+      "To": "4.2.3. Incident Resolution and Recovery"
+    },
+    {
+      "ID": "4-4.3",
+      "FROMID": "4",
+      "TOID": "4.3",
+      "TYPE": "->",
+      "From": "4. Service Operation",
+      "To": "4.3. Request Fulfillment"
+    },
+    {
+      "ID": "4.3-4.3.1",
+      "FROMID": "4.3",
+      "TOID": "4.3.1",
+      "TYPE": "->",
+      "From": "4.3. Request Fulfillment",
+      "To": "4.3.1. Service Request Handling"
+    },
+    {
+      "ID": "4.3-4.3.2",
+      "FROMID": "4.3",
+      "TOID": "4.3.2",
+      "TYPE": "->",
+      "From": "4.3. Request Fulfillment",
+      "To": "4.3.2. Request Routing"
+    },
+    {
+      "ID": "4.3-4.3.3",
+      "FROMID": "4.3",
+      "TOID": "4.3.3",
+      "TYPE": "->",
+      "From": "4.3. Request Fulfillment",
+      "To": "4.3.3. Request Closure"
+    },
+    {
+      "ID": "4-4.4",
+      "FROMID": "4",
+      "TOID": "4.4",
+      "TYPE": "->",
+      "From": "4. Service Operation",
+      "To": "4.4. Problem Management"
+    },
+    {
+      "ID": "4.4-4.4.1",
+      "FROMID": "4.4",
+      "TOID": "4.4.1",
+      "TYPE": "->",
+      "From": "4.4. Problem Management",
+      "To": "4.4.1. Problem Detection and Logging"
+    },
+    {
+      "ID": "4.4-4.4.2",
+      "FROMID": "4.4",
+      "TOID": "4.4.2",
+      "TYPE": "->",
+      "From": "4.4. Problem Management",
+      "To": "4.4.2. Problem Investigation and Diagnosis"
+    },
+    {
+      "ID": "4.4-4.4.3",
+      "FROMID": "4.4",
+      "TOID": "4.4.3",
+      "TYPE": "->",
+      "From": "4.4. Problem Management",
+      "To": "4.4.3. Problem Resolution and Closure"
+    },
+    {
+      "ID": "4-4.5",
+      "FROMID": "4",
+      "TOID": "4.5",
+      "TYPE": "->",
+      "From": "4. Service Operation",
+      "To": "4.5. Access Management"
+    },
+    {
+      "ID": "4.5-4.5.1",
+      "FROMID": "4.5",
+      "TOID": "4.5.1",
+      "TYPE": "->",
+      "From": "4.5. Access Management",
+      "To": "4.5.1. Access Request Handling"
+    },
+    {
+      "ID": "4.5-4.5.2",
+      "FROMID": "4.5",
+      "TOID": "4.5.2",
+      "TYPE": "->",
+      "From": "4.5. Access Management",
+      "To": "4.5.2. Access Authorization"
+    },
+    {
+      "ID": "4.5-4.5.3",
+      "FROMID": "4.5",
+      "TOID": "4.5.3",
+      "TYPE": "->",
+      "From": "4.5. Access Management",
+      "To": "4.5.3. Access Review and Audit"
+    },
+    {
+      "ID": "4-4.6",
+      "FROMID": "4",
+      "TOID": "4.6",
+      "TYPE": "->",
+      "From": "4. Service Operation",
+      "To": "4.6. Service Desk"
+    },
+    {
+      "ID": "4.6-4.6.1",
+      "FROMID": "4.6",
+      "TOID": "4.6.1",
+      "TYPE": "->",
+      "From": "4.6. Service Desk",
+      "To": "4.6.1. User Support and Assistance"
+    },
+    {
+      "ID": "4.6-4.6.2",
+      "FROMID": "4.6",
+      "TOID": "4.6.2",
+      "TYPE": "->",
+      "From": "4.6. Service Desk",
+      "To": "4.6.2. Incident Logging and Tracking"
+    },
+    {
+      "ID": "4.6-4.6.3",
+      "FROMID": "4.6",
+      "TOID": "4.6.3",
+      "TYPE": "->",
+      "From": "4.6. Service Desk",
+      "To": "4.6.3. Communication Management"
+    },
+    {
+      "ID": "4-4.7",
+      "FROMID": "4",
+      "TOID": "4.7",
+      "TYPE": "->",
+      "From": "4. Service Operation",
+      "To": "4.7. Technical Management"
+    },
+    {
+      "ID": "4.7-4.7.1",
+      "FROMID": "4.7",
+      "TOID": "4.7.1",
+      "TYPE": "->",
+      "From": "4.7. Technical Management",
+      "To": "4.7.1. Technical Support Services"
+    },
+    {
+      "ID": "4.7-4.7.2",
+      "FROMID": "4.7",
+      "TOID": "4.7.2",
+      "TYPE": "->",
+      "From": "4.7. Technical Management",
+      "To": "4.7.2. Technical Knowledge Management"
+    },
+    {
+      "ID": "4.7-4.7.3",
+      "FROMID": "4.7",
+      "TOID": "4.7.3",
+      "TYPE": "->",
+      "From": "4.7. Technical Management",
+      "To": "4.7.3. Technical Documentation"
+    },
+    {
+      "ID": "4-4.8",
+      "FROMID": "4",
+      "TOID": "4.8",
+      "TYPE": "->",
+      "From": "4. Service Operation",
+      "To": "4.8. IT Operations Management"
+    },
+    {
+      "ID": "4.8-4.8.1",
+      "FROMID": "4.8",
+      "TOID": "4.8.1",
+      "TYPE": "->",
+      "From": "4.8. IT Operations Management",
+      "To": "4.8.1. System Monitoring"
+    },
+    {
+      "ID": "4.8-4.8.2",
+      "FROMID": "4.8",
+      "TOID": "4.8.2",
+      "TYPE": "->",
+      "From": "4.8. IT Operations Management",
+      "To": "4.8.2. Job Scheduling and Automation"
+    },
+    {
+      "ID": "4.8-4.8.3",
+      "FROMID": "4.8",
+      "TOID": "4.8.3",
+      "TYPE": "->",
+      "From": "4.8. IT Operations Management",
+      "To": "4.8.3. Operational Reporting"
+    },
+    {
+      "ID": "4-4.9",
+      "FROMID": "4",
+      "TOID": "4.9",
+      "TYPE": "->",
+      "From": "4. Service Operation",
+      "To": "4.9. Application Management"
+    },
+    {
+      "ID": "4.9-4.9.1",
+      "FROMID": "4.9",
+      "TOID": "4.9.1",
+      "TYPE": "->",
+      "From": "4.9. Application Management",
+      "To": "4.9.1. Application Support"
+    },
+    {
+      "ID": "4.9-4.9.2",
+      "FROMID": "4.9",
+      "TOID": "4.9.2",
+      "TYPE": "->",
+      "From": "4.9. Application Management",
+      "To": "4.9.2. Application Development Coordination"
+    },
+    {
+      "ID": "4.9-4.9.3",
+      "FROMID": "4.9",
+      "TOID": "4.9.3",
+      "TYPE": "->",
+      "From": "4.9. Application Management",
+      "To": "4.9.3. Application Lifecycle Management"
+    },
+    {
+      "ID": "5-5.1",
+      "FROMID": "5",
+      "TOID": "5.1",
+      "TYPE": "->",
+      "From": "5. Continual Service Improvement",
+      "To": "5.1. Continual Service Improvement"
+    },
+    {
+      "ID": "5.1-5.1.1",
+      "FROMID": "5.1",
+      "TOID": "5.1.1",
+      "TYPE": "->",
+      "From": "5.1. Continual Service Improvement",
+      "To": "5.1.1. Identify Improvement Opportunities"
+    },
+    {
+      "ID": "5.1-5.1.2",
+      "FROMID": "5.1",
+      "TOID": "5.1.2",
+      "TYPE": "->",
+      "From": "5.1. Continual Service Improvement",
+      "To": "5.1.2. Implement Improvement Initiatives"
+    },
+    {
+      "ID": "5.1-5.1.3",
+      "FROMID": "5.1",
+      "TOID": "5.1.3",
+      "TYPE": "->",
+      "From": "5.1. Continual Service Improvement",
+      "To": "5.1.3. Measure Improvement Outcomes"
+    },
+    {
+      "ID": "5-5.2",
+      "FROMID": "5",
+      "TOID": "5.2",
+      "TYPE": "->",
+      "From": "5. Continual Service Improvement",
+      "To": "5.2. Service Measurement and Reporting"
+    },
+    {
+      "ID": "5.2-5.2.1",
+      "FROMID": "5.2",
+      "TOID": "5.2.1",
+      "TYPE": "->",
+      "From": "5.2. Service Measurement and Reporting",
+      "To": "5.2.1. Define Metrics and KPIs"
+    },
+    {
+      "ID": "5.2-5.2.2",
+      "FROMID": "5.2",
+      "TOID": "5.2.2",
+      "TYPE": "->",
+      "From": "5.2. Service Measurement and Reporting",
+      "To": "5.2.2. Data Collection and Analysis"
+    },
+    {
+      "ID": "5.2-5.2.3",
+      "FROMID": "5.2",
+      "TOID": "5.2.3",
+      "TYPE": "->",
+      "From": "5.2. Service Measurement and Reporting",
+      "To": "5.2.3. Reporting and Dashboarding"
+    },
+    {
+      "ID": "5-5.3",
+      "FROMID": "5",
+      "TOID": "5.3",
+      "TYPE": "->",
+      "From": "5. Continual Service Improvement",
+      "To": "5.3. Process Evaluation"
+    },
+    {
+      "ID": "5.3-5.3.1",
+      "FROMID": "5.3",
+      "TOID": "5.3.1",
+      "TYPE": "->",
+      "From": "5.3. Process Evaluation",
+      "To": "5.3.1. Process Performance Assessment"
+    },
+    {
+      "ID": "5.3-5.3.2",
+      "FROMID": "5.3",
+      "TOID": "5.3.2",
+      "TYPE": "->",
+      "From": "5.3. Process Evaluation",
+      "To": "5.3.2. Process Gap Analysis"
+    },
+    {
+      "ID": "5.3-5.3.3",
+      "FROMID": "5.3",
+      "TOID": "5.3.3",
+      "TYPE": "->",
+      "From": "5.3. Process Evaluation",
+      "To": "5.3.3. Process Optimization"
+    },
+    {
+      "ID": "5-5.4",
+      "FROMID": "5",
+      "TOID": "5.4",
+      "TYPE": "->",
+      "From": "5. Continual Service Improvement",
+      "To": "5.4. Service Level Management"
+    },
+    {
+      "ID": "5.4-5.4.1",
+      "FROMID": "5.4",
+      "TOID": "5.4.1",
+      "TYPE": "->",
+      "From": "5.4. Service Level Management",
+      "To": "5.4.1. Review SLAs"
+    },
+    {
+      "ID": "5.4-5.4.2",
+      "FROMID": "5.4",
+      "TOID": "5.4.2",
+      "TYPE": "->",
+      "From": "5.4. Service Level Management",
+      "To": "5.4.2. Monitor SLA Performance"
+    },
+    {
+      "ID": "5.4-5.4.3",
+      "FROMID": "5.4",
+      "TOID": "5.4.3",
+      "TYPE": "->",
+      "From": "5.4. Service Level Management",
+      "To": "5.4.3. SLA Improvement"
+    }
+  ]
+}
