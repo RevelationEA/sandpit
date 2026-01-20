@@ -1,0 +1,256 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Flowchart Simple"
+    },
+    "AUTHOR": {
+      "value": "Steve White",
+      "readOnly": "true"
+    },
+    "MODELTYPE": {
+      "value": "FLOWCHART",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Simple flowchart illustrating START, END, PROCESS, and DECISION",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "VerticalFlow",
+      "refData": "LAYOUTTYPE"
+    },
+    "SYSTEMS": {
+      "value": "Steps",
+      "readOnly": "false"
+    },
+    "INTERACTIONS": {
+      "value": "Flow",
+      "readOnly": "false"
+    }
+  },
+  "systems": [
+    {
+      "ID": "1",
+      "TEXT": "Start",
+      "TYPE": "START"
+    },
+    {
+      "ID": "2",
+      "TEXT": "Student scans QR code and registers for queue",
+      "TYPE": "PROCESS"
+    },
+    {
+      "ID": "3",
+      "TEXT": "Student recieves email notification of registration including estimated queue time",
+      "TYPE": "PROCESS"
+    },
+    {
+      "ID": "4",
+      "TEXT": "Student waits in queue and receives notifications",
+      "TYPE": "PROCESS"
+    },
+    {
+      "ID": "5",
+      "TEXT": "Called to front?",
+      "TYPE": "DECISION"
+    },
+    {
+      "ID": "6",
+      "TEXT": "Continue waiting",
+      "TYPE": "DECISION"
+    },
+    {
+      "ID": "7",
+      "TEXT": "De-register from queue",
+      "TYPE": "PROCESS"
+    },
+    {
+      "ID": "8",
+      "TEXT": "End 1",
+      "TYPE": "END"
+    },
+    {
+      "ID": "9",
+      "TEXT": "Student arrives at front desk?",
+      "TYPE": "DECISION"
+    },
+    {
+      "ID": "10",
+      "TEXT": "Handle student registration / case",
+      "TYPE": "PROCESS"
+    },
+    {
+      "ID": "11",
+      "TEXT": "End 2",
+      "TYPE": "END"
+    },
+    {
+      "ID": "12",
+      "TEXT": "3rd Failure to attend?",
+      "TYPE": "DECISION"
+    },
+    {
+      "ID": "13",
+      "TEXT": "Remove student from queue",
+      "TYPE": "PROCESS"
+    },
+    {
+      "ID": "14",
+      "TEXT": "End 3",
+      "TYPE": "END"
+    },
+    {
+      "ID": "15",
+      "TEXT": "Bump student down queue",
+      "TYPE": "PROCESS"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "1001",
+      "FROMID": "1",
+      "TOID": "2",
+      "TEXT": "",
+      "TYPE": "->",
+      "From": "Start",
+      "To": "Student scans QR code and registers for queue"
+    },
+    {
+      "ID": "1002",
+      "FROMID": "2",
+      "TOID": "3",
+      "TEXT": "",
+      "TYPE": "->",
+      "From": "Student scans QR code and registers for queue",
+      "To": "Student recieves email notification of registration including estimated queue time"
+    },
+    {
+      "ID": "1003",
+      "FROMID": "3",
+      "TOID": "4",
+      "TEXT": "",
+      "TYPE": "->",
+      "From": "Student recieves email notification of registration including estimated queue time",
+      "To": "Student waits in queue and receives notifications"
+    },
+    {
+      "ID": "1004",
+      "FROMID": "4",
+      "TOID": "5",
+      "TEXT": "",
+      "TYPE": "->",
+      "From": "Student waits in queue and receives notifications",
+      "To": "Called to front?"
+    },
+    {
+      "ID": "1005",
+      "FROMID": "5",
+      "TOID": "6",
+      "TEXT": "No",
+      "TYPE": "->",
+      "From": "Called to front?",
+      "To": "Continue waiting"
+    },
+    {
+      "ID": "1006",
+      "FROMID": "6",
+      "TOID": "7",
+      "TEXT": "No",
+      "TYPE": "->",
+      "From": "Continue waiting",
+      "To": "De-register from queue"
+    },
+    {
+      "ID": "1007",
+      "FROMID": "7",
+      "TOID": "8",
+      "TEXT": "",
+      "TYPE": "->",
+      "From": "De-register from queue",
+      "To": "End 1"
+    },
+    {
+      "ID": "1008",
+      "FROMID": "6",
+      "TOID": "4",
+      "TEXT": "Yes",
+      "TYPE": "->",
+      "From": "Continue waiting",
+      "To": "Student waits in queue and receives notifications"
+    },
+    {
+      "ID": "1009",
+      "FROMID": "5",
+      "TOID": "9",
+      "TEXT": "Yes",
+      "TYPE": "->",
+      "From": "Called to front?",
+      "To": "Student arrives at front desk?"
+    },
+    {
+      "ID": "1010",
+      "FROMID": "9",
+      "TOID": "10",
+      "TEXT": "Yes",
+      "TYPE": "->",
+      "From": "Student arrives at front desk?",
+      "To": "Handle student registration / case"
+    },
+    {
+      "ID": "1011",
+      "FROMID": "10",
+      "TOID": "11",
+      "TEXT": "",
+      "TYPE": "->",
+      "From": "Handle student registration / case",
+      "To": "End 2"
+    },
+    {
+      "ID": "1012",
+      "FROMID": "9",
+      "TOID": "12",
+      "TEXT": "No",
+      "TYPE": "->",
+      "From": "Student arrives at front desk?",
+      "To": "3rd Failure to attend?"
+    },
+    {
+      "ID": "1013",
+      "FROMID": "12",
+      "TOID": "13",
+      "TEXT": "Yes",
+      "TYPE": "->",
+      "From": "3rd Failure to attend?",
+      "To": "Remove student from queue"
+    },
+    {
+      "ID": "1014",
+      "FROMID": "13",
+      "TOID": "14",
+      "TEXT": "",
+      "TYPE": "->",
+      "From": "Remove student from queue",
+      "To": "End 3"
+    },
+    {
+      "ID": "1015",
+      "FROMID": "12",
+      "TOID": "15",
+      "TEXT": "No",
+      "TYPE": "->",
+      "From": "3rd Failure to attend?",
+      "To": "Bump student down queue"
+    },
+    {
+      "ID": "1016",
+      "FROMID": "15",
+      "TOID": "4",
+      "TEXT": "",
+      "TYPE": "->",
+      "From": "Bump student down queue",
+      "To": "Student waits in queue and receives notifications"
+    }
+  ]
+}

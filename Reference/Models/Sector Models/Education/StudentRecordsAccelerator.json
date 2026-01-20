@@ -26,22 +26,6 @@
     "Author": {
       "inputType": "text",
       "value": "Steve J White"
-    },
-    "GITHUB_REPO": {
-      "value": "RevelationEA/sandpit",
-      "inputType": "text"
-    },
-    "GITHUB_PATH": {
-      "value": "StudentRecordsAccelerator.json",
-      "inputType": "text"
-    },
-    "GITHUB_BRANCH": {
-      "value": "main",
-      "inputType": "text"
-    },
-    "GITHUB_SHA": {
-      "value": "c429c9ccde5e6408194f9c2a80c4eb103cb04158",
-      "inputType": "text"
     }
   },
   "systems": [
@@ -51,7 +35,8 @@
       "TYPE": "SYSTEM",
       "Description": "Manage on-campus accommodation and external event bookings",
       "Key Capabilities": "Room allocation; Conference/venue scheduling; Booking/payment processing; Resource allocation",
-      "Higher Education Domain": "Campus & Facilities"
+      "Higher Education Domain": "Campus & Facilities",
+      "isExpanded": true
     },
     {
       "ID": "AM",
@@ -59,7 +44,8 @@
       "TYPE": "SYSTEM",
       "Description": "Track student attendance and engagement indicators; analyze learning activities",
       "Key Capabilities": "Attendance tracking; Engagement analytics; Early-warning alerts; Reporting/dashboards",
-      "Higher Education Domain": "Student Lifecycle & Experience"
+      "Higher Education Domain": "Student Lifecycle & Experience",
+      "isExpanded": true
     },
     {
       "ID": "BI",
@@ -67,7 +53,8 @@
       "TYPE": "SYSTEM",
       "Description": "Provide data analysis, dashboards, and reporting across institution-wide data sets",
       "Key Capabilities": "Data aggregation; Analytics & dashboards; Predictive insights; Performance reporting",
-      "Higher Education Domain": "Institutional Analytics & Reporting"
+      "Higher Education Domain": "Institutional Analytics & Reporting",
+      "isExpanded": true
     },
     {
       "ID": "CMS",
@@ -75,7 +62,8 @@
       "TYPE": "SYSTEM",
       "Description": "Manage and publish digital content for websites, intranets, and portals",
       "Key Capabilities": "Web content creation; Content workflow; Version control; Publishing & archiving",
-      "Higher Education Domain": "IT & Digital Infrastructure"
+      "Higher Education Domain": "IT & Digital Infrastructure",
+      "isExpanded": true
     },
     {
       "ID": "CRIS",
@@ -83,7 +71,8 @@
       "TYPE": "SYSTEM",
       "Description": "Centralize and track research outputs, publications, and researcher profiles",
       "Key Capabilities": "Publications management; Researcher profiles; Compliance reporting; Collaboration tracking",
-      "Higher Education Domain": "Research & Innovation"
+      "Higher Education Domain": "Research & Innovation",
+      "isExpanded": true
     },
     {
       "ID": "CRM",
@@ -91,7 +80,8 @@
       "TYPE": "SYSTEM",
       "Description": "Manage interactions and relationships with prospects, students, alumni, partners",
       "Key Capabilities": "Lead management; Communication tracking; Recruitment & marketing automation; Stakeholder engagement",
-      "Higher Education Domain": "Student Lifecycle & Experience"
+      "Higher Education Domain": "Student Lifecycle & Experience",
+      "isExpanded": true
     },
     {
       "ID": "CM",
@@ -99,7 +89,8 @@
       "TYPE": "SYSTEM",
       "Description": "Define and maintain programs, modules, and learning outcomes",
       "Key Capabilities": "Program/module design; Curriculum change tracking; Learning outcome mapping; Approval workflows",
-      "Higher Education Domain": "Academic & Program Management"
+      "Higher Education Domain": "Academic & Program Management",
+      "isExpanded": true
     },
     {
       "ID": "DW",
@@ -107,7 +98,8 @@
       "TYPE": "SYSTEM",
       "Description": "Consolidate institutional data from multiple sources for analysis and reporting",
       "Key Capabilities": "Data extraction/ETL; Historical data storage; Centralized reporting; Integration with BI tools",
-      "Higher Education Domain": "Institutional Analytics & Reporting"
+      "Higher Education Domain": "Institutional Analytics & Reporting",
+      "isExpanded": true
     },
     {
       "ID": "EDRMS",
@@ -115,7 +107,8 @@
       "TYPE": "SYSTEM",
       "Description": "Store, manage, and track electronic documents and records throughout their lifecycle",
       "Key Capabilities": "Document version control; Record retention policies; Secure access; Compliance & auditing",
-      "Higher Education Domain": "Enterprise Administration"
+      "Higher Education Domain": "Enterprise Administration",
+      "isExpanded": true
     },
     {
       "ID": "ESB",
@@ -123,7 +116,8 @@
       "TYPE": "SYSTEM",
       "Description": "Facilitate system-to-system integration and message brokering between applications",
       "Key Capabilities": "Message routing; Data transformation; Enterprise integration patterns; Event-driven architecture",
-      "Higher Education Domain": "IT & Digital Infrastructure"
+      "Higher Education Domain": "IT & Digital Infrastructure",
+      "isExpanded": true
     },
     {
       "ID": "EWP",
@@ -131,7 +125,8 @@
       "TYPE": "SYSTEM",
       "Description": "Provide unified, role-based web access to institutional services and information",
       "Key Capabilities": "Single sign-on; Personalized dashboards; Self-service functionality; Communication tools",
-      "Higher Education Domain": "IT & Digital Infrastructure"
+      "Higher Education Domain": "IT & Digital Infrastructure",
+      "isExpanded": true
     },
     {
       "ID": "EST",
@@ -139,7 +134,8 @@
       "TYPE": "SYSTEM",
       "Description": "Manage property portfolios, maintenance, space allocation, and campus infrastructure",
       "Key Capabilities": "Facilities management; Room allocation; Maintenance scheduling; Capital project management",
-      "Higher Education Domain": "Campus & Facilities"
+      "Higher Education Domain": "Campus & Facilities",
+      "isExpanded": true
     },
     {
       "ID": "FIN",
@@ -147,7 +143,8 @@
       "TYPE": "SYSTEM",
       "Description": "Handle financial transactions, budgeting, accounting, and procurement",
       "Key Capabilities": "Accounts payable/receivable; Budgeting & forecasting; Procurement; Financial reporting",
-      "Higher Education Domain": "Enterprise Administration"
+      "Higher Education Domain": "Enterprise Administration",
+      "isExpanded": true
     },
     {
       "ID": "HR",
@@ -155,7 +152,8 @@
       "TYPE": "SYSTEM",
       "Description": "Support human resource processes including recruitment, performance, and payroll setup",
       "Key Capabilities": "Staff recruitment & onboarding; Performance reviews; Training & development; Leave management",
-      "Higher Education Domain": "Enterprise Administration"
+      "Higher Education Domain": "Enterprise Administration",
+      "isExpanded": true
     },
     {
       "ID": "ITSM",
@@ -163,7 +161,8 @@
       "TYPE": "SYSTEM",
       "Description": "Coordinate and track IT support, incidents, requests, and assets",
       "Key Capabilities": "Incident management; Service request tracking; Configuration & asset management; Knowledge base",
-      "Higher Education Domain": "IT & Digital Infrastructure"
+      "Higher Education Domain": "IT & Digital Infrastructure",
+      "isExpanded": true
     },
     {
       "ID": "LIB",
@@ -171,7 +170,8 @@
       "TYPE": "SYSTEM",
       "Description": "Manage library resources, loans, and digital/electronic materials",
       "Key Capabilities": "Cataloging; Circulation/loans; E-resource management; Discovery & search services",
-      "Higher Education Domain": "Teaching & Learning"
+      "Higher Education Domain": "Teaching & Learning",
+      "isExpanded": true
     },
     {
       "ID": "PAY",
@@ -179,7 +179,8 @@
       "TYPE": "SYSTEM",
       "Description": "Execute payroll runs, deductions, tax, and pension management for institutional employees",
       "Key Capabilities": "Payroll calculation; Tax & pension contributions; Payslip generation; Compliance reporting",
-      "Higher Education Domain": "Enterprise Administration"
+      "Higher Education Domain": "Enterprise Administration",
+      "isExpanded": true
     },
     {
       "ID": "RP",
@@ -187,7 +188,8 @@
       "TYPE": "SYSTEM",
       "Description": "Support the submission, management, and tracking of research funding and contracts",
       "Key Capabilities": "Grant application workflow; Compliance checks; Award management; Contract tracking",
-      "Higher Education Domain": "Research & Innovation"
+      "Higher Education Domain": "Research & Innovation",
+      "isExpanded": true
     },
     {
       "ID": "SETS",
@@ -195,7 +197,8 @@
       "TYPE": "SYSTEM",
       "Description": "Collect and analyze student feedback on modules, lecturers, and teaching effectiveness",
       "Key Capabilities": "Feedback surveys; Data analysis & reporting; Action tracking; Quality enhancement",
-      "Higher Education Domain": "Teaching & Learning"
+      "Higher Education Domain": "Teaching & Learning",
+      "isExpanded": true
     },
     {
       "ID": "SIS",
@@ -203,7 +206,8 @@
       "TYPE": "SYSTEM",
       "Description": "Core SIS functionality to manage student data, enrolment, progression, and awards",
       "Key Capabilities": "Enrolment & registration; Academic records; Grades & progression; Graduation & award management",
-      "Higher Education Domain": "Student Lifecycle & Experience"
+      "Higher Education Domain": "Student Lifecycle & Experience",
+      "isExpanded": true
     },
     {
       "ID": "TTB",
@@ -211,7 +215,8 @@
       "TYPE": "SYSTEM",
       "Description": "Create and manage academic timetables for classes, rooms, and other resources",
       "Key Capabilities": "Schedule generation; Room allocation; Conflict resolution; Calendar integration",
-      "Higher Education Domain": "Teaching & Learning"
+      "Higher Education Domain": "Teaching & Learning",
+      "isExpanded": true
     },
     {
       "ID": "VLE",
@@ -219,7 +224,8 @@
       "TYPE": "SYSTEM",
       "Description": "Deliver and manage online learning content, assessments, and collaboration tools",
       "Key Capabilities": "Course content hosting; Online assessments; Discussion forums; Gradebook",
-      "Higher Education Domain": "Teaching & Learning"
+      "Higher Education Domain": "Teaching & Learning",
+      "isExpanded": true
     },
     {
       "ID": "IAM",
@@ -227,7 +233,8 @@
       "TYPE": "SYSTEM",
       "Description": "Provision and manage user identities and access rights across enterprise systems",
       "Key Capabilities": "User provisioning; Authentication; Role-based access; Single sign-on",
-      "Higher Education Domain": "IT & Digital Infrastructure"
+      "Higher Education Domain": "IT & Digital Infrastructure",
+      "isExpanded": true
     },
     {
       "ID": "OIV",
@@ -235,7 +242,8 @@
       "TYPE": "SYSTEM",
       "Description": "Electronic identity verification service for student personal data and documents",
       "Key Capabilities": "Document scanning; ID matching; Fraud detection; Verification status updates",
-      "Higher Education Domain": "Student Lifecycle & Experience"
+      "Higher Education Domain": "Student Lifecycle & Experience",
+      "isExpanded": true
     }
   ],
   "interactions": [
@@ -499,6 +507,5 @@
       "From": "Online ID Verification",
       "To": "Student Records"
     }
-  ],
-  "layouts": {}
+  ]
 }

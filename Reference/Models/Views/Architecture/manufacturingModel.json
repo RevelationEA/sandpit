@@ -1,0 +1,323 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "C4 Manufacturing High Levevl v1.0"
+    },
+    "AUTHOR": {
+      "value": "Steve White",
+      "readOnly": "true"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "ChatGPT generated manufacturing model",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "HorizontalFlow",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    {
+      "ID": "1",
+      "TEXT": "ERP",
+      "TYPE": "SYSTEM",
+      "Description": "Central software system for managing core business processes.",
+      "selected": true
+    },
+    {
+      "ID": "2",
+      "TEXT": "MES",
+      "TYPE": "SYSTEM",
+      "Description": "Controls and monitors the production process on the factory floor.",
+      "selected": false
+    },
+    {
+      "ID": "3",
+      "TEXT": "SCADA",
+      "TYPE": "SYSTEM",
+      "Description": "Provides real-time process control and monitors plant floor machinery.",
+      "selected": false
+    },
+    {
+      "ID": "4",
+      "TEXT": "PLM",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the entire lifecycle of a product from inception to disposal.",
+      "selected": false
+    },
+    {
+      "ID": "5",
+      "TEXT": "CRM",
+      "TYPE": "SYSTEM",
+      "Description": "Helps manage a company’s interactions with current and potential customers.",
+      "selected": false
+    },
+    {
+      "ID": "6",
+      "TEXT": "WMS",
+      "TYPE": "SYSTEM",
+      "Description": "Supports day-to-day operations in a warehouse.",
+      "selected": false
+    },
+    {
+      "ID": "7",
+      "TEXT": "Quality Management System",
+      "TYPE": "SYSTEM",
+      "Description": "Manages and improves quality processes for products.",
+      "selected": false
+    },
+    {
+      "ID": "8",
+      "TEXT": "Supply Chain Management System",
+      "TYPE": "SYSTEM",
+      "Description": "Manages the flow of goods and services in the supply chain.",
+      "selected": false
+    },
+    {
+      "ID": "9",
+      "TEXT": "Maintenance Management System",
+      "TYPE": "SYSTEM",
+      "Description": "Manages maintenance activities and schedules repairs.",
+      "selected": false
+    },
+    {
+      "ID": "10",
+      "TEXT": "Operators",
+      "TYPE": "ACTOR",
+      "Description": "Individuals working on the factory floor.",
+      "selected": false
+    },
+    {
+      "ID": "11",
+      "TEXT": "Engineers",
+      "TYPE": "ACTOR",
+      "Description": "Use systems for product design and quality assurance.",
+      "selected": false
+    },
+    {
+      "ID": "12",
+      "TEXT": "Supply Chain Managers",
+      "TYPE": "ACTOR",
+      "Description": "Utilize systems for logistics and inventory management.",
+      "selected": false
+    },
+    {
+      "ID": "13",
+      "TEXT": "Sales and Marketing Professionals",
+      "TYPE": "ACTOR",
+      "Description": "Use the CRM system to manage customer relationships and sales.",
+      "selected": false
+    },
+    {
+      "ID": "14",
+      "TEXT": "Executive Management",
+      "TYPE": "ACTOR",
+      "Description": "Relies on ERP and CRM for strategic planning and decision-making.",
+      "selected": false
+    },
+    {
+      "ID": "15",
+      "TEXT": "IT Support Staff",
+      "TYPE": "ACTOR",
+      "Description": "Provides technical support for all IT systems.",
+      "selected": false
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "1",
+      "FROMID": "5",
+      "TOID": "1",
+      "TEXT": "Send Orders",
+      "TYPE": "->",
+      "Description": "production orders",
+      "selected": true
+    },
+    {
+      "ID": "2",
+      "FROMID": "2",
+      "TOID": "1",
+      "TEXT": "Report Results",
+      "TYPE": "->",
+      "Description": "production updates",
+      "selected": true
+    },
+    {
+      "ID": "3",
+      "FROMID": "2",
+      "TOID": "3",
+      "TEXT": "Send Instructions",
+      "TYPE": "->",
+      "Description": "control instructions",
+      "selected": true
+    },
+    {
+      "ID": "4",
+      "FROMID": "3",
+      "TOID": "2",
+      "TEXT": "Report Data",
+      "TYPE": "->",
+      "Description": "real-time data",
+      "selected": true
+    },
+    {
+      "ID": "5",
+      "FROMID": "4",
+      "TOID": "1",
+      "TEXT": "Send Data",
+      "TYPE": "->",
+      "Description": "product data",
+      "selected": true
+    },
+    {
+      "ID": "6",
+      "FROMID": "4",
+      "TOID": "2",
+      "TEXT": "Guide Production",
+      "TYPE": "->",
+      "Description": "production guidance",
+      "selected": true
+    },
+    {
+      "ID": "7",
+      "FROMID": "5",
+      "TOID": "1",
+      "TEXT": "Integrate Orders",
+      "TYPE": "->",
+      "Description": "customer orders",
+      "selected": true
+    },
+    {
+      "ID": "8",
+      "FROMID": "1",
+      "TOID": "6",
+      "TEXT": "Send Data",
+      "TYPE": "->",
+      "Description": "inventory data",
+      "selected": true
+    },
+    {
+      "ID": "9",
+      "FROMID": "6",
+      "TOID": "1",
+      "TEXT": "Update Inventory",
+      "TYPE": "->",
+      "Description": "inventory levels",
+      "selected": true
+    },
+    {
+      "ID": "10",
+      "FROMID": "1",
+      "TOID": "8",
+      "TEXT": "Exchange Data",
+      "TYPE": "->",
+      "Description": "supply chain data",
+      "selected": true
+    },
+    {
+      "ID": "11",
+      "FROMID": "7",
+      "TOID": "1",
+      "TEXT": "Report Quality",
+      "TYPE": "->",
+      "Description": "quality reports",
+      "selected": true
+    },
+    {
+      "ID": "21",
+      "FROMID": "10",
+      "TOID": "2",
+      "TEXT": "Operate",
+      "TYPE": "->",
+      "Description": "operate",
+      "selected": true
+    },
+    {
+      "ID": "22",
+      "FROMID": "11",
+      "TOID": "2",
+      "TEXT": "Configure",
+      "TYPE": "->",
+      "Description": "configure and manage",
+      "selected": true
+    },
+    {
+      "ID": "23",
+      "FROMID": "12",
+      "TOID": "8",
+      "TEXT": "Manage Logistics",
+      "TYPE": "->",
+      "Description": "manage logistics",
+      "selected": true
+    },
+    {
+      "ID": "24",
+      "FROMID": "13",
+      "TOID": "5",
+      "TEXT": "Manage Customer Relationships",
+      "TYPE": "->",
+      "Description": "manage customer relationships",
+      "selected": true
+   },
+    {
+      "ID": "25",
+      "FROMID": "14",
+      "TOID": "1",
+      "TEXT": "Strategic Planning",
+      "TYPE": "->",
+      "Description": "strategic planning and decision-making.",
+      "selected": true
+    },
+    {
+      "ID": "26",
+      "FROMID": "15",
+      "TOID": "1",
+      "TEXT": "Support",
+      "TYPE": "->",
+      "Description": "Itechnical support",
+      "selected": true
+    },
+    {
+      "ID": "27",
+      "FROMID": "10",
+      "TOID": "3",
+      "TEXT": "Monitor",
+      "TYPE": "->",
+      "Description": "monitor production processes",
+      "selected": true
+    },
+    {
+      "ID": "28",
+      "FROMID": "11",
+      "TOID": "4",
+      "TEXT": "Design",
+      "TYPE": "->",
+      "Description": "product design and development.",
+      "selected": true
+    },
+    {
+      "ID": "29",
+      "FROMID": "12",
+      "TOID": "6",
+      "TEXT": "Inventory Management",
+      "TYPE": "->",
+      "Description": "oversee inventory management",
+      "selected": true
+    },
+    {
+      "ID": "30",
+      "FROMID": "13",
+      "TOID": "7",
+      "TEXT": "Quality Assurance",
+      "TYPE": "->",
+      "Description": "ensure product quality",
+      "selected": true
+    }
+  ]
+}
