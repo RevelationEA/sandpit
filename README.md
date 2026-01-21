@@ -38,6 +38,7 @@ reference/
 
 #### Retail
 - D2C Startup Reference Model: [Open in Revelation](https://revelationcore.com/beta/index.html?model=https://raw.githubusercontent.com/RevelationEA/sandpit/main/Reference/Models/Sector%20Models/Retail/revelation-d2c-startup-enterprise-reference-model.json) (`reference/models/Sector Models/Retail/revelation-d2c-startup-enterprise-reference-model.json`)
+- Quick Service Restaurant Chain Reference Model: [Open in Revelation](https://revelationcore.com/beta/index.html?model=https://raw.githubusercontent.com/RevelationEA/sandpit/main/Reference/Models/Sector%20Models/Retail/quick-service-restaurant-chain-reference-model.json) (`Reference/Models/Sector Models/Retail/quick-service-restaurant-chain-reference-model.json`)
 - Wholesaler demonstrating custom fields: [Open in Revelation](https://revelationcore.com/beta/index.html?model=https://raw.githubusercontent.com/RevelationEA/sandpit/main/Reference/Models/Sector%20Models/Retail/wholesaler-basic-custom-fields.json) (`reference/models/Sector Models/Retail/wholesaler-basic-custom-fields.json`)
 
 #### Legal

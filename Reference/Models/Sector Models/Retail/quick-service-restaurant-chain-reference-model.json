@@ -1,0 +1,358 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Quick Service Restaurant Chain Reference Model",
+      "inputType": "text"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "VIEW": {
+      "value": "Architecture",
+      "inputType": "select",
+      "refData": "VIEWTYPE"
+    },
+    "LAYOUT": {
+      "value": "CenteredRectangle",
+      "inputType": "select",
+      "refData": "LAYOUTTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Retail industry reference model for a quick service restaurant chain with a head office and 80 stores.",
+      "inputType": "textarea"
+    },
+    "Store Count": {
+      "value": "80",
+      "inputType": "number"
+    },
+    "Author": {
+      "value": "Steve White",
+      "inputType": "text"
+    }
+  },
+  "systems": [
+    {
+      "ID": "HO",
+      "TEXT": "Head Office Operations",
+      "TYPE": "SYSTEM",
+      "Description": "Central leadership, menu management, pricing, and brand standards.",
+      "Business Domain": "Corporate"
+    },
+    {
+      "ID": "STR",
+      "TEXT": "Store Operations (80 locations)",
+      "TYPE": "SYSTEM",
+      "Description": "In-store execution of ordering, prep, service, and local compliance.",
+      "Business Domain": "Store Operations"
+    },
+    {
+      "ID": "POS",
+      "TEXT": "POS & In-Store Ordering",
+      "TYPE": "SYSTEM",
+      "Description": "Registers, kiosks, and in-store ordering workflow.",
+      "Business Domain": "Sales Operations"
+    },
+    {
+      "ID": "KDS",
+      "TEXT": "Kitchen Display System",
+      "TYPE": "SYSTEM",
+      "Description": "Queues and routes orders to kitchen stations.",
+      "Business Domain": "Kitchen Operations"
+    },
+    {
+      "ID": "OMS",
+      "TEXT": "Online Ordering & Mobile App",
+      "TYPE": "SYSTEM",
+      "Description": "Customer-facing ordering for pickup and delivery.",
+      "Business Domain": "Digital Commerce"
+    },
+    {
+      "ID": "LOY",
+      "TEXT": "Loyalty & CRM",
+      "TYPE": "SYSTEM",
+      "Description": "Customer profiles, rewards, and personalized offers.",
+      "Business Domain": "Customer Engagement"
+    },
+    {
+      "ID": "PAY",
+      "TEXT": "Payment Gateway",
+      "TYPE": "SYSTEM",
+      "Description": "Payment authorization and settlement.",
+      "Business Domain": "Finance & Payments"
+    },
+    {
+      "ID": "ERP",
+      "TEXT": "ERP & Finance",
+      "TYPE": "SYSTEM",
+      "Description": "Financials, budgeting, and centralized accounting.",
+      "Business Domain": "Finance & Accounting"
+    },
+    {
+      "ID": "HRIS",
+      "TEXT": "HRIS & Scheduling",
+      "TYPE": "SYSTEM",
+      "Description": "Hiring, onboarding, scheduling, and payroll inputs.",
+      "Business Domain": "Human Resources"
+    },
+    {
+      "ID": "INV",
+      "TEXT": "Inventory & Procurement",
+      "TYPE": "SYSTEM",
+      "Description": "Stock levels, reorder points, and purchasing.",
+      "Business Domain": "Supply Chain"
+    },
+    {
+      "ID": "SCM",
+      "TEXT": "Distribution & Supplier Management",
+      "TYPE": "SYSTEM",
+      "Description": "Distribution planning and supplier coordination.",
+      "Business Domain": "Supply Chain"
+    },
+    {
+      "ID": "BI",
+      "TEXT": "Reporting & Analytics",
+      "TYPE": "SYSTEM",
+      "Description": "Operational and financial reporting across stores.",
+      "Business Domain": "Analytics & Reporting"
+    },
+    {
+      "ID": "CUS",
+      "TEXT": "Customers",
+      "TYPE": "ACTOR",
+      "Description": "Guests ordering in-store or online.",
+      "Business Domain": "Customer"
+    },
+    {
+      "ID": "SUP",
+      "TEXT": "Suppliers",
+      "TYPE": "ACTOR",
+      "Description": "Food and packaging suppliers.",
+      "Business Domain": "Supply Chain"
+    },
+    {
+      "ID": "DSP",
+      "TEXT": "Delivery Partners",
+      "TYPE": "ACTOR",
+      "Description": "Third-party delivery services.",
+      "Business Domain": "Logistics"
+    },
+    {
+      "ID": "STF",
+      "TEXT": "Store Staff",
+      "TYPE": "ACTOR",
+      "Description": "Crew and managers operating each store.",
+      "Business Domain": "Store Operations"
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "F001",
+      "FROMID": "CUS",
+      "TOID": "POS",
+      "TYPE": "->",
+      "TEXT": "In-store order & payment",
+      "From": "Customers",
+      "To": "POS & In-Store Ordering"
+    },
+    {
+      "ID": "F002",
+      "FROMID": "CUS",
+      "TOID": "OMS",
+      "TYPE": "->",
+      "TEXT": "Mobile/web order",
+      "From": "Customers",
+      "To": "Online Ordering & Mobile App"
+    },
+    {
+      "ID": "F003",
+      "FROMID": "OMS",
+      "TOID": "POS",
+      "TYPE": "->",
+      "TEXT": "Send digital order to store",
+      "From": "Online Ordering & Mobile App",
+      "To": "POS & In-Store Ordering"
+    },
+    {
+      "ID": "F004",
+      "FROMID": "POS",
+      "TOID": "KDS",
+      "TYPE": "->",
+      "TEXT": "Kitchen ticket",
+      "From": "POS & In-Store Ordering",
+      "To": "Kitchen Display System"
+    },
+    {
+      "ID": "F005",
+      "FROMID": "POS",
+      "TOID": "PAY",
+      "TYPE": "->",
+      "TEXT": "Payment authorization",
+      "From": "POS & In-Store Ordering",
+      "To": "Payment Gateway"
+    },
+    {
+      "ID": "F006",
+      "FROMID": "PAY",
+      "TOID": "POS",
+      "TYPE": "->",
+      "TEXT": "Payment confirmation",
+      "From": "Payment Gateway",
+      "To": "POS & In-Store Ordering"
+    },
+    {
+      "ID": "F007",
+      "FROMID": "POS",
+      "TOID": "LOY",
+      "TYPE": "->",
+      "TEXT": "Earn/redeem loyalty",
+      "From": "POS & In-Store Ordering",
+      "To": "Loyalty & CRM"
+    },
+    {
+      "ID": "F008",
+      "FROMID": "LOY",
+      "TOID": "CUS",
+      "TYPE": "->",
+      "TEXT": "Rewards and offers",
+      "From": "Loyalty & CRM",
+      "To": "Customers"
+    },
+    {
+      "ID": "F009",
+      "FROMID": "POS",
+      "TOID": "ERP",
+      "TYPE": "->",
+      "TEXT": "Daily sales summary",
+      "From": "POS & In-Store Ordering",
+      "To": "ERP & Finance"
+    },
+    {
+      "ID": "F010",
+      "FROMID": "STR",
+      "TOID": "INV",
+      "TYPE": "->",
+      "TEXT": "Stock usage & counts",
+      "From": "Store Operations (80 locations)",
+      "To": "Inventory & Procurement"
+    },
+    {
+      "ID": "F011",
+      "FROMID": "INV",
+      "TOID": "SCM",
+      "TYPE": "->",
+      "TEXT": "Replenishment request",
+      "From": "Inventory & Procurement",
+      "To": "Distribution & Supplier Management"
+    },
+    {
+      "ID": "F012",
+      "FROMID": "SCM",
+      "TOID": "SUP",
+      "TYPE": "->",
+      "TEXT": "Purchase orders",
+      "From": "Distribution & Supplier Management",
+      "To": "Suppliers"
+    },
+    {
+      "ID": "F013",
+      "FROMID": "SUP",
+      "TOID": "SCM",
+      "TYPE": "->",
+      "TEXT": "Advance shipment notice",
+      "From": "Suppliers",
+      "To": "Distribution & Supplier Management"
+    },
+    {
+      "ID": "F014",
+      "FROMID": "SCM",
+      "TOID": "STR",
+      "TYPE": "->",
+      "TEXT": "Store deliveries",
+      "From": "Distribution & Supplier Management",
+      "To": "Store Operations (80 locations)"
+    },
+    {
+      "ID": "F015",
+      "FROMID": "STF",
+      "TOID": "HRIS",
+      "TYPE": "->",
+      "TEXT": "Time and availability",
+      "From": "Store Staff",
+      "To": "HRIS & Scheduling"
+    },
+    {
+      "ID": "F016",
+      "FROMID": "HRIS",
+      "TOID": "STF",
+      "TYPE": "->",
+      "TEXT": "Schedules and payroll info",
+      "From": "HRIS & Scheduling",
+      "To": "Store Staff"
+    },
+    {
+      "ID": "F017",
+      "FROMID": "ERP",
+      "TOID": "BI",
+      "TYPE": "->",
+      "TEXT": "Financial data",
+      "From": "ERP & Finance",
+      "To": "Reporting & Analytics"
+    },
+    {
+      "ID": "F018",
+      "FROMID": "POS",
+      "TOID": "BI",
+      "TYPE": "->",
+      "TEXT": "Sales and item mix",
+      "From": "POS & In-Store Ordering",
+      "To": "Reporting & Analytics"
+    },
+    {
+      "ID": "F019",
+      "FROMID": "OMS",
+      "TOID": "DSP",
+      "TYPE": "->",
+      "TEXT": "Delivery dispatch",
+      "From": "Online Ordering & Mobile App",
+      "To": "Delivery Partners"
+    },
+    {
+      "ID": "F020",
+      "FROMID": "DSP",
+      "TOID": "CUS",
+      "TYPE": "->",
+      "TEXT": "Order delivery",
+      "From": "Delivery Partners",
+      "To": "Customers"
+    },
+    {
+      "ID": "F021",
+      "FROMID": "HO",
+      "TOID": "STR",
+      "TYPE": "->",
+      "TEXT": "Menu, pricing, and standards",
+      "From": "Head Office Operations",
+      "To": "Store Operations (80 locations)"
+    },
+    {
+      "ID": "F022",
+      "FROMID": "HO",
+      "TOID": "BI",
+      "TYPE": "->",
+      "TEXT": "KPI definitions and targets",
+      "From": "Head Office Operations",
+      "To": "Reporting & Analytics"
+    },
+    {
+      "ID": "F023",
+      "FROMID": "LOY",
+      "TOID": "OMS",
+      "TYPE": "->",
+      "TEXT": "Personalized offers",
+      "From": "Loyalty & CRM",
+      "To": "Online Ordering & Mobile App"
+    }
+  ]
+}
