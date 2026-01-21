@@ -1,0 +1,47 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "ArchiMate Strategy and Motivation"
+    },
+    "AUTHOR": {
+      "value": "Revelation EA"
+    },
+    "MODELTYPE": {
+      "value": "ARCHIMATE",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Strategy and motivation example with goals, drivers, capabilities, and courses of action. Uses mxArchiMate symbols.",
+      "inputType": "textarea"
+    },
+    "LAYOUT": {
+      "inputType": "select",
+      "value": "HorizontalFlow",
+      "refData": "LAYOUTTYPE"
+    }
+  },
+  "systems": [
+    { "ID": "ST1", "TEXT": "Stakeholder", "TYPE": "ARCHI_STAKEHOLDER" },
+    { "ID": "DR1", "TEXT": "Regulatory Pressure", "TYPE": "ARCHI_DRIVER" },
+    { "ID": "AS1", "TEXT": "Risk Assessment", "TYPE": "ARCHI_ASSESSMENT" },
+    { "ID": "GO1", "TEXT": "Improve Compliance", "TYPE": "ARCHI_GOAL" },
+    { "ID": "COA1", "TEXT": "Compliance Program", "TYPE": "ARCHI_COURSE_OF_ACTION" },
+    { "ID": "CAP1", "TEXT": "Compliance Capability", "TYPE": "ARCHI_CAPABILITY" },
+    { "ID": "RES1", "TEXT": "Compliance Team", "TYPE": "ARCHI_RESOURCE" },
+    { "ID": "REQ1", "TEXT": "Audit Trail", "TYPE": "ARCHI_REQUIREMENT" },
+    { "ID": "VAL1", "TEXT": "Regulatory Value", "TYPE": "ARCHI_VALUE" },
+    { "ID": "PR1", "TEXT": "Privacy Principle", "TYPE": "ARCHI_PRINCIPLE" }
+  ],
+  "interactions": [
+    { "ID": "INT1", "FROMID": "ST1", "TOID": "DR1", "TEXT": "Concern", "TYPE": "ASSOCIATION" },
+    { "ID": "INT2", "FROMID": "DR1", "TOID": "AS1", "TEXT": "Leads To", "TYPE": "TRIGGERING" },
+    { "ID": "INT3", "FROMID": "AS1", "TOID": "GO1", "TEXT": "Informs", "TYPE": "ASSOCIATION" },
+    { "ID": "INT4", "FROMID": "GO1", "TOID": "COA1", "TEXT": "Triggers", "TYPE": "TRIGGERING" },
+    { "ID": "INT5", "FROMID": "COA1", "TOID": "CAP1", "TEXT": "Realizes", "TYPE": "REALIZATION" },
+    { "ID": "INT6", "FROMID": "CAP1", "TOID": "RES1", "TEXT": "Uses", "TYPE": "ASSIGNMENT" },
+    { "ID": "INT7", "FROMID": "REQ1", "TOID": "CAP1", "TEXT": "Constrains", "TYPE": "ASSOCIATION" },
+    { "ID": "INT8", "FROMID": "CAP1", "TOID": "VAL1", "TEXT": "Delivers", "TYPE": "ASSOCIATION" },
+    { "ID": "INT9", "FROMID": "PR1", "TOID": "REQ1", "TEXT": "Guides", "TYPE": "ASSOCIATION" }
+  ]
+}
