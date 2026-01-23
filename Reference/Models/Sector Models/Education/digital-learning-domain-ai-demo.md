@@ -1,20 +1,287 @@
-# Digital Learning Domain AI Demo - Model Creation Notes
+<h1>Digital Learning Domain AI Demo - Model Creation Notes</h1>
 
-Date created: 2026-01-23
+<p><strong>Date created:</strong> 2026-01-23</p>
 
-## Purpose
-This model demonstrates how AI can assist in creating an Enterprise Reference Model for the digital learning domain at a UK university. It captures core systems, actors, and data interactions derived from an initial research prompt.
+<h2>Purpose</h2>
+<p>
+  This model demonstrates how AI can assist in creating an Enterprise Reference Model
+  for the digital learning domain at a UK university. It captures core systems, actors,
+  and bidirectional data interactions derived from an initial research prompt and then
+  structured into a Revelation EA model using a Centered Rectangle layout.
+</p>
 
-## Process
-1. Start with a scoped prompt describing the digital learning domain and asking for core applications, integrations, and roles.
-2. Normalize the output into systems, actors, and interactions suitable for a Revelation EA architecture view.
-3. Define system properties (name, typical products, and key capabilities) and actor descriptions.
-4. Create bidirectional interactions where data flows both ways and describe the entities exchanged.
-5. Save the model using the Centered Rectangle layout and add metadata (author, disclaimer, date, and this readme link).
+<h2>Repository and Tooling Context</h2>
+<p>
+  The model was created directly against the GitHub repository
+  <strong>RevelationEA/sandpit</strong> using Codex as a coding agent. Codex was run
+  inside the repository working directory so it could add the model JSON, generate this
+  README, and update the root model index.
+</p>
 
-## Source Prompt
+<h2>Inputs</h2>
+
+<h3>Initial Research Prompt (Claude)</h3>
+<pre>
+act as an enterprise architect leading the digital learning domain at a UK university. List the core applications that deliver digital learning along with the applications they interact with. In addition list the key roles that interact with these systems.
+</pre>
+
+<h3>Codex Prompt Used to Build the Model</h3>
+<pre>
+Create a Revelation EA for the digital learning domain at UK university. The pupose of the model is to demonstrate the creation of Enterprise Referefence Models using AI. Initial research into the systems, actors and interactions is detail below.
+
+Give the model the TITLE 'Digital Learning Domain AI Demo'. Use Centered Rectangle layout. Add additional model properties such as suthor, disclaimer, date and link to a new readme describing the process for creating the model including this prompt.
+
+Label the system with the name of the application using the TEXT property.Add properties to each system including typical commercial products and the capabilities the system provides.
+
+Label interactions using the TEXT property with a short noun phrase describing the entities Add a description property to the interaction describing the entities in more detail. Add an interaction for each direction entities flow in.
+
+Place the model alongside the Education Sector models and add a revelation EA link to the model to the root level readme. Add another readme alongside the model which describe th process by which the model was create. Provide a link in the model properties to this readme.
+
+Iniitial Research
+
+Initial research was performed in Caluse with the propmpt
+
 "act as an enterprise architect leading the digital learning domain at a UK university. List the core applications that deliver digital learning along with the applications they interact with. In addition list the key roles that interact with these systems."
 
-## Files
-- Model: `digital-learning-domain-ai-demo.json`
-- This readme: `digital-learning-domain-ai-demo.md`
+Digital Learning Domain - Core Applications & Integration Landscape
+Core Digital Learning Applications
+1. Virtual Learning Environment (VLE)
+
+Typical products: Blackboard Learn, Moodle, Canvas
+Purpose: Central platform for course content, assignments, discussions, grades
+Integrates with:
+
+Student Information System (student enrollment, course registration)
+Identity Management (authentication/SSO)
+Turnitin (plagiarism detection)
+Lecture Capture system
+Library systems (reading lists, resource access)
+Assessment tools
+Virtual classroom platforms
+Student engagement analytics
+Email/messaging systems
+Timetabling system (course schedules)
+
+2. Lecture Capture System
+
+Typical products: Panopto, Echo360, Kaltura
+Purpose: Recording and streaming lectures
+Integrates with:
+
+VLE (embedded playback)
+Timetabling (automated recording scheduling)
+Identity Management
+Student Information System
+Room booking systems
+Media management platforms
+
+3. Assessment & Feedback Platform
+
+Typical products: Turnitin Feedback Studio, Gradescope, Inspera
+Purpose: Assignment submission, marking, feedback delivery
+Integrates with:
+
+VLE (grade passback)
+Student Information System
+Plagiarism detection tools
+Identity Management
+
+4. Plagiarism Detection
+
+Typical products: Turnitin, Urkund
+Purpose: Academic integrity checking
+Integrates with:
+
+VLE
+Assessment platforms
+Student Information System
+
+5. Virtual Classroom/Web Conferencing
+
+Typical products: Microsoft Teams, Zoom, Blackboard Collaborate
+Purpose: Synchronous online teaching
+Integrates with:
+
+VLE
+Identity Management
+Timetabling
+Calendar systems
+Student Information System
+
+6. Reading List Management
+
+Typical products: Talis Aspire, EBSCO Content Management
+Purpose: Course reading list creation and management
+Integrates with:
+
+VLE
+Library Management System
+Student Information System
+Digital content repositories
+
+7. E-Portfolio System
+
+Typical products: PebblePad, Mahara
+Purpose: Reflective learning, portfolio development, placement evidence
+Integrates with:
+
+VLE
+Student Information System
+Identity Management
+
+8. Student Engagement Analytics
+
+Typical products: Blackboard Analytics, Civitas Learning, Helix
+Purpose: Learning analytics, early intervention, engagement tracking
+Integrates with:
+
+VLE (activity data)
+Student Information System
+Library systems (resource usage)
+Lecture capture (viewing analytics)
+Assessment systems
+Attendance monitoring
+Student support systems
+
+Key External Integration Points
+Student Information System (SIS)
+
+Banner, SITS, Campus Solutions
+Provides student enrollment data, course registrations, programme information
+
+Identity & Access Management
+
+Active Directory, Azure AD, LDAP
+Single Sign-On (Shibboleth, SAML, OAuth)
+
+Timetabling System
+
+Scientia, CMIS, Celcat
+Provides teaching schedules, room allocations
+
+Library Management System
+
+Ex Libris Alma, OCLC WorldShare
+Resource access, digital content
+
+Student Support Systems
+
+Advisely, Symplicity Advise
+Personal tutoring, wellbeing, support interventions
+
+Research Systems
+
+Research repository, Pure, Symplectic
+For research-led teaching, research student supervision
+
+Key Roles Interacting with Digital Learning Systems
+Academic Staff
+
+Lecturers/Module Leaders: Create content, deliver teaching, assess students
+Programme Directors: Oversee programme-level learning design
+Research Supervisors: Manage postgraduate research student learning
+
+Professional Services
+
+Learning Technologists: Support academics in using digital tools, pedagogy design
+Digital Learning Developers: Create interactive content, multimedia resources
+VLE Administrators: Manage platform configuration, course setup, permissions
+Educational Developers: Design and deliver staff training on digital learning
+
+Students
+
+Undergraduate Students: Primary consumers of digital learning
+Postgraduate Taught Students: Advanced learning, dissertation support
+Postgraduate Research Students: Supervision, training modules
+Distance/Online Learners: Fully online programme students
+
+Support Services
+
+Library Staff: Curate resources, manage reading lists, support information literacy
+IT Service Desk: First-line technical support
+Student Support Advisors: Access engagement analytics, identify at-risk students
+Disability Support: Ensure accessibility, provide reasonable adjustments
+Academic Skills Tutors: Support study skills development
+
+Quality & Governance
+
+Quality Assurance Officers: Monitor teaching standards, review content
+External Examiners: Review assessment practices, access samples
+Academic Administrators: Manage course documentation, assessment boards
+
+Leadership & Strategy
+
+Director of Digital Learning: Strategic oversight of digital learning portfolio
+Associate Deans (Education): Faculty-level academic leadership
+CIO/IT Director: Infrastructure and platform strategy
+Deputy Vice-Chancellor (Education): University-wide education strategy
+
+This architecture supports the full student learning lifecycle from enrollment through to graduation, with the VLE typically serving as the integration hub that brings together content, assessment, engagement, and support capabilities.
+</pre>
+
+<h2>Repeatable Procedure (for third parties)</h2>
+<ol>
+  <li>
+    <strong>Clone the repository.</strong>
+    <pre>git clone https://github.com/RevelationEA/sandpit.git</pre>
+  </li>
+  <li>
+    <strong>Open the repo locally.</strong>
+    <pre>cd sandpit</pre>
+  </li>
+  <li>
+    <strong>Launch Codex in the repo root.</strong>
+    <p>
+      Run Codex in the same directory so it can read and write files. The exact
+      command depends on how you run Codex locally. Ensure Codex has permission
+      to edit files in the repo.
+    </p>
+  </li>
+  <li>
+    <strong>Provide the prompts.</strong>
+    <p>
+      First gather system/actor/integration research using the Claude prompt in the
+      Inputs section. Then provide the Codex prompt (also in the Inputs section) to
+      build the Revelation EA model and documentation.
+    </p>
+  </li>
+  <li>
+    <strong>Verify the model file paths.</strong>
+    <p>
+      The model JSON should be saved at:
+      <code>Reference/Models/Sector Models/Education/digital-learning-domain-ai-demo.json</code>
+      and this README at:
+      <code>Reference/Models/Sector Models/Education/digital-learning-domain-ai-demo.md</code>.
+    </p>
+  </li>
+  <li>
+    <strong>Update the model index.</strong>
+    <p>
+      Add the new model link to <code>README.md</code> under the Education section,
+      using the same URL pattern as other models.
+    </p>
+  </li>
+  <li>
+    <strong>Review in Revelation EA.</strong>
+    <p>
+      Open the model using the Revelation URL format to confirm layout, labels,
+      and properties are correct.
+    </p>
+  </li>
+</ol>
+
+<h2>What Codex Changed</h2>
+<ul>
+  <li><code>Reference/Models/Sector Models/Education/digital-learning-domain-ai-demo.json</code></li>
+  <li><code>Reference/Models/Sector Models/Education/digital-learning-domain-ai-demo.md</code></li>
+  <li><code>README.md</code></li>
+</ul>
+
+<h2>Notes</h2>
+<ul>
+  <li>Use the Centered Rectangle layout and set the model title to <strong>Digital Learning Domain AI Demo</strong>.</li>
+  <li>Add model properties for author, disclaimer, date, and the URL to this README.</li>
+  <li>Label systems using the <code>TEXT</code> field and include <em>Typical Products</em> and <em>Key Capabilities</em>.</li>
+  <li>Label interactions with short noun phrases in <code>TEXT</code> and provide entity detail in a <code>Description</code> property.</li>
+  <li>Add interactions for each direction the entities flow.</li>
+</ul>
