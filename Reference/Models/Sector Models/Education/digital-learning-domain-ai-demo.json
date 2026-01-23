@@ -1,0 +1,631 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Digital Learning Domain AI Demo",
+      "inputType": "text"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "LAYOUT": {
+      "value": "CenteredRectangle",
+      "inputType": "select",
+      "refData": "LAYOUTTYPE"
+    },
+    "VIEW": {
+      "value": "Architecture",
+      "inputType": "select",
+      "refData": "VIEWTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Enterprise reference model for the digital learning domain at a UK university, created with AI to demonstrate the model creation process.",
+      "inputType": "textarea"
+    },
+    "Author": {
+      "value": "Codex (OpenAI)",
+      "inputType": "text"
+    },
+    "Disclaimer": {
+      "value": "AI-generated demo model. Validate against institutional requirements, data governance, and vendor capabilities before use.",
+      "inputType": "textarea"
+    },
+    "Date": {
+      "value": "2026-01-23",
+      "inputType": "text"
+    },
+    "Process Readme": {
+      "value": "https://raw.githubusercontent.com/RevelationEA/sandpit/main/Reference/Models/Sector%20Models/Education/digital-learning-domain-ai-demo.md",
+      "inputType": "url"
+    }
+  },
+  "systems": [
+    {
+      "ID": "VLE",
+      "TEXT": "Virtual Learning Environment",
+      "TYPE": "SYSTEM",
+      "Description": "Central platform for course content, assignments, discussions, and grades.",
+      "Typical Products": "Blackboard Learn; Moodle; Canvas",
+      "Key Capabilities": "Course content delivery; Assessment management; Discussion forums; Gradebook; Learning tools integration",
+      "isExpanded": true
+    },
+    {
+      "ID": "LCS",
+      "TEXT": "Lecture Capture System",
+      "TYPE": "SYSTEM",
+      "Description": "Records, manages, and streams lecture content for on-demand viewing.",
+      "Typical Products": "Panopto; Echo360; Kaltura",
+      "Key Capabilities": "Lecture recording; Streaming; Captioning; Playback analytics; Content management",
+      "isExpanded": true
+    },
+    {
+      "ID": "AFP",
+      "TEXT": "Assessment & Feedback Platform",
+      "TYPE": "SYSTEM",
+      "Description": "Manages assignment submission, marking workflows, and feedback delivery.",
+      "Typical Products": "Turnitin Feedback Studio; Gradescope; Inspera",
+      "Key Capabilities": "Submission handling; Marking workflows; Rubrics; Feedback delivery; Grade export",
+      "isExpanded": true
+    },
+    {
+      "ID": "PLG",
+      "TEXT": "Plagiarism Detection",
+      "TYPE": "SYSTEM",
+      "Description": "Checks academic work for similarity and integrity risks.",
+      "Typical Products": "Turnitin; Urkund",
+      "Key Capabilities": "Similarity checking; Source matching; Report generation; Integrity dashboards",
+      "isExpanded": true
+    },
+    {
+      "ID": "VCP",
+      "TEXT": "Virtual Classroom Platform",
+      "TYPE": "SYSTEM",
+      "Description": "Supports synchronous online teaching with meetings, chat, and collaboration.",
+      "Typical Products": "Microsoft Teams; Zoom; Blackboard Collaborate",
+      "Key Capabilities": "Live sessions; Screen sharing; Breakout rooms; Attendance reporting; Recording",
+      "isExpanded": true
+    },
+    {
+      "ID": "RLM",
+      "TEXT": "Reading List Management",
+      "TYPE": "SYSTEM",
+      "Description": "Creates and publishes curated reading lists for modules.",
+      "Typical Products": "Talis Aspire; EBSCO Content Management",
+      "Key Capabilities": "Reading list authoring; Resource linking; License checks; Publishing workflows",
+      "isExpanded": true
+    },
+    {
+      "ID": "EPS",
+      "TEXT": "E-Portfolio System",
+      "TYPE": "SYSTEM",
+      "Description": "Supports reflective learning, portfolios, and placement evidence.",
+      "Typical Products": "PebblePad; Mahara",
+      "Key Capabilities": "Portfolio creation; Reflection journals; Evidence collection; Sharing and review",
+      "isExpanded": true
+    },
+    {
+      "ID": "SEA",
+      "TEXT": "Student Engagement Analytics",
+      "TYPE": "SYSTEM",
+      "Description": "Aggregates learning activity data to identify engagement trends and risks.",
+      "Typical Products": "Blackboard Analytics; Civitas Learning; Helix",
+      "Key Capabilities": "Engagement dashboards; Early alerting; Risk scoring; Intervention tracking",
+      "isExpanded": true
+    },
+    {
+      "ID": "SIS",
+      "TEXT": "Student Information System",
+      "TYPE": "SYSTEM",
+      "Description": "System of record for student enrollment, registration, and academic records.",
+      "Typical Products": "Banner; SITS; Campus Solutions",
+      "Key Capabilities": "Enrollment management; Student records; Module registrations; Awards and progression",
+      "isExpanded": true
+    },
+    {
+      "ID": "IAM",
+      "TEXT": "Identity & Access Management",
+      "TYPE": "SYSTEM",
+      "Description": "Provides authentication, authorization, and single sign-on.",
+      "Typical Products": "Active Directory; Azure AD; LDAP; Shibboleth",
+      "Key Capabilities": "SSO; User provisioning; Role-based access; Multi-factor authentication",
+      "isExpanded": true
+    },
+    {
+      "ID": "TTB",
+      "TEXT": "Timetabling System",
+      "TYPE": "SYSTEM",
+      "Description": "Plans teaching schedules, rooms, and resource allocations.",
+      "Typical Products": "Scientia; CMIS; Celcat",
+      "Key Capabilities": "Timetable generation; Room allocation; Conflict management; Calendar export",
+      "isExpanded": true
+    },
+    {
+      "ID": "LMS",
+      "TEXT": "Library Management System",
+      "TYPE": "SYSTEM",
+      "Description": "Manages library catalogues, access, and digital resources.",
+      "Typical Products": "Ex Libris Alma; OCLC WorldShare",
+      "Key Capabilities": "Catalog management; Licensing; Access control; Discovery services",
+      "isExpanded": true
+    },
+    {
+      "ID": "SSS",
+      "TEXT": "Student Support System",
+      "TYPE": "SYSTEM",
+      "Description": "Tracks support cases, wellbeing interventions, and tutoring.",
+      "Typical Products": "Advisely; Symplicity Advise",
+      "Key Capabilities": "Case management; Advising notes; Intervention workflows; Appointment scheduling",
+      "isExpanded": true
+    },
+    {
+      "ID": "RSP",
+      "TEXT": "Research Systems",
+      "TYPE": "SYSTEM",
+      "Description": "Manages research outputs and supports research-led teaching links.",
+      "Typical Products": "Pure; Symplectic; Institutional repository",
+      "Key Capabilities": "Research output management; Researcher profiles; Metadata export; Reporting",
+      "isExpanded": true
+    },
+    {
+      "ID": "EMS",
+      "TEXT": "Email & Messaging",
+      "TYPE": "SYSTEM",
+      "Description": "Delivers notifications, announcements, and calendar invites.",
+      "Typical Products": "Microsoft 365; Google Workspace",
+      "Key Capabilities": "Email delivery; Calendar invites; Messaging; Notification tracking",
+      "isExpanded": true
+    },
+    {
+      "ID": "ACAD",
+      "TEXT": "Academic Staff",
+      "TYPE": "ACTOR",
+      "Description": "Lecturers, module leaders, and programme staff delivering teaching.",
+      "isExpanded": true
+    },
+    {
+      "ID": "STUD",
+      "TEXT": "Students",
+      "TYPE": "ACTOR",
+      "Description": "Undergraduate, postgraduate taught, and distance learners.",
+      "isExpanded": true
+    },
+    {
+      "ID": "LTEC",
+      "TEXT": "Learning Technologists",
+      "TYPE": "ACTOR",
+      "Description": "Specialists supporting digital pedagogy and tool adoption.",
+      "isExpanded": true
+    },
+    {
+      "ID": "LIBS",
+      "TEXT": "Library Staff",
+      "TYPE": "ACTOR",
+      "Description": "Curate digital resources and support information literacy.",
+      "isExpanded": true
+    },
+    {
+      "ID": "SSAD",
+      "TEXT": "Student Support Advisors",
+      "TYPE": "ACTOR",
+      "Description": "Monitor engagement data and deliver wellbeing and study support.",
+      "isExpanded": true
+    },
+    {
+      "ID": "QUAL",
+      "TEXT": "Quality Assurance Officers",
+      "TYPE": "ACTOR",
+      "Description": "Review teaching quality, assessment practices, and compliance.",
+      "isExpanded": true
+    },
+    {
+      "ID": "DODL",
+      "TEXT": "Director of Digital Learning",
+      "TYPE": "ACTOR",
+      "Description": "Leads digital learning strategy and portfolio oversight.",
+      "isExpanded": true
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "F001",
+      "FROMID": "SIS",
+      "TOID": "VLE",
+      "TEXT": "Enrollment roster",
+      "TYPE": "->",
+      "Description": "Student identities, module registrations, roles, and academic calendar dates.",
+      "From": "Student Information System",
+      "To": "Virtual Learning Environment"
+    },
+    {
+      "ID": "F002",
+      "FROMID": "VLE",
+      "TOID": "SIS",
+      "TEXT": "Assessment grades",
+      "TYPE": "->",
+      "Description": "Gradebook results, feedback summaries, completion flags, and assessment outcomes.",
+      "From": "Virtual Learning Environment",
+      "To": "Student Information System"
+    },
+    {
+      "ID": "F003",
+      "FROMID": "IAM",
+      "TOID": "VLE",
+      "TEXT": "SSO authentication",
+      "TYPE": "->",
+      "Description": "Authentication tokens, role claims, group memberships, and access entitlements.",
+      "From": "Identity & Access Management",
+      "To": "Virtual Learning Environment"
+    },
+    {
+      "ID": "F004",
+      "FROMID": "VLE",
+      "TOID": "IAM",
+      "TEXT": "Provisioning updates",
+      "TYPE": "->",
+      "Description": "Course role assignments, access exceptions, and account lifecycle events.",
+      "From": "Virtual Learning Environment",
+      "To": "Identity & Access Management"
+    },
+    {
+      "ID": "F005",
+      "FROMID": "VLE",
+      "TOID": "LCS",
+      "TEXT": "Course mapping",
+      "TYPE": "->",
+      "Description": "Module identifiers, course sections, and embed locations for recordings.",
+      "From": "Virtual Learning Environment",
+      "To": "Lecture Capture System"
+    },
+    {
+      "ID": "F006",
+      "FROMID": "LCS",
+      "TOID": "VLE",
+      "TEXT": "Recording links",
+      "TYPE": "->",
+      "Description": "Recording URLs, thumbnails, captions metadata, and availability status.",
+      "From": "Lecture Capture System",
+      "To": "Virtual Learning Environment"
+    },
+    {
+      "ID": "F007",
+      "FROMID": "TTB",
+      "TOID": "LCS",
+      "TEXT": "Teaching schedule",
+      "TYPE": "->",
+      "Description": "Room allocations, start times, module identifiers, and instructor details.",
+      "From": "Timetabling System",
+      "To": "Lecture Capture System"
+    },
+    {
+      "ID": "F008",
+      "FROMID": "LCS",
+      "TOID": "TTB",
+      "TEXT": "Recording status",
+      "TYPE": "->",
+      "Description": "Capture success/failure, exceptions, and scheduling conflicts.",
+      "From": "Lecture Capture System",
+      "To": "Timetabling System"
+    },
+    {
+      "ID": "F009",
+      "FROMID": "VLE",
+      "TOID": "VCP",
+      "TEXT": "Session details",
+      "TYPE": "->",
+      "Description": "Meeting links, class rosters, session metadata, and access permissions.",
+      "From": "Virtual Learning Environment",
+      "To": "Virtual Classroom Platform"
+    },
+    {
+      "ID": "F010",
+      "FROMID": "VCP",
+      "TOID": "VLE",
+      "TEXT": "Attendance data",
+      "TYPE": "->",
+      "Description": "Join/leave times, attendance duration, and participation indicators.",
+      "From": "Virtual Classroom Platform",
+      "To": "Virtual Learning Environment"
+    },
+    {
+      "ID": "F011",
+      "FROMID": "VLE",
+      "TOID": "AFP",
+      "TEXT": "Assignment submissions",
+      "TYPE": "->",
+      "Description": "Submission files, rubrics, assignment metadata, and student identifiers.",
+      "From": "Virtual Learning Environment",
+      "To": "Assessment & Feedback Platform"
+    },
+    {
+      "ID": "F012",
+      "FROMID": "AFP",
+      "TOID": "VLE",
+      "TEXT": "Marks and feedback",
+      "TYPE": "->",
+      "Description": "Grades, annotated feedback, rubrics, and moderation outcomes.",
+      "From": "Assessment & Feedback Platform",
+      "To": "Virtual Learning Environment"
+    },
+    {
+      "ID": "F013",
+      "FROMID": "AFP",
+      "TOID": "PLG",
+      "TEXT": "Submission package",
+      "TYPE": "->",
+      "Description": "Submitted documents, metadata, and assignment context for similarity checking.",
+      "From": "Assessment & Feedback Platform",
+      "To": "Plagiarism Detection"
+    },
+    {
+      "ID": "F014",
+      "FROMID": "PLG",
+      "TOID": "AFP",
+      "TEXT": "Similarity report",
+      "TYPE": "->",
+      "Description": "Similarity scores, matched sources, and integrity indicators.",
+      "From": "Plagiarism Detection",
+      "To": "Assessment & Feedback Platform"
+    },
+    {
+      "ID": "F015",
+      "FROMID": "RLM",
+      "TOID": "VLE",
+      "TEXT": "Reading lists",
+      "TYPE": "->",
+      "Description": "Published reading lists, resource links, and module mappings.",
+      "From": "Reading List Management",
+      "To": "Virtual Learning Environment"
+    },
+    {
+      "ID": "F016",
+      "FROMID": "VLE",
+      "TOID": "RLM",
+      "TEXT": "Usage metrics",
+      "TYPE": "->",
+      "Description": "Click-through counts, access timestamps, and student usage trends.",
+      "From": "Virtual Learning Environment",
+      "To": "Reading List Management"
+    },
+    {
+      "ID": "F017",
+      "FROMID": "RLM",
+      "TOID": "LMS",
+      "TEXT": "Resource metadata",
+      "TYPE": "->",
+      "Description": "ISBNs, licenses, availability constraints, and resource identifiers.",
+      "From": "Reading List Management",
+      "To": "Library Management System"
+    },
+    {
+      "ID": "F018",
+      "FROMID": "LMS",
+      "TOID": "RLM",
+      "TEXT": "Availability status",
+      "TYPE": "->",
+      "Description": "Holdings availability, access permissions, and licensing updates.",
+      "From": "Library Management System",
+      "To": "Reading List Management"
+    },
+    {
+      "ID": "F019",
+      "FROMID": "VLE",
+      "TOID": "SEA",
+      "TEXT": "Activity logs",
+      "TYPE": "->",
+      "Description": "Logins, content views, submission events, and interaction metrics.",
+      "From": "Virtual Learning Environment",
+      "To": "Student Engagement Analytics"
+    },
+    {
+      "ID": "F020",
+      "FROMID": "SIS",
+      "TOID": "SEA",
+      "TEXT": "Student context",
+      "TYPE": "->",
+      "Description": "Enrollment status, programme details, cohorts, and demographic context.",
+      "From": "Student Information System",
+      "To": "Student Engagement Analytics"
+    },
+    {
+      "ID": "F021",
+      "FROMID": "SEA",
+      "TOID": "SIS",
+      "TEXT": "Engagement flags",
+      "TYPE": "->",
+      "Description": "Risk indicators, attendance trends, and engagement scores for records.",
+      "From": "Student Engagement Analytics",
+      "To": "Student Information System"
+    },
+    {
+      "ID": "F022",
+      "FROMID": "SEA",
+      "TOID": "SSS",
+      "TEXT": "Risk alerts",
+      "TYPE": "->",
+      "Description": "At-risk flags, risk reasons, and recommended interventions.",
+      "From": "Student Engagement Analytics",
+      "To": "Student Support System"
+    },
+    {
+      "ID": "F023",
+      "FROMID": "SSS",
+      "TOID": "SEA",
+      "TEXT": "Intervention outcomes",
+      "TYPE": "->",
+      "Description": "Support actions taken, outcomes, and follow-up dates.",
+      "From": "Student Support System",
+      "To": "Student Engagement Analytics"
+    },
+    {
+      "ID": "F024",
+      "FROMID": "SIS",
+      "TOID": "SSS",
+      "TEXT": "Enrollment status",
+      "TYPE": "->",
+      "Description": "Registration status, programme details, and personal tutoring assignments.",
+      "From": "Student Information System",
+      "To": "Student Support System"
+    },
+    {
+      "ID": "F025",
+      "FROMID": "SSS",
+      "TOID": "SIS",
+      "TEXT": "Support notes",
+      "TYPE": "->",
+      "Description": "Support plan summaries, case status, and agreed adjustments.",
+      "From": "Student Support System",
+      "To": "Student Information System"
+    },
+    {
+      "ID": "F026",
+      "FROMID": "VLE",
+      "TOID": "EMS",
+      "TEXT": "Learning notifications",
+      "TYPE": "->",
+      "Description": "Announcements, due date reminders, and messaging templates.",
+      "From": "Virtual Learning Environment",
+      "To": "Email & Messaging"
+    },
+    {
+      "ID": "F027",
+      "FROMID": "EMS",
+      "TOID": "VLE",
+      "TEXT": "Delivery status",
+      "TYPE": "->",
+      "Description": "Delivery confirmations, bounces, and read receipt metadata.",
+      "From": "Email & Messaging",
+      "To": "Virtual Learning Environment"
+    },
+    {
+      "ID": "F028",
+      "FROMID": "VLE",
+      "TOID": "EPS",
+      "TEXT": "Assessment artifacts",
+      "TYPE": "->",
+      "Description": "Assessment briefs, reflective prompts, and submission artifacts.",
+      "From": "Virtual Learning Environment",
+      "To": "E-Portfolio System"
+    },
+    {
+      "ID": "F029",
+      "FROMID": "EPS",
+      "TOID": "VLE",
+      "TEXT": "Portfolio links",
+      "TYPE": "->",
+      "Description": "Portfolio URLs, evidence mappings, and submission status.",
+      "From": "E-Portfolio System",
+      "To": "Virtual Learning Environment"
+    },
+    {
+      "ID": "F030",
+      "FROMID": "RSP",
+      "TOID": "VLE",
+      "TEXT": "Research outputs",
+      "TYPE": "->",
+      "Description": "Publication metadata, datasets, and research project summaries for teaching.",
+      "From": "Research Systems",
+      "To": "Virtual Learning Environment"
+    },
+    {
+      "ID": "F031",
+      "FROMID": "VLE",
+      "TOID": "RSP",
+      "TEXT": "Teaching usage",
+      "TYPE": "->",
+      "Description": "Usage metrics on research materials embedded in teaching content.",
+      "From": "Virtual Learning Environment",
+      "To": "Research Systems"
+    },
+    {
+      "ID": "F032",
+      "FROMID": "ACAD",
+      "TOID": "VLE",
+      "TEXT": "Course content",
+      "TYPE": "->",
+      "Description": "Learning materials, assignments, announcements, and discussion prompts.",
+      "From": "Academic Staff",
+      "To": "Virtual Learning Environment"
+    },
+    {
+      "ID": "F033",
+      "FROMID": "VLE",
+      "TOID": "ACAD",
+      "TEXT": "Teaching insights",
+      "TYPE": "->",
+      "Description": "Submission status, grade distributions, and engagement summaries.",
+      "From": "Virtual Learning Environment",
+      "To": "Academic Staff"
+    },
+    {
+      "ID": "F034",
+      "FROMID": "STUD",
+      "TOID": "VLE",
+      "TEXT": "Learning activity",
+      "TYPE": "->",
+      "Description": "Assignment submissions, forum posts, quizzes, and content interactions.",
+      "From": "Students",
+      "To": "Virtual Learning Environment"
+    },
+    {
+      "ID": "F035",
+      "FROMID": "VLE",
+      "TOID": "STUD",
+      "TEXT": "Learning content",
+      "TYPE": "->",
+      "Description": "Course materials, feedback, grades, and learning resources.",
+      "From": "Virtual Learning Environment",
+      "To": "Students"
+    },
+    {
+      "ID": "F036",
+      "FROMID": "LTEC",
+      "TOID": "VLE",
+      "TEXT": "Course design",
+      "TYPE": "->",
+      "Description": "Template updates, accessibility checks, and design improvements.",
+      "From": "Learning Technologists",
+      "To": "Virtual Learning Environment"
+    },
+    {
+      "ID": "F037",
+      "FROMID": "LIBS",
+      "TOID": "RLM",
+      "TEXT": "Reading curation",
+      "TYPE": "->",
+      "Description": "Reading list updates, license approvals, and resource annotations.",
+      "From": "Library Staff",
+      "To": "Reading List Management"
+    },
+    {
+      "ID": "F038",
+      "FROMID": "SSAD",
+      "TOID": "SEA",
+      "TEXT": "Risk review",
+      "TYPE": "->",
+      "Description": "Advisor notes, outreach status, and case review outcomes.",
+      "From": "Student Support Advisors",
+      "To": "Student Engagement Analytics"
+    },
+    {
+      "ID": "F039",
+      "FROMID": "QUAL",
+      "TOID": "VLE",
+      "TEXT": "Module review",
+      "TYPE": "->",
+      "Description": "Quality review access requests, sampling notes, and compliance checks.",
+      "From": "Quality Assurance Officers",
+      "To": "Virtual Learning Environment"
+    },
+    {
+      "ID": "F040",
+      "FROMID": "SEA",
+      "TOID": "DODL",
+      "TEXT": "KPI dashboard",
+      "TYPE": "->",
+      "Description": "Digital learning KPIs, engagement trends, and strategic performance indicators.",
+      "From": "Student Engagement Analytics",
+      "To": "Director of Digital Learning"
+    }
+  ]
+}
