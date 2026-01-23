@@ -47,8 +47,7 @@
       "TYPE": "SYSTEM",
       "Description": "Central platform for course content, assignments, discussions, and grades.",
       "Typical Products": "Blackboard Learn; Moodle; Canvas",
-      "Key Capabilities": "Course content delivery; Assessment management; Discussion forums; Gradebook; Learning tools integration",
-      "isExpanded": true
+      "Key Capabilities": "Course content delivery; Assessment management; Discussion forums; Gradebook; Learning tools integration"
     },
     {
       "ID": "LCS",
@@ -56,8 +55,7 @@
       "TYPE": "SYSTEM",
       "Description": "Records, manages, and streams lecture content for on-demand viewing.",
       "Typical Products": "Panopto; Echo360; Kaltura",
-      "Key Capabilities": "Lecture recording; Streaming; Captioning; Playback analytics; Content management",
-      "isExpanded": true
+      "Key Capabilities": "Lecture recording; Streaming; Captioning; Playback analytics; Content management"
     },
     {
       "ID": "AFP",
@@ -65,8 +63,7 @@
       "TYPE": "SYSTEM",
       "Description": "Manages assignment submission, marking workflows, and feedback delivery.",
       "Typical Products": "Turnitin Feedback Studio; Gradescope; Inspera",
-      "Key Capabilities": "Submission handling; Marking workflows; Rubrics; Feedback delivery; Grade export",
-      "isExpanded": true
+      "Key Capabilities": "Submission handling; Marking workflows; Rubrics; Feedback delivery; Grade export"
     },
     {
       "ID": "PLG",
@@ -74,8 +71,7 @@
       "TYPE": "SYSTEM",
       "Description": "Checks academic work for similarity and integrity risks.",
       "Typical Products": "Turnitin; Urkund",
-      "Key Capabilities": "Similarity checking; Source matching; Report generation; Integrity dashboards",
-      "isExpanded": true
+      "Key Capabilities": "Similarity checking; Source matching; Report generation; Integrity dashboards"
     },
     {
       "ID": "VCP",
@@ -83,8 +79,7 @@
       "TYPE": "SYSTEM",
       "Description": "Supports synchronous online teaching with meetings, chat, and collaboration.",
       "Typical Products": "Microsoft Teams; Zoom; Blackboard Collaborate",
-      "Key Capabilities": "Live sessions; Screen sharing; Breakout rooms; Attendance reporting; Recording",
-      "isExpanded": true
+      "Key Capabilities": "Live sessions; Screen sharing; Breakout rooms; Attendance reporting; Recording"
     },
     {
       "ID": "RLM",
@@ -92,8 +87,7 @@
       "TYPE": "SYSTEM",
       "Description": "Creates and publishes curated reading lists for modules.",
       "Typical Products": "Talis Aspire; EBSCO Content Management",
-      "Key Capabilities": "Reading list authoring; Resource linking; License checks; Publishing workflows",
-      "isExpanded": true
+      "Key Capabilities": "Reading list authoring; Resource linking; License checks; Publishing workflows"
     },
     {
       "ID": "EPS",
@@ -101,8 +95,7 @@
       "TYPE": "SYSTEM",
       "Description": "Supports reflective learning, portfolios, and placement evidence.",
       "Typical Products": "PebblePad; Mahara",
-      "Key Capabilities": "Portfolio creation; Reflection journals; Evidence collection; Sharing and review",
-      "isExpanded": true
+      "Key Capabilities": "Portfolio creation; Reflection journals; Evidence collection; Sharing and review"
     },
     {
       "ID": "SEA",
@@ -110,8 +103,7 @@
       "TYPE": "SYSTEM",
       "Description": "Aggregates learning activity data to identify engagement trends and risks.",
       "Typical Products": "Blackboard Analytics; Civitas Learning; Helix",
-      "Key Capabilities": "Engagement dashboards; Early alerting; Risk scoring; Intervention tracking",
-      "isExpanded": true
+      "Key Capabilities": "Engagement dashboards; Early alerting; Risk scoring; Intervention tracking"
     },
     {
       "ID": "SIS",
@@ -119,8 +111,7 @@
       "TYPE": "SYSTEM",
       "Description": "System of record for student enrollment, registration, and academic records.",
       "Typical Products": "Banner; SITS; Campus Solutions",
-      "Key Capabilities": "Enrollment management; Student records; Module registrations; Awards and progression",
-      "isExpanded": true
+      "Key Capabilities": "Enrollment management; Student records; Module registrations; Awards and progression"
     },
     {
       "ID": "IAM",
@@ -128,8 +119,7 @@
       "TYPE": "SYSTEM",
       "Description": "Provides authentication, authorization, and single sign-on.",
       "Typical Products": "Active Directory; Azure AD; LDAP; Shibboleth",
-      "Key Capabilities": "SSO; User provisioning; Role-based access; Multi-factor authentication",
-      "isExpanded": true
+      "Key Capabilities": "SSO; User provisioning; Role-based access; Multi-factor authentication"
     },
     {
       "ID": "TTB",
@@ -137,8 +127,7 @@
       "TYPE": "SYSTEM",
       "Description": "Plans teaching schedules, rooms, and resource allocations.",
       "Typical Products": "Scientia; CMIS; Celcat",
-      "Key Capabilities": "Timetable generation; Room allocation; Conflict management; Calendar export",
-      "isExpanded": true
+      "Key Capabilities": "Timetable generation; Room allocation; Conflict management; Calendar export"
     },
     {
       "ID": "LMS",
@@ -146,8 +135,7 @@
       "TYPE": "SYSTEM",
       "Description": "Manages library catalogues, access, and digital resources.",
       "Typical Products": "Ex Libris Alma; OCLC WorldShare",
-      "Key Capabilities": "Catalog management; Licensing; Access control; Discovery services",
-      "isExpanded": true
+      "Key Capabilities": "Catalog management; Licensing; Access control; Discovery services"
     },
     {
       "ID": "SSS",
@@ -155,8 +143,7 @@
       "TYPE": "SYSTEM",
       "Description": "Tracks support cases, wellbeing interventions, and tutoring.",
       "Typical Products": "Advisely; Symplicity Advise",
-      "Key Capabilities": "Case management; Advising notes; Intervention workflows; Appointment scheduling",
-      "isExpanded": true
+      "Key Capabilities": "Case management; Advising notes; Intervention workflows; Appointment scheduling"
     },
     {
       "ID": "RSP",
@@ -164,8 +151,7 @@
       "TYPE": "SYSTEM",
       "Description": "Manages research outputs and supports research-led teaching links.",
       "Typical Products": "Pure; Symplectic; Institutional repository",
-      "Key Capabilities": "Research output management; Researcher profiles; Metadata export; Reporting",
-      "isExpanded": true
+      "Key Capabilities": "Research output management; Researcher profiles; Metadata export; Reporting"
     },
     {
       "ID": "EMS",
@@ -173,57 +159,49 @@
       "TYPE": "SYSTEM",
       "Description": "Delivers notifications, announcements, and calendar invites.",
       "Typical Products": "Microsoft 365; Google Workspace",
-      "Key Capabilities": "Email delivery; Calendar invites; Messaging; Notification tracking",
-      "isExpanded": true
+      "Key Capabilities": "Email delivery; Calendar invites; Messaging; Notification tracking"
     },
     {
       "ID": "ACAD",
       "TEXT": "Academic Staff",
       "TYPE": "ACTOR",
-      "Description": "Lecturers, module leaders, and programme staff delivering teaching.",
-      "isExpanded": true
+      "Description": "Lecturers, module leaders, and programme staff delivering teaching."
     },
     {
       "ID": "STUD",
       "TEXT": "Students",
       "TYPE": "ACTOR",
-      "Description": "Undergraduate, postgraduate taught, and distance learners.",
-      "isExpanded": true
+      "Description": "Undergraduate, postgraduate taught, and distance learners."
     },
     {
       "ID": "LTEC",
       "TEXT": "Learning Technologists",
       "TYPE": "ACTOR",
-      "Description": "Specialists supporting digital pedagogy and tool adoption.",
-      "isExpanded": true
+      "Description": "Specialists supporting digital pedagogy and tool adoption."
     },
     {
       "ID": "LIBS",
       "TEXT": "Library Staff",
       "TYPE": "ACTOR",
-      "Description": "Curate digital resources and support information literacy.",
-      "isExpanded": true
+      "Description": "Curate digital resources and support information literacy."
     },
     {
       "ID": "SSAD",
       "TEXT": "Student Support Advisors",
       "TYPE": "ACTOR",
-      "Description": "Monitor engagement data and deliver wellbeing and study support.",
-      "isExpanded": true
+      "Description": "Monitor engagement data and deliver wellbeing and study support."
     },
     {
       "ID": "QUAL",
       "TEXT": "Quality Assurance Officers",
       "TYPE": "ACTOR",
-      "Description": "Review teaching quality, assessment practices, and compliance.",
-      "isExpanded": true
+      "Description": "Review teaching quality, assessment practices, and compliance."
     },
     {
       "ID": "DODL",
       "TEXT": "Director of Digital Learning",
       "TYPE": "ACTOR",
-      "Description": "Leads digital learning strategy and portfolio oversight.",
-      "isExpanded": true
+      "Description": "Leads digital learning strategy and portfolio oversight."
     }
   ],
   "interactions": [
@@ -627,5 +605,331 @@
       "From": "Student Engagement Analytics",
       "To": "Director of Digital Learning"
     }
-  ]
+  ],
+  "layouts": {
+    "overview": {
+      "systems": {
+        "VLE": {
+          "isSelected": true,
+          "geometry": {
+            "x": 200,
+            "y": 1007.5,
+            "width": 360,
+            "height": 240
+          }
+        },
+        "LCS": {
+          "isSelected": true,
+          "geometry": {
+            "x": -10,
+            "y": 630,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "AFP": {
+          "isSelected": true,
+          "geometry": {
+            "x": 660,
+            "y": 615,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "PLG": {
+          "isSelected": true,
+          "geometry": {
+            "x": 880,
+            "y": 615,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "VCP": {
+          "isSelected": true,
+          "geometry": {
+            "x": 340,
+            "y": 520,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "RLM": {
+          "isSelected": true,
+          "geometry": {
+            "x": 130,
+            "y": 1440,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "EPS": {
+          "isSelected": true,
+          "geometry": {
+            "x": 660,
+            "y": 1400,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "SEA": {
+          "isSelected": true,
+          "geometry": {
+            "x": 900,
+            "y": 1060.0049714156253,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "SIS": {
+          "isSelected": true,
+          "geometry": {
+            "x": 660,
+            "y": 820,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "IAM": {
+          "isSelected": true,
+          "geometry": {
+            "x": -290,
+            "y": 810,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "TTB": {
+          "isSelected": true,
+          "geometry": {
+            "x": -300,
+            "y": 640,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "LMS": {
+          "isSelected": true,
+          "geometry": {
+            "x": 130,
+            "y": 1630,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "SSS": {
+          "isSelected": true,
+          "geometry": {
+            "x": 1050,
+            "y": 809.9979455554687,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "RSP": {
+          "isSelected": true,
+          "geometry": {
+            "x": 660,
+            "y": 1520,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "EMS": {
+          "isSelected": true,
+          "geometry": {
+            "x": 660,
+            "y": 1240,
+            "width": 120,
+            "height": 80
+          }
+        },
+        "ACAD": {
+          "isSelected": true,
+          "geometry": {
+            "x": -280,
+            "y": 1190,
+            "width": 100,
+            "height": 80
+          }
+        },
+        "STUD": {
+          "isSelected": true,
+          "geometry": {
+            "x": -280,
+            "y": 1320,
+            "width": 100,
+            "height": 80
+          }
+        },
+        "LTEC": {
+          "isSelected": true,
+          "geometry": {
+            "x": -280,
+            "y": 1070,
+            "width": 100,
+            "height": 80
+          }
+        },
+        "LIBS": {
+          "isSelected": true,
+          "geometry": {
+            "x": -280,
+            "y": 1440,
+            "width": 100,
+            "height": 80
+          }
+        },
+        "SSAD": {
+          "isSelected": true,
+          "geometry": {
+            "x": 910,
+            "y": 1290,
+            "width": 100,
+            "height": 80
+          }
+        },
+        "QUAL": {
+          "isSelected": true,
+          "geometry": {
+            "x": -280,
+            "y": 970,
+            "width": 100,
+            "height": 80
+          }
+        },
+        "DODL": {
+          "isSelected": true,
+          "geometry": {
+            "x": 1120,
+            "y": 1290.0049714156253,
+            "width": 100,
+            "height": 80
+          }
+        }
+      },
+      "edges": {
+        "F001": {
+          "isSelected": true
+        },
+        "F002": {
+          "isSelected": true
+        },
+        "F003": {
+          "isSelected": true
+        },
+        "F004": {
+          "isSelected": true
+        },
+        "F005": {
+          "isSelected": true
+        },
+        "F006": {
+          "isSelected": true
+        },
+        "F007": {
+          "isSelected": true
+        },
+        "F008": {
+          "isSelected": true
+        },
+        "F009": {
+          "isSelected": true
+        },
+        "F010": {
+          "isSelected": true
+        },
+        "F011": {
+          "isSelected": true
+        },
+        "F012": {
+          "isSelected": true
+        },
+        "F013": {
+          "isSelected": true
+        },
+        "F014": {
+          "isSelected": true
+        },
+        "F015": {
+          "isSelected": true
+        },
+        "F016": {
+          "isSelected": true
+        },
+        "F017": {
+          "isSelected": true
+        },
+        "F018": {
+          "isSelected": true
+        },
+        "F019": {
+          "isSelected": true
+        },
+        "F020": {
+          "isSelected": true
+        },
+        "F021": {
+          "isSelected": true
+        },
+        "F022": {
+          "isSelected": true
+        },
+        "F023": {
+          "isSelected": true
+        },
+        "F024": {
+          "isSelected": true
+        },
+        "F025": {
+          "isSelected": true
+        },
+        "F026": {
+          "isSelected": true
+        },
+        "F027": {
+          "isSelected": true
+        },
+        "F028": {
+          "isSelected": true
+        },
+        "F029": {
+          "isSelected": true
+        },
+        "F030": {
+          "isSelected": true
+        },
+        "F031": {
+          "isSelected": true
+        },
+        "F032": {
+          "isSelected": true
+        },
+        "F033": {
+          "isSelected": true
+        },
+        "F034": {
+          "isSelected": true
+        },
+        "F035": {
+          "isSelected": true
+        },
+        "F036": {
+          "isSelected": true
+        },
+        "F037": {
+          "isSelected": true
+        },
+        "F038": {
+          "isSelected": true
+        },
+        "F039": {
+          "isSelected": true
+        },
+        "F040": {
+          "isSelected": true
+        }
+      }
+    }
+  }
 }
