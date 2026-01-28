@@ -27,6 +27,8 @@ reference/
 
 ### Sector Models
 
+#### Travel
+- Travel Enterprise Reference Model: [Open in Revelation](https://revelationcore.com/beta/index.html?model=https://revelationea.github.io/sandpit/Reference/Models/Sector%20Models/Travel/travel-enterprise-reference-model.json) (`reference/models/Sector Models/Travel/travel-enterprise-reference-model.json`)
 #### Education
 - Student Records Accelerator: [Open in Revelation](https://revelationcore.com/beta/index.html?model=https://revelationea.github.io/sandpit/Reference/Models/Sector%20Models/Education/StudentRecordsAccelerator.json) (`reference/models/Sector Models/Education/StudentRecordsAccelerator.json`)
 - Revelation Workbook for Student Records: [Open in Revelation](https://revelationcore.com/beta/index.html?model=https://revelationea.github.io/sandpit/Reference/Models/Sector%20Models/Education/revelation-workbook-for-student-records.json) (`reference/models/Sector Models/Education/revelation-workbook-for-student-records.json`)
@@ -95,3 +97,4 @@ reference/
 - Technology Layer: [Open in Revelation](https://revelationcore.com/beta/index.html?model=https://revelationea.github.io/sandpit/Reference/Models/archimate/archimate-technology-layer.json) (`Reference/Models/archimate/archimate-technology-layer.json`)
 - Strategy and Motivation: [Open in Revelation](https://revelationcore.com/beta/index.html?model=https://revelationea.github.io/sandpit/Reference/Models/archimate/archimate-strategy-motivation.json) (`Reference/Models/archimate/archimate-strategy-motivation.json`)
 - Implementation and Migration: [Open in Revelation](https://revelationcore.com/beta/index.html?model=https://revelationea.github.io/sandpit/Reference/Models/archimate/archimate-implementation-migration.json) (`Reference/Models/archimate/archimate-implementation-migration.json`)
+

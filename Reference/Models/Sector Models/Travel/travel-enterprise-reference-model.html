@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Enterprise Reference Model - Integration Notes</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.5; margin: 2rem; color: #111; }
+    h1, h2, h3 { margin-top: 1.5rem; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #ddd; padding: 0.5rem; text-align: left; vertical-align: top; }
+    th { background: #f6f8fa; }
+    code { background: #f6f8fa; padding: 0.1rem 0.25rem; }
+  </style>
+</head>
+<body>
+<h1>Travel Enterprise Reference Model - Integration Notes</h1>
+<p><strong>Date created:</strong> 2026-01-28</p>
+
+<h2>Purpose</h2>
+<p>
+  This model provides a travel and cruise enterprise integration reference for reservation, sales channels,
+  and partner connectivity. It supports the Solution Architect (integration focus) engagement by describing
+  systems, interactions, and considerations used to rapidly define an integration layer and partner-facing scope.
+</p>
+
+<h2>Model Overview</h2>
+<ul>
+  <li><strong>Core systems:</strong> Reservation, Inventory, Pricing, Payments, CRM/Loyalty, Operations, Finance.</li>
+  <li><strong>Channel systems:</strong> B2C Web/Mobile, B2B Portal, Channel Manager, OTAs, GDS.</li>
+  <li><strong>Platform services:</strong> Integration Layer, Identity, Observability, Notifications, Data Platform.</li>
+  <li><strong>Actors:</strong> Guests/Passengers, Travel Agents, Operations Staff, Partner Integrators.</li>
+</ul>
+
+<h2>Integration Layer Definition (Phase 1)</h2>
+<ul>
+  <li><strong>Boundaries:</strong> Integration Layer (INT) exposes standardized APIs and events, mediates legacy systems, and provides partner adapters.</li>
+  <li><strong>Responsibilities:</strong> Contract governance, orchestration, transformation, event publication, access control, and telemetry.</li>
+  <li><strong>Technology approach:</strong> API gateway + event bus + adapter framework, with schema registry and contract testing.</li>
+  <li><strong>Environment assumptions:</strong> Hybrid environment with legacy reservation systems and cloud-hosted channel platforms.</li>
+  <li><strong>Security model:</strong> mTLS, OAuth 2.0, API keys by partner, and audited access per contract.</li>
+</ul>
+
+<h2>Partner-Facing Interface Scope Pack (First Tranche)</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Priority</th>
+      <th>Interface</th>
+      <th>Direction</th>
+      <th>Style</th>
+      <th>Dependencies</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Search and Quote (B2B/B2C)</td>
+      <td>INT -> RES/INV/PRC</td>
+      <td>Synchronous API</td>
+      <td>Reservation, Inventory, Pricing</td>
+      <td>Requires caching and SLA definition</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Booking Create/Modify/Cancel</td>
+      <td>INT -> RES</td>
+      <td>Synchronous API</td>
+      <td>Reservation</td>
+      <td>Idempotency keys mandatory</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Booking Events</td>
+      <td>RES -> INT</td>
+      <td>Event</td>
+      <td>Reservation, Event Bus</td>
+      <td>Schema versioning required</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Payment Authorization</td>
+      <td>INT -> PAY</td>
+      <td>Synchronous API</td>
+      <td>Payments</td>
+      <td>PCI scope and retries defined</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Payment Events</td>
+      <td>PAY -> INT</td>
+      <td>Event</td>
+      <td>Payments, Finance</td>
+      <td>Reconciliation workflow agreed</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Initial Interface Catalogue / Integration Backlog</h2>
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Interaction</th>
+      <th>Owner</th>
+      <th>Priority</th>
+      <th>Risks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>F003</td><td>Direct channel booking APIs</td><td>Integration Platform</td><td>High</td><td>Latency and rate limits</td></tr>
+    <tr><td>F006</td><td>Reservation commands</td><td>Reservation Team</td><td>High</td><td>Idempotency and rollback</td></tr>
+    <tr><td>F009</td><td>Booking events</td><td>Reservation Team</td><td>High</td><td>Schema evolution and replay</td></tr>
+    <tr><td>F011</td><td>OTA feeds</td><td>Distribution</td><td>Medium</td><td>Partner SLA variability</td></tr>
+    <tr><td>F018</td><td>Revenue postings to finance</td><td>Finance</td><td>Medium</td><td>Reconciliation accuracy</td></tr>
+  </tbody>
+</table>
+
+<h2>Initial ADRs (early decisions)</h2>
+<ul>
+  <li><strong>ADR-001:</strong> Use canonical API contracts for booking and pricing, with versioning and compatibility rules.</li>
+  <li><strong>ADR-002:</strong> Event-driven propagation for booking lifecycle, payments, and operational updates.</li>
+  <li><strong>ADR-003:</strong> Integration layer owns partner access, throttling, and contract enforcement.</li>
+  <li><strong>ADR-004:</strong> Orchestration centralized in Integration Layer for cross-domain flows.</li>
+</ul>
+
+<h2>Non-Functional Requirements (NFR) Assumptions</h2>
+<ul>
+  <li><strong>Availability:</strong> 99.9% for booking APIs; 99.5% for analytics feeds.</li>
+  <li><strong>Performance:</strong> Search/quote p95 under 2 seconds end-to-end.</li>
+  <li><strong>Resilience:</strong> Retries with backoff; circuit breakers; queue-based buffering for events.</li>
+  <li><strong>Security:</strong> mTLS, OAuth 2.0, least-privilege access, PCI compliance for payments.</li>
+  <li><strong>Observability:</strong> Correlation IDs across API and event flows, SLIs/SLOs, and partner SLA reporting.</li>
+</ul>
+
+<h2>Guardrails: Events vs Synchronous APIs</h2>
+<ul>
+  <li><strong>Use events when:</strong> publishing booking state changes, payment outcomes, and operational updates for multiple consumers.</li>
+  <li><strong>Use synchronous APIs when:</strong> user-facing search, quote, and booking commands require immediate responses.</li>
+  <li><strong>Guardrails:</strong> define event schemas, enforce idempotency, and avoid command semantics in events.</li>
+</ul>
+
+<h2>Design Review Checklist (Phase 2)</h2>
+<ul>
+  <li>Contract versioning and backward compatibility verified.</li>
+  <li>Ownership and support model defined for each interface.</li>
+  <li>Failure modes and retries documented for critical flows.</li>
+  <li>Monitoring and alerting linked to SLAs and partner commitments.</li>
+</ul>
+
+<h2>Continuity and Handover</h2>
+<ul>
+  <li>Interface catalogue owned by Integration Platform team.</li>
+  <li>ADRs stored with clear approvers and change log.</li>
+  <li>Partner onboarding pack includes security, sandbox, and test data guidance.</li>
+</ul>
+
+<h2>Model Mapping</h2>
+<p>
+  Key integration flows are represented as interactions F003-F022 in the model JSON. The integration layer is
+  represented by system <code>INT</code>. Use these elements to drive architecture diagrams, ADRs, and partner scope.
+</p>
+</body>
+</html>

@@ -1,0 +1,554 @@
+{
+  "model": {
+    "TITLE": {
+      "value": "Travel Enterprise Reference Model",
+      "inputType": "text"
+    },
+    "MODELTYPE": {
+      "value": "C4",
+      "inputType": "select",
+      "refData": "MODELTYPE"
+    },
+    "LAYOUT": {
+      "value": "CenteredRectangle",
+      "inputType": "select",
+      "refData": "LAYOUTTYPE"
+    },
+    "VIEW": {
+      "value": "Architecture",
+      "inputType": "select",
+      "refData": "VIEWTYPE"
+    },
+    "DESCRIPTION": {
+      "value": "Enterprise reference model for travel and cruise integration, emphasizing reservation, sales channels, partner interfaces, and the integration layer used to reduce point-to-point connections.",
+      "inputType": "textarea"
+    },
+    "Documentation URL": {
+      "value": "https://revelationea.github.io/sandpit/Reference/Models/Sector%20Models/Travel/travel-enterprise-reference-model.html",
+      "inputType": "url"
+    },
+    "Author": {
+      "value": "Codex (OpenAI)",
+      "inputType": "text"
+    },
+    "Date": {
+      "value": "2026-01-28",
+      "inputType": "text"
+    },
+    "Disclaimer": {
+      "value": "AI-generated reference model. Validate against organization policies, vendor capabilities, and regulatory requirements before use.",
+      "inputType": "textarea"
+    },
+    "Engagement Focus": {
+      "value": "Integration layer definition, partner-facing interface scope, interface catalogue/backlog, and early ADRs/NFRs for travel reservation and sales channels.",
+      "inputType": "textarea"
+    }
+  },
+  "systems": [
+    {
+      "ID": "RES",
+      "TEXT": "Reservation System",
+      "TYPE": "SYSTEM",
+      "Description": "System of record for bookings, pricing commitments, availability, and passenger itineraries.",
+      "Key Capabilities": "Booking lifecycle; Itinerary management; Fare rules; Inventory control; PNR management",
+      "Business Domain": "Core Operations",
+      "Business Owner": "Reservations",
+      "Technical Owner": "Enterprise Applications",
+      "Data Sensitivity": "High",
+      "System of Record Data Entities": "Bookings, PNRs, Itineraries, Fare Rules",
+      "Issues/Challenges": "Legacy integrations and limited real-time partner visibility",
+      "Future Improvements/Plans": "Expose canonical APIs and event streams for booking lifecycle"
+    },
+    {
+      "ID": "INV",
+      "TEXT": "Inventory and Capacity",
+      "TYPE": "SYSTEM",
+      "Description": "Manages seat/cabin capacity, allotments, and inventory constraints across sailings and routes.",
+      "Key Capabilities": "Inventory pools; Allotments; Capacity controls; Release rules",
+      "Business Domain": "Operations",
+      "Business Owner": "Revenue Management",
+      "Technical Owner": "Platform Engineering",
+      "Data Sensitivity": "High",
+      "System of Record Data Entities": "Inventory, Allotments, Capacity Rules",
+      "Issues/Challenges": "Complex channel allocations and frequent inventory updates",
+      "Future Improvements/Plans": "Move to near real-time inventory events"
+    },
+    {
+      "ID": "PRC",
+      "TEXT": "Pricing and Revenue Management",
+      "TYPE": "SYSTEM",
+      "Description": "Defines fares, promotions, packages, and yield rules.",
+      "Key Capabilities": "Dynamic pricing; Promotions; Package rules; Yield controls",
+      "Business Domain": "Commercial",
+      "Business Owner": "Revenue Management",
+      "Technical Owner": "Commercial Systems",
+      "Data Sensitivity": "Medium",
+      "Issues/Challenges": "Price consistency across channels",
+      "Future Improvements/Plans": "Centralized pricing API and cache strategy"
+    },
+    {
+      "ID": "CHAN",
+      "TEXT": "Channel Manager",
+      "TYPE": "SYSTEM",
+      "Description": "Orchestrates availability, pricing, and booking distribution to channels.",
+      "Key Capabilities": "Channel routing; Content syndication; Rate and availability distribution",
+      "Business Domain": "Sales Channels",
+      "Business Owner": "Distribution",
+      "Technical Owner": "Integration Services",
+      "Issues/Challenges": "Point-to-point channel adapters and inconsistent SLAs",
+      "Future Improvements/Plans": "Standardize partner adapters via integration layer"
+    },
+    {
+      "ID": "B2C",
+      "TEXT": "B2C Web and Mobile",
+      "TYPE": "SYSTEM",
+      "Description": "Customer-facing direct sales channels.",
+      "Key Capabilities": "Search; Quote; Booking; Payment; Self-service",
+      "Business Domain": "Digital Commerce",
+      "Business Owner": "Digital",
+      "Technical Owner": "Digital Engineering",
+      "Issues/Challenges": "Latency for availability and pricing",
+      "Future Improvements/Plans": "Edge caching and resilient APIs"
+    },
+    {
+      "ID": "B2B",
+      "TEXT": "Agent and B2B Portal",
+      "TYPE": "SYSTEM",
+      "Description": "Portal for travel agents and corporate partners.",
+      "Key Capabilities": "Partner search; Booking; Amendments; Commission visibility",
+      "Business Domain": "Sales Channels",
+      "Business Owner": "Partner Sales",
+      "Technical Owner": "Partner Platforms",
+      "Issues/Challenges": "Inconsistent partner API behaviors",
+      "Future Improvements/Plans": "Partner interface scope pack and versioning"
+    },
+    {
+      "ID": "OTA",
+      "TEXT": "OTAs and Aggregators",
+      "TYPE": "SYSTEM",
+      "Description": "External distribution partners consuming inventory and booking APIs.",
+      "Key Capabilities": "Search; Quote; Booking; Cancellation",
+      "Business Domain": "External Partners",
+      "Business Owner": "Distribution",
+      "Technical Owner": "Partner Integrations",
+      "Considerations": "Requires clear contract versioning and SLAs to reduce partner churn"
+    },
+    {
+      "ID": "GDS",
+      "TEXT": "GDS Networks",
+      "TYPE": "SYSTEM",
+      "Description": "Global distribution systems for travel inventory and bookings.",
+      "Key Capabilities": "Availability distribution; Booking exchange",
+      "Business Domain": "External Partners",
+      "Business Owner": "Distribution",
+      "Technical Owner": "Partner Integrations",
+      "Considerations": "Often requires legacy protocols and scheduled windows"
+    },
+    {
+      "ID": "CC",
+      "TEXT": "Contact Center",
+      "TYPE": "SYSTEM",
+      "Description": "Assisted booking and servicing via agents.",
+      "Key Capabilities": "Quote; Booking; Amendments; Service recovery",
+      "Business Domain": "Customer Service",
+      "Business Owner": "Guest Services",
+      "Technical Owner": "Customer Platforms"
+    },
+    {
+      "ID": "PAY",
+      "TEXT": "Payments and Fraud",
+      "TYPE": "SYSTEM",
+      "Description": "Payment authorization, settlement, refunds, and fraud checks.",
+      "Key Capabilities": "Payment capture; Refunds; Tokenization; Fraud screening",
+      "Business Domain": "Finance",
+      "Business Owner": "Finance",
+      "Technical Owner": "Payments Team",
+      "Data Sensitivity": "High",
+      "Compliance Requirements": "PCI DSS",
+      "Considerations": "Requires strong idempotency and audit trails"
+    },
+    {
+      "ID": "CRM",
+      "TEXT": "Customer and Loyalty",
+      "TYPE": "SYSTEM",
+      "Description": "Customer profiles, loyalty status, and engagement history.",
+      "Key Capabilities": "Customer profiles; Loyalty tiers; Campaign triggers",
+      "Business Domain": "Customer",
+      "Business Owner": "Marketing",
+      "Technical Owner": "CRM Platforms",
+      "Data Sensitivity": "High",
+      "Considerations": "Consent and privacy enforcement for marketing communications"
+    },
+    {
+      "ID": "OPS",
+      "TEXT": "Operations and Onboard",
+      "TYPE": "SYSTEM",
+      "Description": "Operational systems for embarkation, onboard services, and disruption handling.",
+      "Key Capabilities": "Manifest management; Service delivery; Disruption workflows",
+      "Business Domain": "Operations",
+      "Business Owner": "Operations",
+      "Technical Owner": "Operational Systems",
+      "Considerations": "Requires near real-time access to booking changes"
+    },
+    {
+      "ID": "FIN",
+      "TEXT": "Finance and ERP",
+      "TYPE": "SYSTEM",
+      "Description": "Financial accounting, reconciliation, and revenue recognition.",
+      "Key Capabilities": "Revenue recognition; GL; Reconciliation; Reporting",
+      "Business Domain": "Finance",
+      "Business Owner": "Finance",
+      "Technical Owner": "Enterprise Applications"
+    },
+    {
+      "ID": "IDM",
+      "TEXT": "Identity and Access",
+      "TYPE": "SYSTEM",
+      "Description": "Authentication, authorization, and partner access control.",
+      "Key Capabilities": "SSO; Partner access; API auth; MFA",
+      "Business Domain": "Security",
+      "Business Owner": "Security",
+      "Technical Owner": "Platform Security",
+      "Considerations": "Partner access must be isolated by contract and role"
+    },
+    {
+      "ID": "OBS",
+      "TEXT": "Observability and Support",
+      "TYPE": "SYSTEM",
+      "Description": "Monitoring, logging, tracing, and incident response for integrations.",
+      "Key Capabilities": "Telemetry; SLA reporting; Incident triage",
+      "Business Domain": "IT Operations",
+      "Business Owner": "IT Operations",
+      "Technical Owner": "Platform Engineering",
+      "Considerations": "Define end-to-end trace IDs for partner transactions"
+    },
+    {
+      "ID": "DATA",
+      "TEXT": "Data Platform",
+      "TYPE": "SYSTEM",
+      "Description": "Enterprise data lake/warehouse for analytics and reporting.",
+      "Key Capabilities": "ETL/ELT; Analytics; Data products",
+      "Business Domain": "Analytics",
+      "Business Owner": "Data",
+      "Technical Owner": "Data Engineering"
+    },
+    {
+      "ID": "INT",
+      "TEXT": "Integration Layer",
+      "TYPE": "SYSTEM",
+      "Description": "API management, event bus, mediation, and partner adapters.",
+      "Key Capabilities": "API gateway; Event bus; Orchestration; Transformation; Partner adapters",
+      "Business Domain": "Integration",
+      "Business Owner": "Architecture",
+      "Technical Owner": "Integration Platform",
+      "TIME Status": "INVEST",
+      "Issues/Challenges": "Inconsistent contracts and limited reuse",
+      "Future Improvements/Plans": "Standardized API contracts and event schema governance",
+      "Considerations": "Acts as design authority for integration standards and ADRs"
+    },
+    {
+      "ID": "NTF",
+      "TEXT": "Notifications",
+      "TYPE": "SYSTEM",
+      "Description": "Email/SMS/push notifications for booking updates and disruptions.",
+      "Key Capabilities": "Outbound messaging; Templates; Delivery tracking",
+      "Business Domain": "Customer Service",
+      "Business Owner": "Guest Services",
+      "Technical Owner": "Digital Platform"
+    },
+    {
+      "ID": "CUST",
+      "TEXT": "Guests and Passengers",
+      "TYPE": "ACTOR",
+      "Description": "End customers searching, booking, and servicing travel."
+    },
+    {
+      "ID": "AGT",
+      "TEXT": "Travel Agents",
+      "TYPE": "ACTOR",
+      "Description": "Third-party agents and agency staff selling travel products."
+    },
+    {
+      "ID": "OPSUSR",
+      "TEXT": "Operations Staff",
+      "TYPE": "ACTOR",
+      "Description": "Operational users managing embarkation, onboard services, and disruptions."
+    },
+    {
+      "ID": "PART",
+      "TEXT": "Partner Integrators",
+      "TYPE": "ACTOR",
+      "Description": "Third parties integrating via partner APIs and events."
+    }
+  ],
+  "interactions": [
+    {
+      "ID": "F001",
+      "FROMID": "CUST",
+      "TOID": "B2C",
+      "TEXT": "Search and book",
+      "TYPE": "->",
+      "Description": "Customer searches itineraries, prices, and initiates bookings.",
+      "Integration Style": "Synchronous API",
+      "Considerations": "Low latency; cacheable search results",
+      "From": "Guests and Passengers",
+      "To": "B2C Web and Mobile"
+    },
+    {
+      "ID": "F002",
+      "FROMID": "AGT",
+      "TOID": "B2B",
+      "TEXT": "Agent booking",
+      "TYPE": "->",
+      "Description": "Agents search and book on behalf of customers.",
+      "Integration Style": "Synchronous API",
+      "Considerations": "Agency accreditation and entitlement checks",
+      "From": "Travel Agents",
+      "To": "Agent and B2B Portal"
+    },
+    {
+      "ID": "F003",
+      "FROMID": "B2C",
+      "TOID": "INT",
+      "TEXT": "Booking APIs",
+      "TYPE": "->",
+      "Description": "Direct channels call integration layer for search, price, and booking.",
+      "Integration Style": "Synchronous API",
+      "Security Measures": "OAuth 2.0; mTLS",
+      "Considerations": "Strict SLAs for conversion flow",
+      "From": "B2C Web and Mobile",
+      "To": "Integration Layer"
+    },
+    {
+      "ID": "F004",
+      "FROMID": "B2B",
+      "TOID": "INT",
+      "TEXT": "Partner APIs",
+      "TYPE": "->",
+      "Description": "B2B portal consumes standardized partner APIs via integration layer.",
+      "Integration Style": "Synchronous API",
+      "Security Measures": "OAuth 2.0; API keys; mTLS",
+      "Considerations": "Contract versioning and partner throttling",
+      "From": "Agent and B2B Portal",
+      "To": "Integration Layer"
+    },
+    {
+      "ID": "F005",
+      "FROMID": "PART",
+      "TOID": "INT",
+      "TEXT": "Partner connectivity",
+      "TYPE": "->",
+      "Description": "Partners integrate via API gateway and event subscriptions.",
+      "Integration Style": "API + Events",
+      "Security Measures": "mTLS; IP allow lists; audit logging",
+      "Considerations": "Provide scope pack and onboarding checklist",
+      "From": "Partner Integrators",
+      "To": "Integration Layer"
+    },
+    {
+      "ID": "F006",
+      "FROMID": "INT",
+      "TOID": "RES",
+      "TEXT": "Reservation commands",
+      "TYPE": "->",
+      "Description": "Create/modify/cancel bookings and retrieve booking state.",
+      "Integration Style": "Synchronous API",
+      "Security Measures": "Service-to-service auth",
+      "Considerations": "Idempotency keys required for booking commands",
+      "From": "Integration Layer",
+      "To": "Reservation System"
+    },
+    {
+      "ID": "F007",
+      "FROMID": "INT",
+      "TOID": "INV",
+      "TEXT": "Availability checks",
+      "TYPE": "->",
+      "Description": "Real-time inventory checks and allotment validation.",
+      "Integration Style": "Synchronous API",
+      "Considerations": "Fail-open vs fail-closed rules must be defined",
+      "From": "Integration Layer",
+      "To": "Inventory and Capacity"
+    },
+    {
+      "ID": "F008",
+      "FROMID": "INT",
+      "TOID": "PRC",
+      "TEXT": "Pricing quotes",
+      "TYPE": "->",
+      "Description": "Retrieve prices, promotions, and package eligibility.",
+      "Integration Style": "Synchronous API",
+      "Considerations": "Shared cache and currency handling",
+      "From": "Integration Layer",
+      "To": "Pricing and Revenue Management"
+    },
+    {
+      "ID": "F009",
+      "FROMID": "RES",
+      "TOID": "INT",
+      "TEXT": "Booking events",
+      "TYPE": "->",
+      "Description": "Booking created, amended, cancelled, ticketed, or departed.",
+      "Integration Style": "Event",
+      "Considerations": "Event schema versioning and consumer idempotency",
+      "From": "Reservation System",
+      "To": "Integration Layer"
+    },
+    {
+      "ID": "F010",
+      "FROMID": "INT",
+      "TOID": "CHAN",
+      "TEXT": "Channel distribution",
+      "TYPE": "->",
+      "Description": "Publish availability and pricing to channel manager.",
+      "Integration Style": "Event",
+      "Considerations": "Throttling and back-pressure to avoid partner overload",
+      "From": "Integration Layer",
+      "To": "Channel Manager"
+    },
+    {
+      "ID": "F011",
+      "FROMID": "CHAN",
+      "TOID": "OTA",
+      "TEXT": "OTA feeds",
+      "TYPE": "->",
+      "Description": "Distribute rates, inventory, and booking updates to OTAs.",
+      "Integration Style": "API + Events",
+      "Considerations": "Contracted SLAs and reconciliation process",
+      "From": "Channel Manager",
+      "To": "OTAs and Aggregators"
+    },
+    {
+      "ID": "F012",
+      "FROMID": "CHAN",
+      "TOID": "GDS",
+      "TEXT": "GDS distribution",
+      "TYPE": "->",
+      "Description": "Publish inventory to GDS and receive booking transactions.",
+      "Integration Style": "API + Legacy",
+      "Considerations": "Legacy protocol adapters and scheduled cutovers",
+      "From": "Channel Manager",
+      "To": "GDS Networks"
+    },
+    {
+      "ID": "F013",
+      "FROMID": "INT",
+      "TOID": "PAY",
+      "TEXT": "Payment authorization",
+      "TYPE": "->",
+      "Description": "Authorize and capture customer payments.",
+      "Integration Style": "Synchronous API",
+      "Security Measures": "PCI compliant tokenization",
+      "Considerations": "Retry policy and idempotency for payment commands",
+      "From": "Integration Layer",
+      "To": "Payments and Fraud"
+    },
+    {
+      "ID": "F014",
+      "FROMID": "PAY",
+      "TOID": "INT",
+      "TEXT": "Payment events",
+      "TYPE": "->",
+      "Description": "Payment success, failure, refunds, chargebacks.",
+      "Integration Style": "Event",
+      "Considerations": "Reconciliation and dispute workflows",
+      "From": "Payments and Fraud",
+      "To": "Integration Layer"
+    },
+    {
+      "ID": "F015",
+      "FROMID": "INT",
+      "TOID": "CRM",
+      "TEXT": "Customer updates",
+      "TYPE": "->",
+      "Description": "Sync customer profile and loyalty changes.",
+      "Integration Style": "Event",
+      "Considerations": "Consent flags and data minimization",
+      "From": "Integration Layer",
+      "To": "Customer and Loyalty"
+    },
+    {
+      "ID": "F016",
+      "FROMID": "INT",
+      "TOID": "OPS",
+      "TEXT": "Operational feed",
+      "TYPE": "->",
+      "Description": "Manifest updates and operational changes.",
+      "Integration Style": "Event",
+      "Considerations": "Near real-time propagation for disruptions",
+      "From": "Integration Layer",
+      "To": "Operations and Onboard"
+    },
+    {
+      "ID": "F017",
+      "FROMID": "OPSUSR",
+      "TOID": "OPS",
+      "TEXT": "Operational actions",
+      "TYPE": "->",
+      "Description": "Operations staff manage embarkation and onboard changes.",
+      "Integration Style": "User interaction",
+      "From": "Operations Staff",
+      "To": "Operations and Onboard"
+    },
+    {
+      "ID": "F018",
+      "FROMID": "INT",
+      "TOID": "FIN",
+      "TEXT": "Revenue postings",
+      "TYPE": "->",
+      "Description": "Booking and payment events sent to finance for revenue recognition.",
+      "Integration Style": "Event",
+      "Considerations": "Consistent booking identifiers and reconciliation",
+      "From": "Integration Layer",
+      "To": "Finance and ERP"
+    },
+    {
+      "ID": "F019",
+      "FROMID": "INT",
+      "TOID": "DATA",
+      "TEXT": "Analytics feed",
+      "TYPE": "->",
+      "Description": "Operational and commercial data streams to analytics.",
+      "Integration Style": "Event",
+      "Considerations": "Schema registry and data quality checks",
+      "From": "Integration Layer",
+      "To": "Data Platform"
+    },
+    {
+      "ID": "F020",
+      "FROMID": "INT",
+      "TOID": "NTF",
+      "TEXT": "Customer notifications",
+      "TYPE": "->",
+      "Description": "Send confirmations, reminders, and disruption notices.",
+      "Integration Style": "Event",
+      "Considerations": "Localization and delivery SLAs",
+      "From": "Integration Layer",
+      "To": "Notifications"
+    },
+    {
+      "ID": "F021",
+      "FROMID": "INT",
+      "TOID": "IDM",
+      "TEXT": "Access validation",
+      "TYPE": "->",
+      "Description": "Token validation and partner access checks.",
+      "Integration Style": "Synchronous API",
+      "Considerations": "Zero trust service-to-service controls",
+      "From": "Integration Layer",
+      "To": "Identity and Access"
+    },
+    {
+      "ID": "F022",
+      "FROMID": "INT",
+      "TOID": "OBS",
+      "TEXT": "Telemetry",
+      "TYPE": "->",
+      "Description": "Metrics, traces, and logs for integration flows.",
+      "Integration Style": "Event",
+      "Considerations": "Correlation IDs for partner transactions",
+      "From": "Integration Layer",
+      "To": "Observability and Support"
+    }
+  ]
+}
