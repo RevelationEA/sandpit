@@ -28,13 +28,13 @@
 <ul>
   <li><strong>Core systems:</strong> Reservation, Inventory, Pricing, Payments, CRM/Loyalty, Operations, Finance.</li>
   <li><strong>Channel systems:</strong> B2C Web/Mobile, B2B Portal, Channel Manager, OTAs, GDS.</li>
-  <li><strong>Platform services:</strong> Integration Layer, Identity, Observability, Notifications, Data Platform.</li>
+  <li><strong>Platform services:</strong> Identity, Observability, Notifications, Data Platform.</li>
   <li><strong>Actors:</strong> Guests/Passengers, Travel Agents, Operations Staff, Partner Integrators.</li>
 </ul>
 
 <h2>Integration Layer Definition (Phase 1)</h2>
 <ul>
-  <li><strong>Boundaries:</strong> Integration Layer (INT) exposes standardized APIs and events, mediates legacy systems, and provides partner adapters.</li>
+  <li><strong>Boundaries:</strong> Logical integration layer (API gateway + event bus) mediates legacy systems and partner access.</li>
   <li><strong>Responsibilities:</strong> Contract governance, orchestration, transformation, event publication, access control, and telemetry.</li>
   <li><strong>Technology approach:</strong> API gateway + event bus + adapter framework, with schema registry and contract testing.</li>
   <li><strong>Environment assumptions:</strong> Hybrid environment with legacy reservation systems and cloud-hosted channel platforms.</li>
@@ -57,7 +57,7 @@
     <tr>
       <td>1</td>
       <td>Search and Quote (B2B/B2C)</td>
-      <td>INT -> RES/INV/PRC</td>
+      <td>B2C/B2B -> Reservation, Inventory, Pricing</td>
       <td>Synchronous API</td>
       <td>Reservation, Inventory, Pricing</td>
       <td>Requires caching and SLA definition</td>
@@ -65,7 +65,7 @@
     <tr>
       <td>1</td>
       <td>Booking Create/Modify/Cancel</td>
-      <td>INT -> RES</td>
+      <td>Channels -> Reservation</td>
       <td>Synchronous API</td>
       <td>Reservation</td>
       <td>Idempotency keys mandatory</td>
@@ -73,7 +73,7 @@
     <tr>
       <td>1</td>
       <td>Booking Events</td>
-      <td>RES -> INT</td>
+      <td>Reservation -> Channels</td>
       <td>Event</td>
       <td>Reservation, Event Bus</td>
       <td>Schema versioning required</td>
@@ -81,7 +81,7 @@
     <tr>
       <td>2</td>
       <td>Payment Authorization</td>
-      <td>INT -> PAY</td>
+      <td>Reservation -> Payments</td>
       <td>Synchronous API</td>
       <td>Payments</td>
       <td>PCI scope and retries defined</td>
@@ -89,7 +89,7 @@
     <tr>
       <td>2</td>
       <td>Payment Events</td>
-      <td>PAY -> INT</td>
+      <td>Payments -> Reservation</td>
       <td>Event</td>
       <td>Payments, Finance</td>
       <td>Reconciliation workflow agreed</td>
@@ -111,18 +111,69 @@
   <tbody>
     <tr><td>F003</td><td>Direct channel booking APIs</td><td>Integration Platform</td><td>High</td><td>Latency and rate limits</td></tr>
     <tr><td>F006</td><td>Reservation commands</td><td>Reservation Team</td><td>High</td><td>Idempotency and rollback</td></tr>
-    <tr><td>F009</td><td>Booking events</td><td>Reservation Team</td><td>High</td><td>Schema evolution and replay</td></tr>
-    <tr><td>F011</td><td>OTA feeds</td><td>Distribution</td><td>Medium</td><td>Partner SLA variability</td></tr>
-    <tr><td>F018</td><td>Revenue postings to finance</td><td>Finance</td><td>Medium</td><td>Reconciliation accuracy</td></tr>
+    <tr><td>F009</td><td>F009 Booking events</td><td>Reservation Team</td><td>High</td><td>Schema evolution and replay</td></tr>
+    <tr><td>F011</td><td>F011 OTA feeds</td><td>Distribution</td><td>Medium</td><td>Partner SLA variability</td></tr>
+    <tr><td>F018</td><td>F018 Revenue postings to finance</td><td>Finance</td><td>Medium</td><td>Reconciliation accuracy</td></tr>
   </tbody>
 </table>
+
+<h2>Functional Flows (mapped to model interactions)</h2>
+<p>
+  The flows below are written for business audiences. Each flow references the interaction IDs used in the
+  model so teams can trace requirements back to system interfaces.
+</p>
+
+<h3>Customer direct booking (B2C)</h3>
+<ul>
+  <li><strong>Browse and search:</strong> Guests use the B2C site/app to search trips and start a booking (<code>F001</code>).</li>
+  <li><strong>Quote and availability:</strong> The B2C channel calls the Reservation System to confirm availability and price (<code>F003</code>), which in turn checks Inventory (<code>F007</code>) and Pricing (<code>F008</code>).</li>
+  <li><strong>Payment:</strong> Reservation requests payment authorization (<code>F013</code>) and receives payment outcomes (<code>F014</code>).</li>
+  <li><strong>Confirmation:</strong> Reservation triggers customer notifications for confirmation or updates (<code>F020</code>).</li>
+  <li><strong>After booking:</strong> Customer/loyalty records are updated (<code>F015</code>), telemetry is emitted for support and monitoring (<code>F022</code>), and finance and analytics feeds are updated (<code>F018</code>, <code>F019</code>).</li>
+</ul>
+
+<h3>F002 Agent booking (B2B)</h3>
+<ul>
+  <li><strong>Agent search:</strong> Agents use the B2B portal to find and price itineraries (<code>F002</code>).</li>
+  <li><strong>Booking lifecycle:</strong> The B2B portal calls Reservation for booking actions (<code>F004</code>), with Reservation validating Inventory (<code>F007</code>) and Pricing (<code>F008</code>).</li>
+  <li><strong>Payment and confirmation:</strong> F013 Payment authorization and outcomes are handled (<code>F013</code>, <code>F014</code>) and notifications are sent (<code>F020</code>).</li>
+  <li><strong>Downstream updates:</strong> Loyalty, finance, analytics, and observability updates follow (<code>F015</code>, <code>F018</code>, <code>F019</code>, <code>F022</code>).</li>
+</ul>
+
+<h3>Partner distribution (OTAs and GDS)</h3>
+<ul>
+  <li><strong>Partner onboarding:</strong> Partner integrators connect via the Channel Manager (<code>F005</code>).</li>
+  <li><strong>Inventory and booking updates:</strong> Inventory and booking events are pushed from Inventory and Reservation into the Channel Manager (<code>F010</code>, <code>F009</code>).</li>
+  <li><strong>OTA distribution:</strong> The Channel Manager publishes inventory/rates and booking updates to OTAs (<code>F011</code>).</li>
+  <li><strong>F012 GDS distribution:</strong> The Channel Manager publishes inventory and receives bookings through GDS interfaces (<code>F012</code>).</li>
+  <li><strong>F006 Channel bookings:</strong> Booking transactions are sent from the Channel Manager to Reservation (<code>F006</code>).</li>
+</ul>
+
+<h3>Operational readiness and disruption handling</h3>
+<ul>
+  <li><strong>F016 Operational feed:</strong> Reservation pushes manifest and operational changes to Operations systems (<code>F016</code>).</li>
+  <li><strong>Operations actions:</strong> Operations staff make service and disruption decisions within Operations systems (<code>F017</code>).</li>
+  <li><strong>F015 Customer updates:</strong> Booking changes trigger Notifications for customers (<code>F020</code>) and are observable via telemetry (<code>F022</code>).</li>
+</ul>
+
+<h3>Identity and access</h3>
+<ul>
+  <li><strong>F021 Access validation:</strong> B2C channel validates sessions and access with Identity and Access (<code>F021</code>).</li>
+</ul>
+
+<h3>Finance, analytics, and support</h3>
+<ul>
+  <li><strong>Finance posting:</strong> Reservation sends booking and payment events to Finance for revenue recognition (<code>F018</code>).</li>
+  <li><strong>F019 Analytics feed:</strong> Reservation sends operational and commercial data to the Data Platform (<code>F019</code>).</li>
+  <li><strong>Support visibility:</strong> Reservation publishes telemetry to Observability for SLA tracking and incident response (<code>F022</code>).</li>
+</ul>
 
 <h2>Initial ADRs (early decisions)</h2>
 <ul>
   <li><strong>ADR-001:</strong> Use canonical API contracts for booking and pricing, with versioning and compatibility rules.</li>
   <li><strong>ADR-002:</strong> Event-driven propagation for booking lifecycle, payments, and operational updates.</li>
   <li><strong>ADR-003:</strong> Integration layer owns partner access, throttling, and contract enforcement.</li>
-  <li><strong>ADR-004:</strong> Orchestration centralized in Integration Layer for cross-domain flows.</li>
+  <li><strong>ADR-004:</strong> Orchestration centralized in the logical integration layer for cross-domain flows.</li>
 </ul>
 
 <h2>Non-Functional Requirements (NFR) Assumptions</h2>
@@ -158,8 +209,8 @@
 
 <h2>Model Mapping</h2>
 <p>
-  Key integration flows are represented as interactions F003-F022 in the model JSON. The integration layer is
-  represented by system <code>INT</code>. Use these elements to drive architecture diagrams, ADRs, and partner scope.
+  Key integration flows are represented as interactions <code>F001</code> through <code>F022</code> in the model JSON.
+  The integration layer is represented as a logical property on each interaction, not as a standalone system.
 </p>
 </body>
 </html>
