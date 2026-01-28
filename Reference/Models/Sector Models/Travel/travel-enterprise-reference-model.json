@@ -20,7 +20,7 @@
       "refData": "VIEWTYPE"
     },
     "DESCRIPTION": {
-      "value": "Enterprise reference model for travel and cruise integration, emphasizing reservation, sales channels, partner interfaces, and the integration layer used to reduce point-to-point connections.",
+      "value": "Enterprise reference model for travel and cruise integration, emphasizing reservation, sales channels, partner interfaces, and the integration layer used to reduce point-to-point connections. Functional flows: 1) Customer reservation: Guests -> B2C -> Reservation -> Inventory/Pricing -> Payments -> Reservation -> Notifications. 2) Agent booking: Travel Agents -> B2B -> Reservation -> Inventory/Pricing -> Payments -> Reservation. 3) OTA booking: OTAs -> Channel Manager -> Reservation -> Booking updates -> Channel Manager -> OTAs. 4) Disruption handling: Reservation updates -> Operations -> Notifications. 5) Finance posting: Reservation/Payments -> Finance -> Data Platform.",
       "inputType": "textarea"
     },
     "Documentation URL": {
@@ -233,20 +233,6 @@
       "Technical Owner": "Data Engineering"
     },
     {
-      "ID": "INT",
-      "TEXT": "Integration Layer",
-      "TYPE": "SYSTEM",
-      "Description": "API management, event bus, mediation, and partner adapters.",
-      "Key Capabilities": "API gateway; Event bus; Orchestration; Transformation; Partner adapters",
-      "Business Domain": "Integration",
-      "Business Owner": "Architecture",
-      "Technical Owner": "Integration Platform",
-      "TIME Status": "INVEST",
-      "Issues/Challenges": "Inconsistent contracts and limited reuse",
-      "Future Improvements/Plans": "Standardized API contracts and event schema governance",
-      "Considerations": "Acts as design authority for integration standards and ADRs"
-    },
-    {
       "ID": "NTF",
       "TEXT": "Notifications",
       "TYPE": "SYSTEM",
@@ -292,7 +278,8 @@
       "Integration Style": "Synchronous API",
       "Considerations": "Low latency; cacheable search results",
       "From": "Guests and Passengers",
-      "To": "B2C Web and Mobile"
+      "To": "B2C Web and Mobile",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F002",
@@ -304,107 +291,116 @@
       "Integration Style": "Synchronous API",
       "Considerations": "Agency accreditation and entitlement checks",
       "From": "Travel Agents",
-      "To": "Agent and B2B Portal"
+      "To": "Agent and B2B Portal",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F003",
       "FROMID": "B2C",
-      "TOID": "INT",
+      "TOID": "RES",
       "TEXT": "Booking APIs",
       "TYPE": "->",
-      "Description": "Direct channels call integration layer for search, price, and booking.",
+      "Description": "Direct channel calls reservation APIs for search, quote, and booking.",
       "Integration Style": "Synchronous API",
       "Security Measures": "OAuth 2.0; mTLS",
       "Considerations": "Strict SLAs for conversion flow",
       "From": "B2C Web and Mobile",
-      "To": "Integration Layer"
+      "To": "Reservation System",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F004",
       "FROMID": "B2B",
-      "TOID": "INT",
-      "TEXT": "Partner APIs",
+      "TOID": "RES",
+      "TEXT": "Partner booking APIs",
       "TYPE": "->",
-      "Description": "B2B portal consumes standardized partner APIs via integration layer.",
+      "Description": "B2B portal uses reservation APIs for partner bookings and servicing.",
       "Integration Style": "Synchronous API",
       "Security Measures": "OAuth 2.0; API keys; mTLS",
       "Considerations": "Contract versioning and partner throttling",
       "From": "Agent and B2B Portal",
-      "To": "Integration Layer"
+      "To": "Reservation System",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F005",
       "FROMID": "PART",
-      "TOID": "INT",
+      "TOID": "CHAN",
       "TEXT": "Partner connectivity",
       "TYPE": "->",
-      "Description": "Partners integrate via API gateway and event subscriptions.",
+      "Description": "Partners onboard and exchange inventory/booking data via channel manager interfaces.",
       "Integration Style": "API + Events",
       "Security Measures": "mTLS; IP allow lists; audit logging",
       "Considerations": "Provide scope pack and onboarding checklist",
       "From": "Partner Integrators",
-      "To": "Integration Layer"
+      "To": "Channel Manager",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F006",
-      "FROMID": "INT",
+      "FROMID": "CHAN",
       "TOID": "RES",
-      "TEXT": "Reservation commands",
+      "TEXT": "Channel bookings",
       "TYPE": "->",
-      "Description": "Create/modify/cancel bookings and retrieve booking state.",
+      "Description": "Channel manager submits bookings and amendments into reservation system.",
       "Integration Style": "Synchronous API",
       "Security Measures": "Service-to-service auth",
       "Considerations": "Idempotency keys required for booking commands",
-      "From": "Integration Layer",
-      "To": "Reservation System"
+      "From": "Channel Manager",
+      "To": "Reservation System",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F007",
-      "FROMID": "INT",
+      "FROMID": "RES",
       "TOID": "INV",
       "TEXT": "Availability checks",
       "TYPE": "->",
-      "Description": "Real-time inventory checks and allotment validation.",
+      "Description": "Reservation system requests inventory and allotment validation.",
       "Integration Style": "Synchronous API",
       "Considerations": "Fail-open vs fail-closed rules must be defined",
-      "From": "Integration Layer",
-      "To": "Inventory and Capacity"
+      "From": "Reservation System",
+      "To": "Inventory and Capacity",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F008",
-      "FROMID": "INT",
+      "FROMID": "RES",
       "TOID": "PRC",
       "TEXT": "Pricing quotes",
       "TYPE": "->",
-      "Description": "Retrieve prices, promotions, and package eligibility.",
+      "Description": "Reservation system requests price, promotions, and package eligibility.",
       "Integration Style": "Synchronous API",
       "Considerations": "Shared cache and currency handling",
-      "From": "Integration Layer",
-      "To": "Pricing and Revenue Management"
+      "From": "Reservation System",
+      "To": "Pricing and Revenue Management",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F009",
       "FROMID": "RES",
-      "TOID": "INT",
+      "TOID": "CHAN",
       "TEXT": "Booking events",
       "TYPE": "->",
-      "Description": "Booking created, amended, cancelled, ticketed, or departed.",
+      "Description": "Reservation system publishes booking lifecycle updates for channel distribution.",
       "Integration Style": "Event",
       "Considerations": "Event schema versioning and consumer idempotency",
       "From": "Reservation System",
-      "To": "Integration Layer"
+      "To": "Channel Manager",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F010",
-      "FROMID": "INT",
+      "FROMID": "INV",
       "TOID": "CHAN",
-      "TEXT": "Channel distribution",
+      "TEXT": "Inventory distribution",
       "TYPE": "->",
-      "Description": "Publish availability and pricing to channel manager.",
+      "Description": "Inventory updates are distributed to channels via channel manager.",
       "Integration Style": "Event",
       "Considerations": "Throttling and back-pressure to avoid partner overload",
-      "From": "Integration Layer",
-      "To": "Channel Manager"
+      "From": "Inventory and Capacity",
+      "To": "Channel Manager",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F011",
@@ -416,7 +412,8 @@
       "Integration Style": "API + Events",
       "Considerations": "Contracted SLAs and reconciliation process",
       "From": "Channel Manager",
-      "To": "OTAs and Aggregators"
+      "To": "OTAs and Aggregators",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F012",
@@ -428,11 +425,12 @@
       "Integration Style": "API + Legacy",
       "Considerations": "Legacy protocol adapters and scheduled cutovers",
       "From": "Channel Manager",
-      "To": "GDS Networks"
+      "To": "GDS Networks",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F013",
-      "FROMID": "INT",
+      "FROMID": "RES",
       "TOID": "PAY",
       "TEXT": "Payment authorization",
       "TYPE": "->",
@@ -440,44 +438,48 @@
       "Integration Style": "Synchronous API",
       "Security Measures": "PCI compliant tokenization",
       "Considerations": "Retry policy and idempotency for payment commands",
-      "From": "Integration Layer",
-      "To": "Payments and Fraud"
+      "From": "Reservation System",
+      "To": "Payments and Fraud",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F014",
       "FROMID": "PAY",
-      "TOID": "INT",
+      "TOID": "RES",
       "TEXT": "Payment events",
       "TYPE": "->",
       "Description": "Payment success, failure, refunds, chargebacks.",
       "Integration Style": "Event",
       "Considerations": "Reconciliation and dispute workflows",
       "From": "Payments and Fraud",
-      "To": "Integration Layer"
+      "To": "Reservation System",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F015",
-      "FROMID": "INT",
+      "FROMID": "RES",
       "TOID": "CRM",
       "TEXT": "Customer updates",
       "TYPE": "->",
       "Description": "Sync customer profile and loyalty changes.",
       "Integration Style": "Event",
       "Considerations": "Consent flags and data minimization",
-      "From": "Integration Layer",
-      "To": "Customer and Loyalty"
+      "From": "Reservation System",
+      "To": "Customer and Loyalty",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F016",
-      "FROMID": "INT",
+      "FROMID": "RES",
       "TOID": "OPS",
       "TEXT": "Operational feed",
       "TYPE": "->",
       "Description": "Manifest updates and operational changes.",
       "Integration Style": "Event",
       "Considerations": "Near real-time propagation for disruptions",
-      "From": "Integration Layer",
-      "To": "Operations and Onboard"
+      "From": "Reservation System",
+      "To": "Operations and Onboard",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F017",
@@ -488,67 +490,73 @@
       "Description": "Operations staff manage embarkation and onboard changes.",
       "Integration Style": "User interaction",
       "From": "Operations Staff",
-      "To": "Operations and Onboard"
+      "To": "Operations and Onboard",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F018",
-      "FROMID": "INT",
+      "FROMID": "RES",
       "TOID": "FIN",
       "TEXT": "Revenue postings",
       "TYPE": "->",
       "Description": "Booking and payment events sent to finance for revenue recognition.",
       "Integration Style": "Event",
       "Considerations": "Consistent booking identifiers and reconciliation",
-      "From": "Integration Layer",
-      "To": "Finance and ERP"
+      "From": "Reservation System",
+      "To": "Finance and ERP",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F019",
-      "FROMID": "INT",
+      "FROMID": "RES",
       "TOID": "DATA",
       "TEXT": "Analytics feed",
       "TYPE": "->",
       "Description": "Operational and commercial data streams to analytics.",
       "Integration Style": "Event",
       "Considerations": "Schema registry and data quality checks",
-      "From": "Integration Layer",
-      "To": "Data Platform"
+      "From": "Reservation System",
+      "To": "Data Platform",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F020",
-      "FROMID": "INT",
+      "FROMID": "RES",
       "TOID": "NTF",
       "TEXT": "Customer notifications",
       "TYPE": "->",
       "Description": "Send confirmations, reminders, and disruption notices.",
       "Integration Style": "Event",
       "Considerations": "Localization and delivery SLAs",
-      "From": "Integration Layer",
-      "To": "Notifications"
+      "From": "Reservation System",
+      "To": "Notifications",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F021",
-      "FROMID": "INT",
+      "FROMID": "B2C",
       "TOID": "IDM",
       "TEXT": "Access validation",
       "TYPE": "->",
       "Description": "Token validation and partner access checks.",
       "Integration Style": "Synchronous API",
       "Considerations": "Zero trust service-to-service controls",
-      "From": "Integration Layer",
-      "To": "Identity and Access"
+      "From": "B2C Web and Mobile",
+      "To": "Identity and Access",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     },
     {
       "ID": "F022",
-      "FROMID": "INT",
+      "FROMID": "RES",
       "TOID": "OBS",
       "TEXT": "Telemetry",
       "TYPE": "->",
       "Description": "Metrics, traces, and logs for integration flows.",
       "Integration Style": "Event",
       "Considerations": "Correlation IDs for partner transactions",
-      "From": "Integration Layer",
-      "To": "Observability and Support"
+      "From": "Reservation System",
+      "To": "Observability and Support",
+      "Integration Layer": "API gateway + event bus (logical integration layer)"
     }
   ]
 }
